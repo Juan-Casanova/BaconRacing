@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
-   
+    public Text t_contador;
     public float initialCounter;
     public float time;
     public bool movement;
@@ -17,12 +18,13 @@ public class Countdown : MonoBehaviour
 
     public void Update()
     {
-
+        t_contador.text = initialCounter.ToString("f0");
         initialCounter -= Time.deltaTime;
         if (initialCounter < 1)
         {
             movement = true;
             initialCounter = 0;
+            Destroy(t_contador);
         }
         activateMovement(initialCounter,time,movement);
 
