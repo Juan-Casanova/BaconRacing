@@ -24,7 +24,8 @@ public class Countdown : MonoBehaviour
         {
             movement = true;
             initialCounter = 0;
-            Destroy(t_contador);
+            t_contador.text = "";
+
         }
         activateMovement(initialCounter,time,movement);
 
