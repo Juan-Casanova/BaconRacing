@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+    public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -18,11 +19,15 @@ public class Control_Cerdito : MonoBehaviour
     public int Brake=10000;
     public float CoefAccelaration=10f;
     public float WheelAngleMax=5;
+    public bool activeItem;
+    public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
 
     void Start()
     {
+        activeItem = false;
+        itemControl = FindObjectOfType<ItemControl>();
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
     }
@@ -50,7 +55,7 @@ public class Control_Cerdito : MonoBehaviour
         }
 
         //DECELERATION
-        if(!Input.GetKey(KeyCode.UpArrow) || Speed>MaxSpeed)
+        if (!Input.GetKey(KeyCode.UpArrow) || Speed>MaxSpeed)
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -78,9 +83,19 @@ public class Control_Cerdito : MonoBehaviour
             }
         }
         //if(Girar==0){
-            //Cerdito.transform.Rotate(0,0,0);
+        //Cerdito.transform.Rotate(0,0,0);
         //}
         //Debug.Log(Girar);
+
+
+
+        //Active item
+        if (Input.GetKey(KeyCode.M) && activeItem == true)
+        {
+            itemControl.ChargeItem(numRandom);
+            activeItem = false;
+        }
+
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -117,6 +132,15 @@ public class Control_Cerdito : MonoBehaviour
         {
             Torque=1750;
             MaxSpeed=80;
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("barril"))
+        {
+            Debug.Log("item activo");
+            activeItem = true;
         }
     }
 }
