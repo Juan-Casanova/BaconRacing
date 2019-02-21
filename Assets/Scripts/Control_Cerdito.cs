@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+    public Countdown countdown;
+
     public Text TextSpeed;
     public WheelCollider Front_Left;
     public WheelCollider Front_Right;
@@ -35,7 +37,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
 
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed)
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
