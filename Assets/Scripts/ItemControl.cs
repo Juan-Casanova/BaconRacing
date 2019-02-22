@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
+     public Control_Cerdito controlCerdito;
+
+
+    public bool ActiveShield;
+
     public GameObject item1TocinoPista;
     public GameObject item3ManchaPantallaEnemigo;
     public GameObject item5Proyectil;
+
+    public void Start()
+    {
+        controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
+    }
 
     public void ChargeItem(int _numRandom)
     {
@@ -16,21 +26,21 @@ public class ItemControl : MonoBehaviour
         switch (_numRandom)
         {
             case 1:
-                PoderItem1();
+                PoderItem4();
                 break;
             case 2:
-                PoderItem2();
+                PoderItem2(ActiveShield);
                 break;
             case 3:
-                PoderItem3();
+                PoderItem4();
                 break;
 
             case 4:
-                PoderItem2();
+                PoderItem2(ActiveShield);
                 break;
 
             case 5:
-                PoderItem5();
+                PoderItem4();
                 break;
 
             default:
@@ -48,29 +58,27 @@ public class ItemControl : MonoBehaviour
     public void PoderItem1()
     {
 
-        Instantiate(item1TocinoPista, transform.position, transform.rotation);
+        Instantiate(item1TocinoPista, this.transform.position, this.transform.rotation);
 
     }
 
 
     //Poder escudo cerdo
-    public void PoderItem2()
+    public void PoderItem2(bool _ActiveShield)
     {
-
-        StartCoroutine(TiempoItem2());
+      
+        StartCoroutine(TiempoItem2(_ActiveShield));
         Debug.Log("Se activo el item2");
     }
 
-    IEnumerator TiempoItem2()
+    IEnumerator TiempoItem2(bool _ActiveShield=false)
     {
+        _ActiveShield = true;
+        Debug.Log(_ActiveShield);
 
-        transform.localScale = new Vector3(this.transform.position.x + (this.transform.position.x / 2.0f), this.transform.position.y + (this.transform.position.y / 2.0f), this.transform.position.z + (this.transform.position.z / 2.0f));
+        yield return new WaitForSeconds(10);
 
-        yield return new WaitForSeconds(5);
-
-        transform.localScale = new Vector3(this.transform.position.x - (this.transform.position.x / 2.0f),
-            this.transform.position.y - (this.transform.position.y / 2.0f),
-            this.transform.position.z - (this.transform.position.z / 2.0f));
+        _ActiveShield = false;
 
     }
 
@@ -92,19 +100,22 @@ public class ItemControl : MonoBehaviour
 
     //Item 4 Aceleracion del personaje
 
-    //public void PoderItem4()
-    //{
-    //    StartCoroutine(TiempoItem4());
-    //}
+    public void PoderItem4()
+    {
+        StartCoroutine(TiempoItem4());
+    }
 
-    //IEnumerator TiempoItem4()
-    //{
-    //    GameControl.velocidad1 = 8.0f;
-    //    GameControl.maxSpeed1 = 8.0f;
-    //    yield return new WaitForSeconds(5);
-    //    GameControl.velocidad1 = 1.0f;
-    //    GameControl.maxSpeed1 = 5.0f;
-    //}
+    IEnumerator TiempoItem4()
+    {
+        
+        controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
+
+        yield return new WaitForSeconds(5);
+
+
+        controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
+
+    }
 
 
     //Item 5 Disparar objeto

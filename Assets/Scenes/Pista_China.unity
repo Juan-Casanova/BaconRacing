@@ -30764,6 +30764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d572765bcb3f2a40ab9ba5df7c33b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlCerdito: {fileID: 0}
+  ActiveShield: 0
   item1TocinoPista: {fileID: 3519849501958550579, guid: cf427145cd877e54e99f1b4dec7ee8e1,
     type: 3}
   item3ManchaPantallaEnemigo: {fileID: 1739014878}
