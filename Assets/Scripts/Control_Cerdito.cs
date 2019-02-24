@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+
+
+   
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -57,22 +60,28 @@ public class Control_Cerdito : MonoBehaviour
         }
 
 
-        if (Input.GetKeyUp(KeyCode.UpArrow)) //hola
+        if (Speed<0.8)//hola para activar iddle 
         {
+            Debug.Log("hoooooooola speed"); //hola
             animacion.SetBool("correr", false); //hola
         }
 
         //DECELERATION
-        if(!Input.GetKey(KeyCode.UpArrow) || Speed>MaxSpeed)
+        if (!Input.GetKey(KeyCode.UpArrow) || Speed > MaxSpeed)
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            Back_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            Back_Left.brakeTorque = 0;
+            Back_Right.brakeTorque = 0;
+            Back_Left.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
+            Back_Right.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
+            Front_Left.brakeTorque = 0;
+            Front_Right.brakeTorque = 0;
+            Front_Left.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
+            Front_Right.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
+
+           
+            
+            
+           
         }
 
         //Direction of the pig
