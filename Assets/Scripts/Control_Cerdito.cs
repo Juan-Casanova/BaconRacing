@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-
-
-   
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -24,19 +21,24 @@ public class Control_Cerdito : MonoBehaviour
     public Rigidbody Cerdito;
 
     private Animator animacion; //hola
-    private Animator animacionfrenado; //hola
-    private Animator animacioniddle2; //hola
+    
     //public object Cerdito2;
 
     void Start()
     {
-        Cerdito.centerOfMass=new Vector3(0,.3f,0);
+        Cerdito.centerOfMass = new Vector3(0, .3f, 0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
 
-        animacion = GetComponentInChildren<Animator>();//hola
+        //animaciones abajito
+        animacion = GetComponentInChildren<Animator>();
+        animacioncorrer();
+        animacion.SetBool("frenado", false);
+        animacion.SetBool("iddle2", false); //hola
+    }
+
+    private void animacioncorrer()
+    {
         animacion.SetBool("correr", false);
-        animacion.SetBool("frenado", false); //hola
-        animacion.SetBool("iddle2", false);
     }
 
     // Update is called once per frame
@@ -60,11 +62,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
             Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
 
-
-            
                 animacion.SetBool("correr", true); //hola
-                
-            
         }
 
       
@@ -86,7 +84,7 @@ public class Control_Cerdito : MonoBehaviour
             if (!Input.GetKey(KeyCode.UpArrow) && (Speed > 1 ) )//hola para activar frenado 
             {
                 Debug.Log("sped may 1"); //hola
-                animacion.SetBool("correr", false); //hola
+                animacioncorrer();
                 animacion.SetBool("iddle2", false);
                 Debug.Log("sped may aun "); //hola
                 animacion.SetBool("frenado", true); //hola
@@ -95,13 +93,11 @@ public class Control_Cerdito : MonoBehaviour
             }
             else
             {
-                             
+            
                     Debug.Log("speed menor "); //hola
-                    animacion.SetBool("correr", false); //hola
-                    animacion.SetBool("frenado", false); //hola
+                animacioncorrer();
+                animacion.SetBool("frenado", false); //hola
                     animacion.SetBool("iddle2", true);
-
-                
             }
             
         }
