@@ -19,12 +19,17 @@ public class Control_Cerdito : MonoBehaviour
     public float CoefAccelaration=10f;
     public float WheelAngleMax=5;
     public Rigidbody Cerdito;
+
+    private Animator animacion; //hola
     //public object Cerdito2;
 
     void Start()
     {
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
+
+        animacion = GetComponentInChildren<Animator>();//hola
+        animacion.SetBool("correr", false);
     }
 
     // Update is called once per frame
@@ -37,16 +42,24 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
 
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
+        if (Input.GetKey(KeyCode.UpArrow) && Speed < MaxSpeed && countdown.movement == true)
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Back_Left.brakeTorque = 0;
+            Back_Right.brakeTorque = 0;
+            Back_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Back_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Left.brakeTorque = 0;
+            Front_Right.brakeTorque = 0;
+            Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+
+            animacion.SetBool("correr", true); //hola
+        }
+
+
+        if (Input.GetKeyUp(KeyCode.UpArrow)) //hola
+        {
+            animacion.SetBool("correr", false); //hola
         }
 
         //DECELERATION
