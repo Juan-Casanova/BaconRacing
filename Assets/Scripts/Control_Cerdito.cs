@@ -17,13 +17,15 @@ public class Control_Cerdito : MonoBehaviour
     public WheelCollider Back_Right;
     public float Torque;
     public float Speed;
-    public float MaxSpeed=200f;
-    public int Brake=10000;
-    public float CoefAccelaration=10f;
-    public float WheelAngleMax=5;
+    public float MaxSpeed=200f; //200
+    public int Brake=1000; //1000
+    public float CoefAccelaration=10f; //10
+    public float WheelAngleMax=5; //5
     public Rigidbody Cerdito;
 
     private Animator animacion; //hola
+    private Animator animacionfrenado; //hola
+    private Animator animacioniddle2; //hola
     //public object Cerdito2;
 
     void Start()
@@ -33,6 +35,8 @@ public class Control_Cerdito : MonoBehaviour
 
         animacion = GetComponentInChildren<Animator>();//hola
         animacion.SetBool("correr", false);
+        animacion.SetBool("frenado", false); //hola
+        animacion.SetBool("iddle2", false);
     }
 
     // Update is called once per frame
@@ -45,7 +49,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
 
         //ACCERELATION
-        if (Input.GetKey(KeyCode.UpArrow) && Speed < MaxSpeed && countdown.movement == true)
+        if (Input.GetKey(KeyCode.UpArrow) && Speed < MaxSpeed && countdown.movement == true)//
         {
             Back_Left.brakeTorque = 0;
             Back_Right.brakeTorque = 0;
@@ -56,18 +60,18 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
             Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
 
-            animacion.SetBool("correr", true); //hola
+
+            
+                animacion.SetBool("correr", true); //hola
+                
+            
         }
 
-
-        if (Speed<0.8)//hola para activar iddle 
-        {
-            Debug.Log("hoooooooola speed"); //hola
-            animacion.SetBool("correr", false); //hola
-        }
+      
+       
 
         //DECELERATION
-        if (!Input.GetKey(KeyCode.UpArrow) || Speed > MaxSpeed)
+        if (!Input.GetKey(KeyCode.UpArrow) || Speed > MaxSpeed)//
         {
             Back_Left.brakeTorque = 0;
             Back_Right.brakeTorque = 0;
@@ -77,11 +81,29 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.brakeTorque = 0;
             Front_Left.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
             Front_Right.brakeTorque = Brake * CoefAccelaration * Time.deltaTime;
+            Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaa"); //hola
 
-           
+            if (!Input.GetKey(KeyCode.UpArrow) && (Speed > 1 ) )//hola para activar frenado 
+            {
+                Debug.Log("sped may 1"); //hola
+                animacion.SetBool("correr", false); //hola
+                animacion.SetBool("iddle2", false);
+                Debug.Log("sped may aun "); //hola
+                animacion.SetBool("frenado", true); //hola
+                Debug.Log("sped may aun 3 "); //hola
+
+            }
+            else
+            {
+                             
+                    Debug.Log("speed menor "); //hola
+                    animacion.SetBool("correr", false); //hola
+                    animacion.SetBool("frenado", false); //hola
+                    animacion.SetBool("iddle2", true);
+
+                
+            }
             
-            
-           
         }
 
         //Direction of the pig

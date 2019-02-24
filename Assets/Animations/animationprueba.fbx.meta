@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 496c73df6ccc4e2438e149de4dac4fee
+guid: f88e2da75eaf82941bad536c98bf2b35
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cabeza
-    100002: Cabeza2
-    100004: Cadera
-    100006: CerdoBase
-    100008: Cola1
-    100010: Cola2
-    100012: Colita
-    100014: Colita1
-    100016: Colita3
-    100018: Colita4
-    100020: Columna
-    100022: Cuello
-    100024: Del_Der
-    100026: Del_Izq
-    100028: DelDer
-    100030: DelIzq
-    100032: //RootNode
+    100000: //RootNode
+    100002: Cabeza
+    100004: Cabeza2
+    100006: Cadera
+    100008: CerdoBase
+    100010: Cola1
+    100012: Cola2
+    100014: Colita
+    100016: Colita1
+    100018: Colita3
+    100020: Colita4
+    100022: Columna
+    100024: Cuello
+    100026: Del_Der
+    100028: Del_Izq
+    100030: DelDer
+    100032: DelIzq
     100034: joint20
     100036: Master
     100038: MusloDel_Der
@@ -60,23 +60,23 @@ ModelImporter:
     100108: Tras_Izq
     100110: TrasDer
     100112: TrasIzq
-    400000: Cabeza
-    400002: Cabeza2
-    400004: Cadera
-    400006: CerdoBase
-    400008: Cola1
-    400010: Cola2
-    400012: Colita
-    400014: Colita1
-    400016: Colita3
-    400018: Colita4
-    400020: Columna
-    400022: Cuello
-    400024: Del_Der
-    400026: Del_Izq
-    400028: DelDer
-    400030: DelIzq
-    400032: //RootNode
+    400000: //RootNode
+    400002: Cabeza
+    400004: Cabeza2
+    400006: Cadera
+    400008: CerdoBase
+    400010: Cola1
+    400012: Cola2
+    400014: Colita
+    400016: Colita1
+    400018: Colita3
+    400020: Colita4
+    400022: Columna
+    400024: Cuello
+    400026: Del_Der
+    400028: Del_Izq
+    400030: DelDer
+    400032: DelIzq
     400034: joint20
     400036: Master
     400038: MusloDel_Der
@@ -119,7 +119,7 @@ ModelImporter:
     400112: TrasIzq
     2100000: lambert3SG
     4300000: CerdoBase
-    7400000: AnimacionesIntegras
+    7400000: correrprueba
     9500000: //RootNode
     13700000: CerdoBase
   externalObjects: {}
@@ -149,7 +149,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: correrprueba
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

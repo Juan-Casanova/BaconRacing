@@ -119,7 +119,7 @@ ModelImporter:
     400112: TrasIzq
     2100000: lambert3SG
     4300000: CerdoBase
-    7400000: corrmal
+    7400000: correr(frenado)
     9500000: //RootNode
     13700000: CerdoBase
   externalObjects: {}
@@ -151,7 +151,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: corrmal
+      name: correr(frenado)
       takeName: AnimacionesIntegras
       firstFrame: 94
       lastFrame: 111
