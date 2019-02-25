@@ -30766,6 +30766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlCerdito: {fileID: 0}
   ActiveShield: 0
+  jugador1: {fileID: 1967806416}
   item1TocinoPista: {fileID: 3519849501958550579, guid: cf427145cd877e54e99f1b4dec7ee8e1,
     type: 3}
   item3ManchaPantallaEnemigo: {fileID: 1739014878}

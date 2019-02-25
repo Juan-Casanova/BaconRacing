@@ -9,6 +9,7 @@ public class ItemControl : MonoBehaviour
 
     public bool ActiveShield;
 
+    public GameObject jugador1;
     public GameObject item1TocinoPista;
     public GameObject item3ManchaPantallaEnemigo;
     public GameObject item5Proyectil;
@@ -26,21 +27,30 @@ public class ItemControl : MonoBehaviour
         switch (_numRandom)
         {
             case 1:
-                PoderItem4();
+                PoderItem5();
+                //PoderItem1();
+                Debug.Log("item1: dejar tocino");
                 break;
             case 2:
-                PoderItem2(ActiveShield);
+                PoderItem5();
+                //PoderItem2(ActiveShield);
+                Debug.Log("item2: escudo");
                 break;
             case 3:
-                PoderItem4();
+                PoderItem5();
+              //  PoderItem3();
+                Debug.Log("item3: mancha enemigo");
                 break;
 
             case 4:
-                PoderItem2(ActiveShield);
+                PoderItem5();
+                //PoderItem4();
+                Debug.Log("item4: aceleracion");
                 break;
 
             case 5:
-                PoderItem4();
+                PoderItem5();
+                Debug.Log("item5: disparar objeto");
                 break;
 
             default:
@@ -58,7 +68,7 @@ public class ItemControl : MonoBehaviour
     public void PoderItem1()
     {
 
-        Instantiate(item1TocinoPista, this.transform.position, this.transform.rotation);
+        Instantiate(item1TocinoPista, jugador1.transform.position, jugador1.transform.rotation);
 
     }
 
@@ -122,7 +132,7 @@ public class ItemControl : MonoBehaviour
 
     public void PoderItem5()
     {
-        Instantiate(item5Proyectil, new Vector3(0.0f, 0.0f, 0.0f + Time.deltaTime), transform.rotation);
+        Instantiate(item5Proyectil, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y, jugador1.transform.position.z + 3.0f), transform.rotation);
     }
 
 }

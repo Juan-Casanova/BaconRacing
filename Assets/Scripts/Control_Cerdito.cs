@@ -99,12 +99,12 @@ public class Control_Cerdito : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
         {
             Torque=35000;
             MaxSpeed=160;
-            Debug.Log(Torque);
+           // Debug.Log(Torque);
 
         }
         if(collision.gameObject.name=="Modulo_Recto (14)")
