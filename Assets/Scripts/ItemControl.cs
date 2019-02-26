@@ -11,11 +11,14 @@ public class ItemControl : MonoBehaviour
 
     public GameObject jugador1;
     public GameObject item1TocinoPista;
+    public GameObject item2escudo;
     public GameObject item3ManchaPantallaEnemigo;
+    public GameObject item4chile;
     public GameObject item5Proyectil;
 
     public void Start()
     {
+      
         controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
     }
 
@@ -27,24 +30,23 @@ public class ItemControl : MonoBehaviour
         switch (_numRandom)
         {
             case 1:
-                PoderItem5();
-                //PoderItem1();
+                PoderItem1();
                 Debug.Log("item1: dejar tocino");
                 break;
             case 2:
-                PoderItem5();
-                //PoderItem2(ActiveShield);
+              
+                PoderItem2(ActiveShield);
                 Debug.Log("item2: escudo");
                 break;
             case 3:
-                PoderItem5();
-              //  PoderItem3();
+              
+                PoderItem3();
                 Debug.Log("item3: mancha enemigo");
                 break;
 
             case 4:
-                PoderItem5();
-                //PoderItem4();
+              
+                PoderItem4();
                 Debug.Log("item4: aceleracion");
                 break;
 
@@ -68,7 +70,7 @@ public class ItemControl : MonoBehaviour
     public void PoderItem1()
     {
 
-        Instantiate(item1TocinoPista, jugador1.transform.position, jugador1.transform.rotation);
+        Instantiate(item1TocinoPista, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y+.3f, jugador1.transform.position.z), jugador1.transform.rotation);
 
     }
 
@@ -76,18 +78,17 @@ public class ItemControl : MonoBehaviour
     //Poder escudo cerdo
     public void PoderItem2(bool _ActiveShield)
     {
-      
         StartCoroutine(TiempoItem2(_ActiveShield));
-        Debug.Log("Se activo el item2");
     }
 
-    IEnumerator TiempoItem2(bool _ActiveShield=false)
+    public IEnumerator TiempoItem2(bool _ActiveShield)
     {
+        item2escudo.SetActive(true);
         _ActiveShield = true;
-        Debug.Log(_ActiveShield);
+ 
+        yield return new WaitForSeconds(3);
 
-        yield return new WaitForSeconds(10);
-
+        item2escudo.SetActive(false);
         _ActiveShield = false;
 
     }
@@ -102,7 +103,7 @@ public class ItemControl : MonoBehaviour
     IEnumerator TiempoItem3()
     {
         item3ManchaPantallaEnemigo.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         item3ManchaPantallaEnemigo.SetActive(false);
 
     }
@@ -117,12 +118,12 @@ public class ItemControl : MonoBehaviour
 
     IEnumerator TiempoItem4()
     {
-        
+        item4chile.SetActive(true);
         controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
 
         yield return new WaitForSeconds(5);
 
-
+        item4chile.SetActive(false);
         controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
 
     }
@@ -132,7 +133,7 @@ public class ItemControl : MonoBehaviour
 
     public void PoderItem5()
     {
-        Instantiate(item5Proyectil, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y, jugador1.transform.position.z + 3.0f), transform.rotation);
+        Instantiate(item5Proyectil, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y, jugador1.transform.position.z + 3), transform.rotation);
     }
 
 }

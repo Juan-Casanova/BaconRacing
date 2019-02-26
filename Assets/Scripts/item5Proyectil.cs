@@ -4,11 +4,34 @@ using UnityEngine;
 
 public class item5Proyectil : MonoBehaviour
 {
-   
-    // Update is called once per frame
-    void Update()
+    float velocidad = 10f;
+
+    public void Start()
     {
-       this.gameObject=new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
-        
+        StartCoroutine(destroyObject());
     }
+
+
+    // Update is called once per frame
+     public void Update()
+    {
+        transform.Translate(0,0, velocidad * (Time.deltaTime*3));
+       
+    }
+
+    public void  OnCollisionEnter(Collision collision)
+    {
+            Destroy(gameObject);
+    }
+
+    IEnumerator destroyObject()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
+
+    }
+
+
+
+
 }
