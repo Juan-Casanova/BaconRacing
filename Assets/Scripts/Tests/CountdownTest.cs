@@ -14,15 +14,16 @@ namespace Tests
         {
             //Arrange
             var countDown = new GameObject().AddComponent<Countdown>();
+            float time = 0.0f;
             float initialCounter=5.0f;
-            float time=0.0f;
+          
             bool activateMovement=false;
-
+            
             //Act
-            countDown.activateMovement(initialCounter, time, activateMovement);
+            countDown.activateMovement(initialCounter,time, activateMovement);
 
             //Assert
-            Assert.IsFalse(activateMovement);
+            Assert.IsTrue(activateMovement);
 
         }
 
