@@ -7590,13 +7590,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566762180}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -420, y: 945, z: 165}
+  m_LocalRotation: {x: 0.50000006, y: -0.50000006, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 182.9, y: 945, z: 139}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 388301974}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 90}
 --- !u!81 &566762182
 AudioListener:
   m_ObjectHideFlags: 0
@@ -23581,11 +23581,15 @@ PrefabInstance:
       objectReference: {fileID: 732676336}
     - target: {fileID: 467917836, guid: fae5184390cf7964eba088d6c42db515, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 467917836, guid: fae5184390cf7964eba088d6c42db515, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 311
+      objectReference: {fileID: 0}
+    - target: {fileID: 467917836, guid: fae5184390cf7964eba088d6c42db515, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae5184390cf7964eba088d6c42db515, type: 3}
@@ -28777,8 +28781,8 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: -0.5
+    x: 0.5
+    y: 0
     width: 1
     height: 1
   near clip plane: 0.3
