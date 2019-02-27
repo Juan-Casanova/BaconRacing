@@ -9,7 +9,7 @@ namespace Tests
     public class CountdownTest
     {
         // A Test behaves as an ordinary method
-        [Test]
+        [UnityTest]
         public void CountdownTestSimplePasses()
         {
             //Arrange

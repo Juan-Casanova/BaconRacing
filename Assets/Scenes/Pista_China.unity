@@ -23424,6 +23424,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1636198515, guid: fae5184390cf7964eba088d6c42db515, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 46895982, guid: fae5184390cf7964eba088d6c42db515, type: 3}
       propertyPath: m_SuspensionSpring.spring
       value: 3000

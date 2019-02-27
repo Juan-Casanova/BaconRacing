@@ -24,5 +24,21 @@ namespace Tests
             Assert.Greater(numRandom,0);
         }
 
+        [Test]
+        public void InstantiateBaconInSamePositionPlayerItem1()
+        {
+            //Arrange
+            var player = GameObject.FindGameObjectWithTag("Player");
+            var itemControl = new GameObject().AddComponent<ItemControl>();
+            GameObject testTocino;
+           
+
+            //Act
+            itemControl.PoderItem1();
+
+            //Assert
+
+        }
+
     }
 }
