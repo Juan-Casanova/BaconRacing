@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 7531999473901691331}
   - component: {fileID: 7531999473902461409}
   - component: {fileID: 7531999473903592225}
+  - component: {fileID: 4730361466063978346}
   m_Layer: 0
-  m_Name: Carretera
+  m_Name: Carretera_Recta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4730361466063978346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7531999473901338083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.1008, y: 0.9200001, z: 31.320002}
+  m_Center: {x: 0.00016617775, y: 0.54550004, z: 0}
