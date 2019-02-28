@@ -53,7 +53,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
 
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed)
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -69,7 +69,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow))
+        if(Input.GetKey(KeyCode.DownArrow) && countdown.movement==true)
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
