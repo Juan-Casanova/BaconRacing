@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+    public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -18,12 +19,16 @@ public class Control_Cerdito : MonoBehaviour
     public int Brake=10000;
     public float CoefAccelaration=10f;
     public float WheelAngleMax=5;
+    public bool activeItem;
+    public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
     private Animator animacion; //hola
 
     void Start()
     {
+        activeItem = false;
+        itemControl = FindObjectOfType<ItemControl>();
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
         //animaciones abajito
@@ -87,6 +92,7 @@ public class Control_Cerdito : MonoBehaviour
         }
          
         //DECELERATION
+
         
         if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -139,18 +145,28 @@ public class Control_Cerdito : MonoBehaviour
             }
         }
         //if(Girar==0){
-            //Cerdito.transform.Rotate(0,0,0);
+        //Cerdito.transform.Rotate(0,0,0);
         //}
         //Debug.Log(Girar);
+
+
+
+        //Active item
+        if (Input.GetKey(KeyCode.M) && activeItem == true)
+        {
+            itemControl.ChargeItem(numRandom);
+            activeItem = false;
+        }
+
     }
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo inicio de pendiente")
+        //Debug.Log(collision.gameObject.name);
+        if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
         {
             Torque=35000;
             MaxSpeed=160;
-            Debug.Log(Torque);
+           // Debug.Log(Torque);
 
         }
         if(collision.gameObject.name=="Modulo_Recto (14)")
@@ -178,6 +194,15 @@ public class Control_Cerdito : MonoBehaviour
         {
             Torque=1750;
             MaxSpeed=80;
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("barril"))
+        {
+            Debug.Log("item activo");
+            activeItem = true;
         }
     }
 }

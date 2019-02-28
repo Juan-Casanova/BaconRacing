@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Pista_China.unity
+    guid: 804cc2c840ef9b142a96677e45fd3170
   m_configObjects: {}
