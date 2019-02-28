@@ -53,7 +53,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
         Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed || Input.GetAxisRaw("P1 Left Vertical Joystick") > 0 )
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true || Input.GetAxisRaw("P1 Left Vertical Joystick") > 0 )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -69,7 +69,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow) ||  Input.GetAxisRaw("P1 Left Vertical Joystick") < 0 )
+        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true ||  Input.GetAxisRaw("P1 Left Vertical Joystick") < 0  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -92,12 +92,10 @@ public class Control_Cerdito : MonoBehaviour
         }
          
         //DECELERATION
-<<<<<<< HEAD
+
         
         if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
-=======
-        if (!Input.GetKey(KeyCode.UpArrow) || Speed>MaxSpeed)
->>>>>>> Feature/pruebasUnitarias
+
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -164,13 +162,10 @@ public class Control_Cerdito : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-<<<<<<< HEAD
-        Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo inicio de pendiente")
-=======
+
         //Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
->>>>>>> Feature/pruebasUnitarias
+
         {
             Torque=35000;
             MaxSpeed=160;

@@ -22,7 +22,9 @@ public class ItemControl : MonoBehaviour
         controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
     }
 
-    public int ChargeItem(int _numRandom)
+
+    public void ChargeItem(int _numRandom)
+
     {
 
         _numRandom = Random.Range(1, 5);
@@ -61,7 +63,9 @@ public class ItemControl : MonoBehaviour
 
         }
 
-        return _numRandom;
+
+     
+
 
     }
 
