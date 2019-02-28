@@ -51,9 +51,9 @@ public class Control_Cerdito : MonoBehaviour
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
-
+        Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true || Input.GetAxisRaw("P1 Left Vertical Joystick") > 0 )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -69,7 +69,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow) && countdown.movement==true)
+        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true ||  Input.GetAxisRaw("P1 Left Vertical Joystick") < 0  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
