@@ -14,8 +14,8 @@ namespace Tests
         {
             //Arrange
             var countDown = new GameObject().AddComponent<Countdown>();
-            float time = 0.0f;
-            float initialCounter=5.0f;
+            float time = 1.0f;
+            float initialCounter=1.0f;
           
             bool activateMovement=false;
             

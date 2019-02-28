@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -10,11 +11,23 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void BarrilResoawnTestSimplePasses()
+        public IEnumerator BarrilResoawnTestSimplePasses()
         {
             //Arrange
-            GameObject barrilTest;
-       
+            var barril=new GameObject().AddComponent<BarrilRespawn>();
+            Vector3 barril1;
+            Vector3 barril2;
+
+
+            //Act
+            barril2 = barril.transform.position;
+            barril.DisapearBarrilForSeconds();
+            barril1 = barril.transform.position;
+
+            yield return null;
+          
+            //Assert
+            Assert.AreEqual(barril1,barril2);
 
         }
 
