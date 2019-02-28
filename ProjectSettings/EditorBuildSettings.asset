@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 7faad223c9091274c917bb65abc475de
+  - enabled: 1
+    path: Assets/Scenes/Menu_num_juga.unity
+    guid: afcb9a80217b1c5458dc59588c8e91a8
+  - enabled: 1
+    path: Assets/Scenes/Pista_China2.unity
+    guid: a2daf05c50187144581b6b009e3bfcef
   m_configObjects: {}
