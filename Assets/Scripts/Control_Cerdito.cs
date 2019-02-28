@@ -48,7 +48,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
         Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed || Input.GetAxis("P1 Triggers") > 0.1f )
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed || Input.GetAxisRaw("P1 Left Vertical Joystick") > 0 )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -64,7 +64,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow) ||  Input.GetAxis("P1 Triggers") < -0.1f )
+        if(Input.GetKey(KeyCode.DownArrow) ||  Input.GetAxisRaw("P1 Left Vertical Joystick") < 0 )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
