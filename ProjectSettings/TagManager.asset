@@ -6,6 +6,7 @@ TagManager:
   tags:
   - caida
   - spawn
+  - barril
   layers:
   - Default
   - TransparentFX

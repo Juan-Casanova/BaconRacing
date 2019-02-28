@@ -11,6 +11,7 @@ public class Countdown : MonoBehaviour
     public bool movement;
     
 
+
     public void Start()
     {
         movement = false;
@@ -34,8 +35,9 @@ public class Countdown : MonoBehaviour
 
     public bool activateMovement(float initialCounter,float time,bool activateMovement)
     {
-        time-=Time.deltaTime;
-        
+        time -= Time.deltaTime;
+
+
         initialCounter -= time;
         if (initialCounter < 0)
         {
