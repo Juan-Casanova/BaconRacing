@@ -95,6 +95,7 @@ public class Control_Cerdito : MonoBehaviour
 
         
         if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
+
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -161,8 +162,10 @@ public class Control_Cerdito : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
+
         //Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
+
         {
             Torque=35000;
             MaxSpeed=160;
