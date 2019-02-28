@@ -37,7 +37,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
 
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed)
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -47,20 +47,51 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.brakeTorque=0;
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+
+            Debug.Log(Back_Left.motorTorque);
         }
 
+        //REVERSA
+        
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            Back_Left.brakeTorque=0;
+            Back_Right.brakeTorque=0;
+            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+
+            
+            
+            
+            Front_Left.brakeTorque=0;
+            Front_Right.brakeTorque=0;
+            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Debug.Log(Input.GetAxis("Vertical"));
+            Debug.Log(Front_Left.motorTorque);
+            Debug.Log(Front_Right.motorTorque);
+            Debug.Log(Back_Left.motorTorque);
+            Debug.Log(Back_Right.motorTorque);
+            //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+        }
+         
         //DECELERATION
-        if(!Input.GetKey(KeyCode.UpArrow) || Speed>MaxSpeed)
+        
+        if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
             Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Back_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            
+            
             Front_Left.brakeTorque=0;
             Front_Right.brakeTorque=0;
             Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
         }
+        
+        
 
         //Direction of the pig
         Front_Left.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
@@ -85,7 +116,7 @@ public class Control_Cerdito : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
+        if(collision.gameObject.name=="Modulo inicio de pendiente")
         {
             Torque=35000;
             MaxSpeed=160;
