@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-    public ItemControl itemControl;
+   public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -53,7 +53,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
         Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true || Input.GetAxisRaw("P1 Left Vertical Joystick") > 0 )
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -69,7 +69,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true ||  Input.GetAxisRaw("P1 Left Vertical Joystick") < 0  )
+        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
