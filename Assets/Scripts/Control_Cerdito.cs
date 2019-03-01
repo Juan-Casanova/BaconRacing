@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-    public ItemControl itemControl;
+   public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -51,9 +51,9 @@ public class Control_Cerdito : MonoBehaviour
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
-
+        Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true)
+        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -69,7 +69,7 @@ public class Control_Cerdito : MonoBehaviour
 
         //REVERSA
         
-        if(Input.GetKey(KeyCode.DownArrow) && countdown.movement==true)
+        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -95,6 +95,7 @@ public class Control_Cerdito : MonoBehaviour
 
         
         if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
+
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -161,8 +162,10 @@ public class Control_Cerdito : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
+
         //Debug.Log(collision.gameObject.name);
         if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
+
         {
             Torque=35000;
             MaxSpeed=160;
