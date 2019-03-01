@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,43 +12,22 @@ public class Countdown : MonoBehaviour
     public float time;
     public bool movement;
     
-
+	private CountDownEngine engine = new CountDownEngine();
 
     public void Start()
     {
+	    engine.Counter = initialCounter;
         movement = false;
     }
 
     public void Update()
     {
         t_contador.text = initialCounter.ToString("f0");
-        initialCounter -= Time.deltaTime;
-        if (initialCounter < 1)
+
+        if (engine.ShouldActivateMovement(Time.deltaTime))
         {
-            movement = true;
-            initialCounter = 0;
-            t_contador.text = "";
-
+	        movement = true;
+	        t_contador.text = "";
         }
-        activateMovement(initialCounter,time,movement);
-
     }
-
-
-    public bool activateMovement(float initialCounter,float time,bool activateMovement)
-    {
-        time -= Time.deltaTime;
-
-
-        initialCounter -= time;
-        if (initialCounter < 0)
-        {
-            activateMovement = true;
-            initialCounter = 0;
-        }
-
-        return activateMovement;
-    }
-
-
 }
