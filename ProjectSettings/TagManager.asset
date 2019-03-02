@@ -7,6 +7,8 @@ TagManager:
   - caida
   - spawn
   - barril
+  - rana
+  - abanico
   layers:
   - Default
   - TransparentFX
