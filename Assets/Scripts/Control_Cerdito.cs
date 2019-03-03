@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-   public ItemControl itemControl;
+    public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -15,9 +15,9 @@ public class Control_Cerdito : MonoBehaviour
     public WheelCollider Back_Right;
     public float Torque;
     public float Speed;
-    public float MaxSpeed=200f;
-    public int Brake=10000;
-    public float CoefAccelaration=10f;
+    public float MaxSpeed=250f;
+    public int Brake=1000;
+    public float CoefAccelaration=100f;
     public float WheelAngleMax=5;
     public bool activeItem;
     public int numRandom;
