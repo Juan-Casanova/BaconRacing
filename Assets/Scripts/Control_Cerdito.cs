@@ -65,6 +65,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
              animacion.SetBool("correr", true); //hola
+             //Debug.Log(Front_Right.motorTorque);
         }
 
         //REVERSA
@@ -89,6 +90,7 @@ public class Control_Cerdito : MonoBehaviour
             Debug.Log(Back_Left.motorTorque);
             Debug.Log(Back_Right.motorTorque);
             //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+            
         }
          
         //DECELERATION
@@ -159,17 +161,45 @@ public class Control_Cerdito : MonoBehaviour
             activeItem = false;
         }
 
+        //salto credo
+
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            Cerdito.transform.Translate(0,Time.deltaTime*800,Time.deltaTime*3500);
+        }
+
     }
     void OnCollisionEnter(Collision collision)
     {
-
-        //Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
+         if(collision.gameObject.name=="Modulo_recto (3)")
 
         {
-            Torque=35000;
-            MaxSpeed=160;
-           // Debug.Log(Torque);
+            Front_Left.motorTorque=2500;
+            Front_Right.motorTorque=2500;
+            Back_Left.motorTorque=2500;
+            Back_Right.motorTorque=2500;
+            MaxSpeed=300;
+            Torque=3500;
+            CoefAccelaration=100;
+
+           Debug.Log(Front_Left.motorTorque);
+
+        }
+
+        //Debug.Log(collision.gameObject.name);
+        if(collision.gameObject.name=="Modulo inicio de pendiente")
+
+        {
+            Front_Left.motorTorque=2500;
+            Front_Right.motorTorque=2500;
+            Back_Left.motorTorque=2500;
+            Back_Right.motorTorque=2500;
+            MaxSpeed=300;
+            Torque=3500;
+            CoefAccelaration=100;
+
+           Debug.Log(Front_Left.motorTorque);
+           
 
         }
         if(collision.gameObject.name=="Modulo_Recto (14)")
@@ -196,7 +226,7 @@ public class Control_Cerdito : MonoBehaviour
         else
         {
             Torque=1750;
-            MaxSpeed=80;
+            MaxSpeed=90;
         }
     }
 
