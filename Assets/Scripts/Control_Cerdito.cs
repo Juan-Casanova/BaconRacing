@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-   public ItemControl itemControl;
+    public ControlCerditoEngine controlCerditoEngine;
+    public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -27,6 +28,25 @@ public class Control_Cerdito : MonoBehaviour
 
     void Start()
     {
+        controlCerditoEngine.frontRightMotor = Front_Right.motorTorque;
+        controlCerditoEngine.frontRightBrake = Front_Right.brakeTorque;
+        controlCerditoEngine.frontLeftMotor = Front_Left.motorTorque;
+        controlCerditoEngine.frontLeftBrake = Front_Left.brakeTorque;
+        controlCerditoEngine.backRightBrake = Back_Right.brakeTorque;
+        controlCerditoEngine.backRightMotor = Back_Right.motorTorque;
+        controlCerditoEngine.backLeftBrake = Back_Left.brakeTorque;
+        controlCerditoEngine.backLeftMotor = Back_Left.motorTorque;
+
+
+        controlCerditoEngine.torqueEngine = Torque;
+        controlCerditoEngine.coefAceleration = CoefAccelaration;
+        controlCerditoEngine.time = Time.deltaTime;
+        controlCerditoEngine.brake = Brake;
+        controlCerditoEngine.wheelAngleMax = WheelAngleMax;
+        controlCerditoEngine.buttonAxisVertical = Input.GetAxis("Vertical");
+        controlCerditoEngine.buttonAxisHorizontal = Input.GetAxis("Horizontal");
+
+
         activeItem = false;
         itemControl = FindObjectOfType<ItemControl>();
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
@@ -52,42 +72,50 @@ public class Control_Cerdito : MonoBehaviour
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
         Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
+
         //ACCERELATION
         if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
-             animacion.SetBool("correr", true); //hola
+            controlCerditoEngine.aceleration();
+            //controlCerditoEngine.aceleration(Back_Left.brakeTorque, Back_Right.brakeTorque, Back_Left.motorTorque,
+            //    Back_Right.motorTorque, Front_Left.brakeTorque, Front_Right.brakeTorque, Front_Left.motorTorque, Front_Right.motorTorque);
+
+            //Back_Left.brakeTorque=0;
+
+            //Back_Left.brakeTorque=0;
+            //Back_Right.brakeTorque=0;
+            //Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Front_Left.brakeTorque=0;
+            //Front_Right.brakeTorque=0;
+            //Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+
+            animacion.SetBool("correr", true); //hola
         }
 
         //REVERSA
         
         if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
-            
-            
-            
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            //Debug.Log(Input.GetAxis("Vertical"));
-            Debug.Log(Front_Left.motorTorque);
-            Debug.Log(Front_Right.motorTorque);
-            Debug.Log(Back_Left.motorTorque);
-            Debug.Log(Back_Right.motorTorque);
+            controlCerditoEngine.reverse();
+
+
+            //Back_Left.brakeTorque=0;
+            //Back_Right.brakeTorque=0;
+            //Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Front_Left.brakeTorque=0;
+            //Front_Right.brakeTorque=0;
+            //Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            //Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            ////Debug.Log(Input.GetAxis("Vertical"));
+            //Debug.Log(Front_Left.motorTorque);
+            //Debug.Log(Front_Right.motorTorque);
+            //Debug.Log(Back_Left.motorTorque);
+            //Debug.Log(Back_Right.motorTorque);
             //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
         }
          
@@ -95,48 +123,46 @@ public class Control_Cerdito : MonoBehaviour
 
         
         if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
-
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            Back_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            
-            
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
-            Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+
+            controlCerditoEngine.reverse();
+            //Back_Left.brakeTorque=0;
+            //Back_Right.brakeTorque=0;
+            //Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            //Back_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+
+
+            //Front_Left.brakeTorque=0;
+            //Front_Right.brakeTorque=0;
+            //Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            //Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
 
             if (!Input.GetKey(KeyCode.UpArrow) && (Speed > 1 ) )//hola para activar frenado 
             {
-                Debug.Log("sped may 1"); //hola
                 animacioncorrer();
                 animacion.SetBool("iddle2", false);
-                Debug.Log("sped may aun "); //hola
                 animacion.SetBool("frenado", true); //hola
-                Debug.Log("sped may aun 3 "); //hola
 
             }
             else
             {
-            
-                    Debug.Log("speed menor "); //hola
                 animacioncorrer();
                 animacion.SetBool("frenado", false); //hola
-                    animacion.SetBool("iddle2", true);
+                animacion.SetBool("iddle2", true);
             }
         }
         
         
 
         //Direction of the pig
-        Front_Left.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
-        Front_Right.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
-        
-        if(Speed>2)
+        controlCerditoEngine.turn();
+        //Front_Left.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
+        //Front_Right.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
+
+        if (Speed>2)
         {
-            if(Girar<0){
+   
+            if (Girar<0){
                 Cerdito.transform.Rotate(0,-1.75f,0);
                 
             }
@@ -172,28 +198,12 @@ public class Control_Cerdito : MonoBehaviour
            // Debug.Log(Torque);
 
         }
-        if(collision.gameObject.name=="Modulo_Recto (14)")
+        if(collision.gameObject.name=="Modulo_Recto (14)" || collision.gameObject.name == "Modulo_Recto (15)" ||
+           collision.gameObject.name == "Modulo_Recto (16)"|| collision.gameObject.name == "Modulo_Recto (17)"||
+           collision.gameObject.name == "Modulo_Recto (25)")
         {
             CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (15)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (16)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (17)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (25)")
-        {
-            CoefAccelaration=25;
-        }
-        
-        else
+        }else
         {
             Torque=1750;
             MaxSpeed=80;
@@ -204,7 +214,6 @@ public class Control_Cerdito : MonoBehaviour
     {
         if (other.CompareTag("barril"))
         {
-            Debug.Log("item activo");
             activeItem = true;
         }
     }

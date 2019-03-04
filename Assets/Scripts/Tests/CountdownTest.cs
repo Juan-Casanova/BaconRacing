@@ -13,17 +13,36 @@ namespace Tests
         public void CountdownTestWhenIsTrue()
         {
             //Arrange
-         
-            float time = 1.0f;
-            float initialCounter=1.0f;
+            var countDownEngine=new CountDownEngine();
+            float time = 4.0f;
+            countDownEngine.initialCounter = 2.0f;
           
             bool activateMovement=false;
             
             //Act
-            activateMovement = activateMovementEngine(time, initialCounter);
+            activateMovement = countDownEngine.activateMovementEngine(time);
 
             //Assert
             Assert.IsTrue(activateMovement);
+
+        }
+
+
+        [Test]
+        public void CountdownTestWhenIsFalse()
+        {
+            //Arrange
+            var countDownEngine = new CountDownEngine();
+            float time = 1.0f;
+            countDownEngine.initialCounter = 5.0f;
+
+            bool activateMovement = false;
+
+            //Act
+            activateMovement = countDownEngine.activateMovementEngine(time);
+
+            //Assert
+            Assert.IsFalse(activateMovement);
 
         }
     }

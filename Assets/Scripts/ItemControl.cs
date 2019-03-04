@@ -33,39 +33,26 @@ public class ItemControl : MonoBehaviour
         {
             case 1:
                 PoderItem1();
-                Debug.Log("item1: dejar tocino");
                 break;
             case 2:
               
                 PoderItem2(ActiveShield);
-                Debug.Log("item2: escudo");
                 break;
             case 3:
               
                 PoderItem3();
-                Debug.Log("item3: mancha enemigo");
                 break;
 
             case 4:
               
                 PoderItem4();
-                Debug.Log("item4: aceleracion");
                 break;
 
             case 5:
                 PoderItem5();
-                Debug.Log("item5: disparar objeto");
-                break;
 
-            default:
-                Debug.Log("No hay Nada");
                 break;
-
         }
-
-
-     
-
 
     }
 

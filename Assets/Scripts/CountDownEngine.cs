@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CountDownEngine 
+public class CountDownEngine
 {
-    public bool activateMovementEngine(float initialCounter, float time)
+    public float initialCounter;
+
+    public bool activateMovementEngine(float time)
     {
         initialCounter -= time;
 

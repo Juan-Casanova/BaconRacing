@@ -29,7 +29,8 @@ public class Countdown : MonoBehaviour
             t_contador.text = "";
 
         }
-        movement=countDownEngine.activateMovement(initialCounter,time);
+
+        movement = countDownEngine.activateMovementEngine(Time.deltaTime);
 
     }
 

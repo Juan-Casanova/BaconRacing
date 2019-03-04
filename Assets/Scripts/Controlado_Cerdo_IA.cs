@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SocialPlatforms;
 
 public class Controlado_Cerdo_IA: MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Controlado_Cerdo_IA: MonoBehaviour
     void Update(){
         float dist=Vector3.Distance(gameObject.transform.position,waypoints[num].transform.position);
 
+     
          if(go && countdown.movement==true)
         {
             if(dist>minDist)

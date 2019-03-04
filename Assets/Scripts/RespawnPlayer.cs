@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
+    private RespawnPlayerEngine respawnPlayerEngine;
+
     public int numPlayer;
     public GameObject[] player;
 
@@ -21,34 +23,15 @@ public class RespawnPlayer : MonoBehaviour
     {
         if (other.CompareTag("caida"))
         {
-            Spawn(numPlayer, numSpawn);
+            player[numPlayer].transform.position = new Vector3(spawnLocations[numSpawn].transform.position.x, spawnLocations[numSpawn].transform.position.y, spawnLocations[numSpawn].transform.position.z);
+            player[numPlayer].transform.eulerAngles = new Vector3(spawnLocations[numSpawn].transform.eulerAngles.x - 45, spawnLocations[numSpawn].transform.eulerAngles.y, spawnLocations[numSpawn].transform.eulerAngles.z);
 
-        }else if (other.CompareTag("spawn"))
+        }
+        else if (other.CompareTag("spawn"))
         {
-            AumentarNumeroDeSpawn(numSpawn);
-            Debug.Log("Numero spawn: "+numSpawn);
+            numSpawn=respawnPlayerEngine.IncreaseNumSpawn();
         }
 
-    }
-
-    public int AumentarNumeroDeSpawn(int _numSpawn)
-    {
-        if (numSpawn == 0)
-        {
-            numSpawn += 1;
-        }
-        else if (numSpawn > 6)
-        {
-            numSpawn = 0;
-        }
-
-        return _numSpawn;
-    }
-
-    public void Spawn(int numPlayer, int numSpawn)
-    {
-        player[numPlayer].transform.position = new Vector3(spawnLocations[numSpawn].transform.position.x, spawnLocations[numSpawn].transform.position.y, spawnLocations[numSpawn].transform.position.z);
-        player[numPlayer].transform.eulerAngles = new Vector3(spawnLocations[numSpawn].transform.eulerAngles.x-45, spawnLocations[numSpawn].transform.eulerAngles.y, spawnLocations[numSpawn].transform.eulerAngles.z);    
     }
 
 }
