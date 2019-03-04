@@ -22,13 +22,6 @@ public class Menu_Principal_Gestor : MonoBehaviour
         BotonSalir.SetActive(false);
     }
 
-    public void OnePlayer(){
-        
-    }
-
-    public void TwoPlayers(){
-
-    }
 
   
 }
