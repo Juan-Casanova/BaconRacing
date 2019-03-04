@@ -12,6 +12,8 @@ public class Real_Menu_manager : MonoBehaviour
     public GameObject Character_Pick_Two_Players;
     public GameObject Tracks_Screen;
 
+    public GameObject Menu_Opciones;
+
     private bool Un_jugador=true;
     private int Input_Regreso =0;
 
@@ -49,12 +51,19 @@ public class Real_Menu_manager : MonoBehaviour
         Input_Regreso = 4;
     }
 
+    public void To_Menu_Opciones(){
+        SetEverythingFalse();
+        Menu_Opciones.SetActive(true);
+        Input_Regreso=5;
+    }
+
     public void SetEverythingFalse(){
         Title_Canvas.SetActive(false);
         Main_Menu_Canvas.SetActive(false);
         Character_Pick_One_Player.SetActive(false);
         Character_Pick_Two_Players.SetActive(false);
         Tracks_Screen.SetActive(false);
+        Menu_Opciones.SetActive(false);
     }
 
     public GameObject Grupo_Boton_Jugar;
@@ -99,6 +108,10 @@ public class Real_Menu_manager : MonoBehaviour
                 }else{
                     Character_Screen_Two_Player();
                 }
+                break;
+
+                case 5:
+                To_Main_Menu();
                 break;
 
                 default:
