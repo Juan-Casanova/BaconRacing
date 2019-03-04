@@ -190,10 +190,10 @@ public class Control_Cerdito : MonoBehaviour
         if(collision.gameObject.name=="Modulo inicio de pendiente")
 
         {
-            Front_Left.motorTorque=2500;
-            Front_Right.motorTorque=2500;
-            Back_Left.motorTorque=2500;
-            Back_Right.motorTorque=2500;
+            Front_Left.motorTorque=25000;
+            Front_Right.motorTorque=25000;
+            Back_Left.motorTorque=25000;
+            Back_Right.motorTorque=25000;
             MaxSpeed=300;
             Torque=3500;
             CoefAccelaration=100;
@@ -222,6 +222,17 @@ public class Control_Cerdito : MonoBehaviour
         {
             CoefAccelaration=25;
         }
+
+        //Cirvas subidas
+         if(collision.gameObject.name=="Modulo curva ascendente")
+        {
+         
+            MaxSpeed=300;
+            Torque=3500;
+            CoefAccelaration=100;
+
+        }
+
         
         else
         {
