@@ -22,9 +22,13 @@ public class Menu_Principal_Gestor : MonoBehaviour
         BotonSalir.SetActive(false);
     }
 
-    void Update(){
-        Debug.Log(BotonOpciones.transform.position.y);
-        Debug.Log("posx"+BotonOpciones.transform.position.x);
+    public void OnePlayer(){
+        
     }
-   
+
+    public void TwoPlayers(){
+
+    }
+
+  
 }

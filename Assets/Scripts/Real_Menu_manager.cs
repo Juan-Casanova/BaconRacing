@@ -8,35 +8,42 @@ public class Real_Menu_manager : MonoBehaviour
     public GameObject Title_Canvas;
 
     public GameObject Main_Menu_Canvas;
-    public GameObject Character_Screen;
+    public GameObject Character_Pick_One_Player;
+    public GameObject Character_Pick_Two_Players;
     public GameObject Tracks_Screen;
 
 
     public void To_Title_Screen(){
+        SetEverythingFalse();
         Title_Canvas.SetActive(true);
-        Main_Menu_Canvas.SetActive(false);
-        Character_Screen.SetActive(false);
-        Tracks_Screen.SetActive(false);
     }
 
     public void To_Main_Menu(){
-        Title_Canvas.SetActive(false);
+        SetEverythingFalse();
         Main_Menu_Canvas.SetActive(true);
-        Character_Screen.SetActive(false);
-        Tracks_Screen.SetActive(false);
+        }
+
+    public void Character_Screen_One_Player(){
+        SetEverythingFalse();
+        Character_Pick_One_Player.SetActive(true);
+        
     }
 
-    public void To_Characters_Screen(){
-        Title_Canvas.SetActive(false);
-        Main_Menu_Canvas.SetActive(false);
-        Character_Screen.SetActive(true);
-        Tracks_Screen.SetActive(false);
+    public void Character_Screen_Two_Player(){
+        SetEverythingFalse();
+        Character_Pick_Two_Players.SetActive(true);    
     }
 
      public void To_Tracks_Screen(){
-        Title_Canvas.SetActive(false);
-        Main_Menu_Canvas.SetActive(false);
-        Character_Screen.SetActive(false);
+        SetEverythingFalse();
         Tracks_Screen.SetActive(true);
+    }
+
+    public void SetEverythingFalse(){
+         Title_Canvas.SetActive(false);
+        Main_Menu_Canvas.SetActive(false);
+        Character_Pick_One_Player.SetActive(false);
+        Character_Pick_Two_Players.SetActive(false);
+        Tracks_Screen.SetActive(false);
     }
 }
