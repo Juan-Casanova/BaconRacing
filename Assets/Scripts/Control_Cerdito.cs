@@ -15,7 +15,7 @@ public class Control_Cerdito : MonoBehaviour
     public WheelCollider Back_Right;
     public float Torque;
     public float Speed;
-    public float MaxSpeed=250f;
+    public float MaxSpeed=60;
     public int Brake=1000;
     public float CoefAccelaration=100f;
     public float WheelAngleMax=5;
@@ -24,6 +24,7 @@ public class Control_Cerdito : MonoBehaviour
     public Rigidbody Cerdito;
     //public object Cerdito2;
     private Animator animacion; //hola
+    public bool superSalto;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class Control_Cerdito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float Girar=Input.GetAxis("Horizontal");
+        //float Girar=Input.GetAxis("Horizontal");
 
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
@@ -138,12 +139,12 @@ public class Control_Cerdito : MonoBehaviour
         
         if(Speed>2)
         {
-            if(Girar<0){
+            if(Input.GetKey(KeyCode.LeftArrow)){
                 Cerdito.transform.Rotate(0,-1.75f,0);
                 
             }
 
-            if(Girar>0){
+            if(Input.GetKey(KeyCode.RightArrow)){
                 Cerdito.transform.Rotate(0,1.75f,0);
             }
         }
@@ -163,10 +164,30 @@ public class Control_Cerdito : MonoBehaviour
 
         //salto credo
 
+         if(Input.GetKeyUp(KeyCode.Space))
+        {
+            Debug.Log(Time.deltaTime);
+            //Cerdito.transform.Translate(0,Time.deltaTime*1000,Time.deltaTime*2000);
+            Cerdito.transform.Translate(0,40,60);
+        }
+
+       /*
         if(Input.GetKeyUp(KeyCode.Space))
         {
-            Cerdito.transform.Translate(0,Time.deltaTime*800,Time.deltaTime*3500);
+            if(superSalto==true)
+            {
+                Cerdito.transform.Translate(0,Time.deltaTime*1500,Time.deltaTime*2500);
+            }
         }
+        
+          if(Input.GetKeyUp(KeyCode.Space))
+        {
+            if(superSalto==false)
+            {
+                Cerdito.transform.Translate(0,Time.deltaTime*100,0);                
+            }
+        }
+        */
 
     }
     void OnCollisionEnter(Collision collision)
@@ -178,7 +199,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.motorTorque=2500;
             Back_Left.motorTorque=2500;
             Back_Right.motorTorque=2500;
-            MaxSpeed=300;
+            MaxSpeed=100;
             Torque=3500;
             CoefAccelaration=100;
 
@@ -194,12 +215,15 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.motorTorque=25000;
             Back_Left.motorTorque=25000;
             Back_Right.motorTorque=25000;
-            MaxSpeed=300;
+            MaxSpeed=100;
             Torque=3500;
             CoefAccelaration=100;
 
-           Debug.Log(Front_Left.motorTorque);
-           
+            Debug.Log(Front_Left.motorTorque);
+        
+            superSalto=true;
+
+            Debug.Log(superSalto);
 
         }
         if(collision.gameObject.name=="Modulo_Recto (14)")
@@ -227,7 +251,7 @@ public class Control_Cerdito : MonoBehaviour
          if(collision.gameObject.name=="Modulo curva ascendente")
         {
          
-            MaxSpeed=300;
+            MaxSpeed=100;
             Torque=3500;
             CoefAccelaration=100;
 
@@ -237,8 +261,10 @@ public class Control_Cerdito : MonoBehaviour
         else
         {
             Torque=1750;
-            MaxSpeed=90;
+            MaxSpeed=60;
+            superSalto=false;
         }
+        
     }
 
     public void OnTriggerEnter(Collider other)

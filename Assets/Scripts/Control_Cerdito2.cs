@@ -46,7 +46,7 @@ public class Control_Cerdito2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float Girar=Input.GetAxis("Horizontal");
+        //float Girar=Input.Getke("Horizontal");
 
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
@@ -138,12 +138,12 @@ public class Control_Cerdito2 : MonoBehaviour
         
         if(Speed>2)
         {
-            if(Girar<0){
+            if(Input.GetKey(KeyCode.A)){
                 Cerdito.transform.Rotate(0,-1.75f,0);
                 
             }
 
-            if(Girar>0){
+            if(Input.GetKey(KeyCode.D)){
                 Cerdito.transform.Rotate(0,1.75f,0);
             }
         }
@@ -163,7 +163,7 @@ public class Control_Cerdito2 : MonoBehaviour
 
         //salto credo
 
-        if(Input.GetKeyUp(KeyCode.Space))
+        if(Input.GetKeyUp(KeyCode.C))
         {
             Cerdito.transform.Translate(0,Time.deltaTime*800,Time.deltaTime*3500);
         }
