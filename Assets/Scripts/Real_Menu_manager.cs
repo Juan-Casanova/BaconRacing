@@ -78,7 +78,7 @@ public class Real_Menu_manager : MonoBehaviour
         Grupo_Boton_Jugar.SetActive(true);
             Grupo_Boton_UnJugador.SetActive(false);
             Grupo_Boton_DosJugadores.SetActive(false);
-        Grupo_Boton_Opciones.SetActive(true);
+        //Grupo_Boton_Opciones.SetActive(true);
         Grupo_Boton_Salir.SetActive(true);
     }
 
