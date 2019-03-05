@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
-    private RespawnPlayerEngine respawnPlayerEngine;
+    public RespawnPlayerEngine respawnPlayerEngine=new RespawnPlayerEngine();
 
     public int numPlayer;
     public GameObject[] player;

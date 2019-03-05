@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class TakeOut_title : MonoBehaviour
 {
-    private TakeOut_titleEngine takeOutTitleEngine;
-    public bool mainCanvasIsActive, characterCanvasIsActive, pressAnyKey;
+    public TakeOut_titleEngine takeOutTitleEngine=new TakeOut_titleEngine();
+
+public bool mainCanvasIsActive, characterCanvasIsActive, pressAnyKey;
 
     public GameObject Main_Canvas;
     public GameObject Character_Canvas;

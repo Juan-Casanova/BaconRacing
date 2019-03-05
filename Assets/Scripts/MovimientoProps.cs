@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovimientoProps : MonoBehaviour
 {
-    private MovimientoPropsEngine movimientoPropsEngine;
+    private MovimientoPropsEngine movimientoPropsEngine=new MovimientoPropsEngine();
     float rotateRana;
     float rotateAbanico;
 

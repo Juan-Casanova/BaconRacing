@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-    public ControlCerditoEngine controlCerditoEngine;
+    public ControlCerditoEngine controlCerditoEngine=new ControlCerditoEngine();
     public ItemControl itemControl;
     public Countdown countdown;
 
