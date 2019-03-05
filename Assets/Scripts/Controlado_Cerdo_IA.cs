@@ -5,7 +5,7 @@ using UnityEngine.SocialPlatforms;
 
 public class Controlado_Cerdo_IA: MonoBehaviour
 {
-    private ControladorCerditoIAEngine controladorCerditoIaEngine;
+    private ControladorCerditoIAEngine controladorCerditoIaEngine = new ControladorCerditoIAEngine();
     public Countdown countdown;
 
     public GameObject[] waypoints;
@@ -26,7 +26,6 @@ public class Controlado_Cerdo_IA: MonoBehaviour
         controladorCerditoIaEngine.countDownEngine = countdown.movement;
         controladorCerditoIaEngine.num = num;
         controladorCerditoIaEngine.waypoints = waypoints.Length;
-
     }
 
     void Update()
