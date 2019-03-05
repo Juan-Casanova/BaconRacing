@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+    public MostrarItem mostrarItem=new MostrarItem();
    public ItemControl itemControl;
     public Countdown countdown;
 
@@ -157,6 +158,7 @@ public class Control_Cerdito : MonoBehaviour
         {
             itemControl.ChargeItem(numRandom);
             activeItem = false;
+            mostrarItem.desactivarIconosItems();
         }
 
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemControl : MonoBehaviour
 {
      public Control_Cerdito controlCerdito;
-
+     public MostrarItem mostrarItem=new MostrarItem();
 
     public bool ActiveShield;
 
@@ -33,28 +33,28 @@ public class ItemControl : MonoBehaviour
         {
             case 1:
                 PoderItem1();
-                Debug.Log("item1: dejar tocino");
+                mostrarItem.mostrarItem1();
                 break;
             case 2:
               
                 PoderItem2(ActiveShield);
-                Debug.Log("item2: escudo");
+                mostrarItem.mostrarItem2();
                 break;
             case 3:
               
                 PoderItem3();
-                Debug.Log("item3: mancha enemigo");
+                mostrarItem.mostrarItem3();
                 break;
 
             case 4:
               
                 PoderItem4();
-                Debug.Log("item4: aceleracion");
+                mostrarItem.mostrarItem4();
                 break;
 
             case 5:
                 PoderItem5();
-                Debug.Log("item5: disparar objeto");
+                mostrarItem.mostrarItem5();
                 break;
 
             default:
