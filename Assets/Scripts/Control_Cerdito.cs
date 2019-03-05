@@ -86,10 +86,10 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             //Debug.Log(Input.GetAxis("Vertical"));
-            Debug.Log(Front_Left.motorTorque);
-            Debug.Log(Front_Right.motorTorque);
-            Debug.Log(Back_Left.motorTorque);
-            Debug.Log(Back_Right.motorTorque);
+           // Debug.Log(Front_Left.motorTorque);
+           // Debug.Log(Front_Right.motorTorque);
+           // Debug.Log(Back_Left.motorTorque);
+           // Debug.Log(Back_Right.motorTorque);
             //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
             
         }
@@ -163,52 +163,28 @@ public class Control_Cerdito : MonoBehaviour
         }
 
         //salto credo
-
-         if(Input.GetKeyUp(KeyCode.Space))
+            
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log(Time.deltaTime);
-            //Cerdito.transform.Translate(0,Time.deltaTime*1000,Time.deltaTime*2000);
-            Cerdito.transform.Translate(0,40,60);
-        }
-
-       /*
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            if(superSalto==true)
+            if(superSalto)
             {
-                Cerdito.transform.Translate(0,Time.deltaTime*1500,Time.deltaTime*2500);
+               // Cerdito.transform.Translate(0,Time.deltaTime*1500,Time.deltaTime*2500);
+               Cerdito.transform.Translate(0,40,60);              
+            }
+            else
+            {
+                Cerdito.transform.Translate(0,4,0);                   
             }
         }
         
-          if(Input.GetKeyUp(KeyCode.Space))
-        {
-            if(superSalto==false)
-            {
-                Cerdito.transform.Translate(0,Time.deltaTime*100,0);                
-            }
-        }
-        */
 
     }
     void OnCollisionEnter(Collision collision)
     {
-         if(collision.gameObject.name=="Modulo_recto (3)")
-
-        {
-            Front_Left.motorTorque=2500;
-            Front_Right.motorTorque=2500;
-            Back_Left.motorTorque=2500;
-            Back_Right.motorTorque=2500;
-            MaxSpeed=100;
-            Torque=3500;
-            CoefAccelaration=100;
-
-           Debug.Log(Front_Left.motorTorque);
-
-        }
-
-        //Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo inicio de pendiente")
+         if(collision.gameObject.name=="Modulo_recto (3)"||collision.gameObject.name=="Modulo inicio de pendiente"
+         ||collision.gameObject.name=="Modulo_Recto (14)"||collision.gameObject.name=="Modulo_Recto (15)"||
+         collision.gameObject.name=="Modulo_Recto (16)"||collision.gameObject.name=="Modulo_Recto (17)"||
+         collision.gameObject.name=="Modulo_Recto (25)")
 
         {
             Front_Left.motorTorque=25000;
@@ -218,35 +194,18 @@ public class Control_Cerdito : MonoBehaviour
             MaxSpeed=100;
             Torque=3500;
             CoefAccelaration=100;
-
-            Debug.Log(Front_Left.motorTorque);
-        
             superSalto=true;
+            Debug.Log(Front_Left.motorTorque);
 
-            Debug.Log(superSalto);
-
         }
-        if(collision.gameObject.name=="Modulo_Recto (14)")
+        else
         {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (15)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (16)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (17)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (25)")
-        {
-            CoefAccelaration=25;
+            Torque=1750;
+            MaxSpeed=60;
+            superSalto=false;
         }
 
+        
         //Cirvas subidas
          if(collision.gameObject.name=="Modulo curva ascendente")
         {
@@ -256,15 +215,6 @@ public class Control_Cerdito : MonoBehaviour
             CoefAccelaration=100;
 
         }
-
-        
-        else
-        {
-            Torque=1750;
-            MaxSpeed=60;
-            superSalto=false;
-        }
-        
     }
 
     public void OnTriggerEnter(Collider other)
