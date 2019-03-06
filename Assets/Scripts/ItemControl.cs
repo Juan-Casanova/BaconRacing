@@ -22,53 +22,50 @@ public class ItemControl : MonoBehaviour
         controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
     }
 
+    public int getItemRandom()
+    {
+        return Random.Range(1, 5);
+    }
 
-    public void ChargeItem(int _numRandom)
-
+    public void ChargeItem()
     {
 
-        _numRandom = Random.Range(1, 5);
-
-        switch (_numRandom)
+        switch (getItemRandom())
         {
             case 1:
+               // mostrarItem.mostrarItem1();
                 PoderItem1();
-                mostrarItem.mostrarItem1();
+                
                 break;
             case 2:
-              
+               // mostrarItem.mostrarItem2();
                 PoderItem2(ActiveShield);
-                mostrarItem.mostrarItem2();
+                
                 break;
             case 3:
-              
+               // mostrarItem.mostrarItem3();
                 PoderItem3();
-                mostrarItem.mostrarItem3();
+                
                 break;
 
             case 4:
-              
+               // mostrarItem.mostrarItem4();
                 PoderItem4();
-                mostrarItem.mostrarItem4();
+                
                 break;
 
             case 5:
+               // mostrarItem.mostrarItem5();
                 PoderItem5();
-                mostrarItem.mostrarItem5();
+              
                 break;
 
             default:
                 Debug.Log("No hay Nada");
                 break;
-
         }
 
-
-     
-
-
     }
-
 
     //Poder de dejar un tocino en la pista
 
