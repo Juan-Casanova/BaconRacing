@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-   public ItemControl itemControl;
+    public ItemControl itemControl;
     public Countdown countdown;
 
     public Text TextSpeed;
@@ -15,15 +15,16 @@ public class Control_Cerdito : MonoBehaviour
     public WheelCollider Back_Right;
     public float Torque;
     public float Speed;
-    public float MaxSpeed=200f;
-    public int Brake=10000;
-    public float CoefAccelaration=10f;
+    public float MaxSpeed=60;
+    public int Brake=1000;
+    public float CoefAccelaration=100f;
     public float WheelAngleMax=5;
     public bool activeItem;
     public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
     private Animator animacion; //hola
+    public bool superSalto;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class Control_Cerdito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float Girar=Input.GetAxis("Horizontal");
+        //float Girar=Input.GetAxis("Horizontal");
 
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
@@ -65,6 +66,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
              animacion.SetBool("correr", true); //hola
+             //Debug.Log(Front_Right.motorTorque);
         }
 
         //REVERSA
@@ -84,11 +86,12 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             //Debug.Log(Input.GetAxis("Vertical"));
-            Debug.Log(Front_Left.motorTorque);
-            Debug.Log(Front_Right.motorTorque);
-            Debug.Log(Back_Left.motorTorque);
-            Debug.Log(Back_Right.motorTorque);
+           // Debug.Log(Front_Left.motorTorque);
+           // Debug.Log(Front_Right.motorTorque);
+           // Debug.Log(Back_Left.motorTorque);
+           // Debug.Log(Back_Right.motorTorque);
             //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+            
         }
          
         //DECELERATION
@@ -136,12 +139,12 @@ public class Control_Cerdito : MonoBehaviour
         
         if(Speed>2)
         {
-            if(Girar<0){
+            if(Input.GetKey(KeyCode.LeftArrow)){
                 Cerdito.transform.Rotate(0,-1.75f,0);
                 
             }
 
-            if(Girar>0){
+            if(Input.GetKey(KeyCode.RightArrow)){
                 Cerdito.transform.Rotate(0,1.75f,0);
             }
         }
@@ -159,44 +162,58 @@ public class Control_Cerdito : MonoBehaviour
             activeItem = false;
         }
 
+        //salto credo
+            
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(superSalto)
+            {
+               // Cerdito.transform.Translate(0,Time.deltaTime*1500,Time.deltaTime*2500);
+               Cerdito.transform.Translate(0,40,60);              
+            }
+            else
+            {
+                Cerdito.transform.Translate(0,4,0);                   
+            }
+        }
+        
+
     }
     void OnCollisionEnter(Collision collision)
     {
+         if(collision.gameObject.name=="Modulo_recto (3)"||collision.gameObject.name=="Modulo inicio de pendiente"
+         ||collision.gameObject.name=="Modulo_Recto (14)"||collision.gameObject.name=="Modulo_Recto (15)"||
+         collision.gameObject.name=="Modulo_Recto (16)"||collision.gameObject.name=="Modulo_Recto (17)"||
+         collision.gameObject.name=="Modulo_Recto (25)")
 
-        //Debug.Log(collision.gameObject.name);
-        if(collision.gameObject.name=="Modulo-Inicio-Pendiente")
+        {
+            Front_Left.motorTorque=25000;
+            Front_Right.motorTorque=25000;
+            Back_Left.motorTorque=25000;
+            Back_Right.motorTorque=25000;
+            MaxSpeed=100;
+            Torque=3500;
+            CoefAccelaration=100;
+            superSalto=true;
+            Debug.Log(Front_Left.motorTorque);
 
-        {
-            Torque=35000;
-            MaxSpeed=160;
-           // Debug.Log(Torque);
-
         }
-        if(collision.gameObject.name=="Modulo_Recto (14)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (15)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (16)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (17)")
-        {
-            CoefAccelaration=25;
-        }
-         if(collision.gameObject.name=="Modulo_Recto (25)")
-        {
-            CoefAccelaration=25;
-        }
-        
         else
         {
             Torque=1750;
-            MaxSpeed=80;
+            MaxSpeed=60;
+            superSalto=false;
+        }
+
+        
+        //Cirvas subidas
+         if(collision.gameObject.name=="Modulo curva ascendente")
+        {
+         
+            MaxSpeed=100;
+            Torque=3500;
+            CoefAccelaration=100;
+
         }
     }
 
