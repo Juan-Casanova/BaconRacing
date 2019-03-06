@@ -24375,6 +24375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlCerdito: {fileID: 1235188350}
+  itemControl: {fileID: 2147188207}
   item1DejarTocino: {fileID: 1353968026}
   item2Escudo: {fileID: 2012018001}
   item3Mancha: {fileID: 37973927}
@@ -29026,7 +29028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d3b4005d23810469ced5a9925b8cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mostrarItem: {fileID: 0}
   itemControl: {fileID: 2147188207}
   countdown: {fileID: 732676336}
   TextSpeed: {fileID: 273433715}
@@ -52530,14 +52531,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d572765bcb3f2a40ab9ba5df7c33b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlCerdito: {fileID: 0}
-  mostrarItem: {fileID: 0}
+  controlCerdito: {fileID: 1235188350}
+  mostrarItem: {fileID: 1056444299}
   ActiveShield: 0
-  jugador1: {fileID: 0}
+  jugador1: {fileID: 1235188348}
   item1TocinoPista: {fileID: 100000, guid: 2506876226d3a0c488611f186c5d6289, type: 3}
-  item2escudo: {fileID: 0}
+  item2escudo: {fileID: 100000, guid: 322b2a9d146537b4da1ff833b6cfd48f, type: 3}
   item3ManchaPantallaEnemigo: {fileID: 1772541204}
-  item4chile: {fileID: 0}
+  item4chile: {fileID: 100000, guid: e43c2325927e422489b33f7895cea954, type: 3}
   item5Proyectil: {fileID: 1773111176479660366, guid: 739174d56c9eabc488c404dbbf020c23,
     type: 3}
 --- !u!224 &2147188208

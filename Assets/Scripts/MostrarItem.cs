@@ -13,30 +13,18 @@ public class MostrarItem : MonoBehaviour
     public GameObject item3Mancha;
     public GameObject item4Acelerar;
     public GameObject item5DispararObjeto;
+    public int _numRandom;
 
     public void Start()
     {
         desactivarIconosItems();
     }
 
-    public void Update()
+
+    public void ShowItem(int _numItem)
     {
 
-        if (controlCerdito.activeItem)
-        {
-            ShowItem();
-        }
-        else
-        {
-            desactivarIconosItems();
-        }
-    }
-
-
-    public void ShowItem()
-    {
-
-        switch (itemControl.getItemRandom())
+        switch (_numItem)
         {
             case 1:
                 mostrarItem1();

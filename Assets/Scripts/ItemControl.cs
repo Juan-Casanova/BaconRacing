@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-     public Control_Cerdito controlCerdito;
-     public MostrarItem mostrarItem=new MostrarItem();
-
     public bool ActiveShield;
-
+    public Control_Cerdito controlCerdito;
     public GameObject jugador1;
     public GameObject item1TocinoPista;
     public GameObject item2escudo;
@@ -16,21 +13,16 @@ public class ItemControl : MonoBehaviour
     public GameObject item4chile;
     public GameObject item5Proyectil;
 
-    public void Start()
-    {
-      
-        controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
-    }
 
     public int getItemRandom()
     {
         return Random.Range(1, 5);
     }
 
-    public void ChargeItem()
+    public void ChargeItem(int numRandom)
     {
 
-        switch (getItemRandom())
+        switch (numRandom)
         {
             case 1:
                // mostrarItem.mostrarItem1();

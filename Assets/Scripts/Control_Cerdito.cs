@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
-    
+    public MostrarItem mostrarItem;
    public ItemControl itemControl;
     public Countdown countdown;
 
@@ -152,18 +152,17 @@ public class Control_Cerdito : MonoBehaviour
         //Debug.Log(Girar);
 
         //Active item
-        if (activeItem)
-        {
-            itemControl.getItemRandom();
-            
+    
             if (Input.GetKey(KeyCode.M) && activeItem == true)
             {
-                itemControl.ChargeItem();
+                itemControl.ChargeItem(numRandom);
+                mostrarItem.desactivarIconosItems();
                 activeItem = false;
             }
-        }
+       
  
     }
+
     void OnCollisionEnter(Collision collision)
     {
 
@@ -208,6 +207,8 @@ public class Control_Cerdito : MonoBehaviour
     {
         if (other.CompareTag("barril"))
         {
+            numRandom=itemControl.getItemRandom();
+            mostrarItem.ShowItem(numRandom);
             Debug.Log("item activo");
             activeItem = true;
         }
