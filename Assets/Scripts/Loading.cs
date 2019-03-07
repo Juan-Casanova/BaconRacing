@@ -9,9 +9,10 @@ using UnityEngine.SceneManagement;
 
 public class Loading : MonoBehaviour
 {
-     GameController gameController;
+     public GameController gameController;
+     public GameObject changeScene;
 
-
+    
 
     //Esta es la forma correcta de mostrar variables privadas en el inspector. 
     //No se deben hacer public variables que no queremos sean accesibles desde otras clases-
@@ -27,7 +28,7 @@ public class Loading : MonoBehaviour
     // En cuanto se active el objeto, se inciará el cambio de escena
     void Start()
     {
-
+        changeScene.SetActive(false);
         //Iniciamos una corrutina, que es un método que se ejecuta 
         //en una línea de tiempo diferente al flujo principal del programa
         StartCoroutine(LoadScene());
@@ -57,7 +58,7 @@ public class Loading : MonoBehaviour
             progressImage.fillAmount = loading.progress;
 
             //Esperamos un frame
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3.0f);
 
         }
 
@@ -66,9 +67,14 @@ public class Loading : MonoBehaviour
         progressImage.fillAmount = 1;
 
         //Activamos el salto de escena.
-        loading.allowSceneActivation = true;
 
+        changeScene.SetActive(true);
+        // loading.allowSceneActivation = true;
+    }
 
+    public void changePista()
+    {
+        SceneManager.LoadScene("Pista_China");
     }
 
 }

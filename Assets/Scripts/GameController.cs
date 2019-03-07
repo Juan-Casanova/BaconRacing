@@ -41,7 +41,8 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Z))
         {
-            changeScene();
+            SceneManager.LoadScene("Loading");
+           // changeScene();
         }
     }
 }
