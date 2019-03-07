@@ -209,7 +209,7 @@ public class Control_Cerdito : MonoBehaviour
         {
             numRandom=itemControl.getItemRandom();
             mostrarItem.ShowItem(numRandom);
-            Debug.Log("item activo");
+            Debug.Log("MostrarItem"+numRandom);
             activeItem = true;
         }
     }

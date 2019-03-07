@@ -24382,6 +24382,7 @@ MonoBehaviour:
   item3Mancha: {fileID: 37973927}
   item4Acelerar: {fileID: 1604124669}
   item5DispararObjeto: {fileID: 1376563000}
+  _numRandom: 0
 --- !u!114 &1056444300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29028,6 +29029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37d3b4005d23810469ced5a9925b8cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mostrarItem: {fileID: 1056444299}
   itemControl: {fileID: 2147188207}
   countdown: {fileID: 732676336}
   TextSpeed: {fileID: 273433715}
@@ -52531,9 +52533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d572765bcb3f2a40ab9ba5df7c33b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlCerdito: {fileID: 1235188350}
-  mostrarItem: {fileID: 1056444299}
   ActiveShield: 0
+  controlCerdito: {fileID: 1235188350}
   jugador1: {fileID: 1235188348}
   item1TocinoPista: {fileID: 100000, guid: 2506876226d3a0c488611f186c5d6289, type: 3}
   item2escudo: {fileID: 100000, guid: 322b2a9d146537b4da1ff833b6cfd48f, type: 3}
@@ -53187,3 +53188,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593677220436493779}
   m_Mesh: {fileID: 4300000, guid: 377515fc1a9686d43ad9431bb60a8e18, type: 3}
+--- !u!1001 &6160685083223134875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6160685083246706314, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_Name
+      value: ControlEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 94.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 223
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6160685083246706313, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344808920204036145, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: nameNextScene
+      value: Esccena_Dios
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344808920204036145, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: currentScene
+      value: Pista_China
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805380197927737766, guid: 17a44951cae1d9e4d9c9b5a3e9413054,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17a44951cae1d9e4d9c9b5a3e9413054, type: 3}
