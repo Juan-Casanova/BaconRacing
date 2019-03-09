@@ -9,6 +9,7 @@ TagManager:
   - barril
   - rana
   - abanico
+  - pista
   layers:
   - Default
   - TransparentFX
