@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class menuDios : MonoBehaviour
 {
-    public void cargaMenuPrincipal(string pNombreEscena)
+    public void cargaMenuPrincipal( string pNombreEscena)
     {
         SceneManager.LoadScene(pNombreEscena);
     }
