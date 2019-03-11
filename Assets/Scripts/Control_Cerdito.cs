@@ -33,18 +33,24 @@ public class Control_Cerdito : MonoBehaviour
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
         //animaciones abajito
         animacion = GetComponentInChildren<Animator>();
-        animacioncorrer();
-        animacion.SetBool("frenado", false);
+        animacion.SetBool("correr", false); 
+        animacion.SetBool("frenado", false);//que seria para reversa frena y empieza la reversa
         animacion.SetBool("iddle2", false); //hola
+        
+
     }
 
-    private void animacioncorrer()
+
+    IEnumerator corutinawaitfrenadoyluegocorrer()
     {
-        animacion.SetBool("correr", false);
+        animacion.SetBool("frenado", true); animacion.SetBool("correr", false); animacion.SetBool("iddle2", false);
+        print("hola probando corrutina");
+        yield return new WaitForSeconds(3f);
+        print("como tas"); animacion.SetBool("frenado", false); animacion.SetBool("correr", true); animacion.SetBool("iddle2", false);
     }
 
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
         float Girar=Input.GetAxis("Horizontal");
 
@@ -64,39 +70,43 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
-             animacion.SetBool("correr", true); //hola
+            StartCoroutine(corutinawaitfrenadoyluegocorrer());  // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
         }
 
         //REVERSA
-        
-        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
-        {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
-            
-            
-            
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+        if (Input.GetKey(KeyCode.DownArrow) && countdown.movement == true)
+        {
+            Back_Left.brakeTorque = 0;
+            Back_Right.brakeTorque = 0;
+            Back_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Back_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+
+
+            ;
+
+            Front_Left.brakeTorque = 0;
+            Front_Right.brakeTorque = 0;
+            Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
             //Debug.Log(Input.GetAxis("Vertical"));
             Debug.Log(Front_Left.motorTorque);
             Debug.Log(Front_Right.motorTorque);
             Debug.Log(Back_Left.motorTorque);
             Debug.Log(Back_Right.motorTorque);
-            //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+                //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+
+                StartCoroutine(corutinawaitfrenadoyluegocorrer());//para la corrutina de activar el frenado y luego correr
+               
         }
          
         //DECELERATION
 
         
-        if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
+        if(Input.GetKeyUp(KeyCode.UpArrow)&&Speed>1 || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow) && Speed > 1)
 
         {
+            
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
             Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
@@ -108,26 +118,17 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
 
-            if (!Input.GetKey(KeyCode.UpArrow) && (Speed > 1 ) )//hola para activar frenado 
-            {
-                Debug.Log("sped may 1"); //hola
-                animacioncorrer();
-                animacion.SetBool("iddle2", false);
-                Debug.Log("sped may aun "); //hola
-                animacion.SetBool("frenado", true); //hola
-                Debug.Log("sped may aun 3 "); //hola
+            animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
 
-            }
-            else
-            {
-            
-                    Debug.Log("speed menor "); //hola
-                animacioncorrer();
-                animacion.SetBool("frenado", false); //hola
-                    animacion.SetBool("iddle2", true);
-            }
+
+            print("prueba anii 1");
+
+          
         }
-        
+        if (Speed<=1)
+        {
+            animacion.SetBool("correr", false); animacion.SetBool("iddle2", true); animacion.SetBool("frenado", false); //hola
+        }
         
 
         //Direction of the pig
