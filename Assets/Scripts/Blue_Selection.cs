@@ -1,16 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Blue_Selection : MonoBehaviour
 {
 
-   public void Select_Mario(){
-       Debug.Log("Seleccionando al Mario");
-   }
+    //public GameObject skincuchu;//
+//public GameObject skinrevolucinario;//
+    public static int personajeinterfaz=0;
+
+    /* public void skinsoff()
+     {
+         skincuchu.SetActive(false);
+         skinrevolucinario.SetActive(false);
+     }*/
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);    }
+
+    public void Select_Mario(){
+        Debug.Log("Seleccionando al Mario");
+        print("Seleccionando al Mario");
+        //skincuchu.SetActive(true);//
+        personajeinterfaz = 1;
+    }
 
    public void Select_DK(){
        Debug.Log("Seleccionando al DK");
+        personajeinterfaz = 2;
    }
 
    public void Select_Sly(){

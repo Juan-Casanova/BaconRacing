@@ -21,7 +21,7 @@ public class iralapista : MonoBehaviour
 
     public void irotraescena()
     {
-        Debug.Log("hooooola");
+       
        
             SceneManager.LoadScene("Pista_China");// enl nombre de la escena a la que va a ir (entre parentesis)
         
