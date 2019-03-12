@@ -202,7 +202,7 @@ ModelImporter:
     4300000: Cabeza
     4300002: Sombrero
     4300004: Revoluvionado
-    7400000: Idle_Character
+    7400000: correr_Character
     9500000: //RootNode
     13700000: Cabeza
     13700002: Revoluvionado
@@ -236,7 +236,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle_Character
+      name: correr_Character
       takeName: Take 001
       firstFrame: 6
       lastFrame: 55

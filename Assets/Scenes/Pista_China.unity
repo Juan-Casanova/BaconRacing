@@ -15074,6 +15074,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.008577, y: 2.155323, z: 1}
   m_Center: {x: 1.0647156, y: 0.5776615, z: 0}
+--- !u!95 &568897168 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1967806420, guid: 44bb1180dae988e4588a0da8c2649f8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1020603820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &571076895
 GameObject:
   m_ObjectHideFlags: 0
@@ -29027,6 +29033,18 @@ PrefabInstance:
       propertyPath: countdown
       value: 
       objectReference: {fileID: 732676336}
+    - target: {fileID: 1967806418, guid: 44bb1180dae988e4588a0da8c2649f8a, type: 3}
+      propertyPath: animacion
+      value: 
+      objectReference: {fileID: 568897168}
+    - target: {fileID: 1967806418, guid: 44bb1180dae988e4588a0da8c2649f8a, type: 3}
+      propertyPath: anicharacter
+      value: 
+      objectReference: {fileID: 1020603823}
+    - target: {fileID: 1967806418, guid: 44bb1180dae988e4588a0da8c2649f8a, type: 3}
+      propertyPath: animacioncerdito
+      value: 
+      objectReference: {fileID: 568897168}
     - target: {fileID: 1580760378, guid: 44bb1180dae988e4588a0da8c2649f8a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -29070,6 +29088,12 @@ GameObject:
 --- !u!1 &1020603822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4691654125871475402, guid: 44bb1180dae988e4588a0da8c2649f8a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1020603820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1020603823 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7430174928747748031, guid: 44bb1180dae988e4588a0da8c2649f8a,
     type: 3}
   m_PrefabInstance: {fileID: 1020603820}
   m_PrefabAsset: {fileID: 0}

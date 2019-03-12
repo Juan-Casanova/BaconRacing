@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class Control_Cerdito : MonoBehaviour
 {
    public ItemControl itemControl;
@@ -23,7 +24,9 @@ public class Control_Cerdito : MonoBehaviour
     public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
-    private Animator animacion; //hola
+    public Animator animacioncerdito; //hola animator del cerdito
+    public Animator anicharacter; //animator del personaje
+
 
     void Start()
     {
@@ -32,26 +35,29 @@ public class Control_Cerdito : MonoBehaviour
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
         //animaciones abajito
-        animacion = GetComponentInChildren<Animator>();
-        animacion.SetBool("correr", false); 
-        animacion.SetBool("frenado", false);//que seria para reversa frena y empieza la reversa
-        animacion.SetBool("iddle2", false); //hola
         
+        animacioncerdito.SetInteger("cerdito", 0);
+        anicharacter.SetInteger("personaje", 0);
+        
+
 
     }
 
 
     IEnumerator corutinawaitfrenadoyluegocorrer()
     {
-        animacion.SetBool("frenado", true); animacion.SetBool("correr", false); animacion.SetBool("iddle2", false);
-        print("hola probando corrutina");
+        animacioncerdito.SetInteger("cerdito", 2);
+       // animacion.SetBool("frenado", true); animacion.SetBool("correr", false); animacion.SetBool("iddle2", false);
+       // print("hola probando corrutina");
         yield return new WaitForSeconds(3f);
-        print("como tas"); animacion.SetBool("frenado", false); animacion.SetBool("correr", true); animacion.SetBool("iddle2", false);
+        //animacion.SetBool("frenado", false); animacion.SetBool("correr", true); animacion.SetBool("iddle2", false);
+        animacioncerdito.SetInteger("cerdito", 1);
     }
 
         // Update is called once per frame
         void Update()
     {
+        
         float Girar=Input.GetAxis("Horizontal");
 
         //VISUALIZATION OF SPEED
@@ -70,11 +76,17 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
 
+           
             StartCoroutine(corutinawaitfrenadoyluegocorrer());  // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+                                                                // animacion_character.SetInteger("personaje", 1);
+            
+                
+            anicharacter.SetInteger("personaje", 1);
+       
         }
 
         //REVERSA
-
+        
         if (Input.GetKey(KeyCode.DownArrow) && countdown.movement == true)
         {
             Back_Left.brakeTorque = 0;
@@ -94,10 +106,25 @@ public class Control_Cerdito : MonoBehaviour
             Debug.Log(Front_Right.motorTorque);
             Debug.Log(Back_Left.motorTorque);
             Debug.Log(Back_Right.motorTorque);
-                //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+            //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+            anicharacter.SetInteger("personaje", 4);
 
-                StartCoroutine(corutinawaitfrenadoyluegocorrer());//para la corrutina de activar el frenado y luego correr
-               
+          /*  int randomidle = Random.Range(1, 11);//variable para generar un random para que sea diferente el idle 
+            switch (randomidle)
+            {
+                case 1:
+                    print("randomidle");
+
+                    break;
+                 default:
+                    print("randomidle  default");
+                    break;
+            }*/
+            
+
+            StartCoroutine(corutinawaitfrenadoyluegocorrer());//para la corrutina de activar el frenado y luego correr
+
+            
         }
          
         //DECELERATION
@@ -118,16 +145,18 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
 
-            animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+            // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+            animacioncerdito.SetInteger("cerdito", 1);
 
 
-            print("prueba anii 1");
 
-          
+
         }
         if (Speed<=1)
         {
-            animacion.SetBool("correr", false); animacion.SetBool("iddle2", true); animacion.SetBool("frenado", false); //hola
+            // animacion.SetBool("correr", false); animacion.SetBool("iddle2", true); animacion.SetBool("frenado", false); //hola
+            animacioncerdito.SetInteger("cerdito", 0);
+            anicharacter.SetInteger("personaje", 0);
         }
         
 
