@@ -26,7 +26,7 @@ public class Control_Cerdito : MonoBehaviour
     //public object Cerdito2;
     public Animator animacioncerdito; //hola animator del cerdito
     public Animator anicharacter; //animator del personaje
-
+    int randomidle;//variable para generar un random para que sea diferente el idle 
 
     void Start()
     {
@@ -38,9 +38,8 @@ public class Control_Cerdito : MonoBehaviour
         
         animacioncerdito.SetInteger("cerdito", 0);
         anicharacter.SetInteger("personaje", 0);
-        
-
-
+        Debug.Log(randomidle);
+        randomidle= Random.Range(1, 13);
     }
 
 
@@ -85,8 +84,10 @@ public class Control_Cerdito : MonoBehaviour
        
         }
 
-        //REVERSA
         
+
+        //REVERSA
+
         if (Input.GetKey(KeyCode.DownArrow) && countdown.movement == true)
         {
             Back_Left.brakeTorque = 0;
@@ -109,21 +110,7 @@ public class Control_Cerdito : MonoBehaviour
             //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
             anicharacter.SetInteger("personaje", 4);
 
-          /*  int randomidle = Random.Range(1, 11);//variable para generar un random para que sea diferente el idle 
-            switch (randomidle)
-            {
-                case 1:
-                    print("randomidle");
-
-                    break;
-                 default:
-                    print("randomidle  default");
-                    break;
-            }*/
-            
-
-            StartCoroutine(corutinawaitfrenadoyluegocorrer());//para la corrutina de activar el frenado y luego correr
-
+           
             
         }
          
@@ -145,7 +132,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
 
-            // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+            
             animacioncerdito.SetInteger("cerdito", 1);
 
 
@@ -154,9 +141,16 @@ public class Control_Cerdito : MonoBehaviour
         }
         if (Speed<=1)
         {
-            // animacion.SetBool("correr", false); animacion.SetBool("iddle2", true); animacion.SetBool("frenado", false); //hola
-            animacioncerdito.SetInteger("cerdito", 0);
+           
+            //  animacioncerdito.SetInteger("cerdito", 0);
             anicharacter.SetInteger("personaje", 0);
+
+
+            
+            if (randomidle <= 6) //Para el random de 2 idles que habra
+            { animacioncerdito.SetInteger("cerdito", 1); Debug.Log("menora5"); }
+            else { Debug.Log("mayor as 5"); animacioncerdito.SetInteger("cerdito", 1); }
+           
         }
         
 
