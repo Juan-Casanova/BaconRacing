@@ -37,7 +37,7 @@ public class RespawnPlayer : MonoBehaviour
         {
             numSpawn += 1;
         }
-        else if (numSpawn > 7)
+        else if (numSpawn > spawnLocations.Length)
         {
             numSpawn = 0;
         }
