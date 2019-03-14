@@ -9,8 +9,10 @@ public class Real_Menu_manager : MonoBehaviour
 
     public GameObject Main_Menu_Canvas;
     public GameObject Character_Pick_One_Player;
-    public GameObject Character_Pick_Two_Players;
+    public GameObject Character_Pick_Two_Players_firstPlayer;
+    public GameObject Character_Pick_Two_Players_secondPlayer;
     public GameObject Tracks_Screen;
+    public GameObject Tracks_Screen_2P;
 
     public GameObject Menu_Opciones;
 
@@ -38,17 +40,30 @@ public class Real_Menu_manager : MonoBehaviour
         
     }
 
-    public void Character_Screen_Two_Player(){
+    public void Character_Screen_Two_Player_Firstplayer(){
         SetEverythingFalse();
-        Character_Pick_Two_Players.SetActive(true);
+        Character_Pick_Two_Players_firstPlayer.SetActive(true);
         Un_jugador=false;
         Input_Regreso = 3;    
+    }
+
+    public void Character_Screen_Two_Player_secondplayer(){
+        SetEverythingFalse();
+        Character_Pick_Two_Players_secondPlayer.SetActive(true);
+        Un_jugador=false;
+        Input_Regreso = 6;    
     }
 
      public void To_Tracks_Screen(){
         SetEverythingFalse();
         Tracks_Screen.SetActive(true);
         Input_Regreso = 4;
+    }
+
+    public void To_Tracks_Screen_2P(){
+        SetEverythingFalse();
+        Tracks_Screen_2P.SetActive(true);
+        Input_Regreso = 7;
     }
 
     public void To_Menu_Opciones(){
@@ -61,8 +76,10 @@ public class Real_Menu_manager : MonoBehaviour
         Title_Canvas.SetActive(false);
         Main_Menu_Canvas.SetActive(false);
         Character_Pick_One_Player.SetActive(false);
-        Character_Pick_Two_Players.SetActive(false);
+        Character_Pick_Two_Players_firstPlayer.SetActive(false);
+            Character_Pick_Two_Players_secondPlayer.SetActive(false);
         Tracks_Screen.SetActive(false);
+            Tracks_Screen_2P.SetActive(false);
         Menu_Opciones.SetActive(false);
     }
 
@@ -106,11 +123,19 @@ public class Real_Menu_manager : MonoBehaviour
                 if(Un_jugador){
                    Character_Screen_One_Player(); 
                 }else{
-                    Character_Screen_Two_Player();
+                    Character_Screen_Two_Player_Firstplayer();
                 }
                 break;
 
                 case 5:
+                To_Main_Menu();
+                break;
+
+                case 6:
+                Character_Screen_Two_Player_Firstplayer();
+                break;
+
+                case 7:
                 To_Main_Menu();
                 break;
 
