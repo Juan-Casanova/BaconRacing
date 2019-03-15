@@ -10,6 +10,9 @@ TagManager:
   - rana
   - abanico
   - pista
+  - Enemigo
+  - Piso
+  - IconMiniMap
   layers:
   - Default
   - TransparentFX
