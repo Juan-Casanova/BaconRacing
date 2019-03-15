@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu_Principal_Gestor : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class Menu_Principal_Gestor : MonoBehaviour
         BotonOpciones.SetActive(false);
 
         BotonSalir.SetActive(false);
+    }
+    public void NextScene(string _scene)
+    {
+        SceneManager.LoadScene(_scene, LoadSceneMode.Single);
     }
 
 

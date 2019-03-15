@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-     public Control_Cerdito controlCerdito;
-
-
     public bool ActiveShield;
-
+    public Control_Cerdito controlCerdito;
     public GameObject jugador1;
     public GameObject item1TocinoPista;
     public GameObject item2escudo;
@@ -16,59 +13,51 @@ public class ItemControl : MonoBehaviour
     public GameObject item4chile;
     public GameObject item5Proyectil;
 
-    public void Start()
+
+    public int getItemRandom()
     {
-      
-        controlCerdito = GameObject.FindObjectOfType<Control_Cerdito>();
+        return Random.Range(1, 5);
     }
 
-
-    public void ChargeItem(int _numRandom)
-
+    public void ChargeItem(int numRandom)
     {
 
-        _numRandom = Random.Range(1, 5);
-
-        switch (_numRandom)
+        switch (numRandom)
         {
             case 1:
+               // mostrarItem.mostrarItem1();
                 PoderItem1();
-                Debug.Log("item1: dejar tocino");
+                
                 break;
             case 2:
-              
+               // mostrarItem.mostrarItem2();
                 PoderItem2(ActiveShield);
-                Debug.Log("item2: escudo");
+                
                 break;
             case 3:
-              
+               // mostrarItem.mostrarItem3();
                 PoderItem3();
-                Debug.Log("item3: mancha enemigo");
+                
                 break;
 
             case 4:
-              
+               // mostrarItem.mostrarItem4();
                 PoderItem4();
-                Debug.Log("item4: aceleracion");
+                
                 break;
 
             case 5:
+               // mostrarItem.mostrarItem5();
                 PoderItem5();
-                Debug.Log("item5: disparar objeto");
+              
                 break;
 
             default:
                 Debug.Log("No hay Nada");
                 break;
-
         }
 
-
-     
-
-
     }
-
 
     //Poder de dejar un tocino en la pista
 

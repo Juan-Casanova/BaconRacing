@@ -19,11 +19,11 @@ public class RespawnPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("caida"))
-        {
+        if((this.gameObject.CompareTag("Player")&& other.CompareTag("pista"))|| other.CompareTag("caida"))
+
             Spawn(numPlayer, numSpawn);
 
-        }else if (other.CompareTag("spawn"))
+        else if (other.CompareTag("spawn"))
         {
             AumentarNumeroDeSpawn(numSpawn);
             Debug.Log("Numero spawn: "+numSpawn);
@@ -37,7 +37,7 @@ public class RespawnPlayer : MonoBehaviour
         {
             numSpawn += 1;
         }
-        else if (numSpawn > 6)
+        else if (numSpawn > spawnLocations.Length)
         {
             numSpawn = 0;
         }
