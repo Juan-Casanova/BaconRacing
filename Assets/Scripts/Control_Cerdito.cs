@@ -85,12 +85,7 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.brakeTorque=0;
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            //Debug.Log(Input.GetAxis("Vertical"));
-            //Debug.Log(Front_Left.motorTorque);
-            //Debug.Log(Front_Right.motorTorque);
-            //Debug.Log(Back_Left.motorTorque);
-            //Debug.Log(Back_Right.motorTorque);
-            //Debug.Log(Input.GetAxis(KeyCode.UpArrow));
+            
         }
          
         //DECELERATION
@@ -189,14 +184,28 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.motorTorque=25000;
             Back_Left.motorTorque=25000;
             Back_Right.motorTorque=25000;
-            MaxSpeed=80;
+            //MaxSpeed=80;
             Torque=3500;
             CoefAccelaration=100;
             superSalto=true;
-            Debug.Log(Front_Left.motorTorque);
+            
 
         }
-        else
+
+        if(collision.gameObject.name=="Modulo curva ascendente (1)")
+        {
+            Front_Left.motorTorque=25000;
+            Front_Right.motorTorque=25000;
+            Back_Left.motorTorque=25000;
+            Back_Right.motorTorque=25000;
+            Debug.Log(Front_Left.motorTorque);
+            CoefAccelaration=1000;
+        }
+        //if(!collision.gameObject.name=="Modulo_recto (3)"||!collision.gameObject.name=="Modulo inicio de pendiente"
+        //||!collision.gameObject.name=="Modulo_Recto (14)"||!collision.gameObject.name=="Modulo_Recto (15)"||
+         //!collision.gameObject.name=="Modulo_Recto (16)"||!collision.gameObject.name=="Modulo_Recto (17)"||
+         //!collision.gameObject.name=="Modulo_Recto (25)")
+         else
         {
             Torque=1750;
             MaxSpeed=60;
