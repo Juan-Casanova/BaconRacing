@@ -9,6 +9,8 @@ public class Control_Cerdito : MonoBehaviour
    public ItemControl itemControl;
     public Countdown countdown;
 
+    public AudioSource tickSource;
+    
     public Text TextSpeed;
     public WheelCollider Front_Left;
     public WheelCollider Front_Right;
@@ -30,6 +32,9 @@ public class Control_Cerdito : MonoBehaviour
 
     void Start()
     {
+        tickSource = GetComponent<AudioSource>();
+        
+
         itemControl = FindObjectOfType<ItemControl>();
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
@@ -222,6 +227,12 @@ public class Control_Cerdito : MonoBehaviour
             Debug.Log("MostrarItem"+numRandom);
             activeItem = true;
         }
+        if (other.gameObject.tag == "barril")
+        {
+
+            tickSource.Play();
+        }
+        
     }
 }
 
