@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
+public TeVoleaste teVolteaste;
+
     public int numPlayer;
     public GameObject[] player;
 
@@ -19,11 +21,13 @@ public class RespawnPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("caida"))
+        if(teVolteaste.estasAbajo|| other.CompareTag("caida"))
         {
             Spawn(numPlayer, numSpawn);
+            teVolteaste.estasAbajo=false;
 
-        }else if (other.CompareTag("spawn"))
+        }
+        else if (other.CompareTag("spawn"))
         {
             AumentarNumeroDeSpawn(numSpawn);
             Debug.Log("Numero spawn: "+numSpawn);
@@ -37,7 +41,7 @@ public class RespawnPlayer : MonoBehaviour
         {
             numSpawn += 1;
         }
-        else if (numSpawn > 6)
+        else if (numSpawn > spawnLocations.Length)
         {
             numSpawn = 0;
         }

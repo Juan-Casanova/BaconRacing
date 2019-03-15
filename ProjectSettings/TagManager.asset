@@ -7,6 +7,12 @@ TagManager:
   - caida
   - spawn
   - barril
+  - rana
+  - abanico
+  - pista
+  - Enemigo
+  - Piso
+  - IconMiniMap
   layers:
   - Default
   - TransparentFX
