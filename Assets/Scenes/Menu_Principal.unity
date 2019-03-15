@@ -1343,33 +1343,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-<<<<<<< HEAD
-      - m_Target: {fileID: 1222748733}
-        m_MethodName: NextScene
-=======
       - m_Target: {fileID: 1222748734}
         m_MethodName: Escribe_Escena
->>>>>>> Feature/InterfazFinal
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-<<<<<<< HEAD
-          m_StringArgument: Pista_China
-=======
           m_StringArgument: 
->>>>>>> Feature/InterfazFinal
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-<<<<<<< HEAD
---- !u!114 &281760259
-=======
 --- !u!114 &146879581
->>>>>>> Feature/InterfazFinal
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2742,24 +2729,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-<<<<<<< HEAD
-      - m_Target: {fileID: 1222748733}
-        m_MethodName: NextScene
-=======
       - m_Target: {fileID: 1222748734}
         m_MethodName: Escribe_Escena
->>>>>>> Feature/InterfazFinal
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-<<<<<<< HEAD
-          m_StringArgument: Pista_China
-=======
           m_StringArgument: 
->>>>>>> Feature/InterfazFinal
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -14046,15 +14024,9 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
-  m_IsActive: 0
---- !u!114 &1301766107
-MonoBehaviour:
-=======
   m_IsActive: 1
 --- !u!224 &1596007982
 RectTransform:
->>>>>>> Feature/InterfazFinal
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18518,7 +18490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2142521003
 MonoBehaviour:
   m_ObjectHideFlags: 0
