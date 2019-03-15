@@ -3,21 +3,62 @@ guid: a6f639780196337489d66a334b027699
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Camera
-    100002: //RootNode
-    100004: Directional Light
-    100006: Mesh
-    100008: Texture Group
-    400000: Camera
-    400002: //RootNode
-    400004: Directional Light
-    400006: Mesh
-    400008: Texture Group
+    100000: ala
+    100002: Ala abajo
+    100004: Ala abajo2
+    100006: ala2
+    100008: Camera
+    100010: cara
+    100012: //RootNode
+    100014: Cuerpo
+    100016: Directional Light
+    100018: ojo1
+    100020: ojo2
+    400000: ala
+    400002: Ala abajo
+    400004: Ala abajo2
+    400006: ala2
+    400008: Camera
+    400010: cara
+    400012: //RootNode
+    400014: Cuerpo
+    400016: Directional Light
+    400018: ojo1
+    400020: ojo2
     2000000: Camera
-    2100000: Default
-    2300000: Mesh
-    3300000: Mesh
-    4300000: Mesh
+    2100000: negro
+    2100002: Morado
+    2100004: Azul
+    2100006: M1
+    2100008: rosa
+    2100010: verde
+    2100012: M4
+    2100014: blanco
+    2100016: Default
+    2300000: ala
+    2300002: Ala abajo
+    2300004: Ala abajo2
+    2300006: ala2
+    2300008: cara
+    2300010: Cuerpo
+    2300012: ojo1
+    2300014: ojo2
+    3300000: ala
+    3300002: Ala abajo
+    3300004: Ala abajo2
+    3300006: ala2
+    3300008: cara
+    3300010: Cuerpo
+    3300012: ojo1
+    3300014: ojo2
+    4300000: Ala abajo2
+    4300002: Cuerpo
+    4300004: ala
+    4300006: Ala abajo
+    4300008: cara
+    4300010: ojo1
+    4300012: ojo2
+    4300014: ala2
     7400000: Take 001
     9500000: //RootNode
     10800000: Directional Light
@@ -58,8 +99,8 @@ ModelImporter:
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -83,7 +124,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Control_Cerdito : MonoBehaviour
 {
+    public MostrarItem mostrarItem;
    public ItemControl itemControl;
     public Countdown countdown;
 
@@ -19,7 +20,7 @@ public class Control_Cerdito : MonoBehaviour
     public int Brake=10000;
     public float CoefAccelaration=10f;
     public float WheelAngleMax=5;
-    public bool activeItem;
+    public bool activeItem=false;
     public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
@@ -51,7 +52,7 @@ public class Control_Cerdito : MonoBehaviour
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
-        Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
+       // Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
         if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
         {
@@ -150,16 +151,18 @@ public class Control_Cerdito : MonoBehaviour
         //}
         //Debug.Log(Girar);
 
-
-
         //Active item
-        if (Input.GetKey(KeyCode.M) && activeItem == true)
-        {
-            itemControl.ChargeItem(numRandom);
-            activeItem = false;
-        }
-
+    
+            if (Input.GetKey(KeyCode.M) && activeItem == true)
+            {
+                itemControl.ChargeItem(numRandom);
+                mostrarItem.desactivarIconosItems();
+                activeItem = false;
+            }
+       
+ 
     }
+
     void OnCollisionEnter(Collision collision)
     {
 
@@ -204,7 +207,9 @@ public class Control_Cerdito : MonoBehaviour
     {
         if (other.CompareTag("barril"))
         {
-            Debug.Log("item activo");
+            numRandom=itemControl.getItemRandom();
+            mostrarItem.ShowItem(numRandom);
+            Debug.Log("MostrarItem"+numRandom);
             activeItem = true;
         }
     }
