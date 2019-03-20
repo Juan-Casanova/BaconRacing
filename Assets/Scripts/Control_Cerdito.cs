@@ -18,15 +18,17 @@ public class Control_Cerdito : MonoBehaviour
     public WheelCollider Back_Right;
     public float Torque;
     public float Speed;
-    public float MaxSpeed=60;
-    public int Brake=1000;
-    public float CoefAccelaration=100;
+    public float MaxSpeed=200;
+    public int Brake= 10000;
+    public float CoefAccelaration=10;
     public float WheelAngleMax=5;
     public bool activeItem=false;
     public int numRandom;
     public Rigidbody Cerdito;
     //public object Cerdito2;
-    private Animator animacion; //hola
+    public Animator animacioncerdito; //hola animator del cerdito
+    public Animator anicharacter; //animator del personaje
+    int randomidle;//variable para generar un random para que sea diferente el idle 
 
     public bool superSalto=false;
 
@@ -39,44 +41,55 @@ public class Control_Cerdito : MonoBehaviour
         Cerdito.centerOfMass=new Vector3(0,.3f,0);
         //Cerdito2.centerOfMass=new Vector3(0,-1,0);
         //animaciones abajito
-        animacion = GetComponentInChildren<Animator>();
-        animacioncorrer();
-        animacion.SetBool("frenado", false);
-        animacion.SetBool("iddle2", false); //hola
+        animacioncerdito.SetInteger("cerdito", 0);
+        anicharacter.SetInteger("personaje", 0);
+        Debug.Log(randomidle);
+        randomidle = Random.Range(1, 13);
     }
 
-    private void animacioncorrer()
+    IEnumerator corutinawaitfrenadoyluegocorrer()
     {
-        animacion.SetBool("correr", false);
+        animacioncerdito.SetInteger("cerdito", 2);
+        // animacion.SetBool("frenado", true); animacion.SetBool("correr", false); animacion.SetBool("iddle2", false);
+        // print("hola probando corrutina");
+        yield return new WaitForSeconds(3f);
+        //animacion.SetBool("frenado", false); animacion.SetBool("correr", true); animacion.SetBool("iddle2", false);
+        animacioncerdito.SetInteger("cerdito", 1);
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        //float Girar=Input.GetAxis("Horizontal");
+        float Girar=Input.GetAxis("Horizontal");//
 
         //VISUALIZATION OF SPEED
         Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
-       // Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
+        Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
+        if (Input.GetKey(KeyCode.UpArrow) && Speed < MaxSpeed && countdown.movement == true)
         {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Back_Left.brakeTorque = 0;
+            Back_Right.brakeTorque = 0;
+            Back_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Back_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Left.brakeTorque = 0;
+            Front_Right.brakeTorque = 0;
+            Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
 
-             animacion.SetBool("correr", true); //hola
+            StartCoroutine(corutinawaitfrenadoyluegocorrer());  // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+                                                                // animacion_character.SetInteger("personaje", 1);
+
+
+            anicharacter.SetInteger("personaje", 1);
+
         }
 
         //REVERSA
-        
-        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
+
+        if (Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -90,13 +103,15 @@ public class Control_Cerdito : MonoBehaviour
             Front_Right.brakeTorque=0;
             Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
             Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            
+
+            //anicharacter.SetInteger("personaje", 1);//probajndo daño
+           // StartCoroutine(corutinawaitfrenadoyluegocorrer());
         }
-         
+
         //DECELERATION
 
-        
-        if(Input.GetKeyUp(KeyCode.UpArrow) || Speed>MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow))
+
+        if (Input.GetKeyUp(KeyCode.UpArrow) && Speed > 1 || Speed > MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow) && Speed > 1)
 
         {
             Back_Left.brakeTorque=0;
@@ -110,27 +125,25 @@ public class Control_Cerdito : MonoBehaviour
             Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
             Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
 
-            if (!Input.GetKey(KeyCode.UpArrow) && (Speed > 1 ) )//hola para activar frenado 
-            {
-                Debug.Log("sped may 1"); //hola
-                animacioncorrer();
-                animacion.SetBool("iddle2", false);
-                Debug.Log("sped may aun "); //hola
-                animacion.SetBool("frenado", true); //hola
-                Debug.Log("sped may aun 3 "); //hola
+            animacioncerdito.SetInteger("cerdito", 1);
 
-            }
-            else
-            {
             
-                    Debug.Log("speed menor "); //hola
-                animacioncorrer();
-                animacion.SetBool("frenado", false); //hola
-                    animacion.SetBool("iddle2", true);
-            }
         }
-        
-        
+        if (Speed <= 1)
+        {
+
+            //  animacioncerdito.SetInteger("cerdito", 0);
+            anicharacter.SetInteger("personaje", 0);
+
+
+
+            if (randomidle <= 6) //Para el random de 2 idles que habra
+            { animacioncerdito.SetInteger("cerdito", 1); Debug.Log("menora5"); }
+            else { Debug.Log("mayor as 5"); animacioncerdito.SetInteger("cerdito", 1); }
+
+        }
+
+
 
         //Direction of the pig
         Front_Left.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
