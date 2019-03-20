@@ -196,6 +196,7 @@ public class Control_Cerdito : MonoBehaviour
             
 
         }
+        /*
 
         if(collision.gameObject.name=="Modulo curva ascendente (1)")
         {
@@ -215,7 +216,7 @@ public class Control_Cerdito : MonoBehaviour
             Torque=1750;
             MaxSpeed=60;
             superSalto=false;
-        }
+        }*/
     }
 
     public void OnTriggerEnter(Collider other)

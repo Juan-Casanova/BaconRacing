@@ -40,6 +40,7 @@ public TeVoleaste teVolteaste;
         if (numSpawn == 0)
         {
             numSpawn += 1;
+            Debug.Log(numSpawn);
         }
         else if (numSpawn > spawnLocations.Length)
         {
