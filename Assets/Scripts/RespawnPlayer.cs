@@ -21,34 +21,28 @@ public TeVoleaste teVolteaste;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(teVolteaste.estasAbajo|| other.CompareTag("caida"))
+        if( other.CompareTag("caida"))
         {
             Spawn(numPlayer, numSpawn);
-            teVolteaste.estasAbajo=false;
+   
 
         }
         else if (other.CompareTag("spawn"))
         {
-            AumentarNumeroDeSpawn(numSpawn);
+            numSpawn += 1;
+            if (numSpawn >= spawnLocations.Length-1)
+            {
+                numSpawn = 0;
+            }
             Debug.Log("Numero spawn: "+numSpawn);
         }
 
     }
 
-    public int AumentarNumeroDeSpawn(int _numSpawn)
-    {
-        if (numSpawn == 0)
-        {
-            numSpawn += 1;
-            Debug.Log(numSpawn);
-        }
-        else if (numSpawn > spawnLocations.Length)
-        {
-            numSpawn = 0;
-        }
+ 
+       
 
-        return _numSpawn;
-    }
+     
 
     public void Spawn(int numPlayer, int numSpawn)
     {

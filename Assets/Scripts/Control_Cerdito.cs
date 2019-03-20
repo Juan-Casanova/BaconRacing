@@ -60,7 +60,7 @@ public class Control_Cerdito : MonoBehaviour
         TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
        // Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
         //ACCERELATION
-        if(Input.GetKey(KeyCode.UpArrow) && Speed<MaxSpeed && countdown.movement==true  )
+        if((Input.GetKey(KeyCode.UpArrow)|| Input.GetKey(KeyCode.DownArrow)) && Speed<MaxSpeed && countdown.movement==true  )
         {
             Back_Left.brakeTorque=0;
             Back_Right.brakeTorque=0;
@@ -74,25 +74,7 @@ public class Control_Cerdito : MonoBehaviour
              animacion.SetBool("correr", true); //hola
         }
 
-        //REVERSA
-        
-        if(Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
-        {
-            Back_Left.brakeTorque=0;
-            Back_Right.brakeTorque=0;
-            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-
-            
-            
-            
-            Front_Left.brakeTorque=0;
-            Front_Right.brakeTorque=0;
-            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
-            
-        }
-         
+       
         //DECELERATION
 
         
