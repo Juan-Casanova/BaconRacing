@@ -30016,6 +30016,8 @@ MonoBehaviour:
   activeItem: 0
   numRandom: 0
   Cerdito: {fileID: 1565738458}
+  animacioncerdito: {fileID: 1235188344}
+  anicharacter: {fileID: 1791062732}
   superSalto: 0
 --- !u!65 &1235188351
 BoxCollider:
@@ -43017,11 +43019,21 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
+    - target: {fileID: 9500000, guid: 6b5d50d52f31ad1459df2830b2ccc6e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b5d50d52f31ad1459df2830b2ccc6e1, type: 3}
 --- !u!1 &1791062731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100158, guid: 6b5d50d52f31ad1459df2830b2ccc6e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791062730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1791062732 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 6b5d50d52f31ad1459df2830b2ccc6e1,
     type: 3}
   m_PrefabInstance: {fileID: 1791062730}
   m_PrefabAsset: {fileID: 0}
