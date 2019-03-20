@@ -1,501 +1,250 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!91 &9100000
-AnimatorController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: cerdo
-  serializedVersion: 5
-  m_AnimatorParameters:
-  - m_Name: correr
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: frenado
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: iddle2
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: cerdito
-    m_Type: 3
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  m_AnimatorLayers:
-  - serializedVersion: 5
-    m_Name: Base Layer
-    m_StateMachine: {fileID: 1107340652918202782}
-    m_Mask: {fileID: 0}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 0
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
---- !u!1101 &1101017354995457140
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: cerdito
-    m_EventTreshold: 1
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102572230868495128}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.85
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101048282889951602
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: cerdito
-    m_EventTreshold: 2
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102014776338781872}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.53125
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101202802086503322
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: cerdito
-    m_EventTreshold: 1
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102572230868495128}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.53125
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101532211254513892
-AnimatorStateTransition:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: correr
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102878260077708380}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.85
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101793454437749322
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: cerdito
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102202017409377562}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.78571427
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101939156603952136
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: cerdito
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102202017409377562}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.53125
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1101 &1101986424458163498
-AnimatorStateTransition:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: correr
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 1102915136057169140}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.53125
-  m_HasExitTime: 1
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
---- !u!1102 &1102014776338781872
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: frenado
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101202802086503322}
-  - {fileID: 1101939156603952136}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a7b8867791224b545b671d074b643533, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102147694715161762
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Cerdoidle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102202017409377562
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Cerdoidle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101017354995457140}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 15d74a3f83f790f47a450918d1aecf1c, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102572230868495128
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: correr
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101048282889951602}
-  - {fileID: 1101793454437749322}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f88e2da75eaf82941bad536c98bf2b35, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102762921728863702
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: AnimacionesIntegras
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 496c73df6ccc4e2438e149de4dac4fee, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102878260077708380
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: corrmal
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101986424458163498}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a7b8867791224b545b671d074b643533, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &1102915136057169140
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Cerdoidle
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 1101532211254513892}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 15d74a3f83f790f47a450918d1aecf1c, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1107 &1107340652918202782
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 1102202017409377562}
-    m_Position: {x: 120, y: 252, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102572230868495128}
-    m_Position: {x: 420, y: 168, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102014776338781872}
-    m_Position: {x: 228, y: 24, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 48, y: 24, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102202017409377562}
---- !u!1107 &1107547689568341464
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: New Layer
-  m_ChildStates: []
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 0}
---- !u!1107 &1107940836426636738
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer 0
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 1102915136057169140}
-    m_Position: {x: 276, y: 264, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102878260077708380}
-    m_Position: {x: 420, y: 168, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1102762921728863702}
-    m_Position: {x: 817.3582, y: 371.03735, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 48, y: 24, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102915136057169140}
---- !u!1109 &1109149392768013144
-AnimatorTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions: []
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 0}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 1
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Control_Cerdito : MonoBehaviour
+{
+    public MostrarItem mostrarItem;
+   public ItemControl itemControl;
+    public Countdown countdown;
+
+    public AudioSource tickSource;
+    
+    public Text TextSpeed;
+    public WheelCollider Front_Left;
+    public WheelCollider Front_Right;
+    public WheelCollider Back_Left;
+    public WheelCollider Back_Right;
+    public float Torque;
+    public float Speed;
+    public float MaxSpeed=200;
+    public int Brake= 10000;
+    public float CoefAccelaration=10;
+    public float WheelAngleMax=5;
+    public bool activeItem=false;
+    public int numRandom;
+    public Rigidbody Cerdito;
+    //public object Cerdito2;
+    public Animator animacioncerdito; //hola animator del cerdito
+    public Animator anicharacter; //animator del personaje
+    int randomidle;//variable para generar un random para que sea diferente el idle 
+
+    public bool superSalto=false;
+
+    void Start()
+    {
+        tickSource = GetComponent<AudioSource>();
+        
+
+        itemControl = FindObjectOfType<ItemControl>();
+        Cerdito.centerOfMass=new Vector3(0,.3f,0);
+        //Cerdito2.centerOfMass=new Vector3(0,-1,0);
+        //animaciones abajito
+        animacioncerdito.SetInteger("cerdito", 0);
+        anicharacter.SetInteger("personaje", 0);
+        Debug.Log(randomidle);
+        randomidle = Random.Range(1, 13);
+    }
+
+    IEnumerator corutinawaitfrenadoyluegocorrer()
+    {
+        animacioncerdito.SetInteger("cerdito", 2);
+        // animacion.SetBool("frenado", true); animacion.SetBool("correr", false); animacion.SetBool("iddle2", false);
+        // print("hola probando corrutina");
+        yield return new WaitForSeconds(3f);
+        //animacion.SetBool("frenado", false); animacion.SetBool("correr", true); animacion.SetBool("iddle2", false);
+        animacioncerdito.SetInteger("cerdito", 1);
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        float Girar=Input.GetAxis("Horizontal");//
+
+        //VISUALIZATION OF SPEED
+        Speed=GetComponent<Rigidbody>().velocity.magnitude*3.6f;
+        TextSpeed.text ="Velocidad: "+(int)Speed+" KM/HR";
+        Debug.Log("triggers: " + Input.GetAxis("P1 Triggers"));
+        //ACCERELATION
+        if (Input.GetKey(KeyCode.UpArrow) && Speed < MaxSpeed && countdown.movement == true)
+        {
+            Back_Left.brakeTorque = 0;
+            Back_Right.brakeTorque = 0;
+            Back_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Back_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Left.brakeTorque = 0;
+            Front_Right.brakeTorque = 0;
+            Front_Left.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+            Front_Right.motorTorque = Input.GetAxis("Vertical") * Torque * CoefAccelaration * Time.deltaTime;
+
+            StartCoroutine(corutinawaitfrenadoyluegocorrer());  // animacion.SetBool("correr", true); animacion.SetBool("iddle2", false); animacion.SetBool("frenado", false); //hola
+                                                                // animacion_character.SetInteger("personaje", 1);
+
+
+            anicharacter.SetInteger("personaje", 1);
+
+        }
+
+        //REVERSA
+
+        if (Input.GetKey(KeyCode.DownArrow)&& countdown.movement==true  )
+        {
+            Back_Left.brakeTorque=0;
+            Back_Right.brakeTorque=0;
+            Back_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Back_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+
+            
+            
+            
+            Front_Left.brakeTorque=0;
+            Front_Right.brakeTorque=0;
+            Front_Left.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+            Front_Right.motorTorque=Input.GetAxis("Vertical")*Torque*CoefAccelaration*Time.deltaTime;
+
+            //anicharacter.SetInteger("personaje", 1);//probajndo daño
+           // StartCoroutine(corutinawaitfrenadoyluegocorrer());
+        }
+
+        //DECELERATION
+
+
+        if (Input.GetKeyUp(KeyCode.UpArrow) && Speed > 1 || Speed > MaxSpeed || Input.GetKeyUp(KeyCode.DownArrow) && Speed > 1)
+
+        {
+            Back_Left.brakeTorque=0;
+            Back_Right.brakeTorque=0;
+            Back_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            Back_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            
+            
+            Front_Left.brakeTorque=0;
+            Front_Right.brakeTorque=0;
+            Front_Left.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+            Front_Right.brakeTorque=Brake*CoefAccelaration*Time.deltaTime;
+
+            animacioncerdito.SetInteger("cerdito", 1);
+
+            
+        }
+        if (Speed <= 1)
+        {
+
+            //  animacioncerdito.SetInteger("cerdito", 0);
+            anicharacter.SetInteger("personaje", 0);
+
+
+
+            if (randomidle <= 6) //Para el random de 2 idles que habra
+            { animacioncerdito.SetInteger("cerdito", 1); Debug.Log("menora5"); }
+            else { Debug.Log("mayor as 5"); animacioncerdito.SetInteger("cerdito", 1); }
+
+        }
+
+
+
+        //Direction of the pig
+        Front_Left.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
+        Front_Right.steerAngle=Input.GetAxis("Horizontal")*WheelAngleMax;
+        
+        if(Speed>2)
+        {
+            if(Input.GetKey(KeyCode.LeftArrow)){
+                Cerdito.transform.Rotate(0,-1.75f,0);
+                
+            }
+
+            if(Input.GetKey(KeyCode.RightArrow)){
+                Cerdito.transform.Rotate(0,1.75f,0);
+            }
+        }
+        //if(Girar==0){
+        //Cerdito.transform.Rotate(0,0,0);
+        //}
+        //Debug.Log(Girar);
+
+        //Active item
+    
+            if (Input.GetKey(KeyCode.M) && activeItem == true)
+            {
+                itemControl.ChargeItem(numRandom);
+                mostrarItem.desactivarIconosItems();
+                activeItem = false;
+            }
+                
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(superSalto)
+            {
+               // Cerdito.transform.Translate(0,Time.deltaTime*1500,Time.deltaTime*2500);
+               Cerdito.transform.Translate(0,40,60);              
+            }
+            else
+            {
+                Cerdito.transform.Translate(0,4,0);                   
+            }
+        }
+       
+ 
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name=="Modulo_recto (3)"||collision.gameObject.name=="Modulo inicio de pendiente"
+         ||collision.gameObject.name=="Modulo_Recto (14)"||collision.gameObject.name=="Modulo_Recto (15)"||
+         collision.gameObject.name=="Modulo_Recto (16)"||collision.gameObject.name=="Modulo_Recto (17)"||
+         collision.gameObject.name=="Modulo_Recto (25)")
+
+        {
+            Front_Left.motorTorque=25000;
+            Front_Right.motorTorque=25000;
+            Back_Left.motorTorque=25000;
+            Back_Right.motorTorque=25000;
+            //MaxSpeed=80;
+            Torque=3500;
+            CoefAccelaration=100;
+            superSalto=true;
+            
+
+        }
+
+        if(collision.gameObject.name=="Modulo curva ascendente (1)")
+        {
+            Front_Left.motorTorque=25000;
+            Front_Right.motorTorque=25000;
+            Back_Left.motorTorque=25000;
+            Back_Right.motorTorque=25000;
+            Debug.Log(Front_Left.motorTorque);
+            CoefAccelaration=1000;
+        }
+        //if(!collision.gameObject.name=="Modulo_recto (3)"||!collision.gameObject.name=="Modulo inicio de pendiente"
+        //||!collision.gameObject.name=="Modulo_Recto (14)"||!collision.gameObject.name=="Modulo_Recto (15)"||
+         //!collision.gameObject.name=="Modulo_Recto (16)"||!collision.gameObject.name=="Modulo_Recto (17)"||
+         //!collision.gameObject.name=="Modulo_Recto (25)")
+         else
+        {
+            Torque=1750;
+            MaxSpeed=60;
+            superSalto=false;
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("barril"))
+        {
+            numRandom=itemControl.getItemRandom();
+            mostrarItem.ShowItem(numRandom);
+            Debug.Log("MostrarItem"+numRandom);
+            activeItem = true;
+        }
+        if (other.gameObject.tag == "barril")
+        {
+
+            tickSource.Play();
+        }
+        
+    }
+}
