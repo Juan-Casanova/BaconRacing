@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MostrarItem : MonoBehaviour
 {
-    public Control_Cerdito controlCerdito;
+
     public ItemControl itemControl;
     public GameObject item1DejarTocino;
     public GameObject item2Escudo;
