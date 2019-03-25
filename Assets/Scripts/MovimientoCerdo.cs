@@ -4,115 +4,86 @@ using UnityEngine;
 
 public class MovimientoCerdo : MonoBehaviour
 {
-    public GameObject player1;
+    public enum numPlayer
+    {
+        p1,
+        p2
+    }
 
+    public numPlayer NumPlayer;
+    public Rigidbody rigidbody;
 
-   // public GameObject player2;
-
-    MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
-
-   
-    //public float velocity;
-    //public float maxSpeed;
-    // public float speed;
-    // public float time;
-    // public float angulo;
-    // public float jump;
-    // public int maxJumps;
-
+    public Countdown countdown = new Countdown();
+    public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
 
     public void Start()
     {
-   
+        
         movimientoCerdoEngine.speed = 10.0f;
-       // movimientoCerdoEngine.time = Time.deltaTime;
         movimientoCerdoEngine.angulo = 3.0f;
         movimientoCerdoEngine.jump = 8.0f;
         movimientoCerdoEngine.maxJumps = 3;
-        //movimientoCerdoEngine.vertical = Input.GetAxis("Vertical");
-        //movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal");
-        //movimientoCerdoEngine.jump = Input.GetAxis("Jump");
 
     }
-    //{
-    //    speed = 10.0f;
-    //    time = Time.deltaTime;
-    //    angulo = 3.0f;
-    //    jump = 8.0f;
 
-    //    maxJumps=3;
 
-    
 
     public void FixedUpdate()
     {
-        movimientoCerdoEngine.time = Time.deltaTime;
-        movimientoCerdoEngine.vertical = Input.GetAxis("Vertical");
-        movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal");
-        movimientoCerdoEngine.jump = Input.GetAxis("Jump");
-        // transformsMovimiento();
-        //   transformJump();
-        movimientoCerdoEngine.movimientoCerdito();
+        if (NumPlayer == 0)
+        {
+          
+            movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal");
+            movimientoCerdoEngine.vertical = Input.GetAxis("Vertical");
+            movimientoCerdoEngine.keyJump = Input.GetAxis("Jump");
+        }
+        else
+        {
+            movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal2");
+            movimientoCerdoEngine.vertical = Input.GetAxis("Vertical2");
+            movimientoCerdoEngine.keyJump = Input.GetAxis("Jump2");
+        }
+        if (countdown.movement)
+        {
+            movimientoCerdoEngine.time = Time.deltaTime;
 
-        //float horizontal = Input.GetAxis("Horizontal");
-        //float vertical = Input.GetAxis("Vertical");
-        //float keyJump = Input.GetAxis("Jump");
+            if (movimientoCerdoEngine.vertical != 0 || movimientoCerdoEngine.horizontal != 0)
+            {
 
-        //velocity = vertical * speed * time;
+                transform.Translate(0, 0, movimientoCerdoEngine.getVelocityV());
+                transform.Rotate(0, movimientoCerdoEngine.getRotate(), 0);
 
-        //if (vertical != 0 || horizontal != 0 )
-        //{
+            }
 
-        //transform.Translate(0, 0, velocity);
-        //transform.Translate(horizontal * speed * time, 0, 0);
+            if (movimientoCerdoEngine.keyJump > 0)
+            {
+                if (movimientoCerdoEngine.maxJumps <= 0)
+                {
 
-        //transform.Rotate(0, horizontal * angulo, 0);
-        //    if (keyJump != 0)
-        //    {
-        //        horizontal = 0.0f;
-        //        vertical = 0.0f;
-        //        if (maxJumps <= 0)
-        //        {
-
-        //        }
-        //        else
-        //        {
-        //rigiBodyJump.velocity = new Vector3(0, jump, 0);
-        //rigiBodyJump.angularVelocity = Vector3.zero;
-        //maxJumps--;
-        //        }
-        //    }
+                }
+                else
+                {
+                    movimientoCerdoEngine.vertical = 0.0f;
+                    rigidbody.velocity = new Vector3(0, movimientoCerdoEngine.jump, 0);
+                    rigidbody.angularVelocity = Vector3.zero;
+                    movimientoCerdoEngine.maxJumps--;
+                }
 
 
-        //}
-
+            }
+        }
 
     }
 
 
-    private void OnCollisionEnter(Collision collision)
+
+
+private void OnCollisionEnter(Collision collision)
     {
        movimientoCerdoEngine.maxJumps = 3;
     }
 
-    //public void transformsMovimiento()
-    //{
-       
-    //}
-
-    //public void transformJump()
-    //{
-      
-    //}
-
-    //public void movimientoCerdito()
-    //{
-
-      
-    //}
-
-
-
+   
 }
 
 
