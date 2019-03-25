@@ -27,24 +27,27 @@ public class MostrarItem : MonoBehaviour
         switch (_numItem)
         {
             case 1:
-                mostrarItem1();
+                desactivarIconosItems();
+                item1DejarTocino.GetComponent<Image>().enabled = true;
                 break;
             case 2:
-                mostrarItem2();
-
+                desactivarIconosItems();
+                item2Escudo.GetComponent<Image>().enabled = true;
                 break;
             case 3:
-                mostrarItem3();
+                desactivarIconosItems();
+                item3Mancha.GetComponent<Image>().enabled = true;
                 break;
 
             case 4:
-                mostrarItem4();
+                desactivarIconosItems();
+                item4Acelerar.GetComponent<Image>().enabled = true;
 
                 break;
 
             case 5:
-                mostrarItem5();
-
+                desactivarIconosItems();
+                item5DispararObjeto.GetComponent<Image>().enabled = true;
                 break;
 
             default:
@@ -64,51 +67,6 @@ public class MostrarItem : MonoBehaviour
 
     }
 
-    public void mostrarItem1()
-    {
-        item1DejarTocino.GetComponent<Image>().enabled = true;
-        item2Escudo.GetComponent<Image>().enabled = false;
-        item3Mancha.GetComponent<Image>().enabled = false;
-        item4Acelerar.GetComponent<Image>().enabled = false;
-        item5DispararObjeto.GetComponent<Image>().enabled = false;
-    }
-
-    public void mostrarItem2()
-    {
-        item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Escudo.GetComponent<Image>().enabled = true;
-        item3Mancha.GetComponent<Image>().enabled = false;
-        item4Acelerar.GetComponent<Image>().enabled = false;
-        item5DispararObjeto.GetComponent<Image>().enabled = false;
-    }
-
-    public void mostrarItem3()
-    {
-        item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Escudo.GetComponent<Image>().enabled = false;
-        item3Mancha.GetComponent<Image>().enabled = true;
-        item4Acelerar.GetComponent<Image>().enabled = false;
-        item5DispararObjeto.GetComponent<Image>().enabled = false;
-    }
-
-    public void mostrarItem4()
-    {
-        item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Escudo.GetComponent<Image>().enabled = false;
-        item3Mancha.GetComponent<Image>().enabled = false;
-        item4Acelerar.GetComponent<Image>().enabled = true;
-        item5DispararObjeto.GetComponent<Image>().enabled = false;
-    }
-
-    public void mostrarItem5()
-    {
-        item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Escudo.GetComponent<Image>().enabled = false;
-        item3Mancha.GetComponent<Image>().enabled = false;
-        item4Acelerar.GetComponent<Image>().enabled = false;
-        item5DispararObjeto.GetComponent<Image>().enabled = true;
-
-    }
-
+   
     
 }
