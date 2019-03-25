@@ -74,7 +74,7 @@ public class Loading : MonoBehaviour
 
     public void changePista()
     {
-        SceneManager.LoadScene("Pista_China");
+        SceneManager.LoadScene("PrimeraPista");
     }
 
 }
