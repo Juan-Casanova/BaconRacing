@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
-
+    public checkTurnDown checkTurnDown;
     public int numPlayer;
     public GameObject[] player;
-
 
     public int numSpawn;
     public GameObject[] spawnLocations;
@@ -20,16 +19,17 @@ public class RespawnPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("caida"))
+       
+
+        if(other.CompareTag("caida")||checkTurnDown.IsTurnDown)
         {
             Spawn(numPlayer, numSpawn);
-          
-
+   
         }
         else if (other.CompareTag("spawn"))
         {
             AumentarNumeroDeSpawn(numSpawn);
-            Debug.Log("Numero spawn: "+numSpawn);
+        
         }
 
     }
