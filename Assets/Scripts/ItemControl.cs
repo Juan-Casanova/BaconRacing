@@ -5,7 +5,6 @@ using UnityEngine;
 public class ItemControl : MonoBehaviour
 {
     public bool ActiveShield;
-    public Control_Cerdito controlCerdito;
     public GameObject jugador1;
     public GameObject item1TocinoPista;
     public GameObject item2escudo;
@@ -113,12 +112,12 @@ public class ItemControl : MonoBehaviour
     IEnumerator TiempoItem4()
     {
         item4chile.SetActive(true);
-        controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
+       // controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
 
         yield return new WaitForSeconds(5);
 
         item4chile.SetActive(false);
-        controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
+       // controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
 
     }
 
