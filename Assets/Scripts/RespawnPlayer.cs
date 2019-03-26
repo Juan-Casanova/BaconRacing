@@ -24,7 +24,8 @@ public class RespawnPlayer : MonoBehaviour
         if(other.CompareTag("caida")||checkTurnDown.IsTurnDown)
         {
             Spawn(numPlayer, numSpawn);
-   
+            checkTurnDown.IsTurnDown = false;
+
         }
         else if (other.CompareTag("spawn"))
         {

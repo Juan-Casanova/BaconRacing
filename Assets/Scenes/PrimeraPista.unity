@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 44205350}
   - component: {fileID: 44205349}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: DejarTocino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1451,7 +1451,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 98080f2c1fd600147b8d661462239878, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_TagString
       value: pista
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 98080f2c1fd600147b8d661462239878, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: 98080f2c1fd600147b8d661462239878, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1511,7 +1535,7 @@ GameObject:
   - component: {fileID: 192751915}
   - component: {fileID: 192751914}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: DejarTocino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1590,8 +1614,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 113.07889, y: 2.3127747, z: 178.1299}
+  m_Center: {x: 56.039444, y: -0.6563873, z: -88.56495}
 --- !u!1 &222564081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,7 +3191,7 @@ GameObject:
   - component: {fileID: 342492225}
   - component: {fileID: 342492224}
   m_Layer: 0
-  m_Name: Image (5)
+  m_Name: Velocidad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3460,6 +3484,7 @@ GameObject:
   - component: {fileID: 371541611}
   - component: {fileID: 371541610}
   - component: {fileID: 371541609}
+  - component: {fileID: 371541616}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -3596,6 +3621,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &371541616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371541608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemControl: {fileID: 0}
+  item1DejarTocino: {fileID: 192751912}
+  item2Escudo: {fileID: 385627442}
+  item3Mancha: {fileID: 1894102705}
+  item4Acelerar: {fileID: 2029645731}
+  item5DispararObjeto: {fileID: 1549579821}
+  _numRandom: 0
 --- !u!1 &371640288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,7 +3751,7 @@ GameObject:
   - component: {fileID: 385627445}
   - component: {fileID: 385627444}
   m_Layer: 0
-  m_Name: Image (4)
+  m_Name: Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8665,8 +8709,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834169706}
-  m_LocalRotation: {x: -0, y: -0, z: -0.75331306, w: 0.6576621}
-  m_LocalPosition: {x: 150.07, y: 31.14, z: 9}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 150.83, y: 27.941, z: -0.237}
   m_LocalScale: {x: 4.3645124, y: 4.3645124, z: 4.3645124}
   m_Children:
   - {fileID: 18508500}
@@ -8681,7 +8725,7 @@ Transform:
   - {fileID: 1599426551}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -97.756004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &834169715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10402,8 +10446,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.18524459, y: 0.023530966, z: 0.04901828}
-  m_Center: {x: 0.00036011238, y: 0.23148425, z: -0.011047576}
+  m_Size: {x: 0.18524459, y: 0.023530966, z: 0.1673509}
+  m_Center: {x: 0.00036011238, y: 0.23148425, z: -0.0702139}
 --- !u!23 &939408452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11675,7 +11719,7 @@ GameObject:
   - component: {fileID: 1141681697}
   - component: {fileID: 1141681696}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: Mancha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12837,11 +12881,12 @@ GameObject:
   - component: {fileID: 1235188345}
   - component: {fileID: 1235188344}
   - component: {fileID: 1565738458}
+  - component: {fileID: 1235188351}
+  - component: {fileID: 1235188352}
   - component: {fileID: 1235188349}
   - component: {fileID: 1235188350}
   - component: {fileID: 1235188354}
-  - component: {fileID: 1235188351}
-  - component: {fileID: 1235188352}
+  - component: {fileID: 1235188353}
   m_Layer: 0
   m_Name: cerditoP1
   m_TagString: Untagged
@@ -12995,6 +13040,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1235188353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235188348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d572765bcb3f2a40ab9ba5df7c33b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveShield: 0
+  jugador: {fileID: 1235188348}
+  item1TocinoPista: {fileID: 100000, guid: 2506876226d3a0c488611f186c5d6289, type: 3}
+  item2escudo: {fileID: 1967278342}
+  item4chile: {fileID: 68762853}
+  item5Proyectil: {fileID: 1773111176479660366, guid: 739174d56c9eabc488c404dbbf020c23,
+    type: 3}
 --- !u!114 &1235188354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15451,7 +15515,7 @@ GameObject:
   - component: {fileID: 1549579824}
   - component: {fileID: 1549579823}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: LanzarBotella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16058,8 +16122,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.20399167, y: 0.013276537, z: 0.0618153}
-  m_Center: {x: 0.0009155886, y: 0.2568842, z: -0.109217}
+  m_Size: {x: 0.20399167, y: 0.013276564, z: 0.17455924}
+  m_Center: {x: 0.0009155886, y: 0.2568842, z: -0.16558944}
 --- !u!23 &1599426550
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16194,7 +16258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 98080f2c1fd600147b8d661462239878, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: pista
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 98080f2c1fd600147b8d661462239878, type: 3}
       propertyPath: m_Layer
@@ -20697,7 +20761,7 @@ GameObject:
   - component: {fileID: 1894102708}
   - component: {fileID: 1894102707}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: Mancha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21883,7 +21947,7 @@ GameObject:
   - component: {fileID: 1993405758}
   - component: {fileID: 1993405757}
   m_Layer: 0
-  m_Name: Image (4)
+  m_Name: Escudo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23655,7 +23719,7 @@ GameObject:
   - component: {fileID: 2029645734}
   - component: {fileID: 2029645733}
   m_Layer: 0
-  m_Name: Image (5)
+  m_Name: Velocidad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24643,7 +24707,7 @@ GameObject:
   - component: {fileID: 2097337151}
   - component: {fileID: 2097337150}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: LanzarBotella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25947,10 +26011,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActiveShield: 0
-  jugador1: {fileID: 1235188348}
+  jugador: {fileID: 0}
   item1TocinoPista: {fileID: 100000, guid: 2506876226d3a0c488611f186c5d6289, type: 3}
   item2escudo: {fileID: 100000, guid: 322b2a9d146537b4da1ff833b6cfd48f, type: 3}
-  item3ManchaPantallaEnemigo: {fileID: 0}
   item4chile: {fileID: 100000, guid: e43c2325927e422489b33f7895cea954, type: 3}
   item5Proyectil: {fileID: 1773111176479660366, guid: 739174d56c9eabc488c404dbbf020c23,
     type: 3}
@@ -26300,21 +26363,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &1253085062337111300
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253085062337149220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2, y: 34.41, z: -8.53}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1253085062337111306}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1253085062337111306
 Transform:
   m_ObjectHideFlags: 0
@@ -26322,56 +26370,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253085062337149226}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.08, y: -5.38, z: 11.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 149.32828, y: 28.52, z: 52.04986}
+  m_LocalScale: {x: 1.496668, y: 1.4966687, z: 1.4966687}
   m_Children: []
-  m_Father: {fileID: 1253085062337111300}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1253085062337149220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1253085062337111300}
-  - component: {fileID: 1253085062337149221}
-  - component: {fileID: 1253085062337149222}
-  m_Layer: 0
-  m_Name: Moneda
-  m_TagString: barril
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1253085062337149221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253085062337149220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b028f4f87e179dc4ebca1cd1b8fc6346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1253085062337149222
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253085062337149220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4324379, y: 1.9713554, z: 0.17775154}
-  m_Center: {x: -5.192398, y: -5.8495407, z: 12.142821}
 --- !u!1 &1253085062337149226
 GameObject:
   m_ObjectHideFlags: 0
@@ -26383,6 +26388,8 @@ GameObject:
   - component: {fileID: 1253085062337111306}
   - component: {fileID: 1253085062334244128}
   - component: {fileID: 1253085062335211488}
+  - component: {fileID: 1253085062337149228}
+  - component: {fileID: 1253085062337149227}
   m_Layer: 0
   m_Name: Moneda
   m_TagString: Untagged
@@ -26390,6 +26397,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1253085062337149227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253085062337149226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b028f4f87e179dc4ebca1cd1b8fc6346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1253085062337149228
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253085062337149226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0082138, y: 0.13306648, z: 1.0082141}
+  m_Center: {x: 0, y: 0.1650001, z: 0}
 --- !u!95 &3078319414466129653
 Animator:
   serializedVersion: 3
