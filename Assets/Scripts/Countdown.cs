@@ -14,7 +14,7 @@ public class Countdown : MonoBehaviour
     public void Start()
     {
         countDownEngine.time = Time.deltaTime;
-        countDownEngine.initialCounter = 3.0f;
+        countDownEngine.initialCounter = 5.0f;
         movement = false;
     }
 
@@ -23,6 +23,7 @@ public class Countdown : MonoBehaviour
         countDownEngine.countdownToActivateMovement();
         if (countDownEngine.initialCounter < 1)
         {
+            countDownEngine.initialCounter = 0;
             movement = true;
         }
     }
