@@ -1,15 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
-using UnityEngine.TestTools;
+﻿using NUnit.Framework;
 
 namespace Tests
 {
-    public class MovimientoCerdoTest
+	public class MovimientoCerdoTest
     {
-        // A Test behaves as an ordinary method
         [Test]
-        public void MovimientoCerdoTestGetVelocityVertical()
+        public void MovimientoCerdo_Jump_ExecutesWhenIsJumpingIsTrue()
         {
             //Arrange
             MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
@@ -17,19 +13,51 @@ namespace Tests
             movimientoCerdoEngine.angulo = 3.0f;
             movimientoCerdoEngine.jump = 8.0f;
             movimientoCerdoEngine.maxJumps = 3;
-            movimientoCerdoEngine.time =
-            movimientoCerdoEngine.vertical = 0.7f;
-            movimientoCerdoEngine.horizontal = 0.2f;
-            float result;
+
+			var movimientoCerdoSubstitute = new MovimientoCerdoSubstitute();
 
             //Act
-            result = movimientoCerdoEngine.getVelocityV();
+            movimientoCerdoEngine.Jump(true, movimientoCerdoSubstitute);
 
             //Assert
-            Assert.Greater(result, 0);
-
+            Assert.IsTrue(movimientoCerdoSubstitute.JumpWasCalled);
+            Assert.AreEqual(2, movimientoCerdoEngine.maxJumps);
         }
 
-     
+        [Test]
+        public void MovimientoCerdo_Jump_DoesNotExecutesWhenIsJumpingIsFalse()
+        {
+	        //Arrange
+	        MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+	        movimientoCerdoEngine.speed = 10.0f;
+	        movimientoCerdoEngine.angulo = 3.0f;
+	        movimientoCerdoEngine.jump = 8.0f;
+	        movimientoCerdoEngine.maxJumps = 3;
+
+	        var movimientoCerdoSubstitute = new MovimientoCerdoSubstitute();
+
+	        //Act
+	        movimientoCerdoEngine.Jump(false, movimientoCerdoSubstitute);
+
+	        //Assert
+	        Assert.IsFalse(movimientoCerdoSubstitute.JumpWasCalled);
+	        Assert.AreEqual(3, movimientoCerdoEngine.maxJumps);
+        }
     }
+
+	public class MovimientoCerdoSubstitute : IMovimientoCerdo
+	{
+		public bool MoveWasCalled = false;
+		public bool JumpWasCalled = false;
+
+		public void Move(float verticalVelocity, float rotation)
+		{
+			MoveWasCalled = true;
+		}
+
+		public void Jump(float jumpForce)
+		{
+			JumpWasCalled = true;
+		}
+	}
 }

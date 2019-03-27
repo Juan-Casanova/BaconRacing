@@ -1,91 +1,55 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovimientoCerdo : MonoBehaviour
+public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 {
-    public enum numPlayer
-    {
-        p1,
-        p2
-    }
+	public enum numPlayer
+	{
+		p1,
+		p2
+	}
 
-    public numPlayer NumPlayer;
-    public Rigidbody rigidbody;
+	public numPlayer NumPlayer;
+	public Rigidbody rigidbody;
 
-    public Countdown countdown = new Countdown();
-    public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+	public Countdown countdown = new Countdown();
+	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
 
-    public void Start()
-    {
-        
-        movimientoCerdoEngine.speed = 10.0f;
-        movimientoCerdoEngine.angulo = 3.0f;
-        movimientoCerdoEngine.jump = 8.0f;
-        movimientoCerdoEngine.maxJumps = 3;
+	public void Start()
+	{
+		movimientoCerdoEngine.speed = 10.0f;
+		movimientoCerdoEngine.angulo = 3.0f;
+		movimientoCerdoEngine.jump = 8.0f;
+		movimientoCerdoEngine.maxJumps = 3;
+	}
 
-    }
+	public void FixedUpdate()
+	{
+		string playerSuffix = NumPlayer == 0 ? "" : "2";
+		var horizontalAxis = Input.GetAxis($"Horizontal{playerSuffix}");
+		var verticalAxis = Input.GetAxis($"Vertical{playerSuffix}");
+		var isJumping = Input.GetAxis($"Jump{playerSuffix}") > 0;
 
+		if (countdown.movement)
+		{
+			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
+			movimientoCerdoEngine.Jump(isJumping, this);
+		}
+	}
 
+	private void OnCollisionEnter(Collision collision)
+	{
+		movimientoCerdoEngine.maxJumps = 3;
+	}
 
-    public void FixedUpdate()
-    {
-        if (NumPlayer == 0)
-        {
-          
-            movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal");
-            movimientoCerdoEngine.vertical = Input.GetAxis("Vertical");
-            movimientoCerdoEngine.keyJump = Input.GetAxis("Jump");
-        }
-        else
-        {
-            movimientoCerdoEngine.horizontal = Input.GetAxis("Horizontal2");
-            movimientoCerdoEngine.vertical = Input.GetAxis("Vertical2");
-            movimientoCerdoEngine.keyJump = Input.GetAxis("Jump2");
-        }
-        if (countdown.movement)
-        {
-            movimientoCerdoEngine.time = Time.deltaTime;
+	public void Move(float verticalVelocity, float rotation)
+	{
+		transform.Translate(0, 0, verticalVelocity);
+		transform.Rotate(0, rotation, 0);
+	}
 
-            if (movimientoCerdoEngine.vertical != 0 || movimientoCerdoEngine.horizontal != 0)
-            {
-
-                transform.Translate(0, 0, movimientoCerdoEngine.getVelocityV());
-                transform.Rotate(0, movimientoCerdoEngine.getRotate(), 0);
-
-            }
-
-            if (movimientoCerdoEngine.keyJump > 0)
-            {
-                if (movimientoCerdoEngine.maxJumps <= 0)
-                {
-
-                }
-                else
-                {
-                    movimientoCerdoEngine.vertical = 0.0f;
-                    rigidbody.velocity = new Vector3(0, movimientoCerdoEngine.jump, 0);
-                    rigidbody.angularVelocity = Vector3.zero;
-                    movimientoCerdoEngine.maxJumps--;
-                }
-
-
-            }
-        }
-
-    }
-
-
-
-
-private void OnCollisionEnter(Collision collision)
-    {
-       movimientoCerdoEngine.maxJumps = 3;
-    }
-
-   
+	public void Jump(float jumpForce)
+	{
+		rigidbody.velocity = new Vector3(0, jumpForce, 0);
+		rigidbody.angularVelocity = Vector3.zero;
+	}
 }
-
-
-
-
