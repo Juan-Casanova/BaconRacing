@@ -1277,11 +1277,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-<<<<<<< HEAD
-          m_StringArgument: PrimeraPista
-=======
           m_StringArgument: Pista_China
->>>>>>> Develop
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1728,11 +1724,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-<<<<<<< HEAD
-          m_StringArgument: PrimeraPista
-=======
           m_StringArgument: PistaBosqueChina
->>>>>>> Develop
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4755,7 +4747,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Pista_China
+          m_StringArgument: PrimeraPista
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9526,11 +9518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75bddd8ef0e6dd49b993b39cb813f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotonJugar: {fileID: 1348955863}
-  UnJugador: {fileID: 1056124343}
-  DosJugadores: {fileID: 1258761916}
-  BotonOpciones: {fileID: 1086188393}
-  BotonSalir: {fileID: 279800765}
 --- !u!1 &1223160600
 GameObject:
   m_ObjectHideFlags: 0
