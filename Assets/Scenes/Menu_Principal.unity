@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748734}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: Escribe_Escena
         m_Mode: 5
         m_Arguments:
@@ -1277,7 +1277,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+<<<<<<< HEAD
           m_StringArgument: PrimeraPista
+=======
+          m_StringArgument: Pista_China
+>>>>>>> Develop
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1716,7 +1720,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748734}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: Escribe_Escena
         m_Mode: 5
         m_Arguments:
@@ -1724,7 +1728,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+<<<<<<< HEAD
           m_StringArgument: PrimeraPista
+=======
+          m_StringArgument: PistaBosqueChina
+>>>>>>> Develop
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2420,7 +2428,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748734}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: SalirJuego
         m_Mode: 1
         m_Arguments:
@@ -2551,7 +2559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748734}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: Escribe_Escena
         m_Mode: 5
         m_Arguments:
@@ -2559,7 +2567,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: PistaBosqueChina
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4739,7 +4747,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748734}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: Escribe_Escena
         m_Mode: 5
         m_Arguments:
@@ -4747,7 +4755,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: Pista_China
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -4973,7 +4981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &611258322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7243,7 +7251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &895973265
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9455,7 +9463,6 @@ GameObject:
   - component: {fileID: 1222748732}
   - component: {fileID: 1222748731}
   - component: {fileID: 1222748733}
-  - component: {fileID: 1222748734}
   m_Layer: 0
   m_Name: Menu_Manager
   m_TagString: Untagged
@@ -9488,6 +9495,11 @@ MonoBehaviour:
   Grupo_Boton_DosJugadores: {fileID: 1258761916}
   Grupo_Boton_Opciones: {fileID: 1086188393}
   Grupo_Boton_Salir: {fileID: 279800765}
+  BotonJugar: {fileID: 1348955863}
+  UnJugador: {fileID: 1056124343}
+  DosJugadores: {fileID: 1258761916}
+  BotonOpciones: {fileID: 1086188393}
+  BotonSalir: {fileID: 279800765}
 --- !u!4 &1222748732
 Transform:
   m_ObjectHideFlags: 0
@@ -9519,18 +9531,6 @@ MonoBehaviour:
   DosJugadores: {fileID: 1258761916}
   BotonOpciones: {fileID: 1086188393}
   BotonSalir: {fileID: 279800765}
---- !u!114 &1222748734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222748730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2777e04a5bf6c8946a299373d9916011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1223160600
 GameObject:
   m_ObjectHideFlags: 0
@@ -11082,7 +11082,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1222748733}
+      - m_Target: {fileID: 1222748731}
         m_MethodName: JugarJuego
         m_Mode: 1
         m_Arguments:
@@ -17583,7 +17583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2142521003
 MonoBehaviour:
   m_ObjectHideFlags: 0

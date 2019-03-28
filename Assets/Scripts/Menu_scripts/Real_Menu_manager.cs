@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Real_Menu_manager : MonoBehaviour
 {
@@ -98,6 +99,41 @@ public class Real_Menu_manager : MonoBehaviour
         //Grupo_Boton_Opciones.SetActive(true);
         Grupo_Boton_Salir.SetActive(true);
     }
+    ///////////////////////////
+
+
+    //Metodo para cambiar la escena, agregarlo a un boton
+    public void Escribe_Escena(string _scene)
+    {
+        SceneManager.LoadScene(_scene, LoadSceneMode.Single);
+    }
+
+    public void SalirJuego(){
+        Debug.Log("Saliendo del Juego");
+        Application.Quit();
+    }
+    ///////////////////////////////
+    //Este script te manda para escoger uno o dos jugadores
+
+    public GameObject BotonJugar;
+        public GameObject UnJugador;
+        public GameObject DosJugadores;
+    
+    public GameObject BotonOpciones;
+    public GameObject BotonSalir;
+
+
+    public void JugarJuego(){
+        BotonJugar.SetActive(false);
+            UnJugador.SetActive(true);
+            DosJugadores.SetActive(true);
+        
+        BotonOpciones.SetActive(false);
+
+        BotonSalir.SetActive(false);
+    }
+    /////////////////////////////////
+
 
     void Update(){
         if(Input.GetKeyDown("escape")){
