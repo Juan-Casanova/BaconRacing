@@ -3,14 +3,8 @@
 public class Countdown : MonoBehaviour
 {
 
-    public CountDownEngine countDownEngine = new CountDownEngine();
-
-	/// <summary>
-	/// Indica si el personaje se puede mover.
-	/// </summary>
-    public bool movement;
-
-
+     public CountDownEngine countDownEngine = new CountDownEngine();
+     public bool movement;
 
     public void Start()
     {
@@ -22,7 +16,7 @@ public class Countdown : MonoBehaviour
     public void Update()
     {
         countDownEngine.countdownToActivateMovement();
-        if (countDownEngine.initialCounter < 1)
+        if (countDownEngine.countdownToActivateMovement())
         {
             countDownEngine.initialCounter = 0;
             movement = true;

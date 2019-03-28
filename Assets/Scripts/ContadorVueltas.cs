@@ -11,7 +11,6 @@
      public static int currentLap = 0; 
      public Vector3 startPos;
      public int Lap;
-     public Text Vueltas;
      
      void  Start ()
      {
@@ -23,6 +22,5 @@
      {
          Lap = currentLap;
          spawnA = spawnArray;         
-         Vueltas.text=("Vuelta "+currentLap+" /2");
      }     
  }
