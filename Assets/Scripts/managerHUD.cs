@@ -11,15 +11,16 @@ public class managerHUD : MonoBehaviour
     public Text countDown;
     public GameObject miniMap;
 
-   // public MostrarItem mostrarItem = new MostrarItem();
+    public Check check=new Check();
     public CountDownEngine countdownEngine = new CountDownEngine();
     public CheckEngine checkEngine=new CheckEngine();
 
     public void Update()
     {
+      
       countDown.text = countdownEngine.initialCounter.ToString("f0");
-      laps1.text = "LAP: "+checkEngine.currentLap.ToString()+"/2";
-      //mostrarItem.ShowItem(numRandom);
+      laps1.text = "LAP: " + check.checkEngine.currentLap.ToString()+"/2";
+
         if (countdownEngine.initialCounter < 1)
         {
            countDown.text = "";
