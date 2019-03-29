@@ -1,40 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class MovimientoCerdoEngine : MonoBehaviour
+﻿public class MovimientoCerdoEngine
 {
+	public float angulo;
 
-    public float velocity;
-    public float speed;
-    public float time;
-    public float angulo;
-    public float  jump;
-    public float horizontal;
-    public float vertical;
-    public float keyJump;
-    public int maxJumps;
+	public float speed;
+	public float jump;
+	public int maxJumps;
 
+	public void Jump(bool isJumping, IMovimientoCerdo movimientoCerdoObject)
+	{
+		if (isJumping && maxJumps > 0)
+		{
+			movimientoCerdoObject.Jump(jump);
+			maxJumps--;
+		}
+	}
 
-
-
-    public float getVelocityV()
-    {
-        return velocity = vertical * speed * time;
-    }
-
-
-    public float getVelocityH()
-    {
-        return velocity = horizontal*speed  * time;
-    }
-
-    public float getRotate()
-    {
-        return horizontal * angulo;
-    }
-
-
+	public void Move(float verticalAxis, 
+		float horizontalAxis, float deltaTime, IMovimientoCerdo movimientoCerdoObject)
+	{
+		if (verticalAxis != 0 || horizontalAxis != 0)
+		{
+			movimientoCerdoObject.Move(
+				verticalAxis * speed * deltaTime,
+				horizontalAxis * angulo);
+		}
+	}
 }
-
-
