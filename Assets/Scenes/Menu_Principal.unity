@@ -9485,13 +9485,7 @@ MonoBehaviour:
   Grupo_Boton_Jugar: {fileID: 1348955863}
   Grupo_Boton_UnJugador: {fileID: 1056124343}
   Grupo_Boton_DosJugadores: {fileID: 1258761916}
-  Grupo_Boton_Opciones: {fileID: 1086188393}
   Grupo_Boton_Salir: {fileID: 279800765}
-  BotonJugar: {fileID: 1348955863}
-  UnJugador: {fileID: 1056124343}
-  DosJugadores: {fileID: 1258761916}
-  BotonOpciones: {fileID: 1086188393}
-  BotonSalir: {fileID: 279800765}
 --- !u!4 &1222748732
 Transform:
   m_ObjectHideFlags: 0
@@ -11070,15 +11064,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1222748731}
-        m_MethodName: JugarJuego
-        m_Mode: 1
+        m_MethodName: ShowButtonsForNumberOfPlayers
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
