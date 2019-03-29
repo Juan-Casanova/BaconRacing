@@ -3,6 +3,7 @@
  
  public class Check : MonoBehaviour,ICheck
  {
+
      public CheckEngine checkEngine = new CheckEngine();
 
 
@@ -15,7 +16,6 @@
 
     void  OnTriggerEnter ( Collider other )
      {
-         //Is it the Player who enters the collider?
          if (other.CompareTag("Player")) 
              return; //If it's not the player dont continue
          //if (transform == ContadorVueltas.spawnA[ContadorVueltas.currentCheckpoint].transform) 

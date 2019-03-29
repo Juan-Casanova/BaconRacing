@@ -3483,6 +3483,7 @@ MonoBehaviour:
   laps2: {fileID: 1533784747}
   countDown: {fileID: 550346995}
   miniMap: {fileID: 384759158}
+  check: {fileID: 90172570}
 --- !u!114 &371541612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12805,9 +12806,10 @@ GameObject:
   - component: {fileID: 1235188349}
   - component: {fileID: 1235188354}
   - component: {fileID: 1235188353}
+  - component: {fileID: 1235188350}
   m_Layer: 0
   m_Name: cerditoP1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12827,6 +12829,26 @@ MonoBehaviour:
   NumPlayer: 0
   rigidbody: {fileID: 1565738458}
   countDown: {fileID: 371541610}
+--- !u!114 &1235188350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235188348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9f185939c847f4eb106e7edd053bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnArray:
+  - {fileID: 90172567}
+  - {fileID: 1283054447}
+  - {fileID: 1862488776}
+  - {fileID: 148104725}
+  - {fileID: 1582583771}
+  startPos: {x: 0, y: 0, z: 0}
+  Lap: 0
 --- !u!65 &1235188351
 BoxCollider:
   m_ObjectHideFlags: 0

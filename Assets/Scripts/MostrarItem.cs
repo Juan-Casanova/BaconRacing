@@ -6,14 +6,9 @@ using UnityEngine.UI;
 
 public class MostrarItem : MonoBehaviour
 {
-
-    public ItemControl itemControl;
     public GameObject item1DejarTocino;
-    public GameObject item2Escudo;
-    public GameObject item3Mancha;
-    public GameObject item4Acelerar;
-    public GameObject item5DispararObjeto;
-    public int _numRandom;
+    public GameObject item2Acelerar;
+    public GameObject item3DispararObjeto;
 
     public void Start()
     {
@@ -32,24 +27,12 @@ public class MostrarItem : MonoBehaviour
                 break;
             case 2:
                 desactivarIconosItems();
-                item2Escudo.GetComponent<Image>().enabled = true;
+                item2Acelerar.GetComponent<Image>().enabled = true;
                 break;
             case 3:
                 desactivarIconosItems();
-                item3Mancha.GetComponent<Image>().enabled = true;
+                item3DispararObjeto.GetComponent<Image>().enabled = true;
                 break;
-
-            case 4:
-                desactivarIconosItems();
-                item4Acelerar.GetComponent<Image>().enabled = true;
-
-                break;
-
-            case 5:
-                desactivarIconosItems();
-                item5DispararObjeto.GetComponent<Image>().enabled = true;
-                break;
-
             default:
                 desactivarIconosItems();
                 break;
@@ -60,13 +43,9 @@ public class MostrarItem : MonoBehaviour
     public void desactivarIconosItems()
     {
         item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Escudo.GetComponent<Image>().enabled = false;
-        item3Mancha.GetComponent<Image>().enabled = false;
-        item4Acelerar.GetComponent<Image>().enabled = false;
-        item5DispararObjeto.GetComponent<Image>().enabled = false;
+        item2Acelerar.GetComponent<Image>().enabled = false;
+        item3DispararObjeto.GetComponent<Image>().enabled = false;
 
     }
 
-   
-    
 }
