@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-    public bool ActiveShield;
-    public GameObject jugador;
+    public GameObject jugador1;
     public GameObject item1TocinoPista;
-    public GameObject item2escudo;
-   // public GameObject item3ManchaPantallaEnemigo;
-    public GameObject item4chile;
-    public GameObject item5Proyectil;
+    public GameObject item2chile;
+    public GameObject item3Proyectil;
+
+    public MovimientoCerdo movimientoCerdo=new MovimientoCerdo();
 
 
     public int getItemRandom()
     {
-        return Random.Range(1, 5);
+        return Random.Range(1, 3);
     }
 
     public void ChargeItem(int numRandom)
@@ -24,31 +23,16 @@ public class ItemControl : MonoBehaviour
         switch (numRandom)
         {
             case 1:
-               // mostrarItem.mostrarItem1();
                 PoderItem1();
                 
                 break;
             case 2:
-               // mostrarItem.mostrarItem2();
-                PoderItem2(ActiveShield);
+                PoderItem2();
                 
                 break;
             case 3:
-               // mostrarItem.mostrarItem3();
                 PoderItem3();
                 
-                break;
-
-            case 4:
-               // mostrarItem.mostrarItem4();
-                PoderItem4();
-                
-                break;
-
-            case 5:
-               // mostrarItem.mostrarItem5();
-                PoderItem5();
-              
                 break;
 
             default:
@@ -58,75 +42,33 @@ public class ItemControl : MonoBehaviour
 
     }
 
-    //Poder de dejar un tocino en la pista
+    //Item 1 Dejar Tocino en la pista
 
     public void PoderItem1()
     {
-
-        Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
-
+        Instantiate(item1TocinoPista, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y+.3f, jugador1.transform.position.z), jugador1.transform.rotation);
     }
 
 
-    //Poder escudo cerdo
-    public void PoderItem2(bool _ActiveShield)
+    //Item 2 Aceleracion del personaje
+
+    public void PoderItem2()
     {
-        StartCoroutine(TiempoItem2(_ActiveShield));
+        StartCoroutine(TiempoItem2());
     }
 
-    public IEnumerator TiempoItem2(bool _ActiveShield)
+    IEnumerator TiempoItem2()
     {
-        item2escudo.SetActive(true);
-        _ActiveShield = true;
- 
-        yield return new WaitForSeconds(3);
-
-        item2escudo.SetActive(false);
-        _ActiveShield = false;
+        movimientoCerdo.movimientoCerdoEngine.speed *= 2;
+        yield return new WaitForSeconds(5);
+        movimientoCerdo.movimientoCerdoEngine.speed /= 2;
 
     }
 
-    //Item 3 mancha pantalla del enemigo
-
+    //Lanzar Botella
     public void PoderItem3()
     {
-        StartCoroutine(TiempoItem3());
-    }
-
-    IEnumerator TiempoItem3()
-    {
-     //   item3ManchaPantallaEnemigo.SetActive(true);
-        yield return new WaitForSeconds(3);
-       // item3ManchaPantallaEnemigo.SetActive(false);
-
-    }
-
-
-    //Item 4 Aceleracion del personaje
-
-    public void PoderItem4()
-    {
-        StartCoroutine(TiempoItem4());
-    }
-
-    IEnumerator TiempoItem4()
-    {
-        item4chile.SetActive(true);
-       // controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
-
-        yield return new WaitForSeconds(5);
-
-        item4chile.SetActive(false);
-       // controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
-
-    }
-
-
-    //Item 5 Disparar objeto
-
-    public void PoderItem5()
-    {
-        Instantiate(item5Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
+        Instantiate(item3Proyectil, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y, jugador1.transform.position.z + 3), transform.rotation);
     }
 
 }

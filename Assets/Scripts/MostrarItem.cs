@@ -6,41 +6,41 @@ using UnityEngine.UI;
 
 public class MostrarItem : MonoBehaviour
 {
+    #region Declaracion gameObjectss
+
     public GameObject item1DejarTocino;
     public GameObject item2Acelerar;
     public GameObject item3DispararObjeto;
+#endregion
 
-    public void Start()
-    {
-        desactivarIconosItems();
-    }
-
-
-    public void ShowItem(int _numItem)
+    public void ShowItem(int numRandom)
     {
 
-        switch (_numItem)
+        switch (numRandom)
         {
             case 1:
-                desactivarIconosItems();
-                item1DejarTocino.GetComponent<Image>().enabled = true;
+                showIconItem(item1DejarTocino.GetComponent<Image>());
                 break;
             case 2:
-                desactivarIconosItems();
-                item2Acelerar.GetComponent<Image>().enabled = true;
+                showIconItem(item2Acelerar.GetComponent<Image>());
                 break;
             case 3:
-                desactivarIconosItems();
-                item3DispararObjeto.GetComponent<Image>().enabled = true;
+                showIconItem(item3DispararObjeto.GetComponent<Image>());
                 break;
             default:
-                desactivarIconosItems();
+                hideAllIconItems();
                 break;
         }
 
     }
 
-    public void desactivarIconosItems()
+    public void showIconItem(Image iconItem)
+    {
+        hideAllIconItems();
+        iconItem.enabled = true;
+    }
+    
+    private void hideAllIconItems()
     {
         item1DejarTocino.GetComponent<Image>().enabled = false;
         item2Acelerar.GetComponent<Image>().enabled = false;

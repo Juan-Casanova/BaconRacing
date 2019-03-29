@@ -13,6 +13,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
 	public Countdown countDown=new Countdown();
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+    public MostrarItem mostrarItem=new MostrarItem();
+    public ItemControl itemControl=new ItemControl();
+    private int numItemObtained;
 
 	public void Start()
 	{
@@ -40,6 +43,15 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 	{
 		movimientoCerdoEngine.maxJumps = 3;
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Moneda"))
+        {
+            numItemObtained = itemControl.getItemRandom();
+            mostrarItem.ShowItem(numItemObtained);
+        }
+    }
 
 	public void Move(float verticalVelocity, float rotation)
 	{
