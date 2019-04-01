@@ -15,8 +15,6 @@
      void  Start ()
      {
          startPos = transform.position;
-         currentCheckpoint = 0;
-         currentLap = 0;  
      } 
      void  Update ()
      {

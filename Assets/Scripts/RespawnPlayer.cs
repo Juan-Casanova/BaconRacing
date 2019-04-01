@@ -8,19 +8,16 @@ public class RespawnPlayer : MonoBehaviour
     public int numPlayer;
     public GameObject[] player;
 
-    public int numSpawn;
+    public int numSpawn=0;
     public GameObject[] spawnLocations;
 
     public void Start()
     {
         spawnLocations = GameObject.FindGameObjectsWithTag("spawn");
-        numSpawn = 0;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-       
-
         if(other.CompareTag("caida")||checkTurnDown.IsTurnDown)
         {
             Spawn(numPlayer, numSpawn);
