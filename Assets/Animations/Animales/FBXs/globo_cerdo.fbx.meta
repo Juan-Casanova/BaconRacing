@@ -1,0 +1,1061 @@
+fileFormatVersion: 2
+guid: 5c4b13c70b3e85040975a8388183ed19
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Cuerdas
+    100004: Directional Light
+    100006: FAT_3_5mm_Stitch
+    100008: FAT_3_5mm_Stitch (2)
+    100010: FAT_3_5mm_Stitch (2) 1
+    100012: FAT_3_5mm_Stitch (2) 10
+    100014: FAT_3_5mm_Stitch (2) 11
+    100016: FAT_3_5mm_Stitch (2) 12
+    100018: FAT_3_5mm_Stitch (2) 13
+    100020: FAT_3_5mm_Stitch (2) 14
+    100022: FAT_3_5mm_Stitch (2) 15
+    100024: FAT_3_5mm_Stitch (2) 16
+    100026: FAT_3_5mm_Stitch (2) 17
+    100028: FAT_3_5mm_Stitch (2) 18
+    100030: FAT_3_5mm_Stitch (2) 19
+    100032: FAT_3_5mm_Stitch (2) 2
+    100034: FAT_3_5mm_Stitch (2) 20
+    100036: FAT_3_5mm_Stitch (2) 21
+    100038: FAT_3_5mm_Stitch (2) 22
+    100040: FAT_3_5mm_Stitch (2) 23
+    100042: FAT_3_5mm_Stitch (2) 24
+    100044: FAT_3_5mm_Stitch (2) 25
+    100046: FAT_3_5mm_Stitch (2) 26
+    100048: FAT_3_5mm_Stitch (2) 27
+    100050: FAT_3_5mm_Stitch (2) 28
+    100052: FAT_3_5mm_Stitch (2) 29
+    100054: FAT_3_5mm_Stitch (2) 3
+    100056: FAT_3_5mm_Stitch (2) 30
+    100058: FAT_3_5mm_Stitch (2) 31
+    100060: FAT_3_5mm_Stitch (2) 32
+    100062: FAT_3_5mm_Stitch (2) 33
+    100064: FAT_3_5mm_Stitch (2) 34
+    100066: FAT_3_5mm_Stitch (2) 35
+    100068: FAT_3_5mm_Stitch (2) 36
+    100070: FAT_3_5mm_Stitch (2) 37
+    100072: FAT_3_5mm_Stitch (2) 38
+    100074: FAT_3_5mm_Stitch (2) 39
+    100076: FAT_3_5mm_Stitch (2) 4
+    100078: FAT_3_5mm_Stitch (2) 40
+    100080: FAT_3_5mm_Stitch (2) 41
+    100082: FAT_3_5mm_Stitch (2) 42
+    100084: FAT_3_5mm_Stitch (2) 43
+    100086: FAT_3_5mm_Stitch (2) 44
+    100088: FAT_3_5mm_Stitch (2) 45
+    100090: FAT_3_5mm_Stitch (2) 46
+    100092: FAT_3_5mm_Stitch (2) 47
+    100094: FAT_3_5mm_Stitch (2) 48
+    100096: FAT_3_5mm_Stitch (2) 49
+    100098: FAT_3_5mm_Stitch (2) 5
+    100100: FAT_3_5mm_Stitch (2) 50
+    100102: FAT_3_5mm_Stitch (2) 51
+    100104: FAT_3_5mm_Stitch (2) 52
+    100106: FAT_3_5mm_Stitch (2) 53
+    100108: FAT_3_5mm_Stitch (2) 54
+    100110: FAT_3_5mm_Stitch (2) 55
+    100112: FAT_3_5mm_Stitch (2) 56
+    100114: FAT_3_5mm_Stitch (2) 57
+    100116: FAT_3_5mm_Stitch (2) 58
+    100118: FAT_3_5mm_Stitch (2) 59
+    100120: FAT_3_5mm_Stitch (2) 6
+    100122: FAT_3_5mm_Stitch (2) 60
+    100124: FAT_3_5mm_Stitch (2) 61
+    100126: FAT_3_5mm_Stitch (2) 62
+    100128: FAT_3_5mm_Stitch (2) 63
+    100130: FAT_3_5mm_Stitch (2) 64
+    100132: FAT_3_5mm_Stitch (2) 7
+    100134: FAT_3_5mm_Stitch (2) 8
+    100136: FAT_3_5mm_Stitch (2) 9
+    100138: FAT_3_5mm_Stitch (3)
+    100140: FAT_3_5mm_Stitch (3) 1
+    100142: FAT_3_5mm_Stitch (3) 10
+    100144: FAT_3_5mm_Stitch (3) 11
+    100146: FAT_3_5mm_Stitch (3) 12
+    100148: FAT_3_5mm_Stitch (3) 13
+    100150: FAT_3_5mm_Stitch (3) 2
+    100152: FAT_3_5mm_Stitch (3) 3
+    100154: FAT_3_5mm_Stitch (3) 4
+    100156: FAT_3_5mm_Stitch (3) 5
+    100158: FAT_3_5mm_Stitch (3) 6
+    100160: FAT_3_5mm_Stitch (3) 7
+    100162: FAT_3_5mm_Stitch (3) 8
+    100164: FAT_3_5mm_Stitch (3) 9
+    100166: FAT_3_5mm_Stitch 1
+    100168: FAT_3_5mm_Stitch 10
+    100170: FAT_3_5mm_Stitch 11
+    100172: FAT_3_5mm_Stitch 12
+    100174: FAT_3_5mm_Stitch 13
+    100176: FAT_3_5mm_Stitch 14
+    100178: FAT_3_5mm_Stitch 15
+    100180: FAT_3_5mm_Stitch 16
+    100182: FAT_3_5mm_Stitch 17
+    100184: FAT_3_5mm_Stitch 18
+    100186: FAT_3_5mm_Stitch 19
+    100188: FAT_3_5mm_Stitch 2
+    100190: FAT_3_5mm_Stitch 20
+    100192: FAT_3_5mm_Stitch 21
+    100194: FAT_3_5mm_Stitch 22
+    100196: FAT_3_5mm_Stitch 23
+    100198: FAT_3_5mm_Stitch 24
+    100200: FAT_3_5mm_Stitch 25
+    100202: FAT_3_5mm_Stitch 26
+    100204: FAT_3_5mm_Stitch 27
+    100206: FAT_3_5mm_Stitch 28
+    100208: FAT_3_5mm_Stitch 29
+    100210: FAT_3_5mm_Stitch 3
+    100212: FAT_3_5mm_Stitch 30
+    100214: FAT_3_5mm_Stitch 31
+    100216: FAT_3_5mm_Stitch 32
+    100218: FAT_3_5mm_Stitch 33
+    100220: FAT_3_5mm_Stitch 34
+    100222: FAT_3_5mm_Stitch 35
+    100224: FAT_3_5mm_Stitch 36
+    100226: FAT_3_5mm_Stitch 37
+    100228: FAT_3_5mm_Stitch 38
+    100230: FAT_3_5mm_Stitch 39
+    100232: FAT_3_5mm_Stitch 4
+    100234: FAT_3_5mm_Stitch 40
+    100236: FAT_3_5mm_Stitch 41
+    100238: FAT_3_5mm_Stitch 42
+    100240: FAT_3_5mm_Stitch 43
+    100242: FAT_3_5mm_Stitch 44
+    100244: FAT_3_5mm_Stitch 45
+    100246: FAT_3_5mm_Stitch 46
+    100248: FAT_3_5mm_Stitch 47
+    100250: FAT_3_5mm_Stitch 48
+    100252: FAT_3_5mm_Stitch 49
+    100254: FAT_3_5mm_Stitch 5
+    100256: FAT_3_5mm_Stitch 50
+    100258: FAT_3_5mm_Stitch 51
+    100260: FAT_3_5mm_Stitch 52
+    100262: FAT_3_5mm_Stitch 53
+    100264: FAT_3_5mm_Stitch 54
+    100266: FAT_3_5mm_Stitch 55
+    100268: FAT_3_5mm_Stitch 56
+    100270: FAT_3_5mm_Stitch 57
+    100272: FAT_3_5mm_Stitch 58
+    100274: FAT_3_5mm_Stitch 59
+    100276: FAT_3_5mm_Stitch 6
+    100278: FAT_3_5mm_Stitch 60
+    100280: FAT_3_5mm_Stitch 61
+    100282: FAT_3_5mm_Stitch 62
+    100284: FAT_3_5mm_Stitch 63
+    100286: FAT_3_5mm_Stitch 64
+    100288: FAT_3_5mm_Stitch 65
+    100290: FAT_3_5mm_Stitch 66
+    100292: FAT_3_5mm_Stitch 67
+    100294: FAT_3_5mm_Stitch 68
+    100296: FAT_3_5mm_Stitch 69
+    100298: FAT_3_5mm_Stitch 7
+    100300: FAT_3_5mm_Stitch 70
+    100302: FAT_3_5mm_Stitch 71
+    100304: FAT_3_5mm_Stitch 72
+    100306: FAT_3_5mm_Stitch 73
+    100308: FAT_3_5mm_Stitch 74
+    100310: FAT_3_5mm_Stitch 75
+    100312: FAT_3_5mm_Stitch 76
+    100314: FAT_3_5mm_Stitch 77
+    100316: FAT_3_5mm_Stitch 78
+    100318: FAT_3_5mm_Stitch 79
+    100320: FAT_3_5mm_Stitch 8
+    100322: FAT_3_5mm_Stitch 80
+    100324: FAT_3_5mm_Stitch 81
+    100326: FAT_3_5mm_Stitch 9
+    100328: FAT_4_5mm_Stitch
+    100330: FAT_4_5mm_Stitch (2)
+    100332: FAT_4_5mm_Stitch (2) 1
+    100334: FAT_4_5mm_Stitch (2) 10
+    100336: FAT_4_5mm_Stitch (2) 11
+    100338: FAT_4_5mm_Stitch (2) 12
+    100340: FAT_4_5mm_Stitch (2) 13
+    100342: FAT_4_5mm_Stitch (2) 14
+    100344: FAT_4_5mm_Stitch (2) 15
+    100346: FAT_4_5mm_Stitch (2) 16
+    100348: FAT_4_5mm_Stitch (2) 17
+    100350: FAT_4_5mm_Stitch (2) 18
+    100352: FAT_4_5mm_Stitch (2) 19
+    100354: FAT_4_5mm_Stitch (2) 2
+    100356: FAT_4_5mm_Stitch (2) 20
+    100358: FAT_4_5mm_Stitch (2) 21
+    100360: FAT_4_5mm_Stitch (2) 22
+    100362: FAT_4_5mm_Stitch (2) 3
+    100364: FAT_4_5mm_Stitch (2) 4
+    100366: FAT_4_5mm_Stitch (2) 5
+    100368: FAT_4_5mm_Stitch (2) 6
+    100370: FAT_4_5mm_Stitch (2) 7
+    100372: FAT_4_5mm_Stitch (2) 8
+    100374: FAT_4_5mm_Stitch (2) 9
+    100376: FAT_4_5mm_Stitch 1
+    100378: FAT_4_5mm_Stitch 10
+    100380: FAT_4_5mm_Stitch 11
+    100382: FAT_4_5mm_Stitch 12
+    100384: FAT_4_5mm_Stitch 13
+    100386: FAT_4_5mm_Stitch 14
+    100388: FAT_4_5mm_Stitch 15
+    100390: FAT_4_5mm_Stitch 16
+    100392: FAT_4_5mm_Stitch 17
+    100394: FAT_4_5mm_Stitch 18
+    100396: FAT_4_5mm_Stitch 19
+    100398: FAT_4_5mm_Stitch 2
+    100400: FAT_4_5mm_Stitch 20
+    100402: FAT_4_5mm_Stitch 21
+    100404: FAT_4_5mm_Stitch 22
+    100406: FAT_4_5mm_Stitch 23
+    100408: FAT_4_5mm_Stitch 24
+    100410: FAT_4_5mm_Stitch 25
+    100412: FAT_4_5mm_Stitch 26
+    100414: FAT_4_5mm_Stitch 27
+    100416: FAT_4_5mm_Stitch 28
+    100418: FAT_4_5mm_Stitch 29
+    100420: FAT_4_5mm_Stitch 3
+    100422: FAT_4_5mm_Stitch 30
+    100424: FAT_4_5mm_Stitch 31
+    100426: FAT_4_5mm_Stitch 32
+    100428: FAT_4_5mm_Stitch 33
+    100430: FAT_4_5mm_Stitch 34
+    100432: FAT_4_5mm_Stitch 35
+    100434: FAT_4_5mm_Stitch 4
+    100436: FAT_4_5mm_Stitch 5
+    100438: FAT_4_5mm_Stitch 6
+    100440: FAT_4_5mm_Stitch 7
+    100442: FAT_4_5mm_Stitch 8
+    100444: FAT_4_5mm_Stitch 9
+    100446: //RootNode
+    100448: Mesh
+    100450: Mesh (2)
+    100452: Mesh (2)_CurveSource
+    100454: Mesh (2)_CurveSource (2)
+    100456: Mesh (2)_CurveSource (3)
+    100458: Mesh (2)_CurveSource (4)
+    100460: Mesh (2)_CurveSource (5)
+    100462: Mesh (2)_StitchItem
+    100464: Mesh (2)_StitchItem (2)
+    100466: Mesh (2)_StitchItem (3)
+    100468: Mesh (2)_StitchItem (4)
+    100470: Mesh (2)_StitchItem (5)
+    100472: Replicator
+    100474: Replicator (2)
+    100476: Replicator (3)
+    100478: Replicator (4)
+    100480: Replicator (5)
+    100482: Texture Group
+    100484: Texture Group (2)
+    100486: Texture Group (3)
+    100488: Texture Group (4)
+    100490: Texture Group (5)
+    100492: Texture Group (6)
+    100494: Texture Group (7)
+    100496: Texture Group (8)
+    100498: Texture Group (9)
+    400000: Camera
+    400002: Cuerdas
+    400004: Directional Light
+    400006: FAT_3_5mm_Stitch
+    400008: FAT_3_5mm_Stitch (2)
+    400010: FAT_3_5mm_Stitch (2) 1
+    400012: FAT_3_5mm_Stitch (2) 10
+    400014: FAT_3_5mm_Stitch (2) 11
+    400016: FAT_3_5mm_Stitch (2) 12
+    400018: FAT_3_5mm_Stitch (2) 13
+    400020: FAT_3_5mm_Stitch (2) 14
+    400022: FAT_3_5mm_Stitch (2) 15
+    400024: FAT_3_5mm_Stitch (2) 16
+    400026: FAT_3_5mm_Stitch (2) 17
+    400028: FAT_3_5mm_Stitch (2) 18
+    400030: FAT_3_5mm_Stitch (2) 19
+    400032: FAT_3_5mm_Stitch (2) 2
+    400034: FAT_3_5mm_Stitch (2) 20
+    400036: FAT_3_5mm_Stitch (2) 21
+    400038: FAT_3_5mm_Stitch (2) 22
+    400040: FAT_3_5mm_Stitch (2) 23
+    400042: FAT_3_5mm_Stitch (2) 24
+    400044: FAT_3_5mm_Stitch (2) 25
+    400046: FAT_3_5mm_Stitch (2) 26
+    400048: FAT_3_5mm_Stitch (2) 27
+    400050: FAT_3_5mm_Stitch (2) 28
+    400052: FAT_3_5mm_Stitch (2) 29
+    400054: FAT_3_5mm_Stitch (2) 3
+    400056: FAT_3_5mm_Stitch (2) 30
+    400058: FAT_3_5mm_Stitch (2) 31
+    400060: FAT_3_5mm_Stitch (2) 32
+    400062: FAT_3_5mm_Stitch (2) 33
+    400064: FAT_3_5mm_Stitch (2) 34
+    400066: FAT_3_5mm_Stitch (2) 35
+    400068: FAT_3_5mm_Stitch (2) 36
+    400070: FAT_3_5mm_Stitch (2) 37
+    400072: FAT_3_5mm_Stitch (2) 38
+    400074: FAT_3_5mm_Stitch (2) 39
+    400076: FAT_3_5mm_Stitch (2) 4
+    400078: FAT_3_5mm_Stitch (2) 40
+    400080: FAT_3_5mm_Stitch (2) 41
+    400082: FAT_3_5mm_Stitch (2) 42
+    400084: FAT_3_5mm_Stitch (2) 43
+    400086: FAT_3_5mm_Stitch (2) 44
+    400088: FAT_3_5mm_Stitch (2) 45
+    400090: FAT_3_5mm_Stitch (2) 46
+    400092: FAT_3_5mm_Stitch (2) 47
+    400094: FAT_3_5mm_Stitch (2) 48
+    400096: FAT_3_5mm_Stitch (2) 49
+    400098: FAT_3_5mm_Stitch (2) 5
+    400100: FAT_3_5mm_Stitch (2) 50
+    400102: FAT_3_5mm_Stitch (2) 51
+    400104: FAT_3_5mm_Stitch (2) 52
+    400106: FAT_3_5mm_Stitch (2) 53
+    400108: FAT_3_5mm_Stitch (2) 54
+    400110: FAT_3_5mm_Stitch (2) 55
+    400112: FAT_3_5mm_Stitch (2) 56
+    400114: FAT_3_5mm_Stitch (2) 57
+    400116: FAT_3_5mm_Stitch (2) 58
+    400118: FAT_3_5mm_Stitch (2) 59
+    400120: FAT_3_5mm_Stitch (2) 6
+    400122: FAT_3_5mm_Stitch (2) 60
+    400124: FAT_3_5mm_Stitch (2) 61
+    400126: FAT_3_5mm_Stitch (2) 62
+    400128: FAT_3_5mm_Stitch (2) 63
+    400130: FAT_3_5mm_Stitch (2) 64
+    400132: FAT_3_5mm_Stitch (2) 7
+    400134: FAT_3_5mm_Stitch (2) 8
+    400136: FAT_3_5mm_Stitch (2) 9
+    400138: FAT_3_5mm_Stitch (3)
+    400140: FAT_3_5mm_Stitch (3) 1
+    400142: FAT_3_5mm_Stitch (3) 10
+    400144: FAT_3_5mm_Stitch (3) 11
+    400146: FAT_3_5mm_Stitch (3) 12
+    400148: FAT_3_5mm_Stitch (3) 13
+    400150: FAT_3_5mm_Stitch (3) 2
+    400152: FAT_3_5mm_Stitch (3) 3
+    400154: FAT_3_5mm_Stitch (3) 4
+    400156: FAT_3_5mm_Stitch (3) 5
+    400158: FAT_3_5mm_Stitch (3) 6
+    400160: FAT_3_5mm_Stitch (3) 7
+    400162: FAT_3_5mm_Stitch (3) 8
+    400164: FAT_3_5mm_Stitch (3) 9
+    400166: FAT_3_5mm_Stitch 1
+    400168: FAT_3_5mm_Stitch 10
+    400170: FAT_3_5mm_Stitch 11
+    400172: FAT_3_5mm_Stitch 12
+    400174: FAT_3_5mm_Stitch 13
+    400176: FAT_3_5mm_Stitch 14
+    400178: FAT_3_5mm_Stitch 15
+    400180: FAT_3_5mm_Stitch 16
+    400182: FAT_3_5mm_Stitch 17
+    400184: FAT_3_5mm_Stitch 18
+    400186: FAT_3_5mm_Stitch 19
+    400188: FAT_3_5mm_Stitch 2
+    400190: FAT_3_5mm_Stitch 20
+    400192: FAT_3_5mm_Stitch 21
+    400194: FAT_3_5mm_Stitch 22
+    400196: FAT_3_5mm_Stitch 23
+    400198: FAT_3_5mm_Stitch 24
+    400200: FAT_3_5mm_Stitch 25
+    400202: FAT_3_5mm_Stitch 26
+    400204: FAT_3_5mm_Stitch 27
+    400206: FAT_3_5mm_Stitch 28
+    400208: FAT_3_5mm_Stitch 29
+    400210: FAT_3_5mm_Stitch 3
+    400212: FAT_3_5mm_Stitch 30
+    400214: FAT_3_5mm_Stitch 31
+    400216: FAT_3_5mm_Stitch 32
+    400218: FAT_3_5mm_Stitch 33
+    400220: FAT_3_5mm_Stitch 34
+    400222: FAT_3_5mm_Stitch 35
+    400224: FAT_3_5mm_Stitch 36
+    400226: FAT_3_5mm_Stitch 37
+    400228: FAT_3_5mm_Stitch 38
+    400230: FAT_3_5mm_Stitch 39
+    400232: FAT_3_5mm_Stitch 4
+    400234: FAT_3_5mm_Stitch 40
+    400236: FAT_3_5mm_Stitch 41
+    400238: FAT_3_5mm_Stitch 42
+    400240: FAT_3_5mm_Stitch 43
+    400242: FAT_3_5mm_Stitch 44
+    400244: FAT_3_5mm_Stitch 45
+    400246: FAT_3_5mm_Stitch 46
+    400248: FAT_3_5mm_Stitch 47
+    400250: FAT_3_5mm_Stitch 48
+    400252: FAT_3_5mm_Stitch 49
+    400254: FAT_3_5mm_Stitch 5
+    400256: FAT_3_5mm_Stitch 50
+    400258: FAT_3_5mm_Stitch 51
+    400260: FAT_3_5mm_Stitch 52
+    400262: FAT_3_5mm_Stitch 53
+    400264: FAT_3_5mm_Stitch 54
+    400266: FAT_3_5mm_Stitch 55
+    400268: FAT_3_5mm_Stitch 56
+    400270: FAT_3_5mm_Stitch 57
+    400272: FAT_3_5mm_Stitch 58
+    400274: FAT_3_5mm_Stitch 59
+    400276: FAT_3_5mm_Stitch 6
+    400278: FAT_3_5mm_Stitch 60
+    400280: FAT_3_5mm_Stitch 61
+    400282: FAT_3_5mm_Stitch 62
+    400284: FAT_3_5mm_Stitch 63
+    400286: FAT_3_5mm_Stitch 64
+    400288: FAT_3_5mm_Stitch 65
+    400290: FAT_3_5mm_Stitch 66
+    400292: FAT_3_5mm_Stitch 67
+    400294: FAT_3_5mm_Stitch 68
+    400296: FAT_3_5mm_Stitch 69
+    400298: FAT_3_5mm_Stitch 7
+    400300: FAT_3_5mm_Stitch 70
+    400302: FAT_3_5mm_Stitch 71
+    400304: FAT_3_5mm_Stitch 72
+    400306: FAT_3_5mm_Stitch 73
+    400308: FAT_3_5mm_Stitch 74
+    400310: FAT_3_5mm_Stitch 75
+    400312: FAT_3_5mm_Stitch 76
+    400314: FAT_3_5mm_Stitch 77
+    400316: FAT_3_5mm_Stitch 78
+    400318: FAT_3_5mm_Stitch 79
+    400320: FAT_3_5mm_Stitch 8
+    400322: FAT_3_5mm_Stitch 80
+    400324: FAT_3_5mm_Stitch 81
+    400326: FAT_3_5mm_Stitch 9
+    400328: FAT_4_5mm_Stitch
+    400330: FAT_4_5mm_Stitch (2)
+    400332: FAT_4_5mm_Stitch (2) 1
+    400334: FAT_4_5mm_Stitch (2) 10
+    400336: FAT_4_5mm_Stitch (2) 11
+    400338: FAT_4_5mm_Stitch (2) 12
+    400340: FAT_4_5mm_Stitch (2) 13
+    400342: FAT_4_5mm_Stitch (2) 14
+    400344: FAT_4_5mm_Stitch (2) 15
+    400346: FAT_4_5mm_Stitch (2) 16
+    400348: FAT_4_5mm_Stitch (2) 17
+    400350: FAT_4_5mm_Stitch (2) 18
+    400352: FAT_4_5mm_Stitch (2) 19
+    400354: FAT_4_5mm_Stitch (2) 2
+    400356: FAT_4_5mm_Stitch (2) 20
+    400358: FAT_4_5mm_Stitch (2) 21
+    400360: FAT_4_5mm_Stitch (2) 22
+    400362: FAT_4_5mm_Stitch (2) 3
+    400364: FAT_4_5mm_Stitch (2) 4
+    400366: FAT_4_5mm_Stitch (2) 5
+    400368: FAT_4_5mm_Stitch (2) 6
+    400370: FAT_4_5mm_Stitch (2) 7
+    400372: FAT_4_5mm_Stitch (2) 8
+    400374: FAT_4_5mm_Stitch (2) 9
+    400376: FAT_4_5mm_Stitch 1
+    400378: FAT_4_5mm_Stitch 10
+    400380: FAT_4_5mm_Stitch 11
+    400382: FAT_4_5mm_Stitch 12
+    400384: FAT_4_5mm_Stitch 13
+    400386: FAT_4_5mm_Stitch 14
+    400388: FAT_4_5mm_Stitch 15
+    400390: FAT_4_5mm_Stitch 16
+    400392: FAT_4_5mm_Stitch 17
+    400394: FAT_4_5mm_Stitch 18
+    400396: FAT_4_5mm_Stitch 19
+    400398: FAT_4_5mm_Stitch 2
+    400400: FAT_4_5mm_Stitch 20
+    400402: FAT_4_5mm_Stitch 21
+    400404: FAT_4_5mm_Stitch 22
+    400406: FAT_4_5mm_Stitch 23
+    400408: FAT_4_5mm_Stitch 24
+    400410: FAT_4_5mm_Stitch 25
+    400412: FAT_4_5mm_Stitch 26
+    400414: FAT_4_5mm_Stitch 27
+    400416: FAT_4_5mm_Stitch 28
+    400418: FAT_4_5mm_Stitch 29
+    400420: FAT_4_5mm_Stitch 3
+    400422: FAT_4_5mm_Stitch 30
+    400424: FAT_4_5mm_Stitch 31
+    400426: FAT_4_5mm_Stitch 32
+    400428: FAT_4_5mm_Stitch 33
+    400430: FAT_4_5mm_Stitch 34
+    400432: FAT_4_5mm_Stitch 35
+    400434: FAT_4_5mm_Stitch 4
+    400436: FAT_4_5mm_Stitch 5
+    400438: FAT_4_5mm_Stitch 6
+    400440: FAT_4_5mm_Stitch 7
+    400442: FAT_4_5mm_Stitch 8
+    400444: FAT_4_5mm_Stitch 9
+    400446: //RootNode
+    400448: Mesh
+    400450: Mesh (2)
+    400452: Mesh (2)_CurveSource
+    400454: Mesh (2)_CurveSource (2)
+    400456: Mesh (2)_CurveSource (3)
+    400458: Mesh (2)_CurveSource (4)
+    400460: Mesh (2)_CurveSource (5)
+    400462: Mesh (2)_StitchItem
+    400464: Mesh (2)_StitchItem (2)
+    400466: Mesh (2)_StitchItem (3)
+    400468: Mesh (2)_StitchItem (4)
+    400470: Mesh (2)_StitchItem (5)
+    400472: Replicator
+    400474: Replicator (2)
+    400476: Replicator (3)
+    400478: Replicator (4)
+    400480: Replicator (5)
+    400482: Texture Group
+    400484: Texture Group (2)
+    400486: Texture Group (3)
+    400488: Texture Group (4)
+    400490: Texture Group (5)
+    400492: Texture Group (6)
+    400494: Texture Group (7)
+    400496: Texture Group (8)
+    400498: Texture Group (9)
+    2000000: Camera
+    2100000: canasta
+    2100002: credo
+    2100004: costuras
+    2100006: orejas
+    2100008: Default
+    2300000: Cuerdas
+    2300002: FAT_3_5mm_Stitch
+    2300004: FAT_3_5mm_Stitch (2)
+    2300006: FAT_3_5mm_Stitch (2) 1
+    2300008: FAT_3_5mm_Stitch (2) 10
+    2300010: FAT_3_5mm_Stitch (2) 11
+    2300012: FAT_3_5mm_Stitch (2) 12
+    2300014: FAT_3_5mm_Stitch (2) 13
+    2300016: FAT_3_5mm_Stitch (2) 14
+    2300018: FAT_3_5mm_Stitch (2) 15
+    2300020: FAT_3_5mm_Stitch (2) 16
+    2300022: FAT_3_5mm_Stitch (2) 17
+    2300024: FAT_3_5mm_Stitch (2) 18
+    2300026: FAT_3_5mm_Stitch (2) 19
+    2300028: FAT_3_5mm_Stitch (2) 2
+    2300030: FAT_3_5mm_Stitch (2) 20
+    2300032: FAT_3_5mm_Stitch (2) 21
+    2300034: FAT_3_5mm_Stitch (2) 22
+    2300036: FAT_3_5mm_Stitch (2) 23
+    2300038: FAT_3_5mm_Stitch (2) 24
+    2300040: FAT_3_5mm_Stitch (2) 25
+    2300042: FAT_3_5mm_Stitch (2) 26
+    2300044: FAT_3_5mm_Stitch (2) 27
+    2300046: FAT_3_5mm_Stitch (2) 28
+    2300048: FAT_3_5mm_Stitch (2) 29
+    2300050: FAT_3_5mm_Stitch (2) 3
+    2300052: FAT_3_5mm_Stitch (2) 30
+    2300054: FAT_3_5mm_Stitch (2) 31
+    2300056: FAT_3_5mm_Stitch (2) 32
+    2300058: FAT_3_5mm_Stitch (2) 33
+    2300060: FAT_3_5mm_Stitch (2) 34
+    2300062: FAT_3_5mm_Stitch (2) 35
+    2300064: FAT_3_5mm_Stitch (2) 36
+    2300066: FAT_3_5mm_Stitch (2) 37
+    2300068: FAT_3_5mm_Stitch (2) 38
+    2300070: FAT_3_5mm_Stitch (2) 39
+    2300072: FAT_3_5mm_Stitch (2) 4
+    2300074: FAT_3_5mm_Stitch (2) 40
+    2300076: FAT_3_5mm_Stitch (2) 41
+    2300078: FAT_3_5mm_Stitch (2) 42
+    2300080: FAT_3_5mm_Stitch (2) 43
+    2300082: FAT_3_5mm_Stitch (2) 44
+    2300084: FAT_3_5mm_Stitch (2) 45
+    2300086: FAT_3_5mm_Stitch (2) 46
+    2300088: FAT_3_5mm_Stitch (2) 47
+    2300090: FAT_3_5mm_Stitch (2) 48
+    2300092: FAT_3_5mm_Stitch (2) 49
+    2300094: FAT_3_5mm_Stitch (2) 5
+    2300096: FAT_3_5mm_Stitch (2) 50
+    2300098: FAT_3_5mm_Stitch (2) 51
+    2300100: FAT_3_5mm_Stitch (2) 52
+    2300102: FAT_3_5mm_Stitch (2) 53
+    2300104: FAT_3_5mm_Stitch (2) 54
+    2300106: FAT_3_5mm_Stitch (2) 55
+    2300108: FAT_3_5mm_Stitch (2) 56
+    2300110: FAT_3_5mm_Stitch (2) 57
+    2300112: FAT_3_5mm_Stitch (2) 58
+    2300114: FAT_3_5mm_Stitch (2) 59
+    2300116: FAT_3_5mm_Stitch (2) 6
+    2300118: FAT_3_5mm_Stitch (2) 60
+    2300120: FAT_3_5mm_Stitch (2) 61
+    2300122: FAT_3_5mm_Stitch (2) 62
+    2300124: FAT_3_5mm_Stitch (2) 63
+    2300126: FAT_3_5mm_Stitch (2) 64
+    2300128: FAT_3_5mm_Stitch (2) 7
+    2300130: FAT_3_5mm_Stitch (2) 8
+    2300132: FAT_3_5mm_Stitch (2) 9
+    2300134: FAT_3_5mm_Stitch (3)
+    2300136: FAT_3_5mm_Stitch (3) 1
+    2300138: FAT_3_5mm_Stitch (3) 10
+    2300140: FAT_3_5mm_Stitch (3) 11
+    2300142: FAT_3_5mm_Stitch (3) 12
+    2300144: FAT_3_5mm_Stitch (3) 13
+    2300146: FAT_3_5mm_Stitch (3) 2
+    2300148: FAT_3_5mm_Stitch (3) 3
+    2300150: FAT_3_5mm_Stitch (3) 4
+    2300152: FAT_3_5mm_Stitch (3) 5
+    2300154: FAT_3_5mm_Stitch (3) 6
+    2300156: FAT_3_5mm_Stitch (3) 7
+    2300158: FAT_3_5mm_Stitch (3) 8
+    2300160: FAT_3_5mm_Stitch (3) 9
+    2300162: FAT_3_5mm_Stitch 1
+    2300164: FAT_3_5mm_Stitch 10
+    2300166: FAT_3_5mm_Stitch 11
+    2300168: FAT_3_5mm_Stitch 12
+    2300170: FAT_3_5mm_Stitch 13
+    2300172: FAT_3_5mm_Stitch 14
+    2300174: FAT_3_5mm_Stitch 15
+    2300176: FAT_3_5mm_Stitch 16
+    2300178: FAT_3_5mm_Stitch 17
+    2300180: FAT_3_5mm_Stitch 18
+    2300182: FAT_3_5mm_Stitch 19
+    2300184: FAT_3_5mm_Stitch 2
+    2300186: FAT_3_5mm_Stitch 20
+    2300188: FAT_3_5mm_Stitch 21
+    2300190: FAT_3_5mm_Stitch 22
+    2300192: FAT_3_5mm_Stitch 23
+    2300194: FAT_3_5mm_Stitch 24
+    2300196: FAT_3_5mm_Stitch 25
+    2300198: FAT_3_5mm_Stitch 26
+    2300200: FAT_3_5mm_Stitch 27
+    2300202: FAT_3_5mm_Stitch 28
+    2300204: FAT_3_5mm_Stitch 29
+    2300206: FAT_3_5mm_Stitch 3
+    2300208: FAT_3_5mm_Stitch 30
+    2300210: FAT_3_5mm_Stitch 31
+    2300212: FAT_3_5mm_Stitch 32
+    2300214: FAT_3_5mm_Stitch 33
+    2300216: FAT_3_5mm_Stitch 34
+    2300218: FAT_3_5mm_Stitch 35
+    2300220: FAT_3_5mm_Stitch 36
+    2300222: FAT_3_5mm_Stitch 37
+    2300224: FAT_3_5mm_Stitch 38
+    2300226: FAT_3_5mm_Stitch 39
+    2300228: FAT_3_5mm_Stitch 4
+    2300230: FAT_3_5mm_Stitch 40
+    2300232: FAT_3_5mm_Stitch 41
+    2300234: FAT_3_5mm_Stitch 42
+    2300236: FAT_3_5mm_Stitch 43
+    2300238: FAT_3_5mm_Stitch 44
+    2300240: FAT_3_5mm_Stitch 45
+    2300242: FAT_3_5mm_Stitch 46
+    2300244: FAT_3_5mm_Stitch 47
+    2300246: FAT_3_5mm_Stitch 48
+    2300248: FAT_3_5mm_Stitch 49
+    2300250: FAT_3_5mm_Stitch 5
+    2300252: FAT_3_5mm_Stitch 50
+    2300254: FAT_3_5mm_Stitch 51
+    2300256: FAT_3_5mm_Stitch 52
+    2300258: FAT_3_5mm_Stitch 53
+    2300260: FAT_3_5mm_Stitch 54
+    2300262: FAT_3_5mm_Stitch 55
+    2300264: FAT_3_5mm_Stitch 56
+    2300266: FAT_3_5mm_Stitch 57
+    2300268: FAT_3_5mm_Stitch 58
+    2300270: FAT_3_5mm_Stitch 59
+    2300272: FAT_3_5mm_Stitch 6
+    2300274: FAT_3_5mm_Stitch 60
+    2300276: FAT_3_5mm_Stitch 61
+    2300278: FAT_3_5mm_Stitch 62
+    2300280: FAT_3_5mm_Stitch 63
+    2300282: FAT_3_5mm_Stitch 64
+    2300284: FAT_3_5mm_Stitch 65
+    2300286: FAT_3_5mm_Stitch 66
+    2300288: FAT_3_5mm_Stitch 67
+    2300290: FAT_3_5mm_Stitch 68
+    2300292: FAT_3_5mm_Stitch 69
+    2300294: FAT_3_5mm_Stitch 7
+    2300296: FAT_3_5mm_Stitch 70
+    2300298: FAT_3_5mm_Stitch 71
+    2300300: FAT_3_5mm_Stitch 72
+    2300302: FAT_3_5mm_Stitch 73
+    2300304: FAT_3_5mm_Stitch 74
+    2300306: FAT_3_5mm_Stitch 75
+    2300308: FAT_3_5mm_Stitch 76
+    2300310: FAT_3_5mm_Stitch 77
+    2300312: FAT_3_5mm_Stitch 78
+    2300314: FAT_3_5mm_Stitch 79
+    2300316: FAT_3_5mm_Stitch 8
+    2300318: FAT_3_5mm_Stitch 80
+    2300320: FAT_3_5mm_Stitch 81
+    2300322: FAT_3_5mm_Stitch 9
+    2300324: FAT_4_5mm_Stitch
+    2300326: FAT_4_5mm_Stitch (2)
+    2300328: FAT_4_5mm_Stitch (2) 1
+    2300330: FAT_4_5mm_Stitch (2) 10
+    2300332: FAT_4_5mm_Stitch (2) 11
+    2300334: FAT_4_5mm_Stitch (2) 12
+    2300336: FAT_4_5mm_Stitch (2) 13
+    2300338: FAT_4_5mm_Stitch (2) 14
+    2300340: FAT_4_5mm_Stitch (2) 15
+    2300342: FAT_4_5mm_Stitch (2) 16
+    2300344: FAT_4_5mm_Stitch (2) 17
+    2300346: FAT_4_5mm_Stitch (2) 18
+    2300348: FAT_4_5mm_Stitch (2) 19
+    2300350: FAT_4_5mm_Stitch (2) 2
+    2300352: FAT_4_5mm_Stitch (2) 20
+    2300354: FAT_4_5mm_Stitch (2) 21
+    2300356: FAT_4_5mm_Stitch (2) 22
+    2300358: FAT_4_5mm_Stitch (2) 3
+    2300360: FAT_4_5mm_Stitch (2) 4
+    2300362: FAT_4_5mm_Stitch (2) 5
+    2300364: FAT_4_5mm_Stitch (2) 6
+    2300366: FAT_4_5mm_Stitch (2) 7
+    2300368: FAT_4_5mm_Stitch (2) 8
+    2300370: FAT_4_5mm_Stitch (2) 9
+    2300372: FAT_4_5mm_Stitch 1
+    2300374: FAT_4_5mm_Stitch 10
+    2300376: FAT_4_5mm_Stitch 11
+    2300378: FAT_4_5mm_Stitch 12
+    2300380: FAT_4_5mm_Stitch 13
+    2300382: FAT_4_5mm_Stitch 14
+    2300384: FAT_4_5mm_Stitch 15
+    2300386: FAT_4_5mm_Stitch 16
+    2300388: FAT_4_5mm_Stitch 17
+    2300390: FAT_4_5mm_Stitch 18
+    2300392: FAT_4_5mm_Stitch 19
+    2300394: FAT_4_5mm_Stitch 2
+    2300396: FAT_4_5mm_Stitch 20
+    2300398: FAT_4_5mm_Stitch 21
+    2300400: FAT_4_5mm_Stitch 22
+    2300402: FAT_4_5mm_Stitch 23
+    2300404: FAT_4_5mm_Stitch 24
+    2300406: FAT_4_5mm_Stitch 25
+    2300408: FAT_4_5mm_Stitch 26
+    2300410: FAT_4_5mm_Stitch 27
+    2300412: FAT_4_5mm_Stitch 28
+    2300414: FAT_4_5mm_Stitch 29
+    2300416: FAT_4_5mm_Stitch 3
+    2300418: FAT_4_5mm_Stitch 30
+    2300420: FAT_4_5mm_Stitch 31
+    2300422: FAT_4_5mm_Stitch 32
+    2300424: FAT_4_5mm_Stitch 33
+    2300426: FAT_4_5mm_Stitch 34
+    2300428: FAT_4_5mm_Stitch 35
+    2300430: FAT_4_5mm_Stitch 4
+    2300432: FAT_4_5mm_Stitch 5
+    2300434: FAT_4_5mm_Stitch 6
+    2300436: FAT_4_5mm_Stitch 7
+    2300438: FAT_4_5mm_Stitch 8
+    2300440: FAT_4_5mm_Stitch 9
+    2300442: Mesh
+    2300444: Mesh (2)
+    2300446: Mesh (2)_CurveSource (4)
+    2300448: Mesh (2)_CurveSource (5)
+    3300000: Cuerdas
+    3300002: FAT_3_5mm_Stitch
+    3300004: FAT_3_5mm_Stitch (2)
+    3300006: FAT_3_5mm_Stitch (2) 1
+    3300008: FAT_3_5mm_Stitch (2) 10
+    3300010: FAT_3_5mm_Stitch (2) 11
+    3300012: FAT_3_5mm_Stitch (2) 12
+    3300014: FAT_3_5mm_Stitch (2) 13
+    3300016: FAT_3_5mm_Stitch (2) 14
+    3300018: FAT_3_5mm_Stitch (2) 15
+    3300020: FAT_3_5mm_Stitch (2) 16
+    3300022: FAT_3_5mm_Stitch (2) 17
+    3300024: FAT_3_5mm_Stitch (2) 18
+    3300026: FAT_3_5mm_Stitch (2) 19
+    3300028: FAT_3_5mm_Stitch (2) 2
+    3300030: FAT_3_5mm_Stitch (2) 20
+    3300032: FAT_3_5mm_Stitch (2) 21
+    3300034: FAT_3_5mm_Stitch (2) 22
+    3300036: FAT_3_5mm_Stitch (2) 23
+    3300038: FAT_3_5mm_Stitch (2) 24
+    3300040: FAT_3_5mm_Stitch (2) 25
+    3300042: FAT_3_5mm_Stitch (2) 26
+    3300044: FAT_3_5mm_Stitch (2) 27
+    3300046: FAT_3_5mm_Stitch (2) 28
+    3300048: FAT_3_5mm_Stitch (2) 29
+    3300050: FAT_3_5mm_Stitch (2) 3
+    3300052: FAT_3_5mm_Stitch (2) 30
+    3300054: FAT_3_5mm_Stitch (2) 31
+    3300056: FAT_3_5mm_Stitch (2) 32
+    3300058: FAT_3_5mm_Stitch (2) 33
+    3300060: FAT_3_5mm_Stitch (2) 34
+    3300062: FAT_3_5mm_Stitch (2) 35
+    3300064: FAT_3_5mm_Stitch (2) 36
+    3300066: FAT_3_5mm_Stitch (2) 37
+    3300068: FAT_3_5mm_Stitch (2) 38
+    3300070: FAT_3_5mm_Stitch (2) 39
+    3300072: FAT_3_5mm_Stitch (2) 4
+    3300074: FAT_3_5mm_Stitch (2) 40
+    3300076: FAT_3_5mm_Stitch (2) 41
+    3300078: FAT_3_5mm_Stitch (2) 42
+    3300080: FAT_3_5mm_Stitch (2) 43
+    3300082: FAT_3_5mm_Stitch (2) 44
+    3300084: FAT_3_5mm_Stitch (2) 45
+    3300086: FAT_3_5mm_Stitch (2) 46
+    3300088: FAT_3_5mm_Stitch (2) 47
+    3300090: FAT_3_5mm_Stitch (2) 48
+    3300092: FAT_3_5mm_Stitch (2) 49
+    3300094: FAT_3_5mm_Stitch (2) 5
+    3300096: FAT_3_5mm_Stitch (2) 50
+    3300098: FAT_3_5mm_Stitch (2) 51
+    3300100: FAT_3_5mm_Stitch (2) 52
+    3300102: FAT_3_5mm_Stitch (2) 53
+    3300104: FAT_3_5mm_Stitch (2) 54
+    3300106: FAT_3_5mm_Stitch (2) 55
+    3300108: FAT_3_5mm_Stitch (2) 56
+    3300110: FAT_3_5mm_Stitch (2) 57
+    3300112: FAT_3_5mm_Stitch (2) 58
+    3300114: FAT_3_5mm_Stitch (2) 59
+    3300116: FAT_3_5mm_Stitch (2) 6
+    3300118: FAT_3_5mm_Stitch (2) 60
+    3300120: FAT_3_5mm_Stitch (2) 61
+    3300122: FAT_3_5mm_Stitch (2) 62
+    3300124: FAT_3_5mm_Stitch (2) 63
+    3300126: FAT_3_5mm_Stitch (2) 64
+    3300128: FAT_3_5mm_Stitch (2) 7
+    3300130: FAT_3_5mm_Stitch (2) 8
+    3300132: FAT_3_5mm_Stitch (2) 9
+    3300134: FAT_3_5mm_Stitch (3)
+    3300136: FAT_3_5mm_Stitch (3) 1
+    3300138: FAT_3_5mm_Stitch (3) 10
+    3300140: FAT_3_5mm_Stitch (3) 11
+    3300142: FAT_3_5mm_Stitch (3) 12
+    3300144: FAT_3_5mm_Stitch (3) 13
+    3300146: FAT_3_5mm_Stitch (3) 2
+    3300148: FAT_3_5mm_Stitch (3) 3
+    3300150: FAT_3_5mm_Stitch (3) 4
+    3300152: FAT_3_5mm_Stitch (3) 5
+    3300154: FAT_3_5mm_Stitch (3) 6
+    3300156: FAT_3_5mm_Stitch (3) 7
+    3300158: FAT_3_5mm_Stitch (3) 8
+    3300160: FAT_3_5mm_Stitch (3) 9
+    3300162: FAT_3_5mm_Stitch 1
+    3300164: FAT_3_5mm_Stitch 10
+    3300166: FAT_3_5mm_Stitch 11
+    3300168: FAT_3_5mm_Stitch 12
+    3300170: FAT_3_5mm_Stitch 13
+    3300172: FAT_3_5mm_Stitch 14
+    3300174: FAT_3_5mm_Stitch 15
+    3300176: FAT_3_5mm_Stitch 16
+    3300178: FAT_3_5mm_Stitch 17
+    3300180: FAT_3_5mm_Stitch 18
+    3300182: FAT_3_5mm_Stitch 19
+    3300184: FAT_3_5mm_Stitch 2
+    3300186: FAT_3_5mm_Stitch 20
+    3300188: FAT_3_5mm_Stitch 21
+    3300190: FAT_3_5mm_Stitch 22
+    3300192: FAT_3_5mm_Stitch 23
+    3300194: FAT_3_5mm_Stitch 24
+    3300196: FAT_3_5mm_Stitch 25
+    3300198: FAT_3_5mm_Stitch 26
+    3300200: FAT_3_5mm_Stitch 27
+    3300202: FAT_3_5mm_Stitch 28
+    3300204: FAT_3_5mm_Stitch 29
+    3300206: FAT_3_5mm_Stitch 3
+    3300208: FAT_3_5mm_Stitch 30
+    3300210: FAT_3_5mm_Stitch 31
+    3300212: FAT_3_5mm_Stitch 32
+    3300214: FAT_3_5mm_Stitch 33
+    3300216: FAT_3_5mm_Stitch 34
+    3300218: FAT_3_5mm_Stitch 35
+    3300220: FAT_3_5mm_Stitch 36
+    3300222: FAT_3_5mm_Stitch 37
+    3300224: FAT_3_5mm_Stitch 38
+    3300226: FAT_3_5mm_Stitch 39
+    3300228: FAT_3_5mm_Stitch 4
+    3300230: FAT_3_5mm_Stitch 40
+    3300232: FAT_3_5mm_Stitch 41
+    3300234: FAT_3_5mm_Stitch 42
+    3300236: FAT_3_5mm_Stitch 43
+    3300238: FAT_3_5mm_Stitch 44
+    3300240: FAT_3_5mm_Stitch 45
+    3300242: FAT_3_5mm_Stitch 46
+    3300244: FAT_3_5mm_Stitch 47
+    3300246: FAT_3_5mm_Stitch 48
+    3300248: FAT_3_5mm_Stitch 49
+    3300250: FAT_3_5mm_Stitch 5
+    3300252: FAT_3_5mm_Stitch 50
+    3300254: FAT_3_5mm_Stitch 51
+    3300256: FAT_3_5mm_Stitch 52
+    3300258: FAT_3_5mm_Stitch 53
+    3300260: FAT_3_5mm_Stitch 54
+    3300262: FAT_3_5mm_Stitch 55
+    3300264: FAT_3_5mm_Stitch 56
+    3300266: FAT_3_5mm_Stitch 57
+    3300268: FAT_3_5mm_Stitch 58
+    3300270: FAT_3_5mm_Stitch 59
+    3300272: FAT_3_5mm_Stitch 6
+    3300274: FAT_3_5mm_Stitch 60
+    3300276: FAT_3_5mm_Stitch 61
+    3300278: FAT_3_5mm_Stitch 62
+    3300280: FAT_3_5mm_Stitch 63
+    3300282: FAT_3_5mm_Stitch 64
+    3300284: FAT_3_5mm_Stitch 65
+    3300286: FAT_3_5mm_Stitch 66
+    3300288: FAT_3_5mm_Stitch 67
+    3300290: FAT_3_5mm_Stitch 68
+    3300292: FAT_3_5mm_Stitch 69
+    3300294: FAT_3_5mm_Stitch 7
+    3300296: FAT_3_5mm_Stitch 70
+    3300298: FAT_3_5mm_Stitch 71
+    3300300: FAT_3_5mm_Stitch 72
+    3300302: FAT_3_5mm_Stitch 73
+    3300304: FAT_3_5mm_Stitch 74
+    3300306: FAT_3_5mm_Stitch 75
+    3300308: FAT_3_5mm_Stitch 76
+    3300310: FAT_3_5mm_Stitch 77
+    3300312: FAT_3_5mm_Stitch 78
+    3300314: FAT_3_5mm_Stitch 79
+    3300316: FAT_3_5mm_Stitch 8
+    3300318: FAT_3_5mm_Stitch 80
+    3300320: FAT_3_5mm_Stitch 81
+    3300322: FAT_3_5mm_Stitch 9
+    3300324: FAT_4_5mm_Stitch
+    3300326: FAT_4_5mm_Stitch (2)
+    3300328: FAT_4_5mm_Stitch (2) 1
+    3300330: FAT_4_5mm_Stitch (2) 10
+    3300332: FAT_4_5mm_Stitch (2) 11
+    3300334: FAT_4_5mm_Stitch (2) 12
+    3300336: FAT_4_5mm_Stitch (2) 13
+    3300338: FAT_4_5mm_Stitch (2) 14
+    3300340: FAT_4_5mm_Stitch (2) 15
+    3300342: FAT_4_5mm_Stitch (2) 16
+    3300344: FAT_4_5mm_Stitch (2) 17
+    3300346: FAT_4_5mm_Stitch (2) 18
+    3300348: FAT_4_5mm_Stitch (2) 19
+    3300350: FAT_4_5mm_Stitch (2) 2
+    3300352: FAT_4_5mm_Stitch (2) 20
+    3300354: FAT_4_5mm_Stitch (2) 21
+    3300356: FAT_4_5mm_Stitch (2) 22
+    3300358: FAT_4_5mm_Stitch (2) 3
+    3300360: FAT_4_5mm_Stitch (2) 4
+    3300362: FAT_4_5mm_Stitch (2) 5
+    3300364: FAT_4_5mm_Stitch (2) 6
+    3300366: FAT_4_5mm_Stitch (2) 7
+    3300368: FAT_4_5mm_Stitch (2) 8
+    3300370: FAT_4_5mm_Stitch (2) 9
+    3300372: FAT_4_5mm_Stitch 1
+    3300374: FAT_4_5mm_Stitch 10
+    3300376: FAT_4_5mm_Stitch 11
+    3300378: FAT_4_5mm_Stitch 12
+    3300380: FAT_4_5mm_Stitch 13
+    3300382: FAT_4_5mm_Stitch 14
+    3300384: FAT_4_5mm_Stitch 15
+    3300386: FAT_4_5mm_Stitch 16
+    3300388: FAT_4_5mm_Stitch 17
+    3300390: FAT_4_5mm_Stitch 18
+    3300392: FAT_4_5mm_Stitch 19
+    3300394: FAT_4_5mm_Stitch 2
+    3300396: FAT_4_5mm_Stitch 20
+    3300398: FAT_4_5mm_Stitch 21
+    3300400: FAT_4_5mm_Stitch 22
+    3300402: FAT_4_5mm_Stitch 23
+    3300404: FAT_4_5mm_Stitch 24
+    3300406: FAT_4_5mm_Stitch 25
+    3300408: FAT_4_5mm_Stitch 26
+    3300410: FAT_4_5mm_Stitch 27
+    3300412: FAT_4_5mm_Stitch 28
+    3300414: FAT_4_5mm_Stitch 29
+    3300416: FAT_4_5mm_Stitch 3
+    3300418: FAT_4_5mm_Stitch 30
+    3300420: FAT_4_5mm_Stitch 31
+    3300422: FAT_4_5mm_Stitch 32
+    3300424: FAT_4_5mm_Stitch 33
+    3300426: FAT_4_5mm_Stitch 34
+    3300428: FAT_4_5mm_Stitch 35
+    3300430: FAT_4_5mm_Stitch 4
+    3300432: FAT_4_5mm_Stitch 5
+    3300434: FAT_4_5mm_Stitch 6
+    3300436: FAT_4_5mm_Stitch 7
+    3300438: FAT_4_5mm_Stitch 8
+    3300440: FAT_4_5mm_Stitch 9
+    3300442: Mesh
+    3300444: Mesh (2)
+    3300446: Mesh (2)_CurveSource (4)
+    3300448: Mesh (2)_CurveSource (5)
+    4300000: Mesh
+    4300002: Mesh (2)
+    4300004: Cuerdas
+    4300006: FAT_3_5mm_Stitch
+    4300008: FAT_3_5mm_Stitch (2)
+    4300010: FAT_4_5mm_Stitch
+    4300012: Mesh (2)_CurveSource (4)
+    4300014: FAT_4_5mm_Stitch (2)
+    4300016: Mesh (2)_CurveSource (5)
+    4300018: FAT_3_5mm_Stitch (3)
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Directional Light
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
