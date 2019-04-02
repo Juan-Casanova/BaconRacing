@@ -10,11 +10,9 @@ public class ItemControl : MonoBehaviour
     public GameObject item3Proyectil;
 
     public MovimientoCerdoEngine movimientoCerdoEngine=new MovimientoCerdoEngine();
+    public MovimientoCerdo movimientoCerdo = new MovimientoCerdo();
 
-    public int getItemRandom()
-    {
-        return Random.Range(1, 5);
-    }
+    public int GetItemRandom()=> Random.Range(1, 5);
 
     public void ChargeItem(int numRandom)
     {
@@ -22,19 +20,14 @@ public class ItemControl : MonoBehaviour
         switch (numRandom)
         {
             case 1:
-               // mostrarItem.mostrarItem1();
                 PoderItem1();
-                
                 break;
             case 2:
-               // mostrarItem.mostrarItem2();
                 PoderItem2();
                 
                 break;
             case 3:
-               // mostrarItem.mostrarItem3();
                 PoderItem3();
-                
                 break;
             default:
                 Debug.Log("No hay Nada");
@@ -45,38 +38,22 @@ public class ItemControl : MonoBehaviour
 
     //Item 1 Deja un tocino en la pista
 
-    public void PoderItem1()
-    {
+    public void PoderItem1()=> Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
 
-        Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
-
-    }
-
-    //Item 4 Aceleracion del personaje
-
-    public void PoderItem2()
-    {
-        StartCoroutine(TiempoItem2());
-    }
+    //Item 2 Aceleracion del personaje
+    public void PoderItem2() => StartCoroutine(TiempoItem2());
 
     IEnumerator TiempoItem2()
     {
         item2chile.SetActive(true);
-        movimientoCerdoEngine.speed *= 2;
-
+        movimientoCerdo.movimientoCerdoEngine.speed = 15;
         yield return new WaitForSeconds(5);
-
         item2chile.SetActive(false);
-        movimientoCerdoEngine.speed /= 2;
-
+        movimientoCerdo.movimientoCerdoEngine.speed = 10;
     }
 
+    //Item 3 Disparar objeto
 
-    //Item 5 Disparar objeto
-
-    public void PoderItem3()
-    {
-        Instantiate(item3Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
-    }
-
+    public void PoderItem3() => Instantiate(item3Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y+1.5f, jugador.transform.position.z + 4), transform.rotation);
+ 
 }

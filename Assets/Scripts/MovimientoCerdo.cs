@@ -8,7 +8,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		p2
 	}
 
-    public int numItemToActivate;
+    private int numItemToActivate=0;
 	public numPlayer NumPlayer;
 	public Rigidbody rigidbody;
 
@@ -37,22 +37,23 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
-		}else if (activateItem != 0)
-        {
-            itemControl.ChargeItem(numItemToActivate);
+
+            if (activateItem > 0 && numItemToActivate != 0)
+            {
+                itemControl.ChargeItem(numItemToActivate);
+                mostrarItem.HideAllIconosItems();
+                numItemToActivate = 0;
+            }
         }
 	}
 
-	private void OnCollisionEnter(Collision collision)
-	{
-		movimientoCerdoEngine.maxJumps = 3;
-	}
+	private void OnCollisionEnter(Collision collision)=> movimientoCerdoEngine.maxJumps = 3;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Moneda"))
         {
-            numItemToActivate = itemControl.getItemRandom();
+            numItemToActivate = itemControl.GetItemRandom();
             mostrarItem.ShowItem(numItemToActivate);
         }
     }
