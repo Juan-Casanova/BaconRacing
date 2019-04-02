@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: bfb9ed615f8372c44b73769bb7c4e577
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chozas hueso
+    100002: chozas raras
+    100004: cuerdas
+    100006: Mesh
+    100008: Mesh (5)
+    100010: Piedras
+    100012: //RootNode
+    100014: Props
+    100016: Terreno
+    100018: Texture Group
+    400000: Chozas hueso
+    400002: chozas raras
+    400004: cuerdas
+    400006: Mesh
+    400008: Mesh (5)
+    400010: Piedras
+    400012: //RootNode
+    400014: Props
+    400016: Terreno
+    400018: Texture Group
+    2100000: Recargo
+    2100002: Pista
+    2100004: Naranja
+    2100006: Griss
+    2100008: Cafe2
+    2100010: Blanco
+    2100012: Cafe
+    2100014: Verde
+    2100016: NaranjaF
+    2100018: cafe
+    2100020: cafe2
+    2100022: Griss3
+    2100024: Rojo
+    2100026: Amarillo
+    2100028: negro
+    2100030: Puerta
+    2100032: N6
+    2100034: hueso
+    2100036: amarilloF
+    2100038: Piedra
+    2100040: Negro
+    2100042: Agua
+    2100044: pAN
+    2100046: t22
+    2100048: Daneruds
+    2100050: Cuerda
+    2100052: NaranjaC
+    2100054: GrissF
+    2100056: Tierra
+    2300000: Chozas hueso
+    2300002: chozas raras
+    2300004: cuerdas
+    2300006: Mesh
+    2300008: Mesh (5)
+    2300010: Piedras
+    2300012: Props
+    2300014: Terreno
+    3300000: Chozas hueso
+    3300002: chozas raras
+    3300004: cuerdas
+    3300006: Mesh
+    3300008: Mesh (5)
+    3300010: Piedras
+    3300012: Props
+    3300014: Terreno
+    4300000: Props
+    4300002: Terreno
+    4300004: Chozas hueso
+    4300006: chozas raras
+    4300008: cuerdas
+    4300010: Mesh (5)
+    4300012: Piedras
+    4300014: Mesh
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
