@@ -1358,6 +1358,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b6b0e2fb61198a94fb03ba75184b359c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: b6b0e2fb61198a94fb03ba75184b359c, type: 3}
       propertyPath: m_Layer
       value: 5
@@ -3679,9 +3683,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1DejarTocino: {fileID: 192751912}
-  item2Acelerar: {fileID: 0}
-  item3DispararObjeto: {fileID: 0}
+  item1DejarTocino: {fileID: 100000, guid: c39f2432b4699f74a9ba81097ef410b5, type: 3}
+  item2Acelerar: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+  item3DispararObjeto: {fileID: 100000, guid: d33e07334d3d4814a8bb680d9cf4ee21, type: 3}
 --- !u!1 &371640288
 GameObject:
   m_ObjectHideFlags: 0
@@ -16617,6 +16621,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: b6b0e2fb61198a94fb03ba75184b359c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b82894df7d4aa2f45a7ee4e0b1c3ca35, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b0e2fb61198a94fb03ba75184b359c, type: 3}
 --- !u!1001 &1668761477
