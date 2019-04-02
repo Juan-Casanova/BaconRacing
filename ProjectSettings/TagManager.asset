@@ -13,6 +13,7 @@ TagManager:
   - Enemigo
   - Piso
   - IconMiniMap
+  - Moneda
   layers:
   - Default
   - TransparentFX

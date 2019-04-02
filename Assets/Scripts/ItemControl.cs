@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-    public bool ActiveShield;
     public GameObject jugador;
     public GameObject item1TocinoPista;
-    public GameObject item2escudo;
-   // public GameObject item3ManchaPantallaEnemigo;
-    public GameObject item4chile;
-    public GameObject item5Proyectil;
+    public GameObject item2chile;
+    public GameObject item3Proyectil;
 
+    public MovimientoCerdoEngine movimientoCerdoEngine=new MovimientoCerdoEngine();
 
     public int getItemRandom()
     {
@@ -30,7 +28,7 @@ public class ItemControl : MonoBehaviour
                 break;
             case 2:
                // mostrarItem.mostrarItem2();
-                PoderItem2(ActiveShield);
+                PoderItem2();
                 
                 break;
             case 3:
@@ -38,19 +36,6 @@ public class ItemControl : MonoBehaviour
                 PoderItem3();
                 
                 break;
-
-            case 4:
-               // mostrarItem.mostrarItem4();
-                PoderItem4();
-                
-                break;
-
-            case 5:
-               // mostrarItem.mostrarItem5();
-                PoderItem5();
-              
-                break;
-
             default:
                 Debug.Log("No hay Nada");
                 break;
@@ -58,7 +43,7 @@ public class ItemControl : MonoBehaviour
 
     }
 
-    //Poder de dejar un tocino en la pista
+    //Item 1 Deja un tocino en la pista
 
     public void PoderItem1()
     {
@@ -67,66 +52,31 @@ public class ItemControl : MonoBehaviour
 
     }
 
-
-    //Poder escudo cerdo
-    public void PoderItem2(bool _ActiveShield)
-    {
-        StartCoroutine(TiempoItem2(_ActiveShield));
-    }
-
-    public IEnumerator TiempoItem2(bool _ActiveShield)
-    {
-        item2escudo.SetActive(true);
-        _ActiveShield = true;
- 
-        yield return new WaitForSeconds(3);
-
-        item2escudo.SetActive(false);
-        _ActiveShield = false;
-
-    }
-
-    //Item 3 mancha pantalla del enemigo
-
-    public void PoderItem3()
-    {
-        StartCoroutine(TiempoItem3());
-    }
-
-    IEnumerator TiempoItem3()
-    {
-     //   item3ManchaPantallaEnemigo.SetActive(true);
-        yield return new WaitForSeconds(3);
-       // item3ManchaPantallaEnemigo.SetActive(false);
-
-    }
-
-
     //Item 4 Aceleracion del personaje
 
-    public void PoderItem4()
+    public void PoderItem2()
     {
-        StartCoroutine(TiempoItem4());
+        StartCoroutine(TiempoItem2());
     }
 
-    IEnumerator TiempoItem4()
+    IEnumerator TiempoItem2()
     {
-        item4chile.SetActive(true);
-       // controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
+        item2chile.SetActive(true);
+        movimientoCerdoEngine.speed *= 2;
 
         yield return new WaitForSeconds(5);
 
-        item4chile.SetActive(false);
-       // controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
+        item2chile.SetActive(false);
+        movimientoCerdoEngine.speed /= 2;
 
     }
 
 
     //Item 5 Disparar objeto
 
-    public void PoderItem5()
+    public void PoderItem3()
     {
-        Instantiate(item5Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
+        Instantiate(item3Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
     }
 
 }

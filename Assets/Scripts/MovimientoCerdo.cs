@@ -8,11 +8,14 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		p2
 	}
 
+    public int numItemToActivate;
 	public numPlayer NumPlayer;
 	public Rigidbody rigidbody;
 
 	public Countdown countDown=new Countdown();
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+    public MostrarItem mostrarItem=new MostrarItem();
+    public ItemControl itemControl=new ItemControl();
 
 	public void Start()
 	{
@@ -28,18 +31,31 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		var horizontalAxis = Input.GetAxis($"Horizontal{playerSuffix}");
 		var verticalAxis = Input.GetAxis($"Vertical{playerSuffix}");
 		var isJumping = Input.GetAxis($"Jump{playerSuffix}") > 0;
+        var activateItem = Input.GetAxis($"Fire{playerSuffix}");
 
 		if (countDown.movement)
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
-		}
+		}else if (activateItem != 0)
+        {
+            itemControl.ChargeItem(numItemToActivate);
+        }
 	}
 
 	private void OnCollisionEnter(Collision collision)
 	{
 		movimientoCerdoEngine.maxJumps = 3;
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Moneda"))
+        {
+            numItemToActivate = itemControl.getItemRandom();
+            mostrarItem.ShowItem(numItemToActivate);
+        }
+    }
 
 	public void Move(float verticalVelocity, float rotation)
 	{
