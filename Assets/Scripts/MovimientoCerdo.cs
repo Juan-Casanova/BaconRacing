@@ -13,6 +13,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
 	public Countdown countDown=new Countdown();
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+    public MostrarItem mostrarItem=new MostrarItem();
+
+    public int numRandom = 0;
 
 	public void Start()
 	{
@@ -40,7 +43,10 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
     private void OnTriggerEnter(Collider other)
     {
-     
+        if (other.CompareTag("Moneda"))
+        {
+            mostrarItem.ShowItem(numRandom);
+        }
     }
 
 	public void Move(float verticalVelocity, float rotation)
