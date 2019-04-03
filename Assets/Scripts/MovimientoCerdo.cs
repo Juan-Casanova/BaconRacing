@@ -41,6 +41,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
             if (Input.GetKey(KeyCode.M)&& numRandom!=0)
             {
                 itemControl.ChargeItem(numRandom);
+                mostrarItem.HideAllIcons();
                 numRandom = 0;
             }
 		}

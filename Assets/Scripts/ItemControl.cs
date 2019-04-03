@@ -6,10 +6,16 @@ public class ItemControl : MonoBehaviour
 {
     public GameObject jugador;
     public GameObject item1TocinoPista;
-    public GameObject item3chile;
     public GameObject item2Proyectil;
+    public GameObject item3chile;
+
 
     public MovimientoCerdo movimientoCerdo;
+
+    public void Start()
+    {
+        item3chile.SetActive(false);
+    }
 
 
 public int getItemRandom()=> Random.Range(1, 3);
@@ -20,19 +26,13 @@ public int getItemRandom()=> Random.Range(1, 3);
         switch (numRandom)
         {
             case 1:
-               // mostrarItem.mostrarItem1();
                 PoderItem1();
-                
                 break;
             case 2:
-               // mostrarItem.mostrarItem2();
                 PoderItem2();
-                
                 break;
             case 3:
-               // mostrarItem.mostrarItem3();
                 PoderItem3();
-                
                 break;
             default:
                 Debug.Log("No hay Nada");

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01f23458cb9e0d34bb706fb88fdbd4a2
+guid: f0c5a4a0bdaf08446b4b44746a23651d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,8 +9,9 @@ ModelImporter:
     400000: //RootNode
     400002: Mesh
     400004: Texture Group
-    2100000: chile
-    2100002: chile arribita
+    2100000: botella liq
+    2100002: botellaa
+    2100004: botella arriba
     2300000: Mesh
     3300000: Mesh
     4300000: Mesh

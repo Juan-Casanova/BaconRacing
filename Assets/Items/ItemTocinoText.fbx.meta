@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01f23458cb9e0d34bb706fb88fdbd4a2
+guid: 9c5de20bd2d2ab4448c737e2757bbbdb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,8 +9,10 @@ ModelImporter:
     400000: //RootNode
     400002: Mesh
     400004: Texture Group
-    2100000: chile
-    2100002: chile arribita
+    2100000: tocino_
+    2100002: tocino medio op2
+    2100004: tocino lado1 op2
+    2100006: tocino lado2 op2
     2300000: Mesh
     3300000: Mesh
     4300000: Mesh
