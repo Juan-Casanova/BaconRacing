@@ -13,10 +13,7 @@ public class ItemControl : MonoBehaviour
     public GameObject item5Proyectil;
 
 
-    public int getItemRandom()
-    {
-        return Random.Range(1, 5);
-    }
+    public int getItemRandom()=> Random.Range(1, 5);
 
     public void ChargeItem(int numRandom)
     {
@@ -30,7 +27,7 @@ public class ItemControl : MonoBehaviour
                 break;
             case 2:
                // mostrarItem.mostrarItem2();
-                PoderItem2(ActiveShield);
+                PoderItem2();
                 
                 break;
             case 3:
@@ -38,19 +35,6 @@ public class ItemControl : MonoBehaviour
                 PoderItem3();
                 
                 break;
-
-            case 4:
-               // mostrarItem.mostrarItem4();
-                PoderItem4();
-                
-                break;
-
-            case 5:
-               // mostrarItem.mostrarItem5();
-                PoderItem5();
-              
-                break;
-
             default:
                 Debug.Log("No hay Nada");
                 break;
@@ -58,35 +42,14 @@ public class ItemControl : MonoBehaviour
 
     }
 
-    //Poder de dejar un tocino en la pista
+    //Item1 Poder de dejar un tocino en la pista
 
-    public void PoderItem1()
-    {
-
-        Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
-
-    }
-
-
-    //Poder escudo cerdo
-    public void PoderItem2(bool _ActiveShield)
-    {
-        StartCoroutine(TiempoItem2(_ActiveShield));
-    }
-
-    public IEnumerator TiempoItem2(bool _ActiveShield)
-    {
-        item2escudo.SetActive(true);
-        _ActiveShield = true;
- 
-        yield return new WaitForSeconds(3);
-
-        item2escudo.SetActive(false);
-        _ActiveShield = false;
-
-    }
-
-    //Item 3 mancha pantalla del enemigo
+    public void PoderItem1()=>Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
+   
+    //Item 2 Disparar objeto
+    public void PoderItem2() => Instantiate(item5Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
+   
+    //Item 3 Aceleracion del personaje
 
     public void PoderItem3()
     {
@@ -95,38 +58,8 @@ public class ItemControl : MonoBehaviour
 
     IEnumerator TiempoItem3()
     {
-     //   item3ManchaPantallaEnemigo.SetActive(true);
-        yield return new WaitForSeconds(3);
-       // item3ManchaPantallaEnemigo.SetActive(false);
-
-    }
-
-
-    //Item 4 Aceleracion del personaje
-
-    public void PoderItem4()
-    {
-        StartCoroutine(TiempoItem4());
-    }
-
-    IEnumerator TiempoItem4()
-    {
         item4chile.SetActive(true);
-       // controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
-
         yield return new WaitForSeconds(5);
-
         item4chile.SetActive(false);
-       // controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
-
     }
-
-
-    //Item 5 Disparar objeto
-
-    public void PoderItem5()
-    {
-        Instantiate(item5Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
-    }
-
 }

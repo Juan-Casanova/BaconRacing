@@ -36,10 +36,12 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		}
 	}
 
-	private void OnCollisionEnter(Collision collision)
-	{
-		movimientoCerdoEngine.maxJumps = 3;
-	}
+	private void OnCollisionEnter(Collision collision) => movimientoCerdoEngine.maxJumps = 3;
+
+    private void OnTriggerEnter(Collider other)
+    {
+     
+    }
 
 	public void Move(float verticalVelocity, float rotation)
 	{

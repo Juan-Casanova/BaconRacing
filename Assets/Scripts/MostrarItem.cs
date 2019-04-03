@@ -10,42 +10,35 @@ public class MostrarItem : MonoBehaviour
     public GameObject item2Acelerar;
     public GameObject item3DispararObjeto;
 
-    public void Start()
-    {
-        desactivarIconosItems();
-    }
-
-
     public void ShowItem(int _numItem)
     {
 
         switch (_numItem)
         {
             case 1:
-                desactivarIconosItems();
-                item1DejarTocino.GetComponent<Image>().enabled = true;
+                ShowIconItem(item1DejarTocino);
                 break;
             case 2:
-                desactivarIconosItems();
-                item2Acelerar.GetComponent<Image>().enabled = true;
+                ShowIconItem(item2Acelerar);
                 break;
             case 3:
-                desactivarIconosItems();
-                item3DispararObjeto.GetComponent<Image>().enabled = true;
+                ShowIconItem(item3DispararObjeto);
                 break;
             default:
-                desactivarIconosItems();
+                HideAllIcons();
                 break;
         }
 
     }
 
-    public void desactivarIconosItems()
+    public void HideAllIcons()
     {
         item1DejarTocino.GetComponent<Image>().enabled = false;
         item2Acelerar.GetComponent<Image>().enabled = false;
         item3DispararObjeto.GetComponent<Image>().enabled = false;
 
     }
+
+    public void ShowIconItem(GameObject icon)=>icon.GetComponent<Image>().enabled = true;
 
 }
