@@ -17,9 +17,10 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
     public ItemControl itemControl=new ItemControl();
 
 
-    public int numRandom = 0;
+    public int numRandomP1 = 0;
+    public int numRandomP2 = 0;
 
-	public void Start()
+    public void Start()
 	{
 		movimientoCerdoEngine.speed = 10.0f;
 		movimientoCerdoEngine.angulo = 3.0f;
@@ -38,17 +39,17 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
-            if (Input.GetKey(KeyCode.M)&& numRandom!=0&&NumPlayer==0)
+            if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
             {
-                itemControl.ChargeItem(numRandom);
+                itemControl.ChargeItem(numRandomP1);
                 mostrarItem.HideAllIcons();
-                numRandom = 0;
+                numRandomP1 = 0;
             }
-            if (Input.GetKey(KeyCode.E) && numRandom != 0 && NumPlayer != 0)
+            if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
             {
-                itemControl.ChargeItem(numRandom);
+                itemControl.ChargeItem(numRandomP2);
                 mostrarItem.HideAllIcons();
-                numRandom = 0;
+                numRandomP2 = 0;
             }
         }
 	}
@@ -57,10 +58,15 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Moneda"))
+        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1)
         {
-            numRandom = itemControl.getItemRandom();
-            mostrarItem.ShowItem(numRandom);
+            numRandomP1 = itemControl.getItemRandom();
+            mostrarItem.ShowItem(numRandomP1,numPlayer.p1);
+        }
+        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2)
+        {
+            numRandomP2 = itemControl.getItemRandom();
+            mostrarItem.ShowItem(numRandomP2,numPlayer.p2);
         }
     }
 

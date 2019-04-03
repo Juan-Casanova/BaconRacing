@@ -434,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &44205348
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3490,7 +3490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &342492223
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3864,9 +3864,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1DejarTocino: {fileID: 192751912}
-  item2DispararBotella: {fileID: 0}
-  item3Velocidad: {fileID: 0}
+  item1DejarTocino1: {fileID: 192751912}
+  item2DispararBotella1: {fileID: 1549579821}
+  item3Velocidad1: {fileID: 2029645731}
+  item1DejarTocino2: {fileID: 44205347}
+  item2DispararBotella2: {fileID: 2097337148}
+  item3Velocidad2: {fileID: 342492222}
 --- !u!1 &371640288
 GameObject:
   m_ObjectHideFlags: 0
@@ -8972,7 +8975,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 834169706}
   item1TocinoPista: {fileID: 100000, guid: 9c5de20bd2d2ab4448c737e2757bbbdb, type: 3}
-  item2Proyectil: {fileID: 100000, guid: f0c5a4a0bdaf08446b4b44746a23651d, type: 3}
+  item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
+    type: 3}
   item3chile: {fileID: 517376874}
   movimientoCerdo: {fileID: 834169710}
 --- !u!114 &834169710
@@ -8992,7 +8996,8 @@ MonoBehaviour:
   countDown: {fileID: 371541610}
   mostrarItem: {fileID: 371541616}
   itemControl: {fileID: 834169709}
-  numRandom: 0
+  numRandomP1: 0
+  numRandomP2: 0
 --- !u!54 &834169711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13237,7 +13242,8 @@ MonoBehaviour:
   countDown: {fileID: 371541610}
   mostrarItem: {fileID: 371541616}
   itemControl: {fileID: 1235188353}
-  numRandom: 0
+  numRandomP1: 0
+  numRandomP2: 0
 --- !u!114 &1235188350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13285,7 +13291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1235188348}
   item1TocinoPista: {fileID: 100000, guid: 9c5de20bd2d2ab4448c737e2757bbbdb, type: 3}
-  item2Proyectil: {fileID: 100000, guid: f0c5a4a0bdaf08446b4b44746a23651d, type: 3}
+  item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
+    type: 3}
   item3chile: {fileID: 1651703434}
   movimientoCerdo: {fileID: 1235188349}
 --- !u!114 &1235188354
@@ -24863,7 +24870,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2097337149
 RectTransform:
   m_ObjectHideFlags: 0
