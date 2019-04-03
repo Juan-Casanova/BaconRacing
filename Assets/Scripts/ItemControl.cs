@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-    public bool ActiveShield;
     public GameObject jugador;
     public GameObject item1TocinoPista;
-    public GameObject item2escudo;
-   // public GameObject item3ManchaPantallaEnemigo;
-    public GameObject item4chile;
-    public GameObject item5Proyectil;
+    public GameObject item3chile;
+    public GameObject item2Proyectil;
 
 
     public int getItemRandom()=> Random.Range(1, 5);
@@ -47,7 +44,7 @@ public class ItemControl : MonoBehaviour
     public void PoderItem1()=>Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
    
     //Item 2 Disparar objeto
-    public void PoderItem2() => Instantiate(item5Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
+    public void PoderItem2() => Instantiate(item2Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
    
     //Item 3 Aceleracion del personaje
 
@@ -58,8 +55,8 @@ public class ItemControl : MonoBehaviour
 
     IEnumerator TiempoItem3()
     {
-        item4chile.SetActive(true);
+        item3chile.SetActive(true);
         yield return new WaitForSeconds(5);
-        item4chile.SetActive(false);
+        item3chile.SetActive(false);
     }
 }
