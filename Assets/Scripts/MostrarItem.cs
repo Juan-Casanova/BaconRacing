@@ -10,6 +10,11 @@ public class MostrarItem : MonoBehaviour
     public GameObject item2Acelerar;
     public GameObject item3DispararObjeto;
 
+    public void Start()
+    {
+        HideAllIcons();
+    }
+
     public void ShowItem(int _numItem)
     {
 
