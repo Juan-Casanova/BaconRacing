@@ -56,6 +56,7 @@ public class ItemControl : MonoBehaviour
     IEnumerator TiempoItem3()
     {
         item3chile.SetActive(true);
+       
         yield return new WaitForSeconds(5);
         item3chile.SetActive(false);
     }
