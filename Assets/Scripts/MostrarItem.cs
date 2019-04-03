@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class MostrarItem : MonoBehaviour
 {
     public GameObject item1DejarTocino;
-    public GameObject item2Acelerar;
-    public GameObject item3DispararObjeto;
+    public GameObject item2DispararBotella;
+    public GameObject item3Velocidad;
 
     public void Start()
     {
@@ -24,10 +24,10 @@ public class MostrarItem : MonoBehaviour
                 ShowIconItem(item1DejarTocino);
                 break;
             case 2:
-                ShowIconItem(item2Acelerar);
+                ShowIconItem(item2DispararBotella);
                 break;
             case 3:
-                ShowIconItem(item3DispararObjeto);
+                ShowIconItem(item3Velocidad);
                 break;
             default:
                 HideAllIcons();
@@ -39,8 +39,8 @@ public class MostrarItem : MonoBehaviour
     public void HideAllIcons()
     {
         item1DejarTocino.GetComponent<Image>().enabled = false;
-        item2Acelerar.GetComponent<Image>().enabled = false;
-        item3DispararObjeto.GetComponent<Image>().enabled = false;
+        item2DispararBotella.GetComponent<Image>().enabled = false;
+        item3Velocidad.GetComponent<Image>().enabled = false;
 
     }
 

@@ -43,10 +43,10 @@ public int getItemRandom()=> Random.Range(1, 3);
 
     //Item1 Poder de dejar un tocino en la pista
 
-    public void PoderItem1()=>Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.3f, jugador.transform.position.z), jugador.transform.rotation);
+    public void PoderItem1()=>Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.6f, jugador.transform.position.z-.4f), jugador.transform.rotation);
    
     //Item 2 Disparar objeto
-    public void PoderItem2() => Instantiate(item2Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z + 3), transform.rotation);
+    public void PoderItem2() => Instantiate(item2Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y+1.5f, jugador.transform.position.z + 4), transform.rotation);
    
     //Item 3 Aceleracion del personaje
 

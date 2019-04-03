@@ -38,13 +38,19 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
-            if (Input.GetKey(KeyCode.M)&& numRandom!=0)
+            if (Input.GetKey(KeyCode.M)&& numRandom!=0&&NumPlayer==0)
             {
                 itemControl.ChargeItem(numRandom);
                 mostrarItem.HideAllIcons();
                 numRandom = 0;
             }
-		}
+            if (Input.GetKey(KeyCode.E) && numRandom != 0 && NumPlayer != 0)
+            {
+                itemControl.ChargeItem(numRandom);
+                mostrarItem.HideAllIcons();
+                numRandom = 0;
+            }
+        }
 	}
 
 	private void OnCollisionEnter(Collision collision) => movimientoCerdoEngine.maxJumps = 3;
