@@ -38,6 +38,11 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
+            if (Input.GetKey(KeyCode.M)&& numRandom!=0)
+            {
+                itemControl.ChargeItem(numRandom);
+                numRandom = 0;
+            }
 		}
 	}
 

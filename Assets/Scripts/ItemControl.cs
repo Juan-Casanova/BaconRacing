@@ -9,8 +9,10 @@ public class ItemControl : MonoBehaviour
     public GameObject item3chile;
     public GameObject item2Proyectil;
 
+    public MovimientoCerdo movimientoCerdo;
 
-    public int getItemRandom()=> Random.Range(1, 5);
+
+public int getItemRandom()=> Random.Range(1, 3);
 
     public void ChargeItem(int numRandom)
     {
@@ -56,8 +58,9 @@ public class ItemControl : MonoBehaviour
     IEnumerator TiempoItem3()
     {
         item3chile.SetActive(true);
-       
+        movimientoCerdo.movimientoCerdoEngine.speed = 15;
         yield return new WaitForSeconds(5);
+        movimientoCerdo.movimientoCerdoEngine.speed = 10;
         item3chile.SetActive(false);
     }
 }

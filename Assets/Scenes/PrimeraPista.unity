@@ -8526,6 +8526,7 @@ MonoBehaviour:
   item3chile: {fileID: 869012523}
   item2Proyectil: {fileID: 3561656679768242001, guid: 8e8fe1e1043ed2c42bc665e89be5326a,
     type: 3}
+  movimientoCerdo: {fileID: 834169710}
 --- !u!114 &834169710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12851,6 +12852,7 @@ MonoBehaviour:
   item3chile: {fileID: 1370172252}
   item2Proyectil: {fileID: 3561656679768242001, guid: 8e8fe1e1043ed2c42bc665e89be5326a,
     type: 3}
+  movimientoCerdo: {fileID: 1235188349}
 --- !u!114 &1235188354
 MonoBehaviour:
   m_ObjectHideFlags: 0
