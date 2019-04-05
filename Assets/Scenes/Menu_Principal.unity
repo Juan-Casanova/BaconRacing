@@ -1187,7 +1187,7 @@ GameObject:
   - component: {fileID: 146879580}
   - component: {fileID: 146879579}
   m_Layer: 5
-  m_Name: Boton_Kamikase
+  m_Name: Boton_Uganda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1277,7 +1277,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Pista_China
+          m_StringArgument: Pista_Uganda
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1634,7 +1634,7 @@ GameObject:
   - component: {fileID: 171058531}
   - component: {fileID: 171058530}
   m_Layer: 5
-  m_Name: Boton_DiaDeMuertos
+  m_Name: Boton_BosqueChina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2484,7 +2484,7 @@ GameObject:
   - component: {fileID: 281760258}
   - component: {fileID: 281760261}
   m_Layer: 5
-  m_Name: Boton_DiaDeMuertos
+  m_Name: Boton_BosqueChina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4659,7 +4659,7 @@ GameObject:
   - component: {fileID: 583787892}
   - component: {fileID: 583787895}
   m_Layer: 5
-  m_Name: Boton_Kamikase
+  m_Name: Boton_Uganda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4734,7 +4734,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: PrimeraPista
+          m_StringArgument: Pista_Uganda
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RespawnPlayer : MonoBehaviour
 {
-    public checkTurnDown checkTurnDown;
+  
     public int numPlayer;
     public GameObject[] player;
 
@@ -21,11 +21,9 @@ public class RespawnPlayer : MonoBehaviour
     {
        
 
-        if(other.CompareTag("caida")||checkTurnDown.IsTurnDown)
+        if(other.CompareTag("caida"))
         {
             Spawn(numPlayer, numSpawn);
-            checkTurnDown.IsTurnDown = false;
-
         }
         else if (other.CompareTag("spawn"))
         {

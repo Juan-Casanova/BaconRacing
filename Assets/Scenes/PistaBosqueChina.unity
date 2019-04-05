@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 46d59f4fff4e2034190912421d4bb4b3, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.5636672, g: 0.664523, b: 0.84320325, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7190,6 +7190,7 @@ Transform:
   - {fileID: 182474399}
   - {fileID: 628876634}
   - {fileID: 1310119839}
+  - {fileID: 1610441466}
   - {fileID: 2098732200}
   - {fileID: 36220509}
   - {fileID: 827071837}
@@ -7215,7 +7216,6 @@ Transform:
   - {fileID: 1004768011}
   - {fileID: 1233746855}
   - {fileID: 1639438239}
-  - {fileID: 1610441466}
   - {fileID: 1436633024}
   - {fileID: 1573470119}
   - {fileID: 73773783}
@@ -7593,6 +7593,7 @@ Transform:
   - {fileID: 101150085}
   - {fileID: 518452926}
   - {fileID: 1836115871}
+  - {fileID: 2914211328748578218}
   - {fileID: 1308006281}
   - {fileID: 1885281447}
   - {fileID: 503466764}
@@ -7607,7 +7608,6 @@ Transform:
   - {fileID: 2579330}
   - {fileID: 1877311733}
   - {fileID: 345108358}
-  - {fileID: 2914211328748578218}
   - {fileID: 669474378}
   - {fileID: 1234143909}
   - {fileID: 183821958}
@@ -15749,7 +15749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkTurnDown: {fileID: 268677064}
   numPlayer: 0
   player:
   - {fileID: 523981433}
@@ -40271,7 +40270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkTurnDown: {fileID: 1175619271}
   numPlayer: 1
   player:
   - {fileID: 523981433}
@@ -44237,7 +44235,7 @@ Transform:
   m_Children:
   - {fileID: 1610441464}
   m_Father: {fileID: 261542154}
-  m_RootOrder: 171
+  m_RootOrder: 146
   m_LocalEulerAnglesHint: {x: 0, y: 80.873, z: 0}
 --- !u!4 &1610695438 stripped
 Transform:
@@ -58490,7 +58488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 261542154}
-  m_RootOrder: 563
+  m_RootOrder: 549
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2914211328748812682
 GameObject:
