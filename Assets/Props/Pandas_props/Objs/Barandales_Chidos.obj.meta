@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: 4dba29a7a40afac4495bd7cbf736bdce
+guid: 94a3cd8b50d178f4a90a91645ecd480b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Default
     400000: //RootNode
+    400002: Default
     2100000: Pista_lados
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Barandales_Invisibles
-    4300002: Nuevos_Barandales
-    7400000: Take 001
-    9500000: //RootNode
+    2300000: Default
+    3300000: Default
+    4300000: Default
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,8 +63,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -92,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
