@@ -9,16 +9,11 @@ public class ItemControl : MonoBehaviour
     public GameObject item2Proyectil;
     public GameObject item3chile;
 
-
     public MovimientoCerdo movimientoCerdo;
 
-    public void Start()
-    {
-        item3chile.SetActive(false);
-    }
+    public void Start() => item3chile.SetActive(false);
 
-
-public int getItemRandom()=> Random.Range(1, 3);
+    public int getItemRandom()=> Random.Range(1, 3);
 
     public void ChargeItem(int numRandom)
     {
@@ -50,10 +45,7 @@ public int getItemRandom()=> Random.Range(1, 3);
    
     //Item 3 Aceleracion del personaje
 
-    public void PoderItem3()
-    {
-        StartCoroutine(TiempoItem3());
-    }
+    public void PoderItem3() => StartCoroutine(TiempoItem3());
 
     IEnumerator TiempoItem3()
     {
