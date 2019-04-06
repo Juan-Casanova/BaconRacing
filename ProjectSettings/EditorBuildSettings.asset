@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pista_Uganda.unity
     guid: 6e693d3e8da863a4d953a20de87dff1f
+  - enabled: 1
+    path: Assets/Scenes/PistaMexico.unity
+    guid: 97b86bffdfe519645b1e65b857641d9a
   m_configObjects: {}

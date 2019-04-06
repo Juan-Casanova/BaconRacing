@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 8e6879113e269254cb718db2923f5108
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arbol1
+    100002: Arbol2
+    100004: Arbol3
+    100006: Arcos
+    100008: Barandal
+    100010: BoolTunel
+    100012: BoolVentanas
+    100014: BoteDeBasura
+    100016: Callejon
+    100018: Casa 1
+    100020: Casa 2
+    100022: Casa 3
+    100024: Casa 4
+    100026: Casas
+    100028: Casota
+    100030: Farola
+    100032: Iglesia
+    100034: kioskos
+    100036: mesa con bancos
+    100038: Palmera
+    100040: Personaje
+    100042: Pilar
+    100044: "Pir\xE1mide"
+    100046: PistaChida
+    100048: //RootNode
+    100050: Planta
+    100052: Puente
+    100054: Puerta 1
+    100056: PuertasY ventanas
+    100058: Stant2
+    100060: Texture Group
+    100062: TiendaTequila
+    100064: Tren
+    100066: Ventana1
+    400000: Arbol1
+    400002: Arbol2
+    400004: Arbol3
+    400006: Arcos
+    400008: Barandal
+    400010: BoolTunel
+    400012: BoolVentanas
+    400014: BoteDeBasura
+    400016: Callejon
+    400018: Casa 1
+    400020: Casa 2
+    400022: Casa 3
+    400024: Casa 4
+    400026: Casas
+    400028: Casota
+    400030: Farola
+    400032: Iglesia
+    400034: kioskos
+    400036: mesa con bancos
+    400038: Palmera
+    400040: Personaje
+    400042: Pilar
+    400044: "Pir\xE1mide"
+    400046: PistaChida
+    400048: //RootNode
+    400050: Planta
+    400052: Puente
+    400054: Puerta 1
+    400056: PuertasY ventanas
+    400058: Stant2
+    400060: Texture Group
+    400062: TiendaTequila
+    400064: Tren
+    400066: Ventana1
+    2100000: Cactus_2
+    2100002: Puerta2_1
+    2100004: Puerta2_2
+    2100006: Default
+    2100008: Cactus_1
+    2100010: carretera
+    2100012: cercotas
+    2100014: Beise
+    2100016: Negro
+    2100018: Negroo
+    2100020: Azul
+    2100022: Cafe
+    2100024: Amarillo
+    2100026: Vaso
+    2100028: Piramide_1
+    2100030: Piramide_2
+    2100032: Tunel
+    2100034: Casa_Rojo
+    2100036: Estacion_1
+    2100038: Estacion_2
+    2100040: Terreno
+    2100042: Iglesia_1
+    2100044: Iglesia_2
+    2100046: Puerta2_3
+    2100048: Palmera_1
+    2100050: Palmera_2
+    2100052: pilar
+    2100054: farol2
+    2100056: farol1
+    2100058: barandall
+    2100060: Ventana1_1
+    2100062: Ventana1_3
+    2100064: Ventana1_2
+    2100066: Tronco
+    2100068: CopaArbol2
+    2100070: CopaArbol1
+    2100072: kiosko arriba
+    2100074: kiosko base
+    2100076: Arcos
+    2100078: Arcos_2
+    2100080: stand
+    2100082: maderita
+    2100084: bote
+    2100086: tiendatequila
+    2100088: Casa4_1
+    2100090: Casa3_1
+    2100092: Casa2_1
+    2100094: Casa1_1
+    2100096: tiendatequila grandotasinform
+    2100098: Ventana2_2
+    2100100: Ventana2_1
+    2300000: Arbol1
+    2300002: Arbol2
+    2300004: Arbol3
+    2300006: Arcos
+    2300008: Barandal
+    2300010: BoolTunel
+    2300012: BoolVentanas
+    2300014: BoteDeBasura
+    2300016: Callejon
+    2300018: Casa 1
+    2300020: Casa 2
+    2300022: Casa 3
+    2300024: Casa 4
+    2300026: Casota
+    2300028: Farola
+    2300030: Iglesia
+    2300032: kioskos
+    2300034: mesa con bancos
+    2300036: Palmera
+    2300038: Personaje
+    2300040: Pilar
+    2300042: "Pir\xE1mide"
+    2300044: PistaChida
+    2300046: Planta
+    2300048: Puerta 1
+    2300050: Stant2
+    2300052: TiendaTequila
+    2300054: Tren
+    2300056: Ventana1
+    3300000: Arbol1
+    3300002: Arbol2
+    3300004: Arbol3
+    3300006: Arcos
+    3300008: Barandal
+    3300010: BoolTunel
+    3300012: BoolVentanas
+    3300014: BoteDeBasura
+    3300016: Callejon
+    3300018: Casa 1
+    3300020: Casa 2
+    3300022: Casa 3
+    3300024: Casa 4
+    3300026: Casota
+    3300028: Farola
+    3300030: Iglesia
+    3300032: kioskos
+    3300034: mesa con bancos
+    3300036: Palmera
+    3300038: Personaje
+    3300040: Pilar
+    3300042: "Pir\xE1mide"
+    3300044: PistaChida
+    3300046: Planta
+    3300048: Puerta 1
+    3300050: Stant2
+    3300052: TiendaTequila
+    3300054: Tren
+    3300056: Ventana1
+    4300000: Planta
+    4300002: PistaChida
+    4300004: Callejon
+    4300006: Personaje
+    4300008: "Pir\xE1mide"
+    4300010: BoolTunel
+    4300012: Tren
+    4300014: Arbol3
+    4300016: Iglesia
+    4300018: Puerta 1
+    4300020: Palmera
+    4300022: Pilar
+    4300024: Farola
+    4300026: Barandal
+    4300028: Ventana1
+    4300030: Arbol1
+    4300032: Arbol2
+    4300034: kioskos
+    4300036: Arcos
+    4300038: Stant2
+    4300040: mesa con bancos
+    4300042: BoteDeBasura
+    4300044: TiendaTequila
+    4300046: Casa 4
+    4300048: Casa 3
+    4300050: Casa 2
+    4300052: Casa 1
+    4300054: Casota
+    4300056: BoolVentanas
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
