@@ -613,9 +613,7 @@ GameObject:
   - component: {fileID: 268875515}
   - component: {fileID: 268875514}
   - component: {fileID: 268875513}
-  - component: {fileID: 268875512}
   - component: {fileID: 268875511}
-  - component: {fileID: 268875510}
   m_Layer: 0
   m_Name: cerditoP2
   m_TagString: Untagged
@@ -623,26 +621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &268875510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268875509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9f185939c847f4eb106e7edd053bd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnArray:
-  - {fileID: 1073637282}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  Lap: 0
 --- !u!114 &268875511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,29 +639,6 @@ MonoBehaviour:
     type: 3}
   item3chile: {fileID: 428797513}
   movimientoCerdo: {fileID: 268875513}
---- !u!114 &268875512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268875509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numPlayer: 1
-  player:
-  - {fileID: 1554411221}
-  - {fileID: 268875509}
-  numSpawn: 0
-  spawnLocations:
-  - {fileID: 1073637281}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &268875513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,8 +2909,8 @@ MonoBehaviour:
   - {fileID: 379212447}
   - {fileID: 954032988}
   - {fileID: 1977572631}
-  check: {fileID: 1073637283}
   _countdown: {fileID: 904129375}
+  check: {fileID: 1073637283}
 --- !u!114 &904129377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3453,9 +3408,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1073637281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb909bf99ddbd04790e0a9e14462538, type: 3}
+  m_Script: {fileID: 11500000, guid: e3f2ed1e624cf7b4abac0088626f8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lapP1: 0
+  lapP2: 0
+  movimientoCerdoP1: {fileID: 1554411225}
+  movimientoCerdoP2: {fileID: 268875513}
+  meta: {fileID: 1073637281}
 --- !u!65 &1073637284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5102,9 +5062,7 @@ GameObject:
   - component: {fileID: 1554411227}
   - component: {fileID: 1554411226}
   - component: {fileID: 1554411225}
-  - component: {fileID: 1554411224}
   - component: {fileID: 1554411223}
-  - component: {fileID: 1554411222}
   m_Layer: 0
   m_Name: cerditoP1
   m_TagString: Player
@@ -5112,26 +5070,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1554411222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554411221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9f185939c847f4eb106e7edd053bd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnArray:
-  - {fileID: 1073637282}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  Lap: 0
 --- !u!114 &1554411223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5150,29 +5088,6 @@ MonoBehaviour:
     type: 3}
   item3chile: {fileID: 1432707587}
   movimientoCerdo: {fileID: 1554411225}
---- !u!114 &1554411224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554411221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numPlayer: 0
-  player:
-  - {fileID: 1554411221}
-  - {fileID: 268875509}
-  numSpawn: 0
-  spawnLocations:
-  - {fileID: 1073637281}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &1554411225
 MonoBehaviour:
   m_ObjectHideFlags: 0

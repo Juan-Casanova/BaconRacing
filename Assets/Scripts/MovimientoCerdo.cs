@@ -58,12 +58,12 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1)
+        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1 && numRandomP1==0)
         {
             numRandomP1 = itemControl.getItemRandom();
             mostrarItem.ShowItem(numRandomP1,numPlayer.p1);
         }
-        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2)
+        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2 && numRandomP2 == 0)
         {
             numRandomP2 = itemControl.getItemRandom();
             mostrarItem.ShowItem(numRandomP2,numPlayer.p2);
