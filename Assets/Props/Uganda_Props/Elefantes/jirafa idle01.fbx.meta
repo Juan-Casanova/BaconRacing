@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: b7dcdffab47bc91488df3b000ed43444
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: boca
+    100002: cabeza
+    100004: clavicula
+    100006: col
+    100008: colita1
+    100010: colita2
+    100012: colita3
+    100014: colita_base
+    100016: cuello1
+    100018: cuello2
+    100020: cuello3
+    100022: cuello4
+    100024: cuello5
+    100026: jirafa 2
+    100028: //RootNode
+    100030: joint1
+    100032: joint5
+    100034: joint6
+    100036: oreja1_der
+    100038: oreja1_izq
+    100040: oreja2_der
+    100042: oreja2_izq
+    100044: oreja3_der
+    100046: oreja3_izq
+    100048: oreja4_der
+    100050: oreja4_izq
+    100052: pata1
+    100054: pata1_der
+    100056: pata1_izq_tras
+    100058: pata1_tras
+    100060: pata2
+    100062: pata2_der
+    100064: pata2_izq_tras
+    100066: pata2_tras
+    100068: pata3_izq_tras
+    100070: pata3_tras
+    100072: pata4_izq_tras
+    100074: pata4_tras
+    100076: Pata_Der_Del
+    100078: Pata_Izq_Del
+    100080: patilla_Der
+    100082: patilla_izq
+    100084: "p\xE1ta_Der_Trasera"
+    100086: "p\xE1ta_Izq_Trasera"
+    100088: root
+    100090: spine1
+    100092: spine2
+    100094: spine3
+    400000: boca
+    400002: cabeza
+    400004: clavicula
+    400006: col
+    400008: colita1
+    400010: colita2
+    400012: colita3
+    400014: colita_base
+    400016: cuello1
+    400018: cuello2
+    400020: cuello3
+    400022: cuello4
+    400024: cuello5
+    400026: jirafa 2
+    400028: //RootNode
+    400030: joint1
+    400032: joint5
+    400034: joint6
+    400036: oreja1_der
+    400038: oreja1_izq
+    400040: oreja2_der
+    400042: oreja2_izq
+    400044: oreja3_der
+    400046: oreja3_izq
+    400048: oreja4_der
+    400050: oreja4_izq
+    400052: pata1
+    400054: pata1_der
+    400056: pata1_izq_tras
+    400058: pata1_tras
+    400060: pata2
+    400062: pata2_der
+    400064: pata2_izq_tras
+    400066: pata2_tras
+    400068: pata3_izq_tras
+    400070: pata3_tras
+    400072: pata4_izq_tras
+    400074: pata4_tras
+    400076: Pata_Der_Del
+    400078: Pata_Izq_Del
+    400080: patilla_Der
+    400082: patilla_izq
+    400084: "p\xE1ta_Der_Trasera"
+    400086: "p\xE1ta_Izq_Trasera"
+    400088: root
+    400090: spine1
+    400092: spine2
+    400094: spine3
+    2100000: jirafa cuerpo
+    2100002: jirafa cuerpito manchas color
+    2100004: jirafa patas baja_
+    2100006: "jirafa pesu\xF1as_"
+    2100008: jirafa cabello cuello
+    2100010: parpados
+    2100012: ojos
+    4300000: jirafa 2
+    7400000: jirafaidle1
+    9500000: //RootNode
+    13700000: jirafa 2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jirafaidle1
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
