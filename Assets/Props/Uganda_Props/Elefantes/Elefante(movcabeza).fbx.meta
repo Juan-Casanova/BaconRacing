@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 0a8fb1e38002f3b479fe7db6cb7d2164
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Backdrop Item
+    100002: cadera
+    100004: clavicula
+    100006: colita
+    100008: Directional Light
+    100010: elefante 1
+    100012: //RootNode
+    100014: joint11
+    100016: joint12
+    100018: joint14
+    100020: joint15
+    100022: joint17
+    100024: joint18
+    100026: joint19
+    100028: joint20
+    100030: joint21
+    100032: joint27
+    100034: joint28
+    100036: joint3
+    100038: joint33
+    100040: joint34
+    100042: joint5
+    100044: joint8
+    100046: joint9
+    100048: Oreja_Der
+    100050: Oreja_Izq
+    100052: pata_Der_atras
+    100054: pata_Der_del
+    100056: pata_izq_atras
+    100058: pata_izq_del
+    100060: root
+    100062: spine
+    100064: Trompa_Base
+    100066: trompaspine1
+    100068: trompaspine2
+    100070: trompaspine3
+    100072: trompaspine4
+    400000: Backdrop Item
+    400002: cadera
+    400004: clavicula
+    400006: colita
+    400008: Directional Light
+    400010: elefante 1
+    400012: //RootNode
+    400014: joint11
+    400016: joint12
+    400018: joint14
+    400020: joint15
+    400022: joint17
+    400024: joint18
+    400026: joint19
+    400028: joint20
+    400030: joint21
+    400032: joint27
+    400034: joint28
+    400036: joint3
+    400038: joint33
+    400040: joint34
+    400042: joint5
+    400044: joint8
+    400046: joint9
+    400048: Oreja_Der
+    400050: Oreja_Izq
+    400052: pata_Der_atras
+    400054: pata_Der_del
+    400056: pata_izq_atras
+    400058: pata_izq_del
+    400060: root
+    400062: spine
+    400064: Trompa_Base
+    400066: trompaspine1
+    400068: trompaspine2
+    400070: trompaspine3
+    400072: trompaspine4
+    2100000: elefante cuerpo
+    2100002: elefante colita
+    2100004: parpados
+    2100006: ojos
+    4300000: elefante 1
+    7400000: elefante_movCabeza
+    9500000: //RootNode
+    13700000: elefante 1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: elefante_movCabeza
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

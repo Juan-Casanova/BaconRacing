@@ -2,7 +2,13 @@
 
 public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 {
-	public enum numPlayer
+
+
+
+
+
+    // activaranimaciones activaranimaciones;
+    public enum numPlayer
 	{
 		p1,
 		p2
@@ -26,6 +32,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		movimientoCerdoEngine.angulo = 3.0f;
 		movimientoCerdoEngine.jump = 8.0f;
 		movimientoCerdoEngine.maxJumps = 3;
+
 	}
 
 	public void FixedUpdate()
@@ -72,8 +79,11 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
 	public void Move(float verticalVelocity, float rotation)
 	{
-		transform.Translate(0, 0, verticalVelocity);
+      
+
+        transform.Translate(0, 0, verticalVelocity);
 		transform.Rotate(0, rotation, 0);
+
 	}
 
 	public void Jump(float jumpForce)

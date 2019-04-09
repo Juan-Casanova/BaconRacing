@@ -1,15 +1,16 @@
 fileFormatVersion: 2
-guid: 485962b1559d2b9439dcf00b9b5bfdd7
+guid: 5dba739ee9890514f8f733e5ca814b26
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Default
     400000: //RootNode
-    2100000: Pista_base
-    2100002: Pista_lados
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Alzar
+    400002: Default
+    2100000: DefaultMat
+    2300000: Default
+    3300000: Default
+    4300000: Default
   externalObjects: {}
   materials:
     importMaterials: 1
