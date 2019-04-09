@@ -42,13 +42,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
             if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
             {
                 itemControl.ChargeItem(numRandomP1);
-                mostrarItem.HideAllIcons();
+                mostrarItem.HideAllItem();
                 numRandomP1 = 0;
             }
             if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
             {
                 itemControl.ChargeItem(numRandomP2);
-                mostrarItem.HideAllIcons();
+                mostrarItem.HideAllItem();
                 numRandomP2 = 0;
             }
         }

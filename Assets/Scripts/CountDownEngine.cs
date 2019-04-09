@@ -1,11 +1,7 @@
-﻿public class CountDownEngine
-{
-	private readonly ICountdown countdown;
+﻿using UnityEngine;
 
-	public CountDownEngine(ICountdown countdown)
-	{
-		this.countdown = countdown;
-	}
+public class CountDownEngine:MonoBehaviour
+{
 
 	/// <summary>
 	/// Es desde donde comienza el contador inicial
@@ -25,7 +21,6 @@
 		if (result)
 		{
 			initialCounter = 0;
-			countdown.StartMovement();
 		}
 
 		return result;

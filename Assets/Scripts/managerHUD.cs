@@ -13,14 +13,16 @@ public class managerHUD : MonoBehaviour
     public Text posPlayer1;
     public Text posPlayer2;
     public Text countDown;
-    public Transform player1, player2,meta;
+    public Transform player1, player2;
 
     public Image[] instructions;
     public Image[] winner;
 
-    public Countdown _countdown=new Countdown();
-    public CountDownEngine countdownEngine = new CountDownEngine();
+    public Countdown countdown;
+    public CountDownEngine countDownEngine;
     public CheckLap check=new CheckLap();
+
+
 
     private void Start()
     {
@@ -29,13 +31,13 @@ public class managerHUD : MonoBehaviour
 
     public void Update()
     {
-        float distanceP1 = Vector3.Distance(player1.position, meta.position);
-        float distanceP2 = Vector3.Distance(player2.position, meta.position);
+        float distanceP1 = Vector3.Distance(player1.position, player2.position);
+        float distanceP2 = Vector3.Distance(player2.position, player1.position);
 
 
-        countDown.text = _countdown.countDownEngine.initialCounter < 1 ? countDown.text = "" : _countdown.countDownEngine.initialCounter.ToString("f0");
+        countDown.text = countDownEngine.initialCounter < 1 ? countDown.text = "" : countDownEngine.initialCounter.ToString("f0");
 
-        if (_countdown.movement)
+        if (countdown.movement)
         {
             instructions[0].enabled = false;
             instructions[1].enabled = false;
@@ -76,8 +78,8 @@ public class managerHUD : MonoBehaviour
             winner[i].enabled = false;
 
         }
-
-
     }
+
+ 
 
 }

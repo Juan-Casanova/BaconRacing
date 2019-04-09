@@ -43,9 +43,53 @@ namespace Tests
 	        Assert.IsFalse(movimientoCerdoSubstitute.JumpWasCalled);
 	        Assert.AreEqual(3, movimientoCerdoEngine.maxJumps);
         }
+
+
+
+        [Test]
+        public void MovimientoCerdo_Move_DoesNotExecutesWhenVerticalOrHorizontalAxisAreZero()
+        {
+            //Arrange
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            float verticalAxis=0;
+            float horizontalAxis = 0;
+            float deltaTime = 5.5f;
+
+            var movimientoCerdoSubstitute = new MovimientoCerdoSubstitute();
+
+            //Act
+            movimientoCerdoEngine.Move(verticalAxis,horizontalAxis,deltaTime, movimientoCerdoSubstitute);
+
+            //Assert
+            Assert.IsFalse(movimientoCerdoSubstitute.MoveWasCalled);
+
+        }
+
+
+        [Test]
+        public void MovimientoCerdo_Move_ExecutesWhenVerticalOrHorizontalAxisAreDifferentZero()
+        {
+            //Arrange
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            float verticalAxis = 2.0f;
+            float horizontalAxis = 3.0f;
+            float deltaTime = 5.5f;
+
+            var movimientoCerdoSubstitute = new MovimientoCerdoSubstitute();
+
+            //Act
+            movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, deltaTime, movimientoCerdoSubstitute);
+
+            //Assert
+            Assert.IsTrue(movimientoCerdoSubstitute.MoveWasCalled);
+
+        }
     }
 
-	public class MovimientoCerdoSubstitute : IMovimientoCerdo
+   
+}
+
+public class MovimientoCerdoSubstitute : IMovimientoCerdo
 	{
 		public bool MoveWasCalled = false;
 		public bool JumpWasCalled = false;
@@ -60,4 +104,4 @@ namespace Tests
 			JumpWasCalled = true;
 		}
 	}
-}
+
