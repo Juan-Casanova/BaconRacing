@@ -1,30 +1,27 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 
 public class CheckLap : MonoBehaviour
 {
-    public int lapP1 = 0;
-    public int lapP2 = 0;
+    public ManagerLaps managerLaps;
 
-
-
-    private void Start()
+    public void OnTriggerEnter(Collider other)
     {
-        ResetCheckPointsForLaps();
-    }
-
-    private void ResetCheckPointsForLaps()
-    {
-        for (int i = 0; i < checkPointsForLaps.Length; i++)
+        if (other.CompareTag("Player1")&&
+            !managerLaps.isActivate[managerLaps.numCheckP1] )
         {
-            checkPointsForLaps[i] = false;
+            managerLaps.isActivate[managerLaps.numCheckP1] = true;
+            managerLaps.numCheckP1+=1;
+           
+        }else if (other.CompareTag("Player2")&&
+                  !managerLaps.isActivate[managerLaps.numCheckP2+=4])
+        {
+            managerLaps.isActivate[managerLaps.numCheckP2] = true;
+            managerLaps.numCheckP2+=1;
         }
     }
 
-    private void IncreaseNumLap(int lap)
-    {
-        ResetCheckPointsForLaps();
-        lap++;
-    }
   
+
 }

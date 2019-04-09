@@ -17,10 +17,11 @@ public class managerHUD : MonoBehaviour
 
     public Image[] instructions;
     public Image[] winner;
+    public GameObject[] checkPoints;
 
     public Countdown countdown;
     public CountDownEngine countDownEngine;
-    public CheckLap check=new CheckLap();
+    public ManagerLaps managerLaps=new ManagerLaps();
 
 
 
@@ -31,8 +32,8 @@ public class managerHUD : MonoBehaviour
 
     public void Update()
     {
-        float distanceP1 = Vector3.Distance(player1.position, player2.position);
-        float distanceP2 = Vector3.Distance(player2.position, player1.position);
+        float distanceP1 = Vector3.Distance(player1.position, checkPoints[managerLaps.numCheckP1].transform.position);
+        float distanceP2 = Vector3.Distance(player2.position, checkPoints[managerLaps.numCheckP1].transform.position);
 
 
         countDown.text = countDownEngine.initialCounter < 1 ? countDown.text = "" : countDownEngine.initialCounter.ToString("f0");
@@ -44,10 +45,10 @@ public class managerHUD : MonoBehaviour
         }
             posPlayer1.text = distanceP1 >= distanceP2 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
             posPlayer2.text = distanceP2 >= distanceP1 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
-            laps1.text = "LAP: " +check.lapP1+ "/2";
-            laps2.text = "LAP: "+check.lapP2 + "/2";
+            laps1.text = "LAP: " +managerLaps.LapP1+ "/2";
+            laps2.text = "LAP: "+managerLaps.LapP2 + "/2";
 
-        if (check.lapP1 > 2 || check.lapP2 > 2)
+        if (managerLaps.LapP1 > 2 || managerLaps.LapP2 > 2)
         {
             StartCoroutine(changeNextTrack("PistaBosqueChina", distanceP1, distanceP2));
         }
@@ -56,7 +57,7 @@ public class managerHUD : MonoBehaviour
 
     private IEnumerator changeNextTrack(string nextTrack,float distanceP1,float distanceP2)
     {
-        if (check.lapP1 >= check.lapP2)
+        if (managerLaps.LapP1 >= managerLaps.LapP2)
         {
             winner[0].enabled = true;
             winner[2].enabled = true;
