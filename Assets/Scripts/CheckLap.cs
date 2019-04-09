@@ -5,19 +5,21 @@ using UnityEngine.Experimental.PlayerLoop;
 public class CheckLap : MonoBehaviour
 {
     public ManagerLaps managerLaps;
+    public bool isActivate1=false;
+    public bool isActivate2 = false;
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player1")&&
-            !managerLaps.isActivate[managerLaps.numCheckP1] )
+            !isActivate1 )
         {
-            managerLaps.isActivate[managerLaps.numCheckP1] = true;
+            isActivate1 = true;
             managerLaps.numCheckP1+=1;
            
         }else if (other.CompareTag("Player2")&&
-                  !managerLaps.isActivate[managerLaps.numCheckP2+=4])
+                  !isActivate2)
         {
-            managerLaps.isActivate[managerLaps.numCheckP2] = true;
+            isActivate2 = true;
             managerLaps.numCheckP2+=1;
         }
     }

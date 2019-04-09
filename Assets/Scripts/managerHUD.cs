@@ -18,6 +18,7 @@ public class managerHUD : MonoBehaviour
     public Image[] instructions;
     public Image[] winner;
     public GameObject[] checkPoints;
+    public GameObject meta;
 
     public Countdown countdown;
     public CountDownEngine countDownEngine;
@@ -32,8 +33,8 @@ public class managerHUD : MonoBehaviour
 
     public void Update()
     {
-        float distanceP1 = Vector3.Distance(player1.position, checkPoints[managerLaps.numCheckP1].transform.position);
-        float distanceP2 = Vector3.Distance(player2.position, checkPoints[managerLaps.numCheckP1].transform.position);
+        float distanceP1 = Vector3.Distance(player1.position,meta.transform.position);
+        float distanceP2 = Vector3.Distance(player2.position, meta.transform.position);
 
 
         countDown.text = countDownEngine.initialCounter < 1 ? countDown.text = "" : countDownEngine.initialCounter.ToString("f0");
