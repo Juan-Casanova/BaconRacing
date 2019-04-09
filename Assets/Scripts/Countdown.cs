@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 
-public class Countdown : MonoBehaviour
+public interface ICountdown
 {
+	void StartMovement();
+}
 
-     public CountDownEngine countDownEngine = new CountDownEngine();
+public class Countdown : MonoBehaviour, ICountdown
+{
+	public CountDownEngine countDownEngine;
      public bool movement;
 
     public void Start()
     {
+		countDownEngine = new CountDownEngine(this);
         countDownEngine.time = Time.deltaTime;
         countDownEngine.initialCounter = 5.0f;
         movement = false;
@@ -15,11 +20,8 @@ public class Countdown : MonoBehaviour
 
     public void Update()
     {
-        countDownEngine.countdownToActivateMovement();
-        if (countDownEngine.countdownToActivateMovement())
-        {
-            countDownEngine.initialCounter = 0;
-            movement = true;
-        }
+	    countDownEngine.countdownToActivateMovement();
     }
+
+    public void StartMovement() => movement = true;
 }

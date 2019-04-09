@@ -1,19 +1,33 @@
 ﻿public class CountDownEngine
 {
-    /// <summary>
-    /// Es desde donde comienza el contador inicial
-    /// </summary>
-    public float initialCounter;
+	private readonly ICountdown countdown;
 
-    /// <summary>
-    /// Es la variable que representa a time.deltatime
-    /// </summary>
-    public float time;
+	public CountDownEngine(ICountdown countdown)
+	{
+		this.countdown = countdown;
+	}
 
-    public bool countdownToActivateMovement()
-    {
-        initialCounter -= time;
+	/// <summary>
+	/// Es desde donde comienza el contador inicial
+	/// </summary>
+	public float initialCounter;
 
-        return initialCounter <= 0;
-    }
+	/// <summary>
+	/// Es la variable que representa a time.deltatime
+	/// </summary>
+	public float time;
+
+	public bool countdownToActivateMovement()
+	{
+		initialCounter -= time;
+		var result = initialCounter <= 0;
+
+		if (result)
+		{
+			initialCounter = 0;
+			countdown.StartMovement();
+		}
+
+		return result;
+	}
 }
