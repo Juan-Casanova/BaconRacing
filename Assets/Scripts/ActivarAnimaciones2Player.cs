@@ -19,8 +19,12 @@ public class ActivarAnimaciones2Player : MonoBehaviour
     /// cerdito=6 significa animacion de Item
     /// </summary>
 
-
-
+    IEnumerator corutinaSalto()//para el cerdito
+    {
+        animacioncerdito.SetInteger("cerdito", 3);
+        yield return new WaitForSeconds(1.5f);
+        animacioncerdito.SetInteger("cerdito", 5);
+    }
 
     void Update()
     {
@@ -44,7 +48,7 @@ public class ActivarAnimaciones2Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Q))//salto
         {
-            animacioncerdito.SetInteger("cerdito", 3);
+            StartCoroutine("corutinaSalto");
 
         }
 

@@ -9,7 +9,7 @@ public class activaranimaciones : MonoBehaviour
  
     public Rigidbody Cerdito;
        public Animator animacioncerdito; //hola animator del cerdito
-   
+
 
     /// <summary>
     /// cerdito=0 significa animacion de idle
@@ -21,6 +21,12 @@ public class activaranimaciones : MonoBehaviour
     /// cerdito=6 significa animacion de Item
     /// </summary>
 
+    IEnumerator corutinaSalto()//para el cerdito
+    {
+        animacioncerdito.SetInteger("cerdito", 3);
+        yield return new WaitForSeconds(1.5f);
+        animacioncerdito.SetInteger("cerdito", 5);
+    }
 
     void Update()
     {
@@ -44,11 +50,8 @@ public class activaranimaciones : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))//salto
         {
-            
-           
-            animacioncerdito.SetInteger("cerdito", 3);
-
-        }
+            StartCoroutine("corutinaSalto");
+          }
 
 
 
