@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: 06b4f30f6ef7ce6498fc60ffe941b92b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pasted__Cabeza
+    100004: pasted__Cabeza2
+    100006: pasted__Cadera
+    100008: pasted__CerdoBase
+    100010: pasted__Cola1
+    100012: pasted__Cola2
+    100014: pasted__Colita
+    100016: pasted__Colita1
+    100018: pasted__Colita3
+    100020: pasted__Colita4
+    100022: pasted__Columna
+    100024: pasted__Cuello
+    100026: pasted__Del_Der
+    100028: pasted__Del_Izq
+    100030: pasted__DelDer
+    100032: pasted__DelIzq
+    100034: pasted__joint20
+    100036: pasted__MusloDel_Der
+    100038: pasted__MusloDel_Izq
+    100040: pasted__MusloTras_Der
+    100042: pasted__MusloTras_Izq
+    100044: pasted__Oreja1_Der
+    100046: pasted__Oreja1_Izq
+    100048: pasted__Oreja2_Der
+    100050: pasted__Oreja2_Izq
+    100052: pasted__Oreja3_Der
+    100054: pasted__Oreja3_Izq
+    100056: pasted__Oreja4_Der
+    100058: pasted__Oreja4_Izq
+    100060: pasted__Oreja5_Der
+    100062: pasted__Oreja5_Izq
+    100064: pasted__OrejaIzq
+    100066: pasted__OrejaIzq1
+    100068: pasted__Osico
+    100070: pasted__Osico 1
+    100072: pasted__Osico_1
+    100074: pasted__Osico_2
+    100076: pasted__PataDel_Der
+    100078: pasted__PataDel_Izq
+    100080: pasted__PataTras_Der
+    100082: pasted__PataTras_Izq
+    100084: pasted__PDel_Der
+    100086: pasted__PDel_Izq
+    100088: pasted__PiernaDel_Der
+    100090: pasted__PiernaDel_Izq
+    100092: pasted__PiernaTras_Der
+    100094: pasted__PiernaTras_Izq
+    100096: pasted__POsico
+    100098: pasted__PTras_Der
+    100100: pasted__PTras_Izq
+    100102: pasted__Root
+    100104: pasted__Tras_Der
+    100106: pasted__Tras_Izq
+    100108: pasted__TrasDer
+    100110: pasted__TrasIzq
+    400000: //RootNode
+    400002: pasted__Cabeza
+    400004: pasted__Cabeza2
+    400006: pasted__Cadera
+    400008: pasted__CerdoBase
+    400010: pasted__Cola1
+    400012: pasted__Cola2
+    400014: pasted__Colita
+    400016: pasted__Colita1
+    400018: pasted__Colita3
+    400020: pasted__Colita4
+    400022: pasted__Columna
+    400024: pasted__Cuello
+    400026: pasted__Del_Der
+    400028: pasted__Del_Izq
+    400030: pasted__DelDer
+    400032: pasted__DelIzq
+    400034: pasted__joint20
+    400036: pasted__MusloDel_Der
+    400038: pasted__MusloDel_Izq
+    400040: pasted__MusloTras_Der
+    400042: pasted__MusloTras_Izq
+    400044: pasted__Oreja1_Der
+    400046: pasted__Oreja1_Izq
+    400048: pasted__Oreja2_Der
+    400050: pasted__Oreja2_Izq
+    400052: pasted__Oreja3_Der
+    400054: pasted__Oreja3_Izq
+    400056: pasted__Oreja4_Der
+    400058: pasted__Oreja4_Izq
+    400060: pasted__Oreja5_Der
+    400062: pasted__Oreja5_Izq
+    400064: pasted__OrejaIzq
+    400066: pasted__OrejaIzq1
+    400068: pasted__Osico
+    400070: pasted__Osico 1
+    400072: pasted__Osico_1
+    400074: pasted__Osico_2
+    400076: pasted__PataDel_Der
+    400078: pasted__PataDel_Izq
+    400080: pasted__PataTras_Der
+    400082: pasted__PataTras_Izq
+    400084: pasted__PDel_Der
+    400086: pasted__PDel_Izq
+    400088: pasted__PiernaDel_Der
+    400090: pasted__PiernaDel_Izq
+    400092: pasted__PiernaTras_Der
+    400094: pasted__PiernaTras_Izq
+    400096: pasted__POsico
+    400098: pasted__PTras_Der
+    400100: pasted__PTras_Izq
+    400102: pasted__Root
+    400104: pasted__Tras_Der
+    400106: pasted__Tras_Izq
+    400108: pasted__TrasDer
+    400110: pasted__TrasIzq
+    2100000: pasted__lambert3SG
+    4300000: pasted__CerdoBase
+    7400000: bacon_saltoDown
+    9500000: //RootNode
+    13700000: pasted__CerdoBase
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: bacon_saltoDown
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

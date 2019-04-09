@@ -35,8 +35,18 @@ public class activaranimaciones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-      while (Input.GetKeyDown(KeyCode.UpArrow)|| (Input.GetKeyDown(KeyCode.DownArrow)))
+        do
+        {
+            print("presionando");
+            animacioncerdito.SetInteger("cerdito", 1);
+        } while (!Input.GetKeyDown(KeyCode.UpArrow));
+          if ((Input.GetKeyDown(KeyCode.Space)))
+            {
+            print("saltando");
+            }
+        else { animacioncerdito.SetInteger("cerdito", 1); print("idle"); }
+       
+       /* if (Input.GetKeyDown(KeyCode.UpArrow)|| (Input.GetKeyDown(KeyCode.DownArrow)))
         {
             print("presionando");
             animacioncerdito.SetInteger("cerdito", 1);
@@ -50,16 +60,7 @@ public class activaranimaciones : MonoBehaviour
             print("saltando");
         }
 
-
-
-
-
-
-
-
-
-
-
+        */
 
 
     }
