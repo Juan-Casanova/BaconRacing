@@ -6,16 +6,7 @@ using UnityEngine.UI;
 public class activaranimaciones : MonoBehaviour
 {
 
-   /* public enum numAniCerdito
-    {
-        idle,
-        correr
-
-    }
-
-    public numAniCerdito numaniCerdito;*/
-    
-
+  
     public int numRandom;
     public Rigidbody Cerdito;
        public Animator animacioncerdito; //hola animator del cerdito
@@ -44,28 +35,28 @@ public class activaranimaciones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        if (Input.GetKeyDown(KeyCode.UpArrow)|| (Input.GetKeyDown(KeyCode.DownArrow)))
-        {
 
+      while (Input.GetKeyDown(KeyCode.UpArrow)|| (Input.GetKeyDown(KeyCode.DownArrow)))
+        {
+            print("presionando");
             animacioncerdito.SetInteger("cerdito", 1);
             //StartCoroutine(corutinawaitfrenadoyluegocorrer());
             //anicharacter.SetInteger("personaje", 1);
 
-        } else { animacioncerdito.SetInteger("cerdito", 0); }
-       // else { animacioncerdito.SetInteger("cerdito", 1); }
-       /* if (Input.GetKeyDown(KeyCode.DownArrow))
+        }  { animacioncerdito.SetInteger("cerdito", 0); print("no presionando");       }
+      
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-
-            animacioncerdito.SetInteger("cerdito", 1);
-            //anicharacter.SetInteger("personaje", 1);//probajndo daño
-            // StartCoroutine(corutinawaitfrenadoyluegocorrer());
+            print("saltando");
         }
-        else { animacioncerdito.SetInteger("cerdito", 1); }
-        */
-        
-       
-   
+
+
+
+
+
+
+
+
 
 
 
