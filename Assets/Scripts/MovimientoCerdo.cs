@@ -49,13 +49,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
             if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
             {
                 itemControl.ChargeItem(numRandomP1);
-                mostrarItem.HideAllItem();
+                mostrarItem.HideAllIcons();
                 numRandomP1 = 0;
             }
             if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
             {
                 itemControl.ChargeItem(numRandomP2);
-                mostrarItem.HideAllItem();
+                mostrarItem.HideAllIcons();
                 numRandomP2 = 0;
             }
         }
@@ -65,12 +65,12 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1 && numRandomP1==0)
+        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1)
         {
             numRandomP1 = itemControl.getItemRandom();
             mostrarItem.ShowItem(numRandomP1,numPlayer.p1);
         }
-        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2 && numRandomP2 == 0)
+        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2)
         {
             numRandomP2 = itemControl.getItemRandom();
             mostrarItem.ShowItem(numRandomP2,numPlayer.p2);
