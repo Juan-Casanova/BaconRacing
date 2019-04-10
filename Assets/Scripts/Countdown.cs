@@ -3,7 +3,7 @@
 
 public class Countdown : MonoBehaviour
 {
-	public CountDownEngine countDownEngine;
+	public CountDownEngine countDownEngine=new CountDownEngine();
      public bool movement;
 
     public void Start()

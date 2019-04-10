@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-
-public class CountDownEngine:MonoBehaviour
+﻿
+public class CountDownEngine
 {
 
 	/// <summary>
