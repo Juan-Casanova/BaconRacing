@@ -21,7 +21,7 @@ public class managerHUD : MonoBehaviour
     public GameObject meta;
 
     public Countdown countdown;
-    public CountDownEngine countDownEngine;
+    public CountDownEngine countDownEngine=new CountDownEngine();
     public ManagerLaps managerLaps=new ManagerLaps();
 
 

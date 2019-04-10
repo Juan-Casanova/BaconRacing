@@ -13,8 +13,8 @@ namespace Tests
         //Arrange
         CountDownEngine countDownEngine=new CountDownEngine();
 
-        countDownEngine.time = 6.0f;
-        countDownEngine.initialCounter = 5.0f;
+            countDownEngine.time = 6.0f;
+            countDownEngine.initialCounter = 5.0f;
             bool result;
 
 

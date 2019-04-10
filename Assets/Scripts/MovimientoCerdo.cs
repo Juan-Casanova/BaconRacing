@@ -3,10 +3,6 @@
 public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 {
 
-
-
-
-
     // activaranimaciones activaranimaciones;
     public enum numPlayer
 	{
