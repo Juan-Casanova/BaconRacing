@@ -3,13 +3,23 @@ guid: 485962b1559d2b9439dcf00b9b5bfdd7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Alzar
+    100002: Camera
+    100004: Directional Light
+    100006: //RootNode
+    400000: Alzar
+    400002: Camera
+    400004: Directional Light
+    400006: //RootNode
+    2000000: Camera
     2100000: Pista_base
     2100002: Pista_lados
-    2300000: //RootNode
-    3300000: //RootNode
+    2300000: Alzar
+    3300000: Alzar
     4300000: Alzar
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Directional Light
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -62,8 +72,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,7 +100,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
