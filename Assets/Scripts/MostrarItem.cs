@@ -21,25 +21,44 @@ public class MostrarItem : MonoBehaviour
 
     public void ShowItem(int _numItem, MovimientoCerdo.numPlayer numPlayer)
     {
-            switch (_numItem)
-            {
-                case 1:
-                    if (numPlayer == MovimientoCerdo.numPlayer.p1) { ShowIconItem(itemsIcon[0]); }
-                    else { ShowIconItem(itemsIcon[3]); }
-                    break;
-                case 2:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1) { ShowIconItem(itemsIcon[1]); }
-                else { ShowIconItem(itemsIcon[4]); }
-                break;
-                case 3:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1) { ShowIconItem(itemsIcon[2]); }
-                else { ShowIconItem(itemsIcon[5]); }
-                break;
-                default:
-                    HideAllItem();
-                    break;
-            }
+        switch (_numItem)
+        {
+            case 1:
+                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                {
+                    ShowIconItem(itemsIcon[0]);
+                }
+                else
+                {
+                    ShowIconItem(itemsIcon[3]);
+                }
 
+                break;
+            case 2:
+                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                {
+                    ShowIconItem(itemsIcon[1]);
+                }
+                else
+                {
+                    ShowIconItem(itemsIcon[4]);
+                }
+
+                break;
+            case 3:
+                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                {
+                    ShowIconItem(itemsIcon[2]);
+                }
+                else
+                {
+                    ShowIconItem(itemsIcon[5]);
+                }
+
+                break;
+            default:
+                HideAllItem();
+                break;
+        }
     }
-
 }
