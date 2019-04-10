@@ -14,9 +14,7 @@ public class ItemControlEngine
             case 3:
                 itemControl.PoderItem3();
                 break;
-            default:
-            
-                break;
+
         }
     }
 

@@ -21,7 +21,7 @@ public class managerHUD : MonoBehaviour
 
     public Countdown countdown;
     public CountDownEngine countDownEngine=new CountDownEngine();
-    public ManagerLaps managerLaps=new ManagerLaps();
+    public CheckLapEngine chekCheckLapEngine;
 
 
 
@@ -45,10 +45,10 @@ public class managerHUD : MonoBehaviour
         }
             posPlayer1.text = distanceP1 >= distanceP2 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
             posPlayer2.text = distanceP2 >= distanceP1 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
-            laps1.text = "LAP: " +managerLaps.LapP1+ "/2";
-            laps2.text = "LAP: "+managerLaps.LapP2 + "/2";
+            laps1.text = "LAP: " +chekCheckLapEngine.lapPlayer1+ "/2";
+            laps2.text = "LAP: "+ chekCheckLapEngine.lapPlayer1 + "/2";
 
-        if (managerLaps.LapP1 > 2 || managerLaps.LapP2 > 2)
+        if (chekCheckLapEngine.lapPlayer1 > 2 || chekCheckLapEngine.lapPlayer2 > 2)
         {
             StartCoroutine(changeNextTrack("PistaBosqueChina", distanceP1, distanceP2));
         }
@@ -57,7 +57,7 @@ public class managerHUD : MonoBehaviour
 
     private IEnumerator changeNextTrack(string nextTrack,float distanceP1,float distanceP2)
     {
-        if (managerLaps.LapP1 >= managerLaps.LapP2)
+        if (chekCheckLapEngine.lapPlayer1 >= chekCheckLapEngine.lapPlayer2)
         {
             winner[0].enabled = true;
             winner[2].enabled = true;

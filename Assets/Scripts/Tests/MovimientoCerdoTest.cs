@@ -61,6 +61,7 @@ namespace Tests
             movimientoCerdoEngine.Move(verticalAxis,horizontalAxis,deltaTime, movimientoCerdoSubstitute);
 
             //Assert
+        
             Assert.IsFalse(movimientoCerdoSubstitute.MoveWasCalled);
 
         }

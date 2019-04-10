@@ -1,7 +1,6 @@
 ﻿public class MovimientoCerdoEngine
 {
 	public float angulo;
-
 	public float speed;
 	public float jump;
 	public int maxJumps;
