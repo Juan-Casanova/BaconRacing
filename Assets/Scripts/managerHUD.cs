@@ -17,7 +17,6 @@ public class managerHUD : MonoBehaviour
 
     public Image[] instructions;
     public Image[] winner;
-    public GameObject[] checkPoints;
     public GameObject meta;
 
     public Countdown countdown;
