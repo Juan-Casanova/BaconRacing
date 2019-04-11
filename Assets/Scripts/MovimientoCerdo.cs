@@ -53,13 +53,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo,IItemControl
             if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
             {
                 itemControlEngine.ChargeItem(numRandomP1,this);
-                mostrarItem.HideAllItem();
+                mostrarItem.HideAllItems();
                 numRandomP1 = 0;
             }
             if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
             {
                 itemControlEngine.ChargeItem(numRandomP2,this);
-                mostrarItem.HideAllItem();
+                mostrarItem.HideAllItems();
                 numRandomP2 = 0;
             }
         }

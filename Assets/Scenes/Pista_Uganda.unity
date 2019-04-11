@@ -2305,7 +2305,6 @@ GameObject:
   - component: {fileID: 691258866}
   - component: {fileID: 691258865}
   - component: {fileID: 691258864}
-  - component: {fileID: 691258867}
   m_Layer: 0
   m_Name: spawn1 (1)
   m_TagString: spawn
@@ -2339,7 +2338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f2ed1e624cf7b4abac0088626f8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkLapEngine: {fileID: 691258867}
+  isActivate1: 0
+  isActivate2: 0
 --- !u!65 &691258865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2390,24 +2390,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &691258867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691258862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7023deccb4e9ba0429a90cb9cdb20e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivate1: 0
-  isActivate2: 0
-  numCheckPlayer1: 0
-  numCheckPlayer2: 0
-  lapPlayer1: 0
-  lapPlayer2: 0
 --- !u!1 &693893926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2600,6 @@ GameObject:
   - component: {fileID: 720267944}
   - component: {fileID: 720267943}
   - component: {fileID: 720267942}
-  - component: {fileID: 720267945}
   m_Layer: 0
   m_Name: spawn1 (3)
   m_TagString: spawn
@@ -2652,7 +2633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f2ed1e624cf7b4abac0088626f8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkLapEngine: {fileID: 720267945}
+  isActivate1: 0
+  isActivate2: 0
 --- !u!65 &720267943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2703,24 +2685,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &720267945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720267940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7023deccb4e9ba0429a90cb9cdb20e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivate1: 0
-  isActivate2: 0
-  numCheckPlayer1: 0
-  numCheckPlayer2: 0
-  lapPlayer1: 0
-  lapPlayer2: 0
 --- !u!1 &720557618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,7 +2758,6 @@ GameObject:
   - component: {fileID: 755181456}
   - component: {fileID: 755181455}
   - component: {fileID: 755181454}
-  - component: {fileID: 755181457}
   m_Layer: 0
   m_Name: spawn1 (2)
   m_TagString: spawn
@@ -2828,7 +2791,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f2ed1e624cf7b4abac0088626f8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkLapEngine: {fileID: 755181457}
+  isActivate1: 0
+  isActivate2: 0
 --- !u!65 &755181455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2879,24 +2843,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &755181457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755181452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7023deccb4e9ba0429a90cb9cdb20e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivate1: 0
-  isActivate2: 0
-  numCheckPlayer1: 0
-  numCheckPlayer2: 0
-  lapPlayer1: 0
-  lapPlayer2: 0
 --- !u!1 &756643537
 GameObject:
   m_ObjectHideFlags: 0
@@ -3376,7 +3322,6 @@ MonoBehaviour:
   - {fileID: 1977572631}
   meta: {fileID: 1178301103}
   countdown: {fileID: 904129375}
-  chekCheckLapEngine: {fileID: 1073637286}
 --- !u!114 &904129377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3844,7 +3789,6 @@ GameObject:
   - component: {fileID: 1073637285}
   - component: {fileID: 1073637284}
   - component: {fileID: 1073637283}
-  - component: {fileID: 1073637286}
   m_Layer: 0
   m_Name: spawn1
   m_TagString: spawn
@@ -3878,7 +3822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f2ed1e624cf7b4abac0088626f8729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkLapEngine: {fileID: 1073637286}
+  isActivate1: 0
+  isActivate2: 0
 --- !u!65 &1073637284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3929,24 +3874,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1073637286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073637281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7023deccb4e9ba0429a90cb9cdb20e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isActivate1: 0
-  isActivate2: 0
-  numCheckPlayer1: 0
-  numCheckPlayer2: 0
-  lapPlayer1: 0
-  lapPlayer2: 0
 --- !u!1 &1090205878
 GameObject:
   m_ObjectHideFlags: 0

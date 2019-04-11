@@ -7,44 +7,48 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void CheckLapTest_ManageCheckLap_WhenIsActivate1TrueAndComparePlayerIsTrue()
+        public void ManagerLap_ManageCheckLap_WhenIsActivate1TrueAndComparePlayerIsTrue()
         {
             //Arrange
-            CheckLapEngine checkLapEngine = new CheckLapEngine();
-            checkLapEngine.isActivate1 = false;
+            ManagerLap checkLapEngine = new ManagerLap();
+            bool isActivateTest1 = false;
             checkLapEngine.numCheckPlayer1 = 1;
-            checkLapEngine.isActivate2 = false;
+            bool isActivateTest2 = false;
             checkLapEngine.numCheckPlayer2 = 1;
             bool comparePlayer = true;
 
 
             //Act
-            checkLapEngine.ManageCheckLap(comparePlayer);
+            checkLapEngine.ManageCheckLap(comparePlayer,
+                ref isActivateTest1,
+                ref isActivateTest2);
 
            //Assert
-           Assert.IsTrue(checkLapEngine.isActivate1);
+           Assert.IsTrue(isActivateTest1);
            Assert.AreEqual(2, checkLapEngine.numCheckPlayer1);
 
         }
 
         // A Test behaves as an ordinary method
         [Test]
-        public void CheckLapTest_ManageCheckLap_WhenIsActivate1FalseAndComparePlayerIsTrue()
+        public void ManagerLap_ManageCheckLap_WhenIsActivate1FalseAndComparePlayerIsTrue()
         {
             //Arrange
-            CheckLapEngine checkLapEngine = new CheckLapEngine();
-            checkLapEngine.isActivate1 = false;
+            ManagerLap checkLapEngine = new ManagerLap();
+            bool isActivateTest1 = false;
             checkLapEngine.numCheckPlayer1 = 1;
-            checkLapEngine.isActivate2 = false;
+            bool isActivateTest2 = false;
             checkLapEngine.numCheckPlayer2 = 1;
             bool comparePlayer = false;
 
 
             //Act
-            checkLapEngine.ManageCheckLap(comparePlayer);
+            checkLapEngine.ManageCheckLap(comparePlayer,
+                ref isActivateTest1,
+                ref isActivateTest2);
 
             //Assert
-            Assert.IsFalse(checkLapEngine.isActivate1);
+            Assert.IsFalse(isActivateTest1);
             Assert.AreEqual(1, checkLapEngine.numCheckPlayer1);
 
         }
@@ -52,45 +56,134 @@ namespace Tests
 
         // A Test behaves as an ordinary method
         [Test]
-        public void CheckLapTest_ManageCheckLap_WhenIsActivate2TrueAndComparePlayerIsFalse()
+        public void ManagerLap_ManageCheckLap_WhenIsActivate2TrueAndComparePlayerIsFalse()
         {
             //Arrange
-            CheckLapEngine checkLapEngine = new CheckLapEngine();
-            checkLapEngine.isActivate1 = false;
+            ManagerLap checkLapEngine = new ManagerLap();
+            bool isActivateTest1 = false;
             checkLapEngine.numCheckPlayer1 = 1;
-            checkLapEngine.isActivate2 = false;
+            bool isActivateTest2 = false;
             checkLapEngine.numCheckPlayer2 = 1;
             bool comparePlayer = false;
 
 
             //Act
-            checkLapEngine.ManageCheckLap(comparePlayer);
+            checkLapEngine.ManageCheckLap(comparePlayer,
+                ref isActivateTest1,
+                ref isActivateTest2);
 
             //Assert
-            Assert.IsTrue(checkLapEngine.isActivate2);
+            Assert.IsTrue(isActivateTest2);
             Assert.AreEqual(2, checkLapEngine.numCheckPlayer2);
 
         }
 
         // A Test behaves as an ordinary method
         [Test]
-        public void CheckLapTest_ManageCheckLap_WhenIsActivate2FalseAndComparePlayerIsFalse()
+        public void ManagerLap_ManageCheckLap_WhenIsActivate2FalseAndComparePlayerIsFalse()
         {
             //Arrange
-            CheckLapEngine checkLapEngine = new CheckLapEngine();
-            checkLapEngine.isActivate1 = false;
+            ManagerLap checkLapEngine = new ManagerLap();
+            bool isActivateTest1 = false;
             checkLapEngine.numCheckPlayer1 = 1;
-            checkLapEngine.isActivate2 = false;
+            bool isActivateTest2 = false;
             checkLapEngine.numCheckPlayer2 = 1;
             bool comparePlayer = true;
 
 
             //Act
-            checkLapEngine.ManageCheckLap(comparePlayer);
+            checkLapEngine.ManageCheckLap(comparePlayer,
+                ref isActivateTest1,
+                ref isActivateTest2);
 
             //Assert
-            Assert.IsFalse(checkLapEngine.isActivate2);
+            Assert.IsFalse(isActivateTest2);
             Assert.AreEqual(1, checkLapEngine.numCheckPlayer2);
+
+        }
+
+        [Test]
+        public void ManagerLap_CheckCurrentLap_WhenNumCheckPlayer1GreaterThree()
+        {
+            //Arrange
+            ManagerLap checkLapEngine = new ManagerLap();
+            checkLapEngine.lapPlayer1 = 0;
+            checkLapEngine.numCheckPlayer1 = 4;
+            checkLapEngine.lapPlayer2 = 0;
+            checkLapEngine.numCheckPlayer2 = 1;
+            bool isActivateTest1 = false;
+            bool isActivateTest2 = false;
+
+            //Act
+            checkLapEngine.CheckCurrentLap(ref isActivateTest1,
+                ref isActivateTest2);
+
+            //Assert
+            Assert.AreEqual(1, checkLapEngine.lapPlayer1);
+
+        }
+
+        [Test]
+        public void ManagerLap_CheckCurrentLap_WhenNumCheckPlayer2GreaterThree()
+        {
+            //Arrange
+            ManagerLap checkLapEngine = new ManagerLap();
+            checkLapEngine.lapPlayer1 = 0;
+            checkLapEngine.numCheckPlayer1 = 1;
+            checkLapEngine.lapPlayer2 = 0;
+            checkLapEngine.numCheckPlayer2 = 4;
+            bool isActivateTest1 = false;
+            bool isActivateTest2 = false;
+
+            //Act
+            checkLapEngine.CheckCurrentLap(ref isActivateTest1,
+                ref isActivateTest2);
+
+            //Assert
+            Assert.AreEqual(1, checkLapEngine.lapPlayer2);
+
+        }
+
+        [Test]
+        public void ManagerLap_CheckCurrentLap_WhenNumCheckPlayer1LessThree()
+        {
+            //Arrange
+            ManagerLap checkLapEngine = new ManagerLap();
+            checkLapEngine.lapPlayer1 = 0;
+            checkLapEngine.numCheckPlayer1 = 1;
+            checkLapEngine.lapPlayer2 = 0;
+            checkLapEngine.numCheckPlayer2 = 4;
+
+            bool isActivateTest1 = false;
+            bool isActivateTest2 = false;
+
+            //Act
+            checkLapEngine.CheckCurrentLap(ref isActivateTest1,
+                ref isActivateTest2);
+
+            //Assert
+            Assert.AreEqual(0, checkLapEngine.lapPlayer1);
+
+        }
+
+        [Test]
+        public void ManagerLap_CheckCurrentLap_WhenNumCheckPlayer2LessThree()
+        {
+            //Arrange
+            ManagerLap checkLapEngine = new ManagerLap();
+            checkLapEngine.lapPlayer1 = 0;
+            checkLapEngine.numCheckPlayer1 = 1;
+            checkLapEngine.lapPlayer2 = 0;
+            checkLapEngine.numCheckPlayer2 = 1;
+            bool isActivateTest1 = false;
+            bool isActivateTest2 = false;
+
+            //Act
+            checkLapEngine.CheckCurrentLap(ref isActivateTest1,
+                ref isActivateTest2);
+
+            //Assert
+            Assert.AreEqual(0, checkLapEngine.lapPlayer2);
 
         }
     }

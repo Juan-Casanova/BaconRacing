@@ -6,16 +6,10 @@ using UnityEngine.UI;
 
 public class MostrarItem : MonoBehaviour
 {
-  
+   
     public GameObject[] itemsIcon;
 
-    public void Start()=> HideAllItem();
-
-    public void HideAllItem()
-    {
-        for (int i=0; i< itemsIcon.Length; i++){itemsIcon[i].GetComponent<Image>().enabled = false;}
-
-    }
+    public void Start() => HideAllItems();
 
     public void ShowIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = true;
 
@@ -57,8 +51,17 @@ public class MostrarItem : MonoBehaviour
 
                 break;
             default:
-                HideAllItem();
+               HideAllItems();
                 break;
         }
     }
+
+    public void HideAllItems()
+    {
+        for (int i = 0; i < itemsIcon.Length; i++)
+        {
+            itemsIcon[i].GetComponent<Image>().enabled = false;
+        }
+    }
+
 }
