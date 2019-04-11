@@ -63,19 +63,12 @@ public class Real_Menu_manager : MonoBehaviour
 	#endregion
 
 	public void Escribe_Escena(string _scene) => SceneManager.LoadScene(_scene, LoadSceneMode.Single);
-
-	public void SalirJuego()
-	{
-		Debug.Log("Saliendo del Juego");
-		Application.Quit();
-	}
+    public void SalirJuego() => Application.Quit();
 
 	private void Update()
 	{
 		if (Input.GetKeyDown("escape"))
 		{
-			Debug.Log("Presionando escape");
-
 			switch (Input_Regreso)
 			{
 				case BackTarget.MainMenu:
@@ -89,7 +82,6 @@ public class Real_Menu_manager : MonoBehaviour
 					break;
 				default:
 					ShowButtonsForNumberOfPlayers(false);
-					Debug.Log("Hay un bug papu");
 					break;
 			}
 		}

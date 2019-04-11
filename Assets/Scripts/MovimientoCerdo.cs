@@ -10,7 +10,6 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo,IItemControl
 
     public MovimientoCerdo movimientoCerdo;
 
-    // activaranimaciones activaranimaciones;
     public enum numPlayer
 	{
 		p1,
@@ -83,11 +82,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo,IItemControl
 
 	public void Move(float verticalVelocity, float rotation)
 	{
-      
-
         transform.Translate(0, 0, verticalVelocity);
 		transform.Rotate(0, rotation, 0);
-
 	}
 
 	public void Jump(float jumpForce)
