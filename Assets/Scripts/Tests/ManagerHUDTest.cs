@@ -76,20 +76,39 @@ namespace Tests
         public void ManagerHUD_CheckWinner_WinnerPlayer1()
         {
             // Arrange
-            ManagerLap manager=new ManagerLap();
-            managerHUD managerHud=new managerHUD();
-            manager.lapPlayer1=3;
-            manager.lapPlayer2= 2;
-            managerHud.winner[0].enabled = false;
-            managerHud.winner[1].enabled = false;
-            managerHud.winner[2].enabled = false;
-            managerHud.winner[3].enabled = false;
+            ManagerHUDEngine managerHudEngine=new ManagerHUDEngine();
+            managerHudEngine.lapP1=3;
+            managerHudEngine.lapP2 = 2;
+            managerHudEngine.winner0 = false;
+            managerHudEngine.winner1 = false;
+            managerHudEngine.winner2 = false;
+            managerHudEngine.winner3 = false;
 
             //Act
-           managerHud.checkWinner();
+           managerHudEngine.checkWinner();
 
             //Assert
-            Assert.IsTrue(managerHud.winner[0].enabled);
+            Assert.IsTrue(managerHudEngine.winner0);
+        }
+
+        [Test]
+        public void ManagerHUD_CheckWinner_WinnerPlayer2()
+        {
+            // Arrange
+            ManagerHUDEngine managerHudEngine = new ManagerHUDEngine();
+  
+            managerHudEngine.lapP1 = 2;
+            managerHudEngine.lapP2 = 3;
+            managerHudEngine.winner0 = false;
+            managerHudEngine.winner1 = false;
+            managerHudEngine.winner2 = false;
+            managerHudEngine.winner3 = false;
+
+            //Act
+            managerHudEngine.checkWinner();
+
+            //Assert
+            Assert.IsTrue(managerHudEngine.winner2);
         }
     }
 }

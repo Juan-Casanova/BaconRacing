@@ -13,6 +13,11 @@ public class ManagerHUDEngine
     public int lapP2;
     public float initialCounter;
 
+   public bool winner0 = false;
+   public bool winner1 = false;
+   public bool winner2 = false;
+   public bool winner3 = false;
+
     public void HideScreens(IManagerHUD iManagerHud)
     {
         iManagerHud.HideScreens();
@@ -33,6 +38,21 @@ public class ManagerHUDEngine
 
         t_laps1 = "LAP: " + lapP1 + "/2";
         t_laps2 = "LAP: " + lapP2 + "/2";
+    }
+
+
+    public void checkWinner()
+    {
+        if (lapP1 >= lapP2)
+        {
+            winner0 = true;
+            winner1 = true;
+        }
+        else
+        {
+            winner2 = true;
+            winner3 = true;
+        }
     }
 
 

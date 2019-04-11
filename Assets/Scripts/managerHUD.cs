@@ -43,7 +43,13 @@ public class managerHUD : MonoBehaviour,IManagerHUD
         managerHudEngine.distanceP2 = Vector3.Distance(player2.position, meta.transform.position);
         managerHudEngine.t_coutndown = countDown.text;
         managerHudEngine.initialCounter = countDownEngine.initialCounter;
-#endregion
+        managerHudEngine.lapP1 = chekCheckLapEngine.lapPlayer1;
+        managerHudEngine.lapP2 = chekCheckLapEngine.lapPlayer2;
+        managerHudEngine.winner0 = winner[0].enabled = false;
+        managerHudEngine.winner1 = winner[1].enabled = false;
+        managerHudEngine.winner2 = winner[2].enabled = false;
+        managerHudEngine.winner3 = winner[3].enabled = false;
+        #endregion
         managerHudEngine.ActivateHUD();
        
         if (chekCheckLapEngine.lapPlayer1 > 2 || chekCheckLapEngine.lapPlayer2 > 2)
@@ -55,7 +61,7 @@ public class managerHUD : MonoBehaviour,IManagerHUD
 
     private IEnumerator changeNextTrack(string nextTrack,float distanceP1,float distanceP2)
     {
-        checkWinner();
+        managerHudEngine.checkWinner();
 
         yield return new WaitForSeconds(4);
 
@@ -71,21 +77,5 @@ public class managerHUD : MonoBehaviour,IManagerHUD
         }
     }
 
-
-    public void checkWinner()
-    {
-        if (chekCheckLapEngine.lapPlayer1 >= chekCheckLapEngine.lapPlayer1)
-        {
-            winner[0].enabled = true;
-            winner[2].enabled = true;
-        }
-        else
-        {
-            winner[1].enabled = true;
-            winner[3].enabled = true;
-        }
-    }
-
- 
 
 }
