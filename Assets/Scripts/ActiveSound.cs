@@ -8,8 +8,8 @@ public class ActiveSound : MonoBehaviour
     public AudioSource _AudioObjeto;
 
     void OnTriggerEnter(Collider other)
-    { if (other.gameObject.name == "Moneda") _AudioMoneda.Play(); }
+    { if (other.gameObject.name == "Moneda" || other.gameObject.name == "Moneda (1)"|| other.gameObject.name == "Moneda (2)" || other.gameObject.name == "Moneda (3)") _AudioMoneda.Play(); }
 
     void Update()
-    { if (Input.GetKeyDown(KeyCode.M) && Input.GetKeyDown(KeyCode.E)) _AudioObjeto.Play(); }
+    { if (Input.GetKeyDown(KeyCode.M) || Input.GetKeyDown(KeyCode.E)) _AudioObjeto.Play(); }
 }
