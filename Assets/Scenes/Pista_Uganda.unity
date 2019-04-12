@@ -173,6 +173,36 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a6eca83c171b1e84cb4300fb3cd97ed6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ef8186cecafe9b43b454258a380db6f, type: 3}
+--- !u!1 &8799782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8799783}
+  m_Layer: 0
+  m_Name: SonidoLanzamiento
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8799783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8799782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.514946, y: -4.6148615, z: 23.59473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &18046588
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,6 +979,7 @@ GameObject:
   - component: {fileID: 268875512}
   - component: {fileID: 268875511}
   - component: {fileID: 268875510}
+  - component: {fileID: 268875519}
   m_Layer: 0
   m_Name: cerditoP2
   m_TagString: Untagged
@@ -1110,6 +1141,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cerdito: {fileID: 268875515}
   animacioncerdito: {fileID: 268875516}
+--- !u!114 &268875519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268875509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751cbdf489c61ec4caff1af53384c3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AudioMoneda: {fileID: 0}
+  _AudioObjeto: {fileID: 0}
+  _AudioPublico: {fileID: 0}
+  _AudioChillido: {fileID: 0}
 --- !u!1 &273635729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1328,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 250403211}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &312643655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312643656}
+  m_Layer: 0
+  m_Name: Sonidos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312643656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312643655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.514946, y: -4.6148615, z: 23.59473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317821978
 GameObject:
@@ -2805,6 +2882,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688907084}
   m_CullTransparentMesh: 0
+--- !u!1 &697758173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697758174}
+  m_Layer: 0
+  m_Name: SonidoPublico
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &697758174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697758173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.514946, y: -4.6148615, z: 23.59473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707192316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,6 +5959,7 @@ GameObject:
   - component: {fileID: 1554411228}
   - component: {fileID: 1554411227}
   - component: {fileID: 1554411226}
+  - component: {fileID: 1554411231}
   - component: {fileID: 1554411225}
   - component: {fileID: 1554411230}
   - component: {fileID: 1554411224}
@@ -6019,6 +6127,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cerdito: {fileID: 1554411227}
   animacioncerdito: {fileID: 1554411228}
+--- !u!114 &1554411231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554411221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751cbdf489c61ec4caff1af53384c3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AudioMoneda: {fileID: 0}
+  _AudioObjeto: {fileID: 0}
+  _AudioPublico: {fileID: 0}
+  _AudioChillido: {fileID: 0}
 --- !u!1 &1591783361
 GameObject:
   m_ObjectHideFlags: 0
@@ -7651,6 +7775,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1184954282}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1885161591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885161592}
+  m_Layer: 0
+  m_Name: SonidoMoneda
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1885161592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885161591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.514946, y: -4.6148615, z: 23.59473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1888456337
 MeshRenderer:
