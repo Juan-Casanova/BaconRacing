@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class ItemControl : MonoBehaviour
 {
-    public bool ActiveShield;
-    public Control_Cerdito controlCerdito;
-    public GameObject jugador1;
+    public GameObject jugador;
     public GameObject item1TocinoPista;
-    public GameObject item2escudo;
-    public GameObject item3ManchaPantallaEnemigo;
-    public GameObject item4chile;
-    public GameObject item5Proyectil;
+    public GameObject item2Proyectil;
+    public GameObject item3chile;
 
+    public MovimientoCerdo movimientoCerdo;
 
-    public int getItemRandom()
-    {
-        return Random.Range(1, 5);
-    }
+    public void Start() => item3chile.SetActive(false);
+
+    public int getItemRandom()=> Random.Range(1, 3);
 
     public void ChargeItem(int numRandom)
     {
@@ -25,33 +21,14 @@ public class ItemControl : MonoBehaviour
         switch (numRandom)
         {
             case 1:
-               // mostrarItem.mostrarItem1();
                 PoderItem1();
-                
                 break;
             case 2:
-               // mostrarItem.mostrarItem2();
-                PoderItem2(ActiveShield);
-                
+                PoderItem2();
                 break;
             case 3:
-               // mostrarItem.mostrarItem3();
                 PoderItem3();
-                
                 break;
-
-            case 4:
-               // mostrarItem.mostrarItem4();
-                PoderItem4();
-                
-                break;
-
-            case 5:
-               // mostrarItem.mostrarItem5();
-                PoderItem5();
-              
-                break;
-
             default:
                 Debug.Log("No hay Nada");
                 break;
@@ -59,75 +36,23 @@ public class ItemControl : MonoBehaviour
 
     }
 
-    //Poder de dejar un tocino en la pista
+    //Item1 Poder de dejar un tocino en la pista
 
-    public void PoderItem1()
-    {
+    public void PoderItem1()=>Instantiate(item1TocinoPista, new Vector3(jugador.transform.position.x, jugador.transform.position.y+.4f, jugador.transform.position.z-.4f), jugador.transform.rotation);
+   
+    //Item 2 Disparar objeto
+    public void PoderItem2() => Instantiate(item2Proyectil, new Vector3(jugador.transform.position.x, jugador.transform.position.y+1.2f, jugador.transform.position.z + 3), transform.rotation);
+   
+    //Item 3 Aceleracion del personaje
 
-        Instantiate(item1TocinoPista, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y+.3f, jugador1.transform.position.z), jugador1.transform.rotation);
-
-    }
-
-
-    //Poder escudo cerdo
-    public void PoderItem2(bool _ActiveShield)
-    {
-        StartCoroutine(TiempoItem2(_ActiveShield));
-    }
-
-    public IEnumerator TiempoItem2(bool _ActiveShield)
-    {
-        item2escudo.SetActive(true);
-        _ActiveShield = true;
- 
-        yield return new WaitForSeconds(3);
-
-        item2escudo.SetActive(false);
-        _ActiveShield = false;
-
-    }
-
-    //Item 3 mancha pantalla del enemigo
-
-    public void PoderItem3()
-    {
-        StartCoroutine(TiempoItem3());
-    }
+    public void PoderItem3() => StartCoroutine(TiempoItem3());
 
     IEnumerator TiempoItem3()
     {
-        item3ManchaPantallaEnemigo.SetActive(true);
-        yield return new WaitForSeconds(3);
-        item3ManchaPantallaEnemigo.SetActive(false);
-
-    }
-
-
-    //Item 4 Aceleracion del personaje
-
-    public void PoderItem4()
-    {
-        StartCoroutine(TiempoItem4());
-    }
-
-    IEnumerator TiempoItem4()
-    {
-        item4chile.SetActive(true);
-        controlCerdito.MaxSpeed=controlCerdito.MaxSpeed * 2.0f;
-
+        item3chile.SetActive(true);
+        movimientoCerdo.movimientoCerdoEngine.speed = 15;
         yield return new WaitForSeconds(5);
-
-        item4chile.SetActive(false);
-        controlCerdito.MaxSpeed = controlCerdito.MaxSpeed / 2.0f;
-
+        movimientoCerdo.movimientoCerdoEngine.speed = 10;
+        item3chile.SetActive(false);
     }
-
-
-    //Item 5 Disparar objeto
-
-    public void PoderItem5()
-    {
-        Instantiate(item5Proyectil, new Vector3(jugador1.transform.position.x, jugador1.transform.position.y, jugador1.transform.position.z + 3), transform.rotation);
-    }
-
 }

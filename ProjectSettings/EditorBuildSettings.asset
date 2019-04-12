@@ -5,19 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Esccena_Dios.unity
-    guid: 2fccf33f2bbc45441b955a119f586de3
   - enabled: 1
     path: Assets/Scenes/Menu_Principal.unity
     guid: 7faad223c9091274c917bb65abc475de
   - enabled: 1
-    path: Assets/Scenes/Loading.unity
-    guid: f016eeaa48751ae43ab0ac9a146ac06f
+    path: Assets/Scenes/PistaBosqueChina.unity
+    guid: ac76e6b56e7d0fc448328ef923b84e80
   - enabled: 1
-    path: Assets/Scenes/Pista_China.unity
-    guid: 804cc2c840ef9b142a96677e45fd3170
-  - enabled: 1
-    path: Assets/Scenes/Pista_DiaMuertos.unity
-    guid: c30296555e86396488698fccc2b4e81d
+    path: Assets/Scenes/Pista_Uganda.unity
+    guid: 6e693d3e8da863a4d953a20de87dff1f
+  - enabled: 0
+    path: Assets/Scenes/PistaMexico.unity
+    guid: 97b86bffdfe519645b1e65b857641d9a
   m_configObjects: {}

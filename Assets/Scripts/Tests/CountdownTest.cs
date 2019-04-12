@@ -1,32 +1,45 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
+﻿using NUnit.Framework;
+
 
 namespace Tests
 {
     public class CountdownTest
     {
         // A Test behaves as an ordinary method
-        [UnityTest]
-        public void CountdownTestSimplePasses()
+        [Test]
+        public void CountdownTestWhenIsTrue()
         {
             //Arrange
-            var countDown = new GameObject().AddComponent<Countdown>();
-            float time = 1.0f;
-            float initialCounter=1.0f;
-          
-            bool activateMovement=false;
-            
+            CountDownEngine countDownEngine = new CountDownEngine();
+            countDownEngine.time = 6.0f;
+            countDownEngine.initialCounter = 5.0f;
+            bool result;
+
             //Act
-            countDown.activateMovement(initialCounter,time, activateMovement);
+            result=countDownEngine.countdownToActivateMovement();
 
             //Assert
-            Assert.IsTrue(activateMovement);
+            Assert.IsTrue(result);
 
         }
 
-       
+        [Test]
+        public void CountdownTestWhenIsFalse()
+        {
+            //Arrange
+            CountDownEngine countDownEngine = new CountDownEngine();
+            countDownEngine.time = 3.0f;
+            countDownEngine.initialCounter = 5.0f;
+            bool result;
+
+            //Act
+            result = countDownEngine.countdownToActivateMovement();
+
+            //Assert
+            Assert.IsFalse(result);
+
+        }
+
+
     }
 }
