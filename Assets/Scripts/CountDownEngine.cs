@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ﻿public class CountDownEngine
+=======
+﻿
+public class CountDownEngine
+>>>>>>> Feature/IntegracionCodigoSonidoYEfecto
 {
     /// <summary>
     /// Es desde donde comienza el contador inicial

@@ -8,15 +8,10 @@ public class TakeOut_title : MonoBehaviour
     public GameObject Character_Canvas;
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.anyKey)
-        {
-
-            Debug.Log("A key or mouse click has been detected");
+    void Update(){
+        if (Input.anyKey){
             Main_Canvas.SetActive(false);
             Character_Canvas.SetActive(true);
         }
-
     }
 }

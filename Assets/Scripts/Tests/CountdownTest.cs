@@ -9,8 +9,15 @@ namespace Tests
         [Test]
         public void CountdownTestWhenIsTrue()
         {
+<<<<<<< HEAD
             //Arrange
             CountDownEngine countDownEngine = new CountDownEngine();
+=======
+        
+        //Arrange
+        CountDownEngine countDownEngine=new CountDownEngine();
+
+>>>>>>> Feature/IntegracionCodigoSonidoYEfecto
             countDownEngine.time = 6.0f;
             countDownEngine.initialCounter = 5.0f;
             bool result;
