@@ -326,36 +326,6 @@ Transform:
   m_Father: {fileID: 2104792090}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &124695082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 124695083}
-  m_Layer: 0
-  m_Name: FIU
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &124695083
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124695082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.918839, y: 6.7413135, z: -12.7704735}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130835167
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,7 +916,6 @@ GameObject:
   - component: {fileID: 268875514}
   - component: {fileID: 268875518}
   - component: {fileID: 268875513}
-  - component: {fileID: 268875512}
   - component: {fileID: 268875511}
   - component: {fileID: 268875510}
   m_Layer: 0
@@ -994,18 +963,6 @@ MonoBehaviour:
     type: 3}
   item3chile: {fileID: 0}
   movimientoCerdo: {fileID: 268875513}
---- !u!114 &268875512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268875509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &268875513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,8 +993,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14800414, y: 0.1026596, z: 0.23728478}
-  m_Center: {x: -0.0008980344, y: 0.05479444, z: 0.034981567}
+  m_Size: {x: 0.15282033, y: 0.1276413, z: 0.23728478}
+  m_Center: {x: -0.16686541, y: 0.06728529, z: 0.034981567}
 --- !u!54 &268875515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1158,7 +1115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &281171213
 Transform:
   m_ObjectHideFlags: 0
@@ -3451,8 +3408,8 @@ MonoBehaviour:
   - {fileID: 916220815}
   winner:
   - {fileID: 268176988}
-  - {fileID: 379212447}
   - {fileID: 954032988}
+  - {fileID: 379212447}
   - {fileID: 1977572631}
   check: {fileID: 1073637283}
   _countdown: {fileID: 904129375}
@@ -5163,7 +5120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1370324584
 Transform:
   m_ObjectHideFlags: 0
@@ -5854,7 +5811,6 @@ GameObject:
   - component: {fileID: 1554411226}
   - component: {fileID: 1554411225}
   - component: {fileID: 1554411230}
-  - component: {fileID: 1554411224}
   - component: {fileID: 1554411223}
   - component: {fileID: 1554411222}
   m_Layer: 0
@@ -5902,18 +5858,6 @@ MonoBehaviour:
     type: 3}
   item3chile: {fileID: 1432707587}
   movimientoCerdo: {fileID: 1554411225}
---- !u!114 &1554411224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554411221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7173b6948523a4d8c26ff7d3dc7996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1554411225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6227,7 +6171,7 @@ PrefabInstance:
     - target: {fileID: 8927873421071187055, guid: 1762e1f7d43c85049a14620fa77d0900,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 8927873421071187055, guid: 1762e1f7d43c85049a14620fa77d0900,
         type: 3}
