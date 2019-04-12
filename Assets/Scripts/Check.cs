@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
  using System.Collections;
  
- public class Check : MonoBehaviour,ICheck
+ public class Check : MonoBehaviour
  {
 
      public CheckEngine checkEngine = new CheckEngine();
@@ -16,26 +16,21 @@
 
     void  OnTriggerEnter ( Collider other )
      {
-         if (other.CompareTag("Player")) 
-         CheckCurrentCheckpoint();
-     }
+        //if (other.CompareTag("Player1")|| other.CompareTag("Player2")) 
+        //CheckCurrentCheckpoint();
+        if (checkEngine.currentCheckpoint < checkEngine.lenghtSpawn)
+        {
+            checkEngine.currentCheckpoint++;
+        }
+        else
+        {
+            checkEngine.currentLap++;
+            checkEngine.currentCheckpoint = 0;
+        }
+
+    }
 
 
-     public void CheckCurrentCheckpoint()
-     {
-         if (transform == ContadorVueltas.spawnA[ContadorVueltas.currentCheckpoint].transform)
-         {
-             if (checkEngine.currentCheckpoint + 1 < checkEngine.lenghtSpawn)
-             {
-                 checkEngine.currentCheckpoint++;
-             }
-             else
-             {
-                 checkEngine.currentLap++;
-                 checkEngine.currentCheckpoint = 0;
-             }
-         }
-     }
 
  }
 

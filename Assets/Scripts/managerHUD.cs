@@ -41,10 +41,10 @@ public class managerHUD : MonoBehaviour
             instructions[0].enabled = false;
             instructions[1].enabled = false;
         }
-            posPlayer1.text = distanceP1 >= distanceP2 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
-            posPlayer2.text = distanceP2 >= distanceP1 ? "POS: " + "1" + "/2" : "POS: " + "2" + "/2";
-            laps1.text = "LAP: " + check.checkEngine.currentLap.ToString() + "/2";
-            laps2.text = "LAP: " + check.checkEngine.currentLap.ToString() + "/2";
+            posPlayer1.text = distanceP1 >= distanceP2 ? "2":"1";
+            posPlayer2.text = distanceP2 >= distanceP1 ? "2":"1";
+            laps1.text = check.checkEngine.currentLap.ToString()+"/2";
+            laps2.text = check.checkEngine.currentLap.ToString() + "/2";
 
             if (check.checkEngine.currentLap > 2)
             {
