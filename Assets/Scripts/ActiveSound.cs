@@ -7,7 +7,7 @@ public class ActiveSound : MonoBehaviour
     public AudioSource _AudioMoneda;
     public AudioSource _AudioObjeto;
     public AudioSource _AudioPublico;
-    public AudioSource _AudioChillido;
+    
 
     void OnTriggerEnter(Collider other)
     {
