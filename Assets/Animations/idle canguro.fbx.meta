@@ -1,17 +1,71 @@
 fileFormatVersion: 2
-guid: 3826e2201787774469d6695603aed80c
+guid: 136f3a394cd86e74989cdd09ff3cb8e4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Pista_base
-    2100002: Pista_lados
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Alzar
-    7400000: Take 001
+    100000: cabguro
+    100002: //RootNode
+    100004: ikHandle2
+    100006: ikHandle3
+    100008: ikHandle4
+    100010: ikHandle5
+    100012: joint1
+    100014: joint10
+    100016: joint11
+    100018: joint12
+    100020: joint13
+    100022: joint14
+    100024: joint15
+    100026: joint16
+    100028: joint17
+    100030: joint18
+    100032: joint19
+    100034: joint2
+    100036: joint3
+    100038: joint4
+    100040: joint5
+    100042: joint6
+    100044: joint7
+    100046: joint8
+    100048: joint9
+    100050: nurbsCircle1
+    100052: nurbsCircle2
+    100054: nurbsCircle3
+    100056: nurbsCircle4
+    400000: cabguro
+    400002: //RootNode
+    400004: ikHandle2
+    400006: ikHandle3
+    400008: ikHandle4
+    400010: ikHandle5
+    400012: joint1
+    400014: joint10
+    400016: joint11
+    400018: joint12
+    400020: joint13
+    400022: joint14
+    400024: joint15
+    400026: joint16
+    400028: joint17
+    400030: joint18
+    400032: joint19
+    400034: joint2
+    400036: joint3
+    400038: joint4
+    400040: joint5
+    400042: joint6
+    400044: joint7
+    400046: joint8
+    400048: joint9
+    400050: nurbsCircle1
+    400052: nurbsCircle2
+    400054: nurbsCircle3
+    400056: nurbsCircle4
+    2100000: canguro
+    4300000: cabguro
+    7400000: idle canguro
     9500000: //RootNode
+    13700000: cabguro
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -39,7 +93,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle canguro
+      takeName: idle canguro
+      firstFrame: 0
+      lastFrame: 168
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

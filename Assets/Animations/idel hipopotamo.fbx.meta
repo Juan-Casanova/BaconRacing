@@ -1,27 +1,81 @@
 fileFormatVersion: 2
-guid: 485962b1559d2b9439dcf00b9b5bfdd7
+guid: ffa9389a90557304cb18438f83c87c55
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Alzar
+    100000: Backdrop Item
     100002: Camera
     100004: Directional Light
-    100006: //RootNode
-    400000: Alzar
+    100006: hipopotamo
+    100008: //RootNode
+    100010: ikHandle1
+    100012: ikHandle2
+    100014: ikHandle3
+    100016: ikHandle4
+    100018: joint1
+    100020: joint10
+    100022: joint11
+    100024: joint12
+    100026: joint13
+    100028: joint14
+    100030: joint15
+    100032: joint16
+    100034: joint17
+    100036: joint18
+    100038: joint19
+    100040: joint2
+    100042: joint3
+    100044: joint4
+    100046: joint5
+    100048: joint6
+    100050: joint7
+    100052: joint8
+    100054: joint9
+    100056: nurbsCircle1
+    100058: nurbsCircle2
+    100060: nurbsCircle3
+    100062: nurbsCircle4
+    400000: Backdrop Item
     400002: Camera
     400004: Directional Light
-    400006: //RootNode
+    400006: hipopotamo
+    400008: //RootNode
+    400010: ikHandle1
+    400012: ikHandle2
+    400014: ikHandle3
+    400016: ikHandle4
+    400018: joint1
+    400020: joint10
+    400022: joint11
+    400024: joint12
+    400026: joint13
+    400028: joint14
+    400030: joint15
+    400032: joint16
+    400034: joint17
+    400036: joint18
+    400038: joint19
+    400040: joint2
+    400042: joint3
+    400044: joint4
+    400046: joint5
+    400048: joint6
+    400050: joint7
+    400052: joint8
+    400054: joint9
+    400056: nurbsCircle1
+    400058: nurbsCircle2
+    400060: nurbsCircle3
+    400062: nurbsCircle4
     2000000: Camera
-    2100000: Pista_base
-    2100002: Pista_lados
-    2300000: Alzar
-    2300002: //RootNode
-    3300000: Alzar
-    3300002: //RootNode
-    4300000: Alzar
-    7400000: Take 001
+    2100000: manchas
+    2100002: cuepo
+    4300000: hipopotamo
+    7400000: idel hipopotamo
     9500000: //RootNode
     10800000: Directional Light
+    13700000: hipopotamo
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -49,7 +103,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idel hipopotamo
+      takeName: idel hipopotamo
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
