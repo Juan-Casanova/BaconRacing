@@ -15,7 +15,6 @@ public class Countdown : MonoBehaviour
 
     public void Update()
     {
-        countDownEngine.countdownToActivateMovement();
         if (countDownEngine.countdownToActivateMovement())
         {
             countDownEngine.initialCounter = 0;
