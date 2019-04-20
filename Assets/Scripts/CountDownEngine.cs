@@ -13,7 +13,13 @@
     public bool countdownToActivateMovement()
     {
         initialCounter -= time;
+        var result = initialCounter <= 0;
 
-        return initialCounter <= 0;
+        if (result)
+        {
+            initialCounter = 0;
+        }
+
+        return result;
     }
 }
