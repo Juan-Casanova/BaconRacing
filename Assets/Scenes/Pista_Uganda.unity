@@ -2558,11 +2558,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ea485ea183d0a45ac58f6e74b30312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+  item1TocinoPista: {fileID: 0}
+  item2Proyectil: {fileID: 0}
+  item3chile: {fileID: 0}
+  movimientoCerdo: {fileID: 0}
   NumPlayer: 1
   rigidbody: {fileID: 268875515}
   countDown: {fileID: 904129375}
   mostrarItem: {fileID: 904129373}
-  itemControl: {fileID: 268875511}
   numRandomP1: 0
   numRandomP2: 0
 --- !u!65 &268875514
@@ -6215,6 +6219,43 @@ Transform:
   m_Father: {fileID: 1872331359}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &632181607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632181608}
+  m_Layer: 0
+  m_Name: Pantallas_Instrucciones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &632181608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632181607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 10.034, y: 10.034, z: 10.034}
+  m_Children:
+  - {fileID: 669273884}
+  - {fileID: 916220814}
+  m_Father: {fileID: 904129374}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 145.20001, y: 145}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &634348323
 GameObject:
   m_ObjectHideFlags: 0
@@ -6534,16 +6575,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669273883}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.034, y: 10.034, z: 10.034}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 904129374}
-  m_RootOrder: 7
+  m_Father: {fileID: 632181608}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 145}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &669273885
@@ -9379,12 +9420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1DejarTocino1: {fileID: 688907084}
-  item2DispararBotella1: {fileID: 1520066461}
-  item3Velocidad1: {fileID: 350656904}
-  item1DejarTocino2: {fileID: 1715355526}
-  item2DispararBotella2: {fileID: 2144356739}
-  item3Velocidad2: {fileID: 1404301999}
+  itemsIcon: []
 --- !u!224 &904129374
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9403,8 +9439,7 @@ RectTransform:
   - {fileID: 637604982}
   - {fileID: 1891849755}
   - {fileID: 1111352875}
-  - {fileID: 669273884}
-  - {fileID: 916220814}
+  - {fileID: 632181608}
   - {fileID: 1183045850}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -9542,16 +9577,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916220813}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.33502, y: 10.33502, z: 10.33502}
+  m_LocalScale: {x: 1.03, y: 1.03, z: 1.03}
   m_Children: []
-  m_Father: {fileID: 904129374}
-  m_RootOrder: 8
+  m_Father: {fileID: 632181608}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 37, y: 146}
+  m_AnchoredPosition: {x: -25.254131, y: 0.09965515}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &916220815
@@ -11823,7 +11858,7 @@ RectTransform:
   - {fileID: 954032987}
   - {fileID: 1977572630}
   m_Father: {fileID: 904129374}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15601,11 +15636,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ea485ea183d0a45ac58f6e74b30312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugador: {fileID: 1554411221}
+  item1TocinoPista: {fileID: 688907084}
+  item2Proyectil: {fileID: 1520066461}
+  item3chile: {fileID: 350656904}
+  movimientoCerdo: {fileID: 1554411225}
   NumPlayer: 0
   rigidbody: {fileID: 1554411227}
   countDown: {fileID: 904129375}
   mostrarItem: {fileID: 904129373}
-  itemControl: {fileID: 1554411223}
   numRandomP1: 0
   numRandomP2: 0
 --- !u!65 &1554411226
