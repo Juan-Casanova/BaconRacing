@@ -15637,9 +15637,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1554411221}
-  item1TocinoPista: {fileID: 688907084}
-  item2Proyectil: {fileID: 1520066461}
-  item3chile: {fileID: 350656904}
+  item1TocinoPista: {fileID: 100000, guid: 9c5de20bd2d2ab4448c737e2757bbbdb, type: 3}
+  item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
+    type: 3}
+  item3chile: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
   movimientoCerdo: {fileID: 1554411225}
   NumPlayer: 0
   rigidbody: {fileID: 1554411227}
