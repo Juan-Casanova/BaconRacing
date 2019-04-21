@@ -14,6 +14,10 @@ public class ItemControlEngine
             case 3:
                 itemControl.PoderItem3();
                 break;
+            
+            default:
+                itemControl.No_Hay_Nada();
+                break;
 
         }
     }
@@ -26,5 +30,7 @@ public interface IItemControl
     void PoderItem1();
     void PoderItem2();
     void PoderItem3();
+
+    void No_Hay_Nada();
 
 }
