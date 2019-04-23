@@ -27,17 +27,17 @@ public class ActivaranimacionesEngine
     public int SeleccionAnimacionforTest()
     {
         int result_local;
-        switch (numeroAnimacion)
+        
+        if (numeroAnimacion == 1)
         {
-            case 1:
-                result_local = 1;
-                break;
-            case 3:
-                result_local = 3;
-                break;
-            default:
-                result_local = 0;
-                break;
+            result_local = 1;  
+        }else if (numeroAnimacion == 3)
+        {
+            result_local = 3;
+        }
+        else
+        {
+            result_local = 0;
         }
 
         return result_local;
