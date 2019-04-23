@@ -4,7 +4,7 @@ using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class activaranimaciones : MonoBehaviour, Iactivaranimaciones
+public class activaranimaciones : MonoBehaviour
 {
     private ActivaranimacionesEngine _activaranimacionesengine;
 
@@ -22,51 +22,12 @@ public class activaranimaciones : MonoBehaviour, Iactivaranimaciones
     /// cerdito=6 significa animacion de Item
     /// </summary>
 
-    private void Awake()
-    {
-        _activaranimacionesengine = new ActivaranimacionesEngine(this);
-    }
-
-
-    void Update()
-    {
-
-        animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
-
-    }    
+    private void Awake()=> _activaranimacionesengine = new ActivaranimacionesEngine();
+    
+    void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
+  
     
    
 }
 
-public class ActivaranimacionesEngine
-{
 
-    private Iactivaranimaciones _activaranimaciones;
-
-    public ActivaranimacionesEngine(Iactivaranimaciones activaranimaciones)
-    {
-        _activaranimaciones = activaranimaciones;
-    }
-    
-    
-    public int SeleccionAnimacion()
-    {
-        var numeroAnimacion = 0;
-        
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
-        {
-            numeroAnimacion = 1;
-        } else if (Input.GetKeyDown(KeyCode.Space))
-        {
-            numeroAnimacion = 3;
-        }
-
-        return numeroAnimacion;
-    }
-}
-
-
-public interface Iactivaranimaciones
-{
-    
-}
