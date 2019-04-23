@@ -11,6 +11,7 @@ public class activaranimaciones : MonoBehaviour
  
     //public Rigidbody Cerdito;
     public Animator animacioncerdito; // animator del cerdito
+    
 
     /// <summary>
     /// cerdito=0 significa animacion de idle
@@ -24,10 +25,8 @@ public class activaranimaciones : MonoBehaviour
 
     private void Awake()=> _activaranimacionesengine = new ActivaranimacionesEngine();
     
-    void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
-  
-    
-   
+    private void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
+
 }
 
 

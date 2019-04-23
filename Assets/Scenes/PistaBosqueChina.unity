@@ -12196,12 +12196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1DejarTocino1: {fileID: 0}
-  item2DispararBotella1: {fileID: 0}
-  item3Velocidad1: {fileID: 0}
-  item1DejarTocino2: {fileID: 0}
-  item2DispararBotella2: {fileID: 0}
-  item3Velocidad2: {fileID: 0}
+  itemsIcon: []
 --- !u!4 &433753690
 Transform:
   m_ObjectHideFlags: 0
@@ -35400,7 +35395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3869f8747f7564fa4b5fd8e8462255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cerdito: {fileID: 1360761438}
   animacioncerdito: {fileID: 1360761439}
 --- !u!114 &1360761435
 MonoBehaviour:
@@ -35414,11 +35408,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ea485ea183d0a45ac58f6e74b30312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+  item1TocinoPista: {fileID: 0}
+  item2Proyectil: {fileID: 0}
+  item3chile: {fileID: 0}
+  movimientoCerdo: {fileID: 0}
   NumPlayer: 0
   rigidbody: {fileID: 1360761438}
   countDown: {fileID: 1584765729}
   mostrarItem: {fileID: 1584765728}
-  itemControl: {fileID: 1360761433}
   numRandomP1: 0
   numRandomP2: 0
 --- !u!65 &1360761437
@@ -41832,12 +41830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f192e28d2c08742a6809ad5c8ef752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item1DejarTocino1: {fileID: 224575299}
-  item2DispararBotella1: {fileID: 1380855700}
-  item3Velocidad1: {fileID: 40431575}
-  item1DejarTocino2: {fileID: 1420377110}
-  item2DispararBotella2: {fileID: 855640293}
-  item3Velocidad2: {fileID: 934839093}
+  itemsIcon: []
 --- !u!114 &1584765729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46027,11 +46020,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ea485ea183d0a45ac58f6e74b30312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+  item1TocinoPista: {fileID: 0}
+  item2Proyectil: {fileID: 0}
+  item3chile: {fileID: 0}
+  movimientoCerdo: {fileID: 0}
   NumPlayer: 1
   rigidbody: {fileID: 1721417485}
   countDown: {fileID: 1584765729}
   mostrarItem: {fileID: 1584765728}
-  itemControl: {fileID: 1721417481}
   numRandomP1: 0
   numRandomP2: 0
 --- !u!114 &1721417483
@@ -46046,7 +46043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97dc26d2a361ee04c98787e1215231cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cerdito: {fileID: 1721417485}
   animacioncerdito: {fileID: 1721417486}
 --- !u!65 &1721417484
 BoxCollider:
@@ -58079,7 +58075,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5594490912244313702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -58551,7 +58547,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8697958779867718681}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
