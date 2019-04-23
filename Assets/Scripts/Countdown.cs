@@ -6,13 +6,9 @@ public class Countdown : MonoBehaviour
 {
 
     public CountDownEngine countDownEngine = new CountDownEngine();
-    public bool movement;
+    public bool movement =false;
 
-    public void Start()
-    {
-        countDownEngine.initialCounter = 5.0f;
-        movement = false;
-    }
+    public void Start() => countDownEngine.initialCounter = 5.0f;
 
     public void Update()
     {

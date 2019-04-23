@@ -109,10 +109,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
 	public void PoderItem3() => StartCoroutine(TiempoItem3());
 
-	public void No_Hay_Nada()
-	{
-		Debug.Log("No hay poder");
-	}
+	public void No_Hay_Nada() =>Debug.Log("No hay poder");
 
 	public IEnumerator TiempoItem3()
 	{
