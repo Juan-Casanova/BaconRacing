@@ -9,7 +9,7 @@ namespace Tests
         
         [Test]
 
-        public void When_Numero_Animacion_is_Zero()
+        public void When_Numero_Animacion1P_is_Zero()
         {
             //Arrange
             ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
@@ -26,7 +26,7 @@ namespace Tests
         
         [Test]
 
-        public void When_Numero_Animacion_is_Three()
+        public void When_Numero_Animacion1P_is_Three()
         {
             //Arrange
             ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
@@ -43,7 +43,7 @@ namespace Tests
         
         [Test]
 
-        public void When_Numero_Animacion_is_One()
+        public void When_Numero_Animacion1P_is_One()
         {
             //Arrange
             ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
@@ -59,8 +59,58 @@ namespace Tests
         }
         
         [Test]
+        public void When_Numero_Animacion2P_is_Zero()
+        {
+            //Arrange
+            ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
+            
+            activaranimacionesEngine.numeroAnimacion2P = 0;
+            int result;
+            
+            //Act
+            result = activaranimacionesEngine.SeleccionAnimacion2PforTest();
+            
+            //Assert
+            Assert.AreEqual(result, 0);
+        }
+        
+        [Test]
 
-        public void When_Numero_InputAnimacion_is_Zero()
+        public void When_Numero_Animacion2P_is_Three()
+        {
+            //Arrange
+            ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
+            
+            activaranimacionesEngine.numeroAnimacion2P = 3;
+            int result;
+            
+            //Act
+            result = activaranimacionesEngine.SeleccionAnimacion2PforTest();
+            
+            //Assert
+            Assert.AreEqual(result, 3);
+        }
+        
+        [Test]
+
+        public void When_Numero_Animacion2P_is_One()
+        {
+            //Arrange
+            ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
+            
+            activaranimacionesEngine.numeroAnimacion2P = 1;
+            int result;
+            
+            //Act
+            result = activaranimacionesEngine.SeleccionAnimacion2PforTest();
+            
+            //Assert
+            Assert.AreEqual(result, 1);
+        }
+        
+        [Test]
+
+        public void When_Numero_InputAnimacion1P_is_Zero()
         {
             //Arrange
             ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
@@ -70,6 +120,23 @@ namespace Tests
             
             //Act
             result = activaranimacionesEngine.SeleccionAnimacion();
+            
+            //Assert
+            Assert.AreEqual(result, 0);
+        }
+        
+        [Test]
+
+        public void When_Numero_InputAnimacion2P_is_Zero()
+        {
+            //Arrange
+            ActivaranimacionesEngine activaranimacionesEngine = new ActivaranimacionesEngine();
+            
+            activaranimacionesEngine.numeroAnimacion2P = 0;
+            int result;
+            
+            //Act
+            result = activaranimacionesEngine.SeleccionAnimacion2P();
             
             //Assert
             Assert.AreEqual(result, 0);

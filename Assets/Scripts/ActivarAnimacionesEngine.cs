@@ -6,6 +6,7 @@ public class ActivaranimacionesEngine
     
 
     public int numeroAnimacion;
+    public int numeroAnimacion2P;
 
     public int SeleccionAnimacion()
     {
@@ -24,6 +25,23 @@ public class ActivaranimacionesEngine
         return numeroAnimacion;
     }
 
+    public int SeleccionAnimacion2P()
+    {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            numeroAnimacion2P = 1;
+        } else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            numeroAnimacion2P = 3;
+        }
+        else
+        {
+            numeroAnimacion2P = 0;
+        }
+        
+        return numeroAnimacion2P;
+    }
+
     public int SeleccionAnimacionforTest()
     {
         int result_local;
@@ -32,6 +50,25 @@ public class ActivaranimacionesEngine
         {
             result_local = 1;  
         }else if (numeroAnimacion == 3)
+        {
+            result_local = 3;
+        }
+        else
+        {
+            result_local = 0;
+        }
+
+        return result_local;
+    }
+    
+    public int SeleccionAnimacion2PforTest()
+    {
+        int result_local;
+        
+        if (numeroAnimacion2P == 1)
+        {
+            result_local = 1;  
+        }else if (numeroAnimacion2P == 3)
         {
             result_local = 3;
         }
