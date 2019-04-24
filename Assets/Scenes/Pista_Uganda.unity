@@ -1686,12 +1686,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1684665234}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &245372533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1990729305874840945, guid: ef8bd1b0269ea0b47abc706b287ff467,
-    type: 3}
-  m_PrefabInstance: {fileID: 1990729306099231492}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &246232417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,8 +1846,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seleccionpersonajeinterfaz: {fileID: 1833809242}
-  skincuahu: {fileID: 981753406}
-  skinrev: {fileID: 245372533}
+  skincuahu: {fileID: 1907315485}
+  skinrev: {fileID: 1907315484}
 --- !u!4 &249059932
 Transform:
   m_ObjectHideFlags: 0
@@ -8501,12 +8495,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 136f3a394cd86e74989cdd09ff3cb8e4,
     type: 3}
   m_PrefabInstance: {fileID: 1567403376}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &981753406 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1990729305671693626, guid: ef8bd1b0269ea0b47abc706b287ff467,
-    type: 3}
-  m_PrefabInstance: {fileID: 1990729306099231492}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &997945824
 GameObject:
@@ -17001,6 +16989,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8bd1b0269ea0b47abc706b287ff467, type: 3}
+--- !u!1 &1907315484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1990729305874840945, guid: ef8bd1b0269ea0b47abc706b287ff467,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907315483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1907315485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1990729305671693626, guid: ef8bd1b0269ea0b47abc706b287ff467,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907315483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1908444636
 GameObject:
   m_ObjectHideFlags: 0
