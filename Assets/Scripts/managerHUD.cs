@@ -23,10 +23,8 @@ public class managerHUD : MonoBehaviour
     public Countdown _countdown=new Countdown();
     public CountDownEngine countdownEngine = new CountDownEngine();
 
-    private void Start()
-    {
-        HideScreens();
-    }
+    private void Start()=>HideScreens();
+ 
 
     public void Update()
     {
@@ -47,9 +45,7 @@ public class managerHUD : MonoBehaviour
             laps2.text = check.checkEngine.currentLap.ToString() + "/2";
 
             if (check.checkEngine.currentLap > 2)
-            {
                 StartCoroutine(changeNextTrack("PistaBosqueChina", distanceP1, distanceP2));
-            }
         
     }
 
@@ -73,10 +69,7 @@ public class managerHUD : MonoBehaviour
     private void HideScreens()
     {
         for (int i = 0; i < winner.Length; i++)
-        {
             winner[i].enabled = false;
-
-        }
 
 
     }

@@ -18,25 +18,11 @@ public class MostrarItem : MonoBehaviour
         switch (_numItem)
         {
             case 1:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1)
-                {
-                    ShowIconItem(itemsIcon[0]);
-                }
-                else
-                {
-                    ShowIconItem(itemsIcon[3]);
-                }
+                ShowIconItem(numPlayer == MovimientoCerdo.numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
 
                 break;
             case 2:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1)
-                {
-                    ShowIconItem(itemsIcon[1]);
-                }
-                else
-                {
-                    ShowIconItem(itemsIcon[4]);
-                }
+                ShowIconItem(numPlayer == MovimientoCerdo.numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
 
                 break;
             case 3:
