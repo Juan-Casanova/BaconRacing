@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class activarskinpersoje2 : MonoBehaviour
+public class activarskinpersoje : MonoBehaviour
 {
 
     ///  aqui ira el codigo de la interfaz blue_selection
@@ -31,17 +31,17 @@ public class activarskinpersoje2 : MonoBehaviour
         switch (seleccionpersonajeinterfaz.text)
         {
 
-            case  "1":
+            case  "7":
                  print("personaje1");
                 skinrev.SetActive(true);
                  break;
-             case "2":
+             case "8":
                 print("personaje2");
                 skincuahu.SetActive(true);
                 break;
              default:
                 print("personaje default.");
-                skinrev.SetActive(true);
+                skincuahu.SetActive(true);
                
                 break;
          }
