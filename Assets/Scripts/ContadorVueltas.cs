@@ -7,8 +7,8 @@
      // These Static Variables are accessed in "checkpoint" Script
      public Transform[] spawnArray;
      public static Transform[] spawnA;
-     public static int currentCheckpoint = 0; 
-     public static int currentLap = 0; 
+     public int currentCheckpoint = 0; 
+     public int currentLap = 0; 
      public Vector3 startPos;
      public int Lap;
      
@@ -20,7 +20,7 @@
      } 
      void  Update ()
      {
-         Lap = currentLap;
-         spawnA = spawnArray;         
+         //Lap = currentLap;
+         //spawnA = spawnArray;         
      }     
  }
