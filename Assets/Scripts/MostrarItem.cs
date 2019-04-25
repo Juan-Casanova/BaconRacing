@@ -6,7 +6,13 @@ using UnityEngine.UI;
 
 public class MostrarItem : MonoBehaviour
 {
+
+    private MostrarItemEngine _mostrarItemEngine;
+    
+    
     public GameObject[] itemsIcon;
+
+    public void Awake() => _mostrarItemEngine = new MostrarItemEngine();
 
     public void Start() => HideAllItems();
     

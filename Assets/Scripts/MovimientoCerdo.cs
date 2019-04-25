@@ -48,23 +48,20 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 		var verticalAxis = Input.GetAxis($"Vertical{playerSuffix}");
 		var isJumping = Input.GetAxis($"Jump{playerSuffix}") > 0;
 
-		if (countDown.movement)
+		if (!countDown.movement) return;
+		movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
+		movimientoCerdoEngine.Jump(isJumping, this);
+		if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
 		{
-			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
-			movimientoCerdoEngine.Jump(isJumping, this);
-            if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
-            {
-	            itemControlEngine.ChargeItem(numRandomP1,this);
-                mostrarItem.HideAllItems();
-                numRandomP1 = 0;
-            }
-            if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
-            {
-                itemControlEngine.ChargeItem(numRandomP2, this);
-                mostrarItem.HideAllItems();
-                numRandomP2 = 0;
-            }
-        }
+			itemControlEngine.ChargeItem(numRandomP1,this);
+			mostrarItem.HideAllItems();
+			numRandomP1 = 0;
+		}
+
+		if (!Input.GetKey(KeyCode.E) || numRandomP2 == 0) return;
+		itemControlEngine.ChargeItem(numRandomP2, this);
+		mostrarItem.HideAllItems();
+		numRandomP2 = 0;
 	}
 
 	private void OnCollisionEnter(Collision collision) => movimientoCerdoEngine.maxJumps = 3;

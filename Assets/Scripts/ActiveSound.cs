@@ -15,6 +15,6 @@ public class ActiveSound : MonoBehaviour
         if (other.gameObject.name == "ActivadorPublico") _AudioPublico.Play();
     }
 
-    void Update()
+    private void Update()
     { if (Input.GetKeyDown(KeyCode.M) || Input.GetKeyDown(KeyCode.E)) _AudioObjeto.Play(); }
 }
