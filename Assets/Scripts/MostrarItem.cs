@@ -12,13 +12,13 @@ public class MostrarItem : MonoBehaviour
     
     public void ShowIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = true;
 
-    public void ShowItem(int _numItem,MovimientoCerdo.numPlayer numPlayer)
+    public void ShowItem(int _numItem, numPlayer numPlayer)
     {
         
         switch (_numItem)
         {
             case 1:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                if (numPlayer == numPlayer.p1)
                 {
                     ShowIconItem(itemsIcon[0]);
                 }
@@ -29,7 +29,7 @@ public class MostrarItem : MonoBehaviour
 
                 break;
             case 2:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                if (numPlayer == numPlayer.p1)
                 {
                     ShowIconItem(itemsIcon[1]);
                 }
@@ -40,7 +40,7 @@ public class MostrarItem : MonoBehaviour
 
                 break;
             case 3:
-                if (numPlayer == MovimientoCerdo.numPlayer.p1)
+                if (numPlayer == numPlayer.p1)
                 {
                     ShowIconItem(itemsIcon[2]);
                 }
