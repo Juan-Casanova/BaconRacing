@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class activarskinpersoje2 : MonoBehaviour
+public class activarskinpersoje : MonoBehaviour
 {
 
     ///  aqui ira el codigo de la interfaz blue_selection
