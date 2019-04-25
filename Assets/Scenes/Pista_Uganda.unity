@@ -5343,7 +5343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -7.100006, y: 10.925003}
+  m_AnchoredPosition: {x: -7.100006, y: 10.924988}
   m_SizeDelta: {x: 110.75, y: 108.85}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &640741755
@@ -8224,8 +8224,8 @@ MonoBehaviour:
   posPlayer1: {fileID: 1891849756}
   posPlayer2: {fileID: 1111352876}
   countDown: {fileID: 1722305764}
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  player1: {fileID: 4630842336817475562, guid: bd9a11bc9063add4f940d74f903b1316, type: 3}
+  player2: {fileID: 7241489297305784380, guid: c13f9bd7cc4e28c4a91dfbaad6000d4d, type: 3}
   meta: {fileID: 1073637282}
   instructions:
   - {fileID: 669273885}
