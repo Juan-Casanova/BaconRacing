@@ -26,29 +26,20 @@ public class GameManager : MonoBehaviour
 
 
     public void GameOver(GameObject winner)
-    {
+    {   
         if(winner == player1Instancia)
         {
-
+            managerHUD.instancia.ShowGameResults(numPlayer.p1);
         }
         else
         {
-
+            managerHUD.instancia.ShowGameResults(numPlayer.p2);
         }
     }
 
     private IEnumerator changeNextTrack(string nextTrack, float distanceP1, float distanceP2)
     {
-        if (distanceP1 >= distanceP2)
-        {
-            winner[0].enabled = true;
-            winner[2].enabled = true;
-        }
-        else
-        {
-            winner[1].enabled = true;
-            winner[3].enabled = true;
-        }
+        
         yield return new WaitForSeconds(4);
 
         SceneManager.LoadScene(nextTrack, LoadSceneMode.Single);

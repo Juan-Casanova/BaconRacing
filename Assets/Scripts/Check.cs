@@ -5,12 +5,13 @@
  {
     public int index;
 
-     public CheckEngine checkEngine = new CheckEngine();
+    public CheckEngine checkEngine;
    
 
     public void Start()
     {
-        checkEngine.lenghtSpawn = ContadorVueltas.spawnA.Length;
+        checkEngine = new CheckEngine();
+        //checkEngine.lenghtSpawn = ContadorVueltas.spawnA.Length;
     }
 
     void  OnTriggerEnter ( Collider other )

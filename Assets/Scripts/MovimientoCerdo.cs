@@ -1,6 +1,12 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+// activaranimaciones activaranimaciones;
+public enum numPlayer
+{
+    p1,
+    p2
+}
 public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 {
 	
@@ -11,21 +17,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	
 	public MovimientoCerdo movimientoCerdo;
 
-
-    // activaranimaciones activaranimaciones;
-    public enum numPlayer
-	{
-		p1,
-		p2
-	}
-
 	public numPlayer NumPlayer;
 	public Rigidbody rigidbody;
 
-	public Countdown countDown=new Countdown();
+	public Countdown countDown;
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
-    public MostrarItem mostrarItem=new MostrarItem();
-    public ItemControlEngine itemControlEngine=new ItemControlEngine();
+    public MostrarItem mostrarItem;
+    public ItemControlEngine itemControlEngine = new ItemControlEngine();
 
 
     public int numRandomP1 = 0;
@@ -33,6 +31,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
     public void Start()
 	{
+	    countDown = managerHUD.instancia.GetComponent<Countdown>();
+        mostrarItem = managerHUD.instancia.GetComponent<MostrarItem>();
+        
 		movimientoCerdoEngine.speed = 10.0f;
 		movimientoCerdoEngine.angulo = 3.0f;
 		movimientoCerdoEngine.jump = 8.0f;

@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Meta : MonoBehaviour
 {
+    public int index;
+
     void OnTriggerEnter(Collider other)
     {
         //if (other.CompareTag("Player1")|| other.CompareTag("Player2")) 
         //CheckCurrentCheckpoint();
-        if (other.CompareTag("Player"))
+        ContadorVueltas contador = other.GetComponent<ContadorVueltas>();
+        if(contador )
+        if (other.CompareTag("Player") && contador.currentCheckpoint == index-1)
         {
-            ContadorVueltas contador = other.GetComponent<ContadorVueltas>();
             contador.currentLap++;
             contador.currentCheckpoint = 0;
             if(contador.currentLap >= 3)
