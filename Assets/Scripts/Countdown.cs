@@ -1,25 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Countdown : MonoBehaviour
 {
 
-     public CountDownEngine countDownEngine = new CountDownEngine();
-     public bool movement;
+    public CountDownEngine countDownEngine = new CountDownEngine();
+    public bool movement =false;
 
-    public void Start()
-    {
-        countDownEngine.time = Time.deltaTime;
-        countDownEngine.initialCounter = 5.0f;
-        movement = false;
-    }
+    public void Start() => countDownEngine.initialCounter = 5.0f;
 
     public void Update()
     {
-        countDownEngine.countdownToActivateMovement();
-        if (countDownEngine.countdownToActivateMovement())
-        {
-            countDownEngine.initialCounter = 0;
-            movement = true;
-        }
+        countDownEngine.time = Time.deltaTime;
+        movement = countDownEngine.countdownToActivateMovement();
     }
 }

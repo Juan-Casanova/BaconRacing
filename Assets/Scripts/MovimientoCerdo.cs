@@ -1,62 +1,87 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
+// activaranimaciones activaranimaciones;
+public enum numPlayer
 {
-
-
-
-
-
-    // activaranimaciones activaranimaciones;
-    public enum numPlayer
-	{
-		p1,
-		p2
-	}
-
+    p1,
+    p2
+}
+public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
+{
+	
+	public GameObject jugador;
+	public GameObject item1TocinoPista;
+	public GameObject item2Proyectil;
+	public GameObject item3chile;
 	public numPlayer NumPlayer;
+    public Player player;
 	public Rigidbody rigidbody;
 
-	public Countdown countDown=new Countdown();
+	public Countdown countDown;
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
-    public MostrarItem mostrarItem=new MostrarItem();
-    public ItemControl itemControl=new ItemControl();
+    public MostrarItem mostrarItem;
+    public ItemControlEngine itemControlEngine = new ItemControlEngine();
 
+    public Transform BackSpawnPoint, FrontSpawnPoint;
 
-    public int numRandomP1 = 0;
-    public int numRandomP2 = 0;
+    public int numRandom = 0;
+
+    #region  Variables del Movimiento
+
+    public float _BaseSpeed;
+
+    public float BaseSpeed { get => _BaseSpeed; }
+
+    [SerializeField, Range(0, 10)]
+    private float _speed = 1;
+
+    public float speed
+    {
+        get => _speed;
+        set => _speed = value;
+    }
+
+    [SerializeField, Range(0, 10)]
+    private float _jumpForce;
+
+    public float jumpForce
+    {
+        get => _jumpForce;
+        set => _jumpForce = value;
+    }
+    #endregion
+
 
     public void Start()
 	{
-		movimientoCerdoEngine.speed = 10.0f;
+	    countDown = managerHUD.instancia.GetComponent<Countdown>();
+        mostrarItem = managerHUD.instancia.GetComponent<MostrarItem>();
+        _BaseSpeed = _speed;
+        movimientoCerdoEngine.speed = _speed;
 		movimientoCerdoEngine.angulo = 3.0f;
-		movimientoCerdoEngine.jump = 8.0f;
+		movimientoCerdoEngine.jump = _jumpForce;
 		movimientoCerdoEngine.maxJumps = 3;
+		item3chile.SetActive(false);
 
 	}
 
 	public void FixedUpdate()
 	{
-		string playerSuffix = NumPlayer == 0 ? "" : "2";
-		var horizontalAxis = Input.GetAxis($"Horizontal{playerSuffix}");
-		var verticalAxis = Input.GetAxis($"Vertical{playerSuffix}");
-		var isJumping = Input.GetAxis($"Jump{playerSuffix}") > 0;
+		var horizontalAxis = Input.GetAxis(player.input.horizontalAxis);
+		var verticalAxis = Input.GetAxis(player.input.verticalAxis);
+		var isJumping = Input.GetKeyDown(player.input.jump);
 
 		if (countDown.movement)
 		{
 			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
 			movimientoCerdoEngine.Jump(isJumping, this);
-            if (Input.GetKey(KeyCode.M)&& numRandomP1!=0)
+            if (Input.GetKeyDown(player.input.powerUp)&& numRandom!=0)
             {
-                itemControl.ChargeItem(numRandomP1);
-                mostrarItem.HideAllIcons();
-                numRandomP1 = 0;
-            }
-            if (Input.GetKey(KeyCode.E) && numRandomP2 != 0 )
-            {
-                itemControl.ChargeItem(numRandomP2);
-                mostrarItem.HideAllIcons();
-                numRandomP2 = 0;
+	            itemControlEngine.ChargeItem(numRandom,this);
+                mostrarItem.HideItem(numRandom, NumPlayer);
+                numRandom = 0;
             }
         }
 	}
@@ -65,25 +90,18 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Moneda")&&NumPlayer == numPlayer.p1)
+        if (other.CompareTag("Moneda") && numRandom==0)
         {
-            numRandomP1 = itemControl.getItemRandom();
-            mostrarItem.ShowItem(numRandomP1,numPlayer.p1);
+            numRandom = getItemRandom();
+            mostrarItem.ShowItem(numRandom, NumPlayer);
         }
-        else if(other.CompareTag("Moneda") && NumPlayer == numPlayer.p2)
-        {
-            numRandomP2 = itemControl.getItemRandom();
-            mostrarItem.ShowItem(numRandomP2,numPlayer.p2);
-        }
+
     }
 
 	public void Move(float verticalVelocity, float rotation)
 	{
-      
-
         transform.Translate(0, 0, verticalVelocity);
 		transform.Rotate(0, rotation, 0);
-
 	}
 
 	public void Jump(float jumpForce)
@@ -91,4 +109,28 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo
 		rigidbody.velocity = new Vector3(0, jumpForce, 0);
 		rigidbody.angularVelocity = Vector3.zero;
 	}
+	
+	//Item1 Poder de dejar un tocino en la pista
+
+	public void PoderItem1() => Instantiate(item1TocinoPista, BackSpawnPoint.position, BackSpawnPoint.rotation);
+
+	//Item 2 Disparar objeto
+	public void PoderItem2() => Instantiate(item2Proyectil, FrontSpawnPoint.position, FrontSpawnPoint.rotation);
+
+	//Item 3 Aceleracion del personaje
+
+	public void PoderItem3() => StartCoroutine(TiempoItem3());
+
+	public void No_Hay_Nada() =>Debug.Log("No hay poder");
+
+	public IEnumerator TiempoItem3()
+	{
+		item3chile.SetActive(true);
+		movimientoCerdoEngine.speed *= 2;
+		yield return new WaitForSeconds(5);
+		movimientoCerdoEngine.speed = _BaseSpeed;
+		item3chile.SetActive(false);
+	}
+
+	public int getItemRandom() => Random.Range(1, 4);
 }
