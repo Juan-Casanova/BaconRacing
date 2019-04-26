@@ -5,12 +5,9 @@ using UnityEngine;
 public class ActivarAnimaciones2Player : MonoBehaviour
 {
    
-    private ActivaranimacionesEngine _activaranimacionesengine;
+    public Rigidbody Cerdito;
+    public Animator animacioncerdito; //hola animator del cerdito
 
- 
-    //public Rigidbody Cerdito;
-    public Animator animacioncerdito; // animator del cerdito
-    
 
     /// <summary>
     /// cerdito=0 significa animacion de idle
@@ -22,9 +19,37 @@ public class ActivarAnimaciones2Player : MonoBehaviour
     /// cerdito=6 significa animacion de Item
     /// </summary>
 
-    private void Awake()=> _activaranimacionesengine = new ActivaranimacionesEngine();
-    
-    private void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion2P());
 
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) //objeto
+        {
+
+            animacioncerdito.SetInteger("cerdito", 0);
+        }
+        else if (Input.GetKey(KeyCode.W) || (Input.GetKeyDown(KeyCode.S) || (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.D)))))
+        {
+
+            animacioncerdito.SetInteger("cerdito", 1);
+
+        }
+        else { { animacioncerdito.SetInteger("cerdito", 0); print("no presionando"); } }
+
+        if (Input.GetKeyDown(KeyCode.N)) //daño
+        {
+
+            animacioncerdito.SetInteger("cerdito", 4);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))//salto
+        {
+            animacioncerdito.SetInteger("cerdito", 3);
+
+        }
+
+
+
+    }
 
 }

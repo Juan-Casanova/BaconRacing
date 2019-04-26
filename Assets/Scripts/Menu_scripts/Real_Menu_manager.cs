@@ -64,7 +64,11 @@ public class Real_Menu_manager : MonoBehaviour
 
 	public void Escribe_Escena(string _scene) => SceneManager.LoadScene(_scene, LoadSceneMode.Single);
 
-	public void SalirJuego() => Application.Quit();
+	public void SalirJuego()
+	{
+		Debug.Log("Saliendo del Juego");
+		Application.Quit();
+	}
 
 	private void Update()
 	{
