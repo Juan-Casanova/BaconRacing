@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MostrarItem : MonoBehaviour
 {
     public GameObject[] itemsIcon;
+    public AudioSource _AudioMoneda;
 
     public void Start() => HideAllItems();
     
@@ -19,15 +20,18 @@ public class MostrarItem : MonoBehaviour
         switch (_numItem)
         {
             case 1:
+                
                 ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
 
                 break;
             case 2:
+                
                 ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
 
 
                 break;
             case 3:
+                
                 ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
 
                 break;

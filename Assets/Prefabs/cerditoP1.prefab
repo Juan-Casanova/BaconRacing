@@ -1256,6 +1256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4630842336187953924}
   - component: {fileID: 4630842336187953922}
+  - component: {fileID: 2148679488293156674}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1319,6 +1320,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &2148679488293156674
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630842336187953925}
+  m_Enabled: 1
 --- !u!1 &4630842336283890990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1747,7 @@ GameObject:
   - component: {fileID: 4630842336817475561}
   - component: {fileID: 4630842336817475552}
   - component: {fileID: 4630842336817475553}
+  - component: {fileID: 1163019210427654470}
   m_Layer: 0
   m_Name: cerditoP1
   m_TagString: Player
@@ -1840,6 +1850,8 @@ MonoBehaviour:
   NumPlayer: 0
   player: {fileID: 11400000, guid: e15ae4b4e4d40d74eafcdd0ddb956c2a, type: 2}
   rigidbody: {fileID: 4630842336817475564}
+  _AudioMoneda: {fileID: 6232624845941119807, guid: 081532290f6646d49ba1a57384a87230,
+    type: 3}
   countDown: {fileID: 0}
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 1974399818709723846}
@@ -1901,6 +1913,24 @@ MonoBehaviour:
   currentCheckpoint: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
+--- !u!114 &1163019210427654470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630842336817475554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751cbdf489c61ec4caff1af53384c3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AudioMoneda: {fileID: 6232624845941119807, guid: 081532290f6646d49ba1a57384a87230,
+    type: 3}
+  _AudioObjeto: {fileID: 4409409310986261865, guid: f0f838381c65fcf45bb01783e1dea611,
+    type: 3}
+  _AudioPublico: {fileID: 3442105310127653919, guid: 094c7ca9143fe8b468bf469ea8276e1e,
+    type: 3}
 --- !u!1 &4630842336882104930
 GameObject:
   m_ObjectHideFlags: 0

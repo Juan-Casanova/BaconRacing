@@ -18,6 +18,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	public numPlayer NumPlayer;
     public Player player;
 	public Rigidbody rigidbody;
+    private AudioSource _audioMoneda;
 
 	public Countdown countDown;
 	public MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
@@ -92,9 +93,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     {
         if (other.CompareTag("Moneda") && numRandom==0)
         {
+            
             numRandom = getItemRandom();
             mostrarItem.ShowItem(numRandom, NumPlayer);
+            
         }
+
+       
 
     }
 
