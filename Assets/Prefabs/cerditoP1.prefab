@@ -1847,7 +1847,7 @@ MonoBehaviour:
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
-  _jumpForce: 2
+  _jumpForce: 5
 --- !u!114 &4630842336817475561
 MonoBehaviour:
   m_ObjectHideFlags: 0
