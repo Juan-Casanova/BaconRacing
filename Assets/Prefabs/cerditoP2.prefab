@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2546182937490071241}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.173, y: 0.119, z: -0.187}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7241489297305784380}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7241489296914682140
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,8 +467,6 @@ MonoBehaviour:
   NumPlayer: 1
   player: {fileID: 11400000, guid: 5054624e1c4e33b49863f42a66688978, type: 2}
   rigidbody: {fileID: 7241489297305784378}
-  _AudioMoneda: {fileID: 6232624845941119807, guid: 081532290f6646d49ba1a57384a87230,
-    type: 3}
   countDown: {fileID: 0}
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 7680747160933727928}
@@ -490,7 +488,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 7241489297305784372}
-  item1TocinoPista: {fileID: 100000, guid: 9c5de20bd2d2ab4448c737e2757bbbdb, type: 3}
+  item1TocinoPista: {fileID: 4962767852438827569, guid: b64f2aca9f8c97d47aeb6f20abfd7ff9,
+    type: 3}
   item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
     type: 3}
   item3chile: {fileID: 8318498944865311579}
@@ -2213,14 +2212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12999573
@@ -2276,6 +2267,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}

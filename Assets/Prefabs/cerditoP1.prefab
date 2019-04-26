@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 4630842336817475554}
-  item1TocinoPista: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
+  item1TocinoPista: {fileID: 4962767852438827569, guid: b64f2aca9f8c97d47aeb6f20abfd7ff9,
     type: 3}
   item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
     type: 3}
@@ -1850,8 +1850,6 @@ MonoBehaviour:
   NumPlayer: 0
   player: {fileID: 11400000, guid: e15ae4b4e4d40d74eafcdd0ddb956c2a, type: 2}
   rigidbody: {fileID: 4630842336817475564}
-  _AudioMoneda: {fileID: 6232624845941119807, guid: 081532290f6646d49ba1a57384a87230,
-    type: 3}
   countDown: {fileID: 0}
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 1974399818709723846}
@@ -2214,14 +2212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -2277,6 +2267,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.48478
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
