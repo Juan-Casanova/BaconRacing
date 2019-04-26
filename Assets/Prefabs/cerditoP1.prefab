@@ -1256,6 +1256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4630842336187953924}
   - component: {fileID: 4630842336187953922}
+  - component: {fileID: 2148679488293156674}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1319,6 +1320,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &2148679488293156674
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630842336187953925}
+  m_Enabled: 1
 --- !u!1 &4630842336283890990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +1747,7 @@ GameObject:
   - component: {fileID: 4630842336817475561}
   - component: {fileID: 4630842336817475552}
   - component: {fileID: 4630842336817475553}
+  - component: {fileID: 1163019210427654470}
   m_Layer: 0
   m_Name: cerditoP1
   m_TagString: Player
@@ -1832,7 +1842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 4630842336817475554}
-  item1TocinoPista: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
+  item1TocinoPista: {fileID: 4962767852438827569, guid: b64f2aca9f8c97d47aeb6f20abfd7ff9,
     type: 3}
   item2Proyectil: {fileID: 580560441515095189, guid: ff3b1cd535c3cfb44b5ed13e408b3cd4,
     type: 3}
@@ -1847,7 +1857,7 @@ MonoBehaviour:
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
-  _jumpForce: 2
+  _jumpForce: 5
 --- !u!114 &4630842336817475561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1901,6 +1911,24 @@ MonoBehaviour:
   currentCheckpoint: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
+--- !u!114 &1163019210427654470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630842336817475554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751cbdf489c61ec4caff1af53384c3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AudioMoneda: {fileID: 6232624845941119807, guid: 081532290f6646d49ba1a57384a87230,
+    type: 3}
+  _AudioObjeto: {fileID: 4409409310986261865, guid: f0f838381c65fcf45bb01783e1dea611,
+    type: 3}
+  _AudioPublico: {fileID: 3442105310127653919, guid: 094c7ca9143fe8b468bf469ea8276e1e,
+    type: 3}
 --- !u!1 &4630842336882104930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,14 +2212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -2247,6 +2267,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.48478
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
