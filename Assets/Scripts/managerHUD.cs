@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class managerHUD : MonoBehaviour
 {
 
-    public static managerHUD instancia;
-
     public Text laps1;
     public Text laps2;
 
@@ -18,45 +16,18 @@ public class managerHUD : MonoBehaviour
     public Transform player1, player2,meta;
 
     public Image[] instructions;
-    
+    public Image[] winner;
+
     public Check check=new Check();
     public CheckEngine checkEngine=new CheckEngine();
     public Countdown _countdown=new Countdown();
     public CountDownEngine countdownEngine = new CountDownEngine();
 
-    [Header("Game Over Settings")]
-    public Text player1gameOver;
-    public Text player2gameOver;
-    
-    void Awake()
+    private void Start()
     {
-        if (instancia == null)
-        {
-            instancia = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-    
+        HideScreens();
     }
 
-    public void Start()
-    {
-        Spawner.PlayersSpawnEvent += Settup;
-        ContadorVueltas.LapCompletedEvent += ActualizarLapHUD;
-    }
-    public void OnDestroy()
-    {
-        Spawner.PlayersSpawnEvent -= Settup;
-        ContadorVueltas.LapCompletedEvent -= ActualizarLapHUD;
-
-    }
-    public void Settup()
-    {
-        player1 = GameManager.instancia.player1Instancia.transform;
-        player2 = GameManager.instancia.player2Instancia.transform;
-    }
     public void Update()
     {
         float distanceP1 = Vector3.Distance(player1.position, meta.position);
@@ -70,41 +41,44 @@ public class managerHUD : MonoBehaviour
             instructions[0].enabled = false;
             instructions[1].enabled = false;
         }
-        posPlayer1.text = distanceP1 >= distanceP2 ? "2":"1";
-        posPlayer2.text = distanceP2 >= distanceP1 ? "2":"1";
+            posPlayer1.text = distanceP1 >= distanceP2 ? "2":"1";
+            posPlayer2.text = distanceP2 >= distanceP1 ? "2":"1";
+            laps1.text = check.checkEngine.currentLap.ToString()+"/2";
+            laps2.text = check.checkEngine.currentLap.ToString() + "/2";
+
+            if (check.checkEngine.currentLap > 2)
+            {
+                StartCoroutine(changeNextTrack("PistaBosqueChina", distanceP1, distanceP2));
+            }
         
     }
-    public void ActualizarLapHUD(ContadorVueltas contador)
-    {
-        MovimientoCerdo cerdito = contador.GetComponent<MovimientoCerdo>();
-        switch(cerdito.NumPlayer)
-        {
-            case numPlayer.p1:
-                laps1.text = contador.currentLap+"/2";
-            break;
-            case numPlayer.p2:
-                laps2.text = contador.currentLap+"/2";
-            break;
-        }        
-    }
-    public void ShowGameResults(numPlayer player)   
-    {
-        player1gameOver.transform.parent.gameObject.SetActive(true);
-        player2gameOver.transform.parent.gameObject.SetActive(true);
 
-        switch(player)
+    private IEnumerator changeNextTrack(string nextTrack,float distanceP1,float distanceP2)
+    {
+        if (distanceP1 >= distanceP2)
         {
-            case numPlayer.p1:
-                player1gameOver.text = "U win";
-                player2gameOver.text = "U r looser";
-            break;
-            case numPlayer.p2:
-                player1gameOver.text = "U r looser";
-                player2gameOver.text = "U win";
-            break;
+            winner[0].enabled = true;
+            winner[2].enabled = true;
         }
+        else
+        {
+            winner[1].enabled = true;
+            winner[3].enabled = true;
+        }
+        yield return new WaitForSeconds(4);
+
+        SceneManager.LoadScene(nextTrack,LoadSceneMode.Single);
     }
 
-    
+    private void HideScreens()
+    {
+        for (int i = 0; i < winner.Length; i++)
+        {
+            winner[i].enabled = false;
+
+        }
+
+
+    }
 
 }

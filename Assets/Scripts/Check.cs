@@ -3,30 +3,34 @@
  
  public class Check : MonoBehaviour
  {
-    public int index;
 
-    public CheckEngine checkEngine;
-   
+     public CheckEngine checkEngine = new CheckEngine();
+
 
     public void Start()
     {
-        checkEngine = new CheckEngine();
-        //checkEngine.lenghtSpawn = ContadorVueltas.spawnA.Length;
+        checkEngine.currentCheckpoint = ContadorVueltas.currentCheckpoint;
+        checkEngine.currentLap = ContadorVueltas.currentLap;
+        checkEngine.lenghtSpawn = ContadorVueltas.spawnA.Length;
     }
 
     void  OnTriggerEnter ( Collider other )
      {
         //if (other.CompareTag("Player1")|| other.CompareTag("Player2")) 
         //CheckCurrentCheckpoint();
-        if (other.CompareTag("Player"))
+        if (checkEngine.currentCheckpoint < checkEngine.lenghtSpawn)
         {
-            ContadorVueltas contador = other.GetComponent<ContadorVueltas>();
-
-            if(contador.currentCheckpoint == index-1)
-            {
-                contador.currentCheckpoint = index;
-            }
+            checkEngine.currentCheckpoint++;
         }
+        else
+        {
+            checkEngine.currentLap++;
+            checkEngine.currentCheckpoint = 0;
+        }
+
     }
+
+
+
  }
 

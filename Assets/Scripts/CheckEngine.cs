@@ -12,7 +12,6 @@ public class CheckEngine:ICheck
     /// Es la cantidad de spawns que se tiene y con esta verifica cada checkpoint para
     /// saber si ya dio una vuelta
     /// </summary>
-    ///<deprecated>Nel</deprecated>
     public int lenghtSpawn;
     /// <summary>
     /// Es el numero de lap 
