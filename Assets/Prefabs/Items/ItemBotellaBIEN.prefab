@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 638582798293960382}
   - component: {fileID: 1084149100954985652}
+  - component: {fileID: 1406117122773262835}
+  - component: {fileID: 8004113638836158500}
   m_Layer: 0
   m_Name: ItemBotellaBIEN
   m_TagString: Untagged
@@ -45,6 +47,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5152d27253900345ae0d844cfb4b466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1406117122773262835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580560441515095189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911797b3221726d499ffd6d4f9c43828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reduccion: 0
+  duration: 2
+  picked: 0
+  renderer: {fileID: 3970815183029196865}
+--- !u!135 &8004113638836158500
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580560441515095189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.74
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1177569579015679113
 GameObject:
   m_ObjectHideFlags: 0

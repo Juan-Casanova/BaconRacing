@@ -11,6 +11,7 @@ public class MostrarItem : MonoBehaviour
     public void Start() => HideAllItems();
     
     public void ShowIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = true;
+    public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
 
     public void ShowItem(int _numItem, numPlayer numPlayer)
     {
@@ -18,36 +19,16 @@ public class MostrarItem : MonoBehaviour
         switch (_numItem)
         {
             case 1:
-                if (numPlayer == numPlayer.p1)
-                {
-                    ShowIconItem(itemsIcon[0]);
-                }
-                else
-                {
-                    ShowIconItem(itemsIcon[3]);
-                }
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
 
                 break;
             case 2:
-                if (numPlayer == numPlayer.p1)
-                {
-                    ShowIconItem(itemsIcon[1]);
-                }
-                else
-                {
-                    ShowIconItem(itemsIcon[4]);
-                }
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
+
 
                 break;
             case 3:
-                if (numPlayer == numPlayer.p1)
-                {
-                    ShowIconItem(itemsIcon[2]);
-                }
-                else
-                {
-                    ShowIconItem(itemsIcon[5]);
-                }
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
 
                 break;
             default:
@@ -64,4 +45,26 @@ public class MostrarItem : MonoBehaviour
             itemsIcon[i].GetComponent<Image>().enabled = false;
     }
 
+    public void HideItem(int _numItem, numPlayer numPlayer)
+    {
+        switch (_numItem)
+        {
+            case 1:
+                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
+
+                break;
+            case 2:
+                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
+
+
+                break;
+            case 3:
+                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
+
+                break;
+            default:
+                HideAllItems();
+                break;
+        }
+    }
 }
