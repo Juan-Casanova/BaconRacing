@@ -7,7 +7,7 @@ public class VelocityModifier : MonoBehaviour
     [Range(0, 1)]
     public float reduccion = 0.5f;
 
-    public float duration = 2;
+    public float duration = 1;
 
     public bool picked = false;
     public MeshRenderer renderer;

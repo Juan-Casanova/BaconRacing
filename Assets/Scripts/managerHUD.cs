@@ -95,12 +95,12 @@ public class managerHUD : MonoBehaviour
         switch(player)
         {
             case numPlayer.p1:
-                player1gameOver.text = "U win";
-                player2gameOver.text = "U r looser";
+                player1gameOver.text = "You Win";
+                player2gameOver.text = "You Lose";
             break;
             case numPlayer.p2:
-                player1gameOver.text = "U r looser";
-                player2gameOver.text = "U win";
+                player1gameOver.text = "You Lose";
+                player2gameOver.text = "You Win";
             break;
         }
     }

@@ -31,13 +31,13 @@ public class Real_Menu_manager : MonoBehaviour
 
 	public void To_Main_Menu() => goToScreen(Main_Menu_Canvas, BackTarget.None);
 
-	public void Character_Screen_One_Player() => goToScreen(Character_Pick_One_Player, BackTarget.MainMenu);
+	//public void Character_Screen_One_Player() => goToScreen(Character_Pick_One_Player, BackTarget.MainMenu);
 
 	public void Character_Screen_Two_Player_Firstplayer() => goToScreen(Character_Pick_Two_Players_firstPlayer, BackTarget.MainMenu);
 
 	public void Character_Screen_Two_Player_secondplayer() => goToScreen(Character_Pick_Two_Players_secondPlayer, BackTarget.CharacterSelectMultiPlayer);
 
-	public void To_Tracks_Screen() => goToScreen(Tracks_Screen, BackTarget.MainMenu);
+	//public void To_Tracks_Screen() => goToScreen(Tracks_Screen, BackTarget.MainMenu);
 
 	public void To_Tracks_Screen_2P() => goToScreen(Tracks_Screen_2P, BackTarget.MainMenu);
 
@@ -64,13 +64,13 @@ public class Real_Menu_manager : MonoBehaviour
 
 	public void Escribe_Escena(string _scene) => SceneManager.LoadScene(_scene, LoadSceneMode.Single);
 
-	public void SalirJuego() => Application.Quit();
+	//public void SalirJuego() => Application.Quit();
 
 	private void Update()
 	{
 		if (Input.GetKeyDown("escape"))
 		{
-			Debug.Log("Presionando escape");
+			//Debug.Log("Presionando escape");
 
 			switch (Input_Regreso)
 			{
@@ -80,12 +80,12 @@ public class Real_Menu_manager : MonoBehaviour
 				case BackTarget.CharacterSelectMultiPlayer:
 					Character_Screen_Two_Player_Firstplayer();
 					break;
-				case BackTarget.CharacterSelectSinglePlayer:
-					Character_Screen_One_Player();
-					break;
+				//case BackTarget.CharacterSelectSinglePlayer:
+					//Character_Screen_One_Player();
+				//	break;
 				default:
 					ShowButtonsForNumberOfPlayers(false);
-					Debug.Log("Hay un bug papu");
+					//Debug.Log("Hay un bug papu");
 					break;
 			}
 		}
@@ -100,9 +100,9 @@ public class Real_Menu_manager : MonoBehaviour
 	public void ShowButtonsForNumberOfPlayers(bool show)
 	{
 		Grupo_Boton_Jugar.SetActive(!show);
-		Grupo_Boton_Salir.SetActive(!show);
+		//Grupo_Boton_Salir.SetActive(!show);
 
-		Grupo_Boton_UnJugador.SetActive(show);
+		//Grupo_Boton_UnJugador.SetActive(show);
 		Grupo_Boton_DosJugadores.SetActive(show);
 	}
 
