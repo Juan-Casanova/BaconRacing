@@ -8,11 +8,8 @@
     public CheckEngine checkEngine;
    
 
-    public void Start()
-    {
-        checkEngine = new CheckEngine();
+    public void Start() => checkEngine = new CheckEngine();
         //checkEngine.lenghtSpawn = ContadorVueltas.spawnA.Length;
-    }
 
     void  OnTriggerEnter ( Collider other )
      {
