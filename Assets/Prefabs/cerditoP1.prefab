@@ -1256,7 +1256,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4630842336187953924}
   - component: {fileID: 4630842336187953922}
-  - component: {fileID: 2148679488293156674}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1320,14 +1319,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2148679488293156674
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630842336187953925}
-  m_Enabled: 1
 --- !u!1 &4630842336283890990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1851,6 +1842,7 @@ MonoBehaviour:
   rigidbody: {fileID: 4630842336817475564}
   countDown: {fileID: 0}
   mostrarItem: {fileID: 0}
+  PosRes: {x: 0, y: 0, z: 0}
   BackSpawnPoint: {fileID: 1974399818709723846}
   FrontSpawnPoint: {fileID: 5938778515610558050}
   numRandom: 0
@@ -2193,14 +2185,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -2256,6 +2240,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.48478
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
