@@ -10,6 +10,7 @@ ModelImporter:
     2100000: Cascada
     2100002: Cascada_agua
     2100004: Cascada_erosion
+    2100006: DefaultMat
     2300000: Default
     3300000: Default
     4300000: Default

@@ -1,21 +1,28 @@
 fileFormatVersion: 2
-guid: 997788fec9e6cca4c9d01f4fdefaa839
+guid: 745bfea292ce3ab4e9fdd616f506a7b1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Default
-    400000: //RootNode
-    400002: Default
-    2100000: Pilares
-    2100002: detalles_032casa
-    2100004: base_032casa
-    2100006: casa_032color_032base
-    2100008: tejado_032rico
-    2100010: DefaultMat
-    2300000: Default
-    3300000: Default
-    4300000: Default
+    100000: Camera
+    100002: Directional Light
+    100004: Puente curvo
+    100006: //RootNode
+    100008: Texture Group
+    400000: Camera
+    400002: Directional Light
+    400004: Puente curvo
+    400006: //RootNode
+    400008: Texture Group
+    2000000: Camera
+    2100000: tablas
+    2100002: patas puente
+    2100004: barandales
+    2300000: Puente curvo
+    3300000: Puente curvo
+    4300000: Puente curvo
+    7400000: Take 001
+    9500000: //RootNode
+    10800000: Directional Light
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -68,8 +75,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -96,7 +103,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
