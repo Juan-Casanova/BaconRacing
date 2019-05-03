@@ -102,7 +102,7 @@ public class Real_Menu_manager : MonoBehaviour
 		Grupo_Boton_Jugar.SetActive(!show);
 		Grupo_Boton_Salir.SetActive(!show);
 
-		Grupo_Boton_UnJugador.SetActive(show);
+		//Grupo_Boton_UnJugador.SetActive(show);
 		Grupo_Boton_DosJugadores.SetActive(show);
 	}
 
