@@ -5,13 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+
     public static GameManager instancia;
 
     public GameObject player1Prefab, player2Prefab;
     public GameObject player1Instancia, player2Instancia;
 
+
+    public GameObject SrTequilaP1, SrTequilaP2;
+    public GameObject SakeP1, SakeP2;
+    public GameObject CuauhtemocP1, CuauhtemocP2;
+    public GameObject AlemanaP1, AlemanaP2;
+
     void Awake()
     {
+        
+
         if (instancia == null)
         {
             instancia = this;
@@ -47,5 +57,25 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(8);
 
         SceneManager.LoadScene(nextTrack, LoadSceneMode.Single);
+    }
+
+    public void PickCharacterSrTequilaP1()
+    {
+        player1Prefab = SrTequilaP1;
+    }
+
+    public void PickCharacterSrTequilaP2()
+    {
+        player2Prefab = SrTequilaP2;
+    }
+
+    public void PickCharacterSakeP1()
+    {
+        player1Prefab = SakeP1;
+    }
+
+    public void PickCharacterSakeP2()
+    {
+        player2Prefab = SakeP2;
     }
 }
