@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
             managerHUD.instancia.ShowGameResults(numPlayer.p2);
         }
 
-        Time.timeScale = 0.1f;
+        Time.timeScale = 0.01f;
         StartCoroutine(changeNextTrack("Menu_Principal"));
 
     }
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator changeNextTrack(string nextTrack)
     {
         
-        yield return new WaitForSecondsRealtime(4);
+        yield return new WaitForSecondsRealtime(8);
 
         SceneManager.LoadScene(nextTrack, LoadSceneMode.Single);
     }
