@@ -78,4 +78,24 @@ public class GameManager : MonoBehaviour
     {
         player2Prefab = SakeP2;
     }
+
+    public void PickCharacterCuauhtemocP1()
+    {
+        player1Prefab = CuauhtemocP1;
+    }
+
+    public void PickCharacterCuauhtemocP2()
+    {
+        player2Prefab = CuauhtemocP2;
+    }
+
+    public void PickCharacterAlemanaP1()
+    {
+        player1Prefab = AlemanaP1;
+    }
+
+    public void PickCharacterAlemanaP2()
+    {
+        player2Prefab = AlemanaP2;
+    }
 }
