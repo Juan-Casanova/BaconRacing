@@ -6,6 +6,7 @@
     public int index;
 
     public CheckEngine checkEngine;
+    public MovimientoCerdo MovimientoCerdo;
    
 
     public void Start() => checkEngine = new CheckEngine();
@@ -23,6 +24,16 @@
             {
                 contador.currentCheckpoint = index;
             }
+        }
+        if (other.gameObject.name == "TequilaP1(Clone)")
+        {
+            MovimientoCerdo.PosRes1 = transform.position;
+            //MovimientoCerdo.cerditoRespawn1();
+        }
+        if (other.gameObject.name == "TequilaP2(Clone)")
+        {
+            MovimientoCerdo.PosRes2 = transform.position;
+            //MovimientoCerdo.cerditoRespawn2();
         }
     }
  }

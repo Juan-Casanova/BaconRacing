@@ -104,11 +104,11 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
         if (other.CompareTag("Respawn"))
         {
-            if (this.gameObject.name == "cerditoP1(Clone)")
+            if (this.gameObject.name == "TequilaP1(Clone)")
             {
                 cerditoRespawn1();
             }
-            if (this.gameObject.name == "cerditoP2(Clone)")
+            if (this.gameObject.name == "TequilaP2(Clone)")
             {
                 cerditoRespawn2();
             }
@@ -152,11 +152,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	public int getItemRandom() => Random.Range(1, 4);
     public void cerditoRespawn1()
     {
+        Debug.Log("jajajajaja");
         GameManager.instancia.player1Instancia.transform.position = PosRes1;
     }
 
     public void cerditoRespawn2()
     {
+        Debug.Log("buuuuu");
         GameManager.instancia.player2Instancia.transform.position = PosRes2;
     }
 }
