@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 553d2de2c6c0f1b40a9f124f7732dbc3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cabeza
+    100002: Cabeza2
+    100004: Cadera
+    100006: //RootNode
+    100008: Cola1
+    100010: Cola2
+    100012: Colita
+    100014: Colita1
+    100016: Colita3
+    100018: Colita4
+    100020: joint20
+    100022: MusloDel_Der
+    100024: MusloDel_Izq
+    100026: MusloTras_Der
+    100028: MusloTras_Izq
+    100030: Oreja1_Der
+    100032: Oreja1_Izq
+    100034: Oreja2_Der
+    100036: Oreja2_Izq
+    100038: Oreja3_Der
+    100040: Oreja3_Izq
+    100042: Oreja4_Der
+    100044: Oreja4_Izq
+    100046: Oreja5_Der
+    100048: Oreja5_Izq
+    100050: Osico
+    100052: Osico 1
+    100054: PataDel_Der
+    100056: PataDel_Izq
+    100058: PataTras_Der
+    100060: PataTras_Izq
+    100062: PDel_Der
+    100064: PDel_Izq
+    100066: PiernaDel_Der
+    100068: PiernaDel_Izq
+    100070: PiernaTras_Der
+    100072: PiernaTras_Izq
+    100074: POsico
+    100076: PTras_Der
+    100078: PTras_Izq
+    100080: Quetzqlcerdo
+    100082: Root
+    400000: Cabeza
+    400002: Cabeza2
+    400004: Cadera
+    400006: //RootNode
+    400008: Cola1
+    400010: Cola2
+    400012: Colita
+    400014: Colita1
+    400016: Colita3
+    400018: Colita4
+    400020: joint20
+    400022: MusloDel_Der
+    400024: MusloDel_Izq
+    400026: MusloTras_Der
+    400028: MusloTras_Izq
+    400030: Oreja1_Der
+    400032: Oreja1_Izq
+    400034: Oreja2_Der
+    400036: Oreja2_Izq
+    400038: Oreja3_Der
+    400040: Oreja3_Izq
+    400042: Oreja4_Der
+    400044: Oreja4_Izq
+    400046: Oreja5_Der
+    400048: Oreja5_Izq
+    400050: Osico
+    400052: Osico 1
+    400054: PataDel_Der
+    400056: PataDel_Izq
+    400058: PataTras_Der
+    400060: PataTras_Izq
+    400062: PDel_Der
+    400064: PDel_Izq
+    400066: PiernaDel_Der
+    400068: PiernaDel_Izq
+    400070: PiernaTras_Der
+    400072: PiernaTras_Izq
+    400074: POsico
+    400076: PTras_Der
+    400078: PTras_Izq
+    400080: Quetzqlcerdo
+    400082: Root
+    2100000: Rosa
+    2100002: Rosa2
+    2100004: Negro
+    2100006: Blanco
+    2100008: Stone
+    2100010: verde4
+    2100012: Verde
+    2100014: verde3
+    2100016: amarillo1
+    2100018: Naranja
+    2100020: verde2
+    4300000: Quetzqlcerdo
+    9500000: //RootNode
+    13700000: Quetzqlcerdo
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
