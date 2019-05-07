@@ -25,6 +25,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     public MostrarItem mostrarItem;
     public ItemControlEngine itemControlEngine = new ItemControlEngine();
 
+    public static Vector3 PosRes1;
+    public static Vector3 PosRes2;
+
     public Transform BackSpawnPoint, FrontSpawnPoint;
 
     public int numRandom = 0;
@@ -99,11 +102,20 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
             
         }
 
-       
-
+        if (other.CompareTag("Respawn"))
+        {
+            if (this.gameObject.name == "TequilaP1(Clone)")
+            {
+                cerditoRespawn1();
+            }
+            if (this.gameObject.name == "TequilaP2(Clone)")
+            {
+                cerditoRespawn2();
+            }
+        }
     }
 
-	public void Move(float verticalVelocity, float rotation)
+    public void Move(float verticalVelocity, float rotation)
 	{
         transform.Translate(0, 0, verticalVelocity);
 		transform.Rotate(0, rotation, 0);
@@ -138,4 +150,15 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	}
 
 	public int getItemRandom() => Random.Range(1, 4);
+    public void cerditoRespawn1()
+    {
+        Debug.Log("jajajajaja");
+        GameManager.instancia.player1Instancia.transform.position = PosRes1;
+    }
+
+    public void cerditoRespawn2()
+    {
+        Debug.Log("buuuuu");
+        GameManager.instancia.player2Instancia.transform.position = PosRes2;
+    }
 }
