@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 39c6b3c3900dd5d47a69e658f501c49d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SrTequilaP1: {fileID: 4630842336817475554, guid: bd9a11bc9063add4f940d74f903b1316,
+      type: 3}
+  - StTequilaP2: {fileID: 7241489297305784372, guid: c13f9bd7cc4e28c4a91dfbaad6000d4d,
+      type: 3}
+  - CuauhtemocP1: {fileID: 6949198748249925314, guid: c4b5118370f291b49b3c1b824fa43a4d,
+      type: 3}
+  - CuauhtemocP2: {fileID: 6949198748249925314, guid: c4b5118370f291b49b3c1b824fa43a4d,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

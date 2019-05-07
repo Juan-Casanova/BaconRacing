@@ -1256,7 +1256,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4630842336187953924}
   - component: {fileID: 4630842336187953922}
-  - component: {fileID: 2148679488293156674}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1320,14 +1319,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &2148679488293156674
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4630842336187953925}
-  m_Enabled: 1
 --- !u!1 &4630842336283890990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +1739,7 @@ GameObject:
   - component: {fileID: 4630842336817475552}
   - component: {fileID: 4630842336817475553}
   m_Layer: 0
-  m_Name: cerditoP1
+  m_Name: TequilaP1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
