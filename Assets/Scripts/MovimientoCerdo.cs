@@ -30,8 +30,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
     public Transform BackSpawnPoint, FrontSpawnPoint;
 
-    private MovimientoCerdo cerdito;
-    public float aumento=2100;
+    public float aumento=4;
+    public VelocityModifier VelocityModifier;
 
     public int numRandom = 0;
 
@@ -93,18 +93,17 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         }
 	}
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        movimientoCerdoEngine.maxJumps = 3;
-        if (collision.gameObject.name=="Cube")
-        {
-            Debug.Log("jajajajajaja");
-            movimientoCerdoEngine.speed *= aumento;
-        }
-    }
+    private void OnCollisionEnter(Collision collision)=>movimientoCerdoEngine.maxJumps = 3;
+
+    private void RetornarVel() => movimientoCerdoEngine.speed = BaseSpeed;
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("power"))
+        {
+            movimientoCerdoEngine.speed *= aumento;
+            Invoke("RetornarVel", 2);
+        }
         if (other.CompareTag("Moneda") && numRandom==0)
         {
             
