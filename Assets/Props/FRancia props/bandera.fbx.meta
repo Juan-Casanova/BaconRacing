@@ -1,29 +1,18 @@
 fileFormatVersion: 2
-guid: 62c70b8409181ef41af87b1b61190f55
+guid: a5a784ba792d1444a864911e4e373d55
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Camera
-    100002: Directional Light
-    100004: Mesh
-    100006: //RootNode
-    100008: Pista
-    400000: Camera
-    400002: Directional Light
-    400004: Mesh
-    400006: //RootNode
-    400008: Pista
-    2000000: Camera
-    2100000: tablas
-    2100002: Default
-    2100004: banqueta
-    2100006: carretera
-    2300000: Pista
-    3300000: Pista
-    4300000: Pista
+    100000: //RootNode
+    400000: //RootNode
+    2100000: bandera negro
+    2100002: bandera blanca
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Mesh
     7400000: Take 001
     9500000: //RootNode
-    10800000: Directional Light
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
