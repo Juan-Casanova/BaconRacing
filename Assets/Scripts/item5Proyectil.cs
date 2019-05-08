@@ -8,8 +8,6 @@ public class item5Proyectil : MonoBehaviour
 
     public void Start() => StartCoroutine(destroyObject());
 
-
-
     // Update is called once per frame
      public void Update() => transform.Translate(0,0, velocidad * (Time.deltaTime*3));
 
@@ -21,8 +19,4 @@ public class item5Proyectil : MonoBehaviour
         yield return new WaitForSeconds(5);
         Destroy(gameObject);
     }
-
-
-
-
 }

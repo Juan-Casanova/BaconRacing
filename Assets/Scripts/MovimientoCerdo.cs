@@ -30,6 +30,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
     public Transform BackSpawnPoint, FrontSpawnPoint;
 
+    public float aumento=4;
+    public VelocityModifier VelocityModifier;
+
     public int numRandom = 0;
 
     #region  Variables del Movimiento
@@ -90,10 +93,17 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         }
 	}
 
-	private void OnCollisionEnter(Collision collision) => movimientoCerdoEngine.maxJumps = 3;
+    private void OnCollisionEnter(Collision collision)=>movimientoCerdoEngine.maxJumps = 3;
+
+    private void RetornarVel() => movimientoCerdoEngine.speed = BaseSpeed;
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("power"))
+        {
+            movimientoCerdoEngine.speed *= aumento;
+            Invoke("RetornarVel", 2);
+        }
         if (other.CompareTag("Moneda") && numRandom==0)
         {
             
@@ -113,6 +123,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
                 cerditoRespawn2();
             }
         }
+
+      
     }
 
     public void Move(float verticalVelocity, float rotation)
@@ -150,15 +162,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	}
 
 	public int getItemRandom() => Random.Range(1, 4);
-    public void cerditoRespawn1()
-    {
-        Debug.Log("jajajajaja");
-        GameManager.instancia.player1Instancia.transform.position = PosRes1;
-    }
 
-    public void cerditoRespawn2()
-    {
-        Debug.Log("buuuuu");
-        GameManager.instancia.player2Instancia.transform.position = PosRes2;
-    }
+    public void cerditoRespawn1()=>GameManager.instancia.player1Instancia.transform.position = PosRes1;
+
+    public void cerditoRespawn2()=>GameManager.instancia.player2Instancia.transform.position = PosRes2;
+    
 }
