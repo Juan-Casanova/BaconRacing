@@ -12,7 +12,8 @@
      public delegate void OnLapCompleted(ContadorVueltas contador);
      public static event OnLapCompleted LapCompletedEvent;
       
-     private int _currentLap = 0;
+    [HideInInspector]
+     public int _currentLap = 0;
      public int currentLap
      {
         get

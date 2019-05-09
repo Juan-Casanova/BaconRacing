@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IMeta
 {
 
 
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-
+    //este no se puede probar
     public void GameOver(GameObject winner)
     {   
         if(winner == player1Instancia)
@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextTrack, LoadSceneMode.Single);
     }
 
+    //no se puede probar
     public void PickCharacterSrTequilaP1()
     {
         player1Prefab = SrTequilaP1;

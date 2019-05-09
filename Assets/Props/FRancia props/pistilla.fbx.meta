@@ -1,49 +1,19 @@
 fileFormatVersion: 2
-guid: 18b79f5f927077d458ccd2db34277ee7
+guid: 133800540c17d8b4390c67fb78b39642
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Asphalt 2D.lxp (2)
-    100002: //RootNode
-    100004: Colicion
-    100006: Mesh
-    100008: Parte 1
-    100010: Parte2
-    100012: Parte3
-    100014: Pista
-    100016: Red Concrete 2D.lxp
-    100018: Texture Group
-    400000: Asphalt 2D.lxp (2)
-    400002: //RootNode
-    400004: Colicion
-    400006: Mesh
-    400008: Parte 1
-    400010: Parte2
-    400012: Parte3
-    400014: Pista
-    400016: Red Concrete 2D.lxp
-    400018: Texture Group
+    100000: //RootNode
+    400000: //RootNode
     2100000: tablones
     2100002: tablas
     2100004: boyas
     2100006: banqueta
     2100008: Default
     2100010: carretera
-    2300000: Mesh
-    2300002: Parte 1
-    2300004: Parte2
-    2300006: Parte3
-    2300008: Pista
-    3300000: Mesh
-    3300002: Parte 1
-    3300004: Parte2
-    3300006: Parte3
-    3300008: Pista
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: Pista
-    4300002: Parte2
-    4300004: Mesh
-    4300006: Parte 1
-    4300008: Parte3
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
