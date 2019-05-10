@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 7241489297305784374}
   - component: {fileID: 7241489297305784375}
   m_Layer: 0
-  m_Name: Meca-Tequila
+  m_Name: Meca-TequilP2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animacioncerdito: {fileID: 7241489297305784381}
+  animacionpersonaje: {fileID: 2806576194849878011}
 --- !u!114 &7241489297305784376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +161,9 @@ MonoBehaviour:
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 7680747160933727928}
   FrontSpawnPoint: {fileID: 6730304370992527275}
+  aumento: 2
+  activo: 0
+  VelocityModifier: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -202,6 +206,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentCheckpoint: 0
+  _currentLap: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
 --- !u!1 &7241489297522098899
@@ -514,6 +519,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2806576194857261723}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2806576194849878011 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: fd64159c899ac0047b760edd10094944,
+    type: 3}
+  m_PrefabInstance: {fileID: 2806576194857261723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8318498944865345019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -521,6 +532,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03230991
@@ -576,14 +595,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}

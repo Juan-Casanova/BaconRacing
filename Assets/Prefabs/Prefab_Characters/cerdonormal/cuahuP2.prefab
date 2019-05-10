@@ -446,6 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animacioncerdito: {fileID: 7241489297305784381}
+  animacionpersonaje: {fileID: 4287663243451655801}
 --- !u!114 &7241489297305784376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +472,9 @@ MonoBehaviour:
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 7680747160933727928}
   FrontSpawnPoint: {fileID: 6730304370992527275}
+  aumento: 2
+  activo: 0
+  VelocityModifier: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -513,6 +517,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentCheckpoint: 0
+  _currentLap: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
 --- !u!1 &7241489297328624330
@@ -2239,6 +2244,12 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
+--- !u!95 &4287663243451655801 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 2355d0de01761ea4f9d4f3194b935534,
+    type: 3}
+  m_PrefabInstance: {fileID: 4287663243461104409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4287663243460708761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2355d0de01761ea4f9d4f3194b935534,
@@ -2252,6 +2263,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03230991
@@ -2307,14 +2326,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}

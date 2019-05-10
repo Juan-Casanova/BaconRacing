@@ -1845,6 +1845,9 @@ MonoBehaviour:
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 1974399818709723846}
   FrontSpawnPoint: {fileID: 5938778515610558050}
+  aumento: 2
+  activo: 0
+  VelocityModifier: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -1862,6 +1865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animacioncerdito: {fileID: 4630842336817475563}
+  animacionpersonaje: {fileID: 540913393901215688}
 --- !u!114 &4630842336817475552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1900,6 +1904,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentCheckpoint: 0
+  _currentLap: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
 --- !u!1 &4630842336882104930
@@ -2239,6 +2244,12 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
+--- !u!95 &540913393901215688 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 2355d0de01761ea4f9d4f3194b935534,
+    type: 3}
+  m_PrefabInstance: {fileID: 540913393891764904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &540913393891897384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2355d0de01761ea4f9d4f3194b935534,
@@ -2252,6 +2263,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -2308,25 +2327,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.48478
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
---- !u!4 &4630842335888461337 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 4630842335888856217}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4630842335888888377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4630842335888856217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4630842335888461337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2,
     type: 3}
   m_PrefabInstance: {fileID: 4630842335888856217}
   m_PrefabAsset: {fileID: 0}
