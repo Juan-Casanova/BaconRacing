@@ -85,18 +85,10 @@ public class GameManager : MonoBehaviour, IMeta
         player1Prefab = CuauhtemocP1;
     }
 
-    public void PickCharacterCuauhtemocP2()
-    {
-        player2Prefab = CuauhtemocP2;
-    }
+    public void PickCharacterCuauhtemocP2()=>player2Prefab = CuauhtemocP2;
+    
 
-    public void PickCharacterAlemanaP1()
-    {
-        player1Prefab = AlemanaP1;
-    }
+    public void PickCharacterAlemanaP1()=>player1Prefab = AlemanaP1;
 
-    public void PickCharacterAlemanaP2()
-    {
-        player2Prefab = AlemanaP2;
-    }
+    public void PickCharacterAlemanaP2()=>player2Prefab = AlemanaP2;
 }
