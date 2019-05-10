@@ -60,30 +60,17 @@ public class GameManager : MonoBehaviour, IMeta
     }
 
     //no se puede probar
-    public void PickCharacterSrTequilaP1()
-    {
-        player1Prefab = SrTequilaP1;
-    }
+    public void PickCharacterSrTequilaP1() => player1Prefab = SrTequilaP1;
 
-    public void PickCharacterSrTequilaP2()
-    {
-        player2Prefab = SrTequilaP2;
-    }
+    public void PickCharacterSrTequilaP2()=>player2Prefab = SrTequilaP2;
 
-    public void PickCharacterSakeP1()
-    {
-        player1Prefab = SakeP1;
-    }
+    public void PickCharacterSakeP1()=>player1Prefab = SakeP1;
 
-    public void PickCharacterSakeP2()
-    {
-        player2Prefab = SakeP2;
-    }
 
-    public void PickCharacterCuauhtemocP1()
-    {
-        player1Prefab = CuauhtemocP1;
-    }
+    public void PickCharacterSakeP2()=>player2Prefab = SakeP2;
+
+
+    public void PickCharacterCuauhtemocP1()=>player1Prefab = CuauhtemocP1;
 
     public void PickCharacterCuauhtemocP2()=>player2Prefab = CuauhtemocP2;
     
