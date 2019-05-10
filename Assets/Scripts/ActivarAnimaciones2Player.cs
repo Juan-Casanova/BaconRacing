@@ -7,10 +7,10 @@ public class ActivarAnimaciones2Player : MonoBehaviour
    
     private ActivaranimacionesEngine _activaranimacionesengine;
 
- 
+
     //public Rigidbody Cerdito;
     public Animator animacioncerdito; // animator del cerdito
-    
+    public Animator animacionpersonaje; // animator del personaje
 
     /// <summary>
     /// cerdito=0 significa animacion de idle
@@ -23,8 +23,10 @@ public class ActivarAnimaciones2Player : MonoBehaviour
     /// </summary>
 
     private void Awake()=> _activaranimacionesengine = new ActivaranimacionesEngine();
-    
-    private void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion2P());
+
+    private void Update()
+    {   animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion2P());
+        animacionpersonaje.SetInteger("personaje", _activaranimacionesengine.SeleccionAnimacionPersonaje2P());  }
 
 
 }
