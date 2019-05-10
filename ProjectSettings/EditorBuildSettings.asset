@@ -10,11 +10,17 @@ EditorBuildSettings:
     guid: 7faad223c9091274c917bb65abc475de
   - enabled: 1
     path: Assets/Scenes/PistaBosqueChina.unity
-    guid: ac76e6b56e7d0fc448328ef923b84e80
+    guid: 9bd9ec640e9e31f46acbaeb54ca81a87
   - enabled: 1
     path: Assets/Scenes/Pista_Uganda.unity
-    guid: 6e693d3e8da863a4d953a20de87dff1f
+    guid: 164e64447f694244b91c09031e732b55
   - enabled: 1
     path: Assets/Scenes/PistaMexico.unity
     guid: 97b86bffdfe519645b1e65b857641d9a
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
