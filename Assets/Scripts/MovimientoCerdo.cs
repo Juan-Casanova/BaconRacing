@@ -30,7 +30,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
     public Transform BackSpawnPoint, FrontSpawnPoint;
 
-    public float aumento=4;
+    public float aumento=2;
+    public bool activo=false;
     public VelocityModifier VelocityModifier;
 
     public int numRandom = 0;
@@ -93,16 +94,40 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         }
 	}
 
-    private void OnCollisionEnter(Collision collision)=>movimientoCerdoEngine.maxJumps = 3;
+    private void OnCollisionEnter(Collision collision)
 
-    private void RetornarVel() => movimientoCerdoEngine.speed = BaseSpeed;
+    {
+        movimientoCerdoEngine.maxJumps = 3;
+        if (collision.gameObject.name == "Rampa")
+        {
+            //Debug.Log("jajajajaja");
+            //if (activo == false)
+            //{
+            //    Debug.Log("jajajajaja");
+            //    movimientoCerdoEngine.speed *= aumento;
+            //    Invoke("RetornarVel", 2);
+            //    //activo = true;
+            //}
+        }
 
+    }
+
+    private void RetornarVel()
+    {
+        movimientoCerdoEngine.speed = BaseSpeed;
+        activo = false;
+    }
+
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("power"))
         {
+
             movimientoCerdoEngine.speed *= aumento;
             Invoke("RetornarVel", 2);
+            Debug.Log(movimientoCerdoEngine.speed);
+
         }
         if (other.CompareTag("Moneda") && numRandom==0)
         {
