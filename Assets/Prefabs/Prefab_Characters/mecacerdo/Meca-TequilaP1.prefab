@@ -297,6 +297,9 @@ MonoBehaviour:
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 1974399818709723846}
   FrontSpawnPoint: {fileID: 5938778515610558050}
+  aumento: 2
+  activo: 0
+  VelocityModifier: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -314,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animacioncerdito: {fileID: 4630842336817475563}
+  animacionpersonaje: {fileID: 8154077628120745188}
 --- !u!114 &4630842336817475552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +356,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentCheckpoint: 0
+  _currentLap: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
 --- !u!1 &6894096524851976988
@@ -454,6 +459,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -509,14 +522,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.48478
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
@@ -596,6 +601,12 @@ PrefabInstance:
 --- !u!4 &8154077628128439068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400024, guid: fd64159c899ac0047b760edd10094944,
+    type: 3}
+  m_PrefabInstance: {fileID: 8154077628128047492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8154077628120745188 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: fd64159c899ac0047b760edd10094944,
     type: 3}
   m_PrefabInstance: {fileID: 8154077628128047492}
   m_PrefabAsset: {fileID: 0}

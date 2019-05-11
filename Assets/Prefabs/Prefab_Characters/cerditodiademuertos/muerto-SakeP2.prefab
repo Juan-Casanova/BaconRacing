@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animacioncerdito: {fileID: 7241489297305784381}
+  animacionpersonaje: {fileID: 2964035054210959067}
 --- !u!114 &7241489297305784376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +161,9 @@ MonoBehaviour:
   mostrarItem: {fileID: 0}
   BackSpawnPoint: {fileID: 7680747160933727928}
   FrontSpawnPoint: {fileID: 6730304370992527275}
+  aumento: 2
+  activo: 0
+  VelocityModifier: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -202,6 +206,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentCheckpoint: 0
+  _currentLap: 0
   startPos: {x: 0, y: 0, z: 0}
   Lap: 0
 --- !u!1 &7241489297522098899
@@ -448,6 +453,12 @@ PrefabInstance:
 --- !u!4 &2964035054220224651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400176, guid: 3ac24157d6a97024895923862b2de40f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2964035054220358587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2964035054210959067 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 3ac24157d6a97024895923862b2de40f,
     type: 3}
   m_PrefabInstance: {fileID: 2964035054220358587}
   m_PrefabAsset: {fileID: 0}

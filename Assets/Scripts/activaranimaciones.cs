@@ -10,7 +10,7 @@ public class activaranimaciones : MonoBehaviour
  
     //public Rigidbody Cerdito;
     public Animator animacioncerdito; // animator del cerdito
-    
+    public Animator animacionpersonaje; // animator del personaje
 
     /// <summary>
     /// cerdito=0 significa animacion de idle
@@ -22,9 +22,12 @@ public class activaranimaciones : MonoBehaviour
     /// cerdito=6 significa animacion de Item
     /// </summary>
 
-    private void Awake()=> _activaranimacionesengine = new ActivaranimacionesEngine();
+    private void Awake() { _activaranimacionesengine = new ActivaranimacionesEngine();
+                           
+    }
     
-    private void Update() => animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
+    private void Update() { animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
+    animacionpersonaje.SetInteger("personaje", _activaranimacionesengine.SeleccionAnimacionPersonaje());  }
 
 }
 
