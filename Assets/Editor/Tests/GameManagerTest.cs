@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using NUnit.Framework;
-using UnityEngine;
+﻿using NUnit.Framework;
 using NSubstitute;
 
 
@@ -12,16 +9,15 @@ namespace Tests
         [Test]
         public void CompareGameObjectsAreEqual()
         {
-            PlayerPrefab1 _gameManager = new PlayerPrefab1();
+            GameManagerEngine _gameManager = new GameManagerEngine();
+            int Instance1 = 0, Instance2=0;
 
+            //_gameManager.TEST_Assert_Method(Instance1, Instance2);
+            
+            
 
             
-            GameObject someobject = null;
-            GameObject otherobject = null;
-            _gameManager.TEST_Assert_Method(ref someobject, ref otherobject);
-
-            
-            Assert.AreEqual(someobject, otherobject);
+            Assert.AreEqual(Instance1, Instance2);
         }
         
     }
