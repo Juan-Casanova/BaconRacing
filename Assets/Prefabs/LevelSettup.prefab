@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
+  MovimientoCerdo: {fileID: 0}
 --- !u!1 &4729714466700589048
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,6 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 2
+  MovimientoCerdo: {fileID: 0}
 --- !u!1 &4729714467084105098
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +167,28 @@ MonoBehaviour:
     type: 3}
   player1Instancia: {fileID: 0}
   player2Instancia: {fileID: 0}
+  SrTequilaP1: {fileID: 4630842336817475554, guid: bd9a11bc9063add4f940d74f903b1316,
+    type: 3}
+  SrTequilaP2: {fileID: 7241489297305784372, guid: c13f9bd7cc4e28c4a91dfbaad6000d4d,
+    type: 3}
+  SakeP1: {fileID: 4630842336817475554, guid: e1ca1b494afe9214786f69be2df34d88, type: 3}
+  SakeP2: {fileID: 7241489297305784372, guid: 7bfae76e40965d8438d979feb831062b, type: 3}
+  CuauhtemocP1: {fileID: 4630842336817475554, guid: 131ced2caef947b438b21b64b8f000bf,
+    type: 3}
+  CuauhtemocP2: {fileID: 7241489297305784372, guid: ff244f32f2727bb4eadcb26e2d32accb,
+    type: 3}
+  MecaTequilaP1: {fileID: 4630842336817475554, guid: 1da82a9d6a5b773479eb06829c31b468,
+    type: 3}
+  MecaTequilaP2: {fileID: 7241489297305784372, guid: 0d6ae632d0d2d9248b0da6f3fad24d68,
+    type: 3}
+  MecaSakeP1: {fileID: 4630842336817475554, guid: 5e469bc0fd33b054197ad81d9f36a96b,
+    type: 3}
+  MecaSakeP2: {fileID: 7241489297305784372, guid: bc864cee6acec6e4b8bfe1ccebb4a77f,
+    type: 3}
+  MecaCuahuP1: {fileID: 4630842336817475554, guid: ca18b662d6e98e942ad1ae7f16db601b,
+    type: 3}
+  MecaCuahuP2: {fileID: 7241489297305784372, guid: aa5c6e5d0e5b7b645ac6a75748bfdb65,
+    type: 3}
 --- !u!1 &4729714467086324228
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 3
+  MovimientoCerdo: {fileID: 0}
 --- !u!1 &4729714467360597824
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,11 +526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5688879523468329774}
     m_Modifications:
-    - target: {fileID: 2971089153144567698, guid: 766b4fa3dacca474b84934afad632394,
-        type: 3}
-      propertyPath: m_Name
-      value: HUD
-      objectReference: {fileID: 0}
     - target: {fileID: 2971089153144567696, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -610,6 +630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971089153144567698, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_Name
+      value: HUD
       objectReference: {fileID: 0}
     - target: {fileID: 2971089153144567726, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
