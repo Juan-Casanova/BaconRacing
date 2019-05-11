@@ -79,3 +79,16 @@ public class GameManager : MonoBehaviour, IMeta
 
     public void PickCharacterAlemanaP2()=>player2Prefab = AlemanaP2;
 }
+
+public class PlayerPrefab1 : MonoBehaviour
+{
+    GameManager _gameManager = new GameManager();
+
+    
+
+    public void TEST_Assert_Method(ref GameObject someobject,ref GameObject otherobject)
+    {
+
+        
+    }
+}
