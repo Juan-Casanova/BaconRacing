@@ -55,8 +55,17 @@ public class GameManager : MonoBehaviour, IMeta
     {
         
         yield return new WaitForSecondsRealtime(8);
-
+        
         SceneManager.LoadScene(nextTrack, LoadSceneMode.Single);
+
+    }
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            StopAllCoroutines();
+        }
     }
 
     //no se puede probar
