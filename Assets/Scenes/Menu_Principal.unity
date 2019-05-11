@@ -6494,8 +6494,10 @@ MonoBehaviour:
     type: 3}
   MecaSakeP2: {fileID: 7241489297305784372, guid: bc864cee6acec6e4b8bfe1ccebb4a77f,
     type: 3}
-  MecaCuahuP1: {fileID: 0}
-  MecaCuahuP2: {fileID: 0}
+  MecaCuahuP1: {fileID: 4630842336817475554, guid: ca18b662d6e98e942ad1ae7f16db601b,
+    type: 3}
+  MecaCuahuP2: {fileID: 7241489297305784372, guid: aa5c6e5d0e5b7b645ac6a75748bfdb65,
+    type: 3}
 --- !u!4 &754367102
 Transform:
   m_ObjectHideFlags: 0
