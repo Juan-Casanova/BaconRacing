@@ -82,6 +82,19 @@ namespace Tests
 	        Assert.IsTrue(movimientoCerdoSubstitute.MoveWasCalled);
 
         }
+
+        [Test]
+        public void AumentarVelocidadAlDoble()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            float aumento = 2;
+            movimientoCerdoEngine.speed = 2;
+            
+
+            movimientoCerdoEngine.AumentarVelocidadCerdo(aumento);
+            var resultado = movimientoCerdoEngine.speed;
+            Assert.AreEqual(4,resultado);
+        }
     }
 	
 	

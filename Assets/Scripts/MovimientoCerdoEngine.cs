@@ -1,4 +1,6 @@
-﻿public class MovimientoCerdoEngine
+﻿using UnityEngine;
+
+public class MovimientoCerdoEngine
 {
 	public float angulo;
 
@@ -25,4 +27,16 @@
 				horizontalAxis * angulo);
 		}
 	}
+
+    public void AumentarVelocidadCerdo(float aumento)
+    {
+        speed *= aumento;
+    }
+
+    public bool AsignarspeedaBase(bool activo,float BaseSpeed)
+    {
+        speed = BaseSpeed;
+        return activo;
+    }
+
 }
