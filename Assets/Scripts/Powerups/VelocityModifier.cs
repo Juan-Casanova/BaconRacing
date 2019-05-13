@@ -7,6 +7,8 @@ public class VelocityModifier : MonoBehaviour
     [Range(0, 1)]
     public float reduccion = 0.5f;
 
+    VelocityModiferEngine _velocityModiferEngine= new VelocityModiferEngine();
+
     public float duration = 2;
 
     public bool picked = false;
@@ -14,14 +16,16 @@ public class VelocityModifier : MonoBehaviour
     private MovimientoCerdo cerdito;
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !picked)
-        {
-            picked = true;
-            cerdito = other.GetComponent<MovimientoCerdo>();
-            cerdito.movimientoCerdoEngine.speed *= reduccion;
-            renderer.enabled = false;
-            StartCoroutine(cancelEffect());
-        }
+        _velocityModiferEngine.CompararTagCerdo(other, picked,
+            reduccion, renderer);
+        //if (other.CompareTag("Player") && !picked)
+        //{
+        //    picked = true;
+        //    cerdito = other.GetComponent<MovimientoCerdo>();
+        //    cerdito.movimientoCerdoEngine.speed *= reduccion;
+        //    renderer.enabled = false;
+        //    StartCoroutine(cancelEffect());
+        //}
     }
 
     public IEnumerator cancelEffect()

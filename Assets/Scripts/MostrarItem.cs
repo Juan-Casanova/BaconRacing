@@ -18,7 +18,29 @@ public class MostrarItem : MonoBehaviour
 
     public void ShowItem(int _numItem,numPlayer numPlayer)
     {
-        _MostrarItemEngine.ShowItems( _numItem,numPlayer, itemsIcon);
+        //_MostrarItemEngine.ShowItems( _numItem,numPlayer, itemsIcon);
+        switch (_numItem)
+        {
+            case 1:
+
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
+
+                break;
+            case 2:
+
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
+
+
+                break;
+            case 3:
+
+                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
+
+                break;
+            default:
+                HideAllItems();
+                break;
+        }
     }
 
     public void HideAllItems()
