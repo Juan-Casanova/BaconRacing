@@ -55,6 +55,18 @@ public class ManagerHUDEngine
         }
     }
 
+    public string TextoGanaste()
+    {
+        string Texto = "You Win";
+        return Texto;
+    }
+
+    public string TextoPerdiste()
+    {
+        string Texto = "You Lose";
+        return Texto;
+    }
+
 
 }
 

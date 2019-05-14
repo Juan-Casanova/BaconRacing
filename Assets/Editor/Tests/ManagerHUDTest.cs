@@ -110,6 +110,28 @@ namespace Tests
             //Assert
             Assert.IsTrue(managerHudEngine.winner2);
         }
+
+        [Test]
+        public void ComprobarTextoGanasteisnull()
+        {
+            ManagerHUDEngine managerHudEngine = new ManagerHUDEngine();
+
+            var resultado = managerHudEngine.TextoGanaste();
+            resultado = null;
+
+            Assert.IsNull(resultado);
+        }
+
+        [Test]
+        public void ComprobarTextoPerdisteisnull()
+        {
+            ManagerHUDEngine managerHudEngine = new ManagerHUDEngine();
+
+            var resultado = managerHudEngine.TextoPerdiste();
+            resultado = null;
+
+            Assert.IsNull(resultado);
+        }
     }
 }
 
