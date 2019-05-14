@@ -19,9 +19,9 @@ namespace Tests
 
             VelocityModiferEngine _velocityModiferEngine= new VelocityModiferEngine();
 
-            _velocityModiferEngine.CompararTagCerdo(Collider other, picked,reduccion,renderer);
+           // _velocityModiferEngine.CompararTagCerdo(Collider other, picked,reduccion,renderer);
 
-            Assert.AreEqual();
+           // Assert.AreEqual();
         }
 
       

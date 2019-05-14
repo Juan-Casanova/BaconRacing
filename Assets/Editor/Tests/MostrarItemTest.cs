@@ -1,26 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using NSubstitute;
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class MostrarItemTest1
+	public class MostrarItemTest1
     {
         [Test]
-        public void MostrarItemTest1ScriptSimplePasses()
+        public void MostrarItemEngine_ShowItems_ShowsItem0_WithNumItemEquals0_AndP1()
         {
-            int _numItem=1;
-            numPlayer numPlayer;
-            GameObject[] itemsIcon;
+			// Arrange
+	        var mostrarItem = Substitute.For<IMostrarItem>();
+			var engine = new MostrarItemEngine(mostrarItem);
 
-            MostrarItemEngine _mostrarItemEngine=new MostrarItemEngine();
+			// Act
+			engine.ShowItems(1, numPlayer.p1);
 
-            //_mostrarItemEngine.ShowItems(_numItem, numPlayer,itemsIcon);
-
-            //Assert.AreEqual();
-  
+			// Assert
+			mostrarItem.Received(1).ShowIconItem(0);
         }
     }
 }

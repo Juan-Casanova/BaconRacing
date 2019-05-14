@@ -3,18 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class MostrarItem : MonoBehaviour
+public class MostrarItem : MonoBehaviour, IMostrarItem // TODO Este nombre de clase está mal
 {
-    
     public GameObject[] itemsIcon;
+
+    private MostrarItemEngine _MostrarItemEngine;
+    private void Awake()
+    {
+	    _MostrarItemEngine = new MostrarItemEngine(this);
+    }
 
     public void Start() => HideAllItems();
     
-    public void ShowIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = true;
-    public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
+    public void ShowIconItem(int index)
+    {
+	    itemsIcon[index].GetComponent<Image>().enabled = true;
+    }
 
-    MostrarItemEngine _MostrarItemEngine = new MostrarItemEngine();
+    public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
 
     public void ShowItem(int _numItem,numPlayer numPlayer)
     {
@@ -23,18 +29,18 @@ public class MostrarItem : MonoBehaviour
         {
             case 1:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
+                ShowIconItem(numPlayer == numPlayer.p1 ? 0 : 3);
 
                 break;
             case 2:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
+                ShowIconItem(numPlayer == numPlayer.p1 ? 2 : 5);
 
 
                 break;
             case 3:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
+                ShowIconItem(numPlayer == numPlayer.p1 ? 1 : 4);
 
                 break;
             default:
