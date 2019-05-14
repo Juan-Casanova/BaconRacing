@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MostrarItem : MonoBehaviour, IMostrarItem // TODO Este nombre de clase está mal
+public class MostrarItem : MonoBehaviour, IMostrarItem,IOcultarItem // TODO Este nombre de clase está mal
 {
     public GameObject[] itemsIcon;
 
     private MostrarItemEngine _MostrarItemEngine;
+    //private MostrarItemEngine _OcultarItemEngine;
     private void Awake()
     {
-	    _MostrarItemEngine = new MostrarItemEngine(this);
+	    _MostrarItemEngine = new MostrarItemEngine(this,this);
+        //_OcultarItemEngine = new MostrarItemEngine(this).OcultarItem;
     }
 
     public void Start() => HideAllItems();
@@ -20,7 +22,12 @@ public class MostrarItem : MonoBehaviour, IMostrarItem // TODO Este nombre de cl
 	    itemsIcon[index].GetComponent<Image>().enabled = true;
     }
 
-    public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
+    public void HideIconItem(int index)
+    {
+        itemsIcon[index].GetComponent<Image>().enabled = false;
+    }
+
+    //public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
 
     //public void ShowItem(int _numItem, numPlayer numPlayer)
     //{
@@ -55,21 +62,21 @@ public class MostrarItem : MonoBehaviour, IMostrarItem // TODO Este nombre de cl
             itemsIcon[i].GetComponent<Image>().enabled = false;
     }
 
-    public void HideItem(int _numItem, numPlayer numPlayer)
+    public void HideItems(int _numItem, numPlayer numPlayer)
     {
         switch (_numItem)
         {
             case 1:
-                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[0] : itemsIcon[3]);
+                HideIconItem(numPlayer == numPlayer.p1 ? 0 : 3);
 
                 break;
             case 2:
-                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[2] : itemsIcon[5]);
+                HideIconItem(numPlayer == numPlayer.p1 ? 2 : 5);
 
 
                 break;
             case 3:
-                HideIconItem(numPlayer == numPlayer.p1 ? itemsIcon[1] : itemsIcon[4]);
+                HideIconItem(numPlayer == numPlayer.p1 ? 1 : 4);
 
                 break;
             default:
