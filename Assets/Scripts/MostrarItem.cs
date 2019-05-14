@@ -22,32 +22,32 @@ public class MostrarItem : MonoBehaviour, IMostrarItem // TODO Este nombre de cl
 
     public void HideIconItem(GameObject icon) => icon.GetComponent<Image>().enabled = false;
 
-    public void ShowItem(int _numItem,numPlayer numPlayer)
-    {
-        //_MostrarItemEngine.ShowItems( _numItem,numPlayer, itemsIcon);
-        switch (_numItem)
-        {
-            case 1:
+    //public void ShowItem(int _numItem, numPlayer numPlayer)
+    //{
+    //    //_MostrarItemEngine.ShowItems( _numItem,numPlayer, itemsIcon);
+    //    switch (_numItem)
+    //    {
+    //        case 1:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? 0 : 3);
+    //            ShowIconItem(numPlayer == numPlayer.p1 ? 0 : 3);
 
-                break;
-            case 2:
+    //            break;
+    //        case 2:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? 2 : 5);
+    //            ShowIconItem(numPlayer == numPlayer.p1 ? 2 : 5);
 
 
-                break;
-            case 3:
+    //            break;
+    //        case 3:
 
-                ShowIconItem(numPlayer == numPlayer.p1 ? 1 : 4);
+    //            ShowIconItem(numPlayer == numPlayer.p1 ? 1 : 4);
 
-                break;
-            default:
-                HideAllItems();
-                break;
-        }
-    }
+    //            break;
+    //        default:
+    //            HideAllItems();
+    //            break;
+    //    }
+    //}
 
     public void HideAllItems()
     {

@@ -133,7 +133,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         {
             
             numRandom = getItemRandom();
-            mostrarItem.ShowItem(numRandom, NumPlayer);
+            mostrarItem.ShowIconItem(numRandom);
             
         }
 
