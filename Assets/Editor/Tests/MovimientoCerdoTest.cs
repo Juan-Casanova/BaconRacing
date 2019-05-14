@@ -95,6 +95,30 @@ namespace Tests
             var resultado = movimientoCerdoEngine.speed;
             Assert.AreEqual(4,resultado);
         }
+
+        [Test]
+        public void AsignaciondeSpeed_a_BaseSpeed()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            
+            float BaseSpeed = 2;
+
+            movimientoCerdoEngine.AsignarspeedaBase(BaseSpeed);
+            float Velocidad = movimientoCerdoEngine.speed;
+
+            Assert.AreEqual(2,Velocidad);
+
+        }
+
+        [Test]
+        public void Changetofalse()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+
+            var result = movimientoCerdoEngine.Cambiarafalso();
+
+            Assert.IsFalse(result);
+        }
     }
 	
 	

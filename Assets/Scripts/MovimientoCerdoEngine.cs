@@ -33,10 +33,14 @@ public class MovimientoCerdoEngine
         speed *= aumento;
     }
 
-    public bool AsignarspeedaBase(bool activo,float BaseSpeed)
+    public void AsignarspeedaBase(float BaseSpeed)
     {
         speed = BaseSpeed;
-        return activo;
+    }
+
+    public bool Cambiarafalso()
+    {
+        return false;
     }
 
 }

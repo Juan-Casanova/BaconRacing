@@ -98,9 +98,9 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 
         private void RetornarVel()
     {
-        movimientoCerdoEngine.AsignarspeedaBase(activo,BaseSpeed);
+        movimientoCerdoEngine.AsignarspeedaBase(BaseSpeed);
         //movimientoCerdoEngine.speed = BaseSpeed;
-        activo = false;
+        activo = movimientoCerdoEngine.Cambiarafalso();
     }
 
     
