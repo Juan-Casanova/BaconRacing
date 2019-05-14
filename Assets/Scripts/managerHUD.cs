@@ -23,6 +23,7 @@ public class managerHUD : MonoBehaviour
     public CheckEngine checkEngine=new CheckEngine();
     public Countdown _countdown=new Countdown();
     public CountDownEngine countdownEngine = new CountDownEngine();
+    public ManagerHUDEngine ManagerHUDEngine = new ManagerHUDEngine();
 
     [Header("Game Over Settings")]
     public Text player1gameOver;
@@ -95,13 +96,13 @@ public class managerHUD : MonoBehaviour
         switch(player)
         {
             case numPlayer.p1:
-                player1gameOver.text = "U win";
-                player2gameOver.text = "U r looser";
+                player1gameOver.text = ManagerHUDEngine.TextoGanaste();
+                player2gameOver.text = ManagerHUDEngine.TextoPerdiste();
             break;
             case numPlayer.p2:
-                player1gameOver.text = "U r looser";
-                player2gameOver.text = "U win";
-            break;
+                player1gameOver.text = ManagerHUDEngine.TextoPerdiste();
+                player2gameOver.text = ManagerHUDEngine.TextoGanaste();
+                break;
         }
     }
 
