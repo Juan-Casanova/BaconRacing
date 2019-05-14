@@ -11,6 +11,8 @@
      
      public delegate void OnLapCompleted(ContadorVueltas contador);
      public static event OnLapCompleted LapCompletedEvent;
+
+    ContadorVueltasEngine _contadorVueltasEngine = new ContadorVueltasEngine();
       
     [HideInInspector]
      public int _currentLap = 0;
@@ -34,7 +36,7 @@
      void  Start ()
      {
          startPos = transform.position;
-         currentCheckpoint = 0;
-         currentLap = 0;  
+         currentCheckpoint = _contadorVueltasEngine.currentCheckpoint;
+         currentLap = _contadorVueltasEngine.currentLap;  
      }  
  }
