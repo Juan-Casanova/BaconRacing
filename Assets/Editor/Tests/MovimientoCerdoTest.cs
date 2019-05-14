@@ -119,11 +119,59 @@ namespace Tests
 
             Assert.IsFalse(result);
         }
-    }
-	
-	
 
-	public class MovimientoCerdoSubstitute : IMovimientoCerdo
+        [Test]
+        public void AsignSpeedValue()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            float _speed = 2;
+            movimientoCerdoEngine.Asignar_Valor_de_speed(_speed);
+            var result = movimientoCerdoEngine.speed;
+
+            Assert.AreEqual(_speed, result);
+
+        }
+
+        [Test]
+        public void Asign_Angle()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            
+            movimientoCerdoEngine.Asignar_Angulo();
+
+            var result = movimientoCerdoEngine.angulo;
+
+            Assert.AreEqual(3,result);
+        }
+
+        [Test]
+        public void Asign_JumpForce()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            float _jumpForce = 1;
+            movimientoCerdoEngine.Asignar_JumpForce(_jumpForce);
+
+            var result = movimientoCerdoEngine.jump;
+
+            Assert.AreEqual(1, result);
+        }
+
+        [Test]
+        public void Asign_MaxJumps()
+        {
+            MovimientoCerdoEngine movimientoCerdoEngine = new MovimientoCerdoEngine();
+            
+            movimientoCerdoEngine.Asignar_MaxJumps();
+
+            var result = movimientoCerdoEngine.maxJumps;
+
+            Assert.AreEqual(3,result);
+        }
+    }
+
+
+
+    public class MovimientoCerdoSubstitute : IMovimientoCerdo
 	{
 		public bool MoveWasCalled = false;
 		public bool JumpWasCalled = false;

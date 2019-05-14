@@ -67,10 +67,18 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	    countDown = managerHUD.instancia.GetComponent<Countdown>();
         mostrarItem = managerHUD.instancia.GetComponent<MostrarItem>();
         _BaseSpeed = _speed;
-        movimientoCerdoEngine.speed = _speed;
-		movimientoCerdoEngine.angulo = 3.0f;
-		movimientoCerdoEngine.jump = _jumpForce;
-		movimientoCerdoEngine.maxJumps = 3;
+
+        movimientoCerdoEngine.Asignar_Valor_de_speed(_speed);
+        //movimientoCerdoEngine.speed = _speed;
+
+        movimientoCerdoEngine.Asignar_Angulo();
+		//movimientoCerdoEngine.angulo = 3.0f;
+
+        movimientoCerdoEngine.Asignar_JumpForce(_jumpForce);
+		//movimientoCerdoEngine.jump = _jumpForce;
+
+        movimientoCerdoEngine.Asignar_MaxJumps();
+		//movimientoCerdoEngine.maxJumps = 3;
 		item3chile.SetActive(false);
 
 	}

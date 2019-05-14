@@ -43,4 +43,24 @@ public class MovimientoCerdoEngine
         return false;
     }
 
+    public void Asignar_Valor_de_speed(float _speed)
+    {
+        speed = _speed;
+    }
+
+    public void Asignar_Angulo()
+    {
+        angulo = 3.0f;
+    }
+
+    public void Asignar_JumpForce(float _jumpForce)
+    {
+        jump = _jumpForce;
+    }
+
+    public void Asignar_MaxJumps()
+    {
+        maxJumps = 3;
+    }
+
 }
