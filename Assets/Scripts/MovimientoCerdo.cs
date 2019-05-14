@@ -67,10 +67,18 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	    countDown = managerHUD.instancia.GetComponent<Countdown>();
         mostrarItem = managerHUD.instancia.GetComponent<MostrarItem>();
         _BaseSpeed = _speed;
-        movimientoCerdoEngine.speed = _speed;
-		movimientoCerdoEngine.angulo = 3.0f;
-		movimientoCerdoEngine.jump = _jumpForce;
-		movimientoCerdoEngine.maxJumps = 3;
+
+        movimientoCerdoEngine.Asignar_Valor_de_speed(_speed);
+        //movimientoCerdoEngine.speed = _speed;
+
+        movimientoCerdoEngine.Asignar_Angulo();
+		//movimientoCerdoEngine.angulo = 3.0f;
+
+        movimientoCerdoEngine.Asignar_JumpForce(_jumpForce);
+		//movimientoCerdoEngine.jump = _jumpForce;
+
+        movimientoCerdoEngine.Asignar_MaxJumps();
+		//movimientoCerdoEngine.maxJumps = 3;
 		item3chile.SetActive(false);
 
 	}
@@ -94,28 +102,13 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         }
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision)=> movimientoCerdoEngine.maxJumps = 3;
 
+        private void RetornarVel()
     {
-        movimientoCerdoEngine.maxJumps = 3;
-        if (collision.gameObject.name == "Rampa")
-        {
-            //Debug.Log("jajajajaja");
-            //if (activo == false)
-            //{
-            //    Debug.Log("jajajajaja");
-            //    movimientoCerdoEngine.speed *= aumento;
-            //    Invoke("RetornarVel", 2);
-            //    //activo = true;
-            //}
-        }
-
-    }
-
-    private void RetornarVel()
-    {
-        movimientoCerdoEngine.speed = BaseSpeed;
-        activo = false;
+        movimientoCerdoEngine.AsignarspeedaBase(BaseSpeed);
+        //movimientoCerdoEngine.speed = BaseSpeed;
+        activo = movimientoCerdoEngine.Cambiarafalso();
     }
 
     
@@ -123,10 +116,10 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     {
         if (other.CompareTag("power"))
         {
-
-            movimientoCerdoEngine.speed *= aumento;
+            movimientoCerdoEngine.AumentarVelocidadCerdo(aumento);
+            //movimientoCerdoEngine.speed *= aumento;
             Invoke("RetornarVel", 2);
-            Debug.Log(movimientoCerdoEngine.speed);
+            //Debug.Log(movimientoCerdoEngine.speed);
 
         }
         if (other.CompareTag("Moneda") && numRandom==0)
