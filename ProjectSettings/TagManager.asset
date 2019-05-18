@@ -15,6 +15,7 @@ TagManager:
   - IconMiniMap
   - Moneda
   - power
+  - trampolin
   layers:
   - Default
   - TransparentFX
