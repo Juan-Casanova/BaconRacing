@@ -142,6 +142,12 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
             }
         }
 
+        if (other.CompareTag("trampolin"))
+            {
+                rigidbody.velocity = new Vector3(0, jumpForce*2, 0);
+
+        }
+
       
     }
 

@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 524ce36e141985c48b162de7bca63fb1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ' BARRERAS'
+    100002: Mesh
+    100004: Mesh (2)
+    100006: Mesh (3)
+    100008: pisobaseprops
+    100010: pista resp
+    100012: //RootNode
+    100014: pistabase con hoyos
+    100016: relleno props
+    100018: Texture Group
+    100020: trampolin
+    100022: "\xB4pistabase "
+    400000: ' BARRERAS'
+    400002: Mesh
+    400004: Mesh (2)
+    400006: Mesh (3)
+    400008: pisobaseprops
+    400010: pista resp
+    400012: //RootNode
+    400014: pistabase con hoyos
+    400016: relleno props
+    400018: Texture Group
+    400020: trampolin
+    400022: "\xB4pistabase "
+    2100000: pino troncobase
+    2100002: arbol3arriba
+    2100004: arbol4arriba
+    2100006: pistaexterior
+    2100008: Default
+    2100010: pista
+    2100012: pisocentro
+    2300000: ' BARRERAS'
+    2300002: Mesh
+    2300004: Mesh (2)
+    2300006: Mesh (3)
+    2300008: pisobaseprops
+    2300010: pista resp
+    2300012: pistabase con hoyos
+    2300014: relleno props
+    2300016: trampolin
+    2300018: "\xB4pistabase "
+    3300000: ' BARRERAS'
+    3300002: Mesh
+    3300004: Mesh (2)
+    3300006: Mesh (3)
+    3300008: pisobaseprops
+    3300010: pista resp
+    3300012: pistabase con hoyos
+    3300014: relleno props
+    3300016: trampolin
+    3300018: "\xB4pistabase "
+    4300000: relleno props
+    4300002: ' BARRERAS'
+    4300004: trampolin
+    4300006: pistabase con hoyos
+    4300008: "\xB4pistabase "
+    4300010: pisobaseprops
+    4300012: pista resp
+    4300014: Mesh
+    4300016: Mesh (2)
+    4300018: Mesh (3)
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
