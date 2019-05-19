@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: e9a6b14307c1f4a4c9c2ea5f58208477
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: arbolitos
+    100002: arbolitos (2)
+    100004: arbolitos (3)
+    100006: arbolitos (4)
+    100008: arbolitos (5)
+    100010: barandal1
+    100012: barandal2
+    100014: flecha
+    100016: flecha2
+    100018: flecha3
+    100020: flecha4
+    100022: Group flechas
+    100024: Group trampolines
+    100026: 'letreroDangerous '
+    100028: letreroDangerous  (2)
+    100030: minimapa
+    100032: pista partes
+    100034: pista partes (10)
+    100036: pista partes (11)
+    100038: pista partes (12)
+    100040: pista partes (13)
+    100042: pista partes (14)
+    100044: pista partes (15)
+    100046: pista partes (16)
+    100048: pista partes (17)
+    100050: pista partes (18)
+    100052: pista partes (2)
+    100054: pista partes (3)
+    100056: pista partes (4)
+    100058: pista partes (5)
+    100060: pista partes (6)
+    100062: pista partes (7)
+    100064: pista partes (8)
+    100066: pista partes (9)
+    100068: pista por partess
+    100070: pista por partess (2)
+    100072: pista saltarina
+    100074: //RootNode
+    100076: pistabase1
+    100078: pistabase2
+    100080: pistabase3
+    100082: pistabase4
+    100084: pistabase5
+    100086: props
+    100088: riesgo de caerse
+    100090: riesgo de caerse (2)
+    100092: terreno
+    100094: Texture Group
+    100096: trampolines
+    400000: arbolitos
+    400002: arbolitos (2)
+    400004: arbolitos (3)
+    400006: arbolitos (4)
+    400008: arbolitos (5)
+    400010: barandal1
+    400012: barandal2
+    400014: flecha
+    400016: flecha2
+    400018: flecha3
+    400020: flecha4
+    400022: Group flechas
+    400024: Group trampolines
+    400026: 'letreroDangerous '
+    400028: letreroDangerous  (2)
+    400030: minimapa
+    400032: pista partes
+    400034: pista partes (10)
+    400036: pista partes (11)
+    400038: pista partes (12)
+    400040: pista partes (13)
+    400042: pista partes (14)
+    400044: pista partes (15)
+    400046: pista partes (16)
+    400048: pista partes (17)
+    400050: pista partes (18)
+    400052: pista partes (2)
+    400054: pista partes (3)
+    400056: pista partes (4)
+    400058: pista partes (5)
+    400060: pista partes (6)
+    400062: pista partes (7)
+    400064: pista partes (8)
+    400066: pista partes (9)
+    400068: pista por partess
+    400070: pista por partess (2)
+    400072: pista saltarina
+    400074: //RootNode
+    400076: pistabase1
+    400078: pistabase2
+    400080: pistabase3
+    400082: pistabase4
+    400084: pistabase5
+    400086: props
+    400088: riesgo de caerse
+    400090: riesgo de caerse (2)
+    400092: terreno
+    400094: Texture Group
+    400096: trampolines
+    2100000: minimapa
+    2100002: pino troncobase
+    2100004: palmeraarriva
+    2100006: arbolpalmerafruto
+    2100008: Default
+    2100010: pistasaltarina
+    2100012: letreros
+    2100014: letras
+    2100016: trampolines
+    2100018: pistasaltarina partes
+    2100020: piso azul
+    2300000: arbolitos
+    2300002: arbolitos (2)
+    2300004: arbolitos (3)
+    2300006: arbolitos (4)
+    2300008: arbolitos (5)
+    2300010: barandal1
+    2300012: barandal2
+    2300014: flecha
+    2300016: flecha2
+    2300018: flecha3
+    2300020: flecha4
+    2300022: 'letreroDangerous '
+    2300024: letreroDangerous  (2)
+    2300026: minimapa
+    2300028: pista partes
+    2300030: pista partes (10)
+    2300032: pista partes (11)
+    2300034: pista partes (12)
+    2300036: pista partes (13)
+    2300038: pista partes (14)
+    2300040: pista partes (15)
+    2300042: pista partes (16)
+    2300044: pista partes (17)
+    2300046: pista partes (18)
+    2300048: pista partes (2)
+    2300050: pista partes (3)
+    2300052: pista partes (4)
+    2300054: pista partes (5)
+    2300056: pista partes (6)
+    2300058: pista partes (7)
+    2300060: pista partes (8)
+    2300062: pista partes (9)
+    2300064: pista por partess
+    2300066: pista por partess (2)
+    2300068: pistabase1
+    2300070: pistabase2
+    2300072: pistabase3
+    2300074: pistabase4
+    2300076: pistabase5
+    2300078: riesgo de caerse
+    2300080: riesgo de caerse (2)
+    2300082: terreno
+    2300084: trampolines
+    3300000: arbolitos
+    3300002: arbolitos (2)
+    3300004: arbolitos (3)
+    3300006: arbolitos (4)
+    3300008: arbolitos (5)
+    3300010: barandal1
+    3300012: barandal2
+    3300014: flecha
+    3300016: flecha2
+    3300018: flecha3
+    3300020: flecha4
+    3300022: 'letreroDangerous '
+    3300024: letreroDangerous  (2)
+    3300026: minimapa
+    3300028: pista partes
+    3300030: pista partes (10)
+    3300032: pista partes (11)
+    3300034: pista partes (12)
+    3300036: pista partes (13)
+    3300038: pista partes (14)
+    3300040: pista partes (15)
+    3300042: pista partes (16)
+    3300044: pista partes (17)
+    3300046: pista partes (18)
+    3300048: pista partes (2)
+    3300050: pista partes (3)
+    3300052: pista partes (4)
+    3300054: pista partes (5)
+    3300056: pista partes (6)
+    3300058: pista partes (7)
+    3300060: pista partes (8)
+    3300062: pista partes (9)
+    3300064: pista por partess
+    3300066: pista por partess (2)
+    3300068: pistabase1
+    3300070: pistabase2
+    3300072: pistabase3
+    3300074: pistabase4
+    3300076: pistabase5
+    3300078: riesgo de caerse
+    3300080: riesgo de caerse (2)
+    3300082: terreno
+    3300084: trampolines
+    4300000: minimapa
+    4300002: arbolitos
+    4300004: arbolitos (2)
+    4300006: arbolitos (3)
+    4300008: arbolitos (4)
+    4300010: arbolitos (5)
+    4300012: barandal2
+    4300014: barandal1
+    4300016: pistabase3
+    4300018: pistabase5
+    4300020: pistabase4
+    4300022: pistabase2
+    4300024: pistabase1
+    4300026: 'letreroDangerous '
+    4300028: letreroDangerous  (2)
+    4300030: riesgo de caerse
+    4300032: riesgo de caerse (2)
+    4300034: flecha4
+    4300036: flecha3
+    4300038: flecha2
+    4300040: flecha
+    4300042: trampolines
+    4300044: pista partes
+    4300046: pista partes (18)
+    4300048: pista partes (2)
+    4300050: pista por partess
+    4300052: pista por partess (2)
+    4300054: pista partes (17)
+    4300056: pista partes (3)
+    4300058: pista partes (4)
+    4300060: pista partes (5)
+    4300062: pista partes (6)
+    4300064: pista partes (7)
+    4300066: pista partes (8)
+    4300068: pista partes (9)
+    4300070: pista partes (10)
+    4300072: pista partes (11)
+    4300074: pista partes (12)
+    4300076: pista partes (13)
+    4300078: pista partes (14)
+    4300080: pista partes (15)
+    4300082: pista partes (16)
+    4300084: terreno
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
