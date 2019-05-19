@@ -33,6 +33,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     public float aumento=2;
     public bool activo=false;
     public VelocityModifier VelocityModifier;
+    public bool iniciarMovimiento;
+
 
     public int numRandom = 0;
 
@@ -81,26 +83,37 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 		//movimientoCerdoEngine.maxJumps = 3;
 		item3chile.SetActive(false);
 
-	}
+        
+
+    }
 
 	public void FixedUpdate()
 	{
 		var horizontalAxis = Input.GetAxis(player.input.horizontalAxis);
 		var verticalAxis = Input.GetAxis(player.input.verticalAxis);
 		var isJumping = Input.GetKeyDown(player.input.jump);
+        var fixeddeltatime = Time.fixedDeltaTime;
+        var poderJugador = Input.GetKeyDown(player.input.powerUp);
+        iniciarMovimiento = countDown.movement;
 
-		if (countDown.movement)
-		{
-			movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, Time.fixedDeltaTime, this);
-			movimientoCerdoEngine.Jump(isJumping, this);
-            if (Input.GetKeyDown(player.input.powerUp)&& numRandom!=0)
-            {
-	            itemControlEngine.ChargeItem(numRandom,this);
-                mostrarItem.HideIconItem(numRandom);
-                numRandom = 0;
-            }
+
+        movimientoCerdoEngine.IniciarMovimientoDelCerdo(iniciarMovimiento, verticalAxis, horizontalAxis, fixeddeltatime, this, isJumping);
+  //      if (iniciarMovimiento)
+		//{
+		//	movimientoCerdoEngine.Move(verticalAxis, horizontalAxis, fixeddeltatime, this);
+		//	movimientoCerdoEngine.Jump(isJumping, this);
+            
+  //      }
+
+        if (poderJugador && numRandom != 0)
+        {
+            itemControlEngine.ChargeItem(numRandom, this);
+            mostrarItem.HideIconItem(numRandom);
+            numRandom = 0;
         }
-	}
+    }
+
+    
 
     private void OnCollisionEnter(Collision collision)=> movimientoCerdoEngine.maxJumps = 3;
 
@@ -112,7 +125,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     }
 
     
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("power"))
         {
@@ -143,9 +156,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         }
 
         if (other.CompareTag("trampolin"))
-            {
-                rigidbody.velocity = new Vector3(0, jumpForce*2, 0);
-
+        {
+            rigidbody.velocity = new Vector3(0, jumpForce*2, 0);
         }
 
       

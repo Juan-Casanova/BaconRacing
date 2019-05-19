@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿
 
 public class MovimientoCerdoEngine
 {
@@ -7,6 +7,7 @@ public class MovimientoCerdoEngine
 	public float speed;
 	public float jump;
 	public int maxJumps;
+
 
 	public void Jump(bool isJumping, IMovimientoCerdo movimientoCerdoObject)
 	{
@@ -61,6 +62,16 @@ public class MovimientoCerdoEngine
     public void Asignar_MaxJumps()
     {
         maxJumps = 3;
+    }
+
+    public void IniciarMovimientoDelCerdo(bool IniciarMovimiento, float verticalAxis, float horizontalAxis, float fixeddeltatime, IMovimientoCerdo movimientoCerdoObject, bool isJumping)
+    {
+        if (IniciarMovimiento)
+        {
+            Move(verticalAxis, horizontalAxis, fixeddeltatime, movimientoCerdoObject);
+            Jump(isJumping, movimientoCerdoObject);
+        }
+
     }
 
 }
