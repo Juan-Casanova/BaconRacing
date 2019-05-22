@@ -5376,7 +5376,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE FOREST
+  m_Text: LITTLE FOREST
 --- !u!222 &636574808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7752,9 +7752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_Name: 
-  m_Name: 
 --- !u!114 &897982608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13356,8 +13353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1497903066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16039,7 +16034,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: KAMIKASE PARK
+  m_Text: UGANDA
 --- !u!222 &1731493679
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17022,7 +17017,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIUZHOU CITY
+  m_Text: BAMBOO VALLEY
 --- !u!222 &1857413135
 CanvasRenderer:
   m_ObjectHideFlags: 0

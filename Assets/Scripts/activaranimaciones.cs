@@ -26,8 +26,11 @@ public class activaranimaciones : MonoBehaviour
                            
     }
     
-    private void Update() { animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
-    animacionpersonaje.SetInteger("personaje", _activaranimacionesengine.SeleccionAnimacionPersonaje());  }
+    private void Update()
+    {
+        animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
+        animacionpersonaje.SetInteger("personaje", _activaranimacionesengine.SeleccionAnimacionPersonaje());
+    }
 
 }
 
