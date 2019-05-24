@@ -13,7 +13,7 @@ public class ItemControl : MonoBehaviour
 
     public void Start() => item3chile.SetActive(false);
 
-    public int getItemRandom()=> Random.Range(1, 3);
+    //public int getItemRandom()=> Random.Range(1, 3);
 
     public void ChargeItem(int numRandom)
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5638062, g: 0.664491, b: 0.8435421, a: 1}
+  m_IndirectSpecularColor: {r: 0.5636672, g: 0.664523, b: 0.84320325, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18798,6 +18798,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.1199999
       objectReference: {fileID: 0}
+    - target: {fileID: 4729714467257284225, guid: 28b67e2983c71c64daf0d72875766694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729714467828108715, guid: 28b67e2983c71c64daf0d72875766694,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4729714466599088157, guid: 28b67e2983c71c64daf0d72875766694,
         type: 3}
       propertyPath: m_Size.x
@@ -18897,16 +18907,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.y
       value: 1.7896045
-      objectReference: {fileID: 0}
-    - target: {fileID: 4729714467257284225, guid: 28b67e2983c71c64daf0d72875766694,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4729714467828108715, guid: 28b67e2983c71c64daf0d72875766694,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b67e2983c71c64daf0d72875766694, type: 3}
@@ -22308,7 +22308,7 @@ MonoBehaviour:
   jugador: {fileID: 0}
   item1TocinoPista: {fileID: 0}
   item2Proyectil: {fileID: 0}
-  item3chile: {fileID: 0}
+  item3chile: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
   movimientoCerdo: {fileID: 0}
 --- !u!4 &788312770 stripped
 Transform:

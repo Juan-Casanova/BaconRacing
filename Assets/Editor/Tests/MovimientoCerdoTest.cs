@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using NSubstitute;
 
 namespace Tests
 {
@@ -166,6 +167,23 @@ namespace Tests
             var result = movimientoCerdoEngine.maxJumps;
 
             Assert.AreEqual(3,result);
+        }
+
+        [Test]
+        public void Only_Empezar_a_Moverse()
+        {
+            MovimientoCerdoEngine _movimientoCerdoEngine = new MovimientoCerdoEngine();
+
+            bool IniciarMovimiento = true;
+            float verticalAxis = 1.0f;
+            float horizontalAxis = 1.0f;
+            float fixeddeltatime= 1.0f;
+            IMovimientoCerdo _iMovimientoCerdo = Substitute.For<IMovimientoCerdo>();
+            bool isJumping = true;
+
+            _movimientoCerdoEngine.IniciarMovimientoDelCerdo(IniciarMovimiento, verticalAxis, horizontalAxis, fixeddeltatime,  _iMovimientoCerdo, isJumping);
+
+            Assert.AreEqual(true,IniciarMovimiento);
         }
     }
 
