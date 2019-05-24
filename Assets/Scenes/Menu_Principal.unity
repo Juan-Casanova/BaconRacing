@@ -7575,7 +7575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &665308831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24767,7 +24767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315.99997, y: -2.000061}
+  m_AnchoredPosition: {x: -315.99997, y: -52}
   m_SizeDelta: {x: 560, y: 93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6515036029042437315
@@ -24782,6 +24782,7 @@ GameObject:
   - component: {fileID: 6515036029042437318}
   - component: {fileID: 6515036029042437319}
   - component: {fileID: 6515036029042437312}
+  - component: {fileID: 6515036029042437316}
   m_Layer: 5
   m_Name: Boton_BosqueChina
   m_TagString: Untagged
@@ -24789,6 +24790,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029042437316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029042437315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 6515036029207632439}
+  Sprite_Correspondiente: {fileID: 21300000, guid: d00671e8b3818e648b80e0b503450fe9,
+    type: 3}
 --- !u!222 &6515036029042437318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24859,6 +24875,7 @@ GameObject:
   - component: {fileID: 6515036029060201981}
   - component: {fileID: 6515036029060201982}
   - component: {fileID: 6515036029060201983}
+  - component: {fileID: 6515036029060201979}
   m_Layer: 5
   m_Name: Boton_Uganda
   m_TagString: Untagged
@@ -24866,6 +24883,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029060201979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029060201978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 6515036029207632439}
+  Sprite_Correspondiente: {fileID: 21300000, guid: ab49f61ed3f3c2649b67556b964f1841,
+    type: 3}
 --- !u!222 &6515036029060201981
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25047,8 +25079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 20.9}
-  m_SizeDelta: {x: 389.8, y: 314.9}
+  m_AnchoredPosition: {x: -14.8, y: 26.84}
+  m_SizeDelta: {x: 450.96, y: 357.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6515036029207632433
 GameObject:
@@ -25096,7 +25128,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: dbff409cec6009d44be4cc827300fab1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 330da75ba98b22248aa527702be62ce6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25197,7 +25229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315.99997, y: 89.999985}
+  m_AnchoredPosition: {x: -315.99997, y: 65.000046}
   m_SizeDelta: {x: 560, y: 93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6515036029517703470
@@ -25212,6 +25244,7 @@ GameObject:
   - component: {fileID: 6515036029517703473}
   - component: {fileID: 6515036029517703474}
   - component: {fileID: 6515036029517703475}
+  - component: {fileID: 6515036029517703471}
   m_Layer: 5
   m_Name: Boton_PistaMexico
   m_TagString: Untagged
@@ -25219,6 +25252,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029517703471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029517703470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 6515036029207632439}
+  Sprite_Correspondiente: {fileID: 21300000, guid: 58ae1f45e10ee324ea66eba30b4cf53a,
+    type: 3}
 --- !u!222 &6515036029517703473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25364,8 +25412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 338.9, y: 72.8}
-  m_SizeDelta: {x: 503.5, y: 431}
+  m_AnchoredPosition: {x: 314.7, y: -5.75}
+  m_SizeDelta: {x: 552, y: 472.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6515036029593796187
 GameObject:
@@ -25625,7 +25673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE FOREST
+  m_Text: LITTLE FOREST
 --- !u!224 &6515036029784774133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25683,6 +25731,7 @@ GameObject:
   - component: {fileID: 6515036029857572479}
   - component: {fileID: 6515036029857572472}
   - component: {fileID: 6515036029857572473}
+  - component: {fileID: 6515036029857572469}
   m_Layer: 5
   m_Name: Boton_PistaArbolitos
   m_TagString: Untagged
@@ -25690,6 +25739,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029857572469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029857572468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 6515036029207632439}
+  Sprite_Correspondiente: {fileID: 21300000, guid: 424ee6196cdbeec44817b7ae731aafb5,
+    type: 3}
 --- !u!114 &6515036029857572472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25791,7 +25855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315.99997, y: -98}
+  m_AnchoredPosition: {x: -316, y: -167.5}
   m_SizeDelta: {x: 560, y: 93}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6515036029857572479
@@ -26028,7 +26092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6515036030050157991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26247,7 +26311,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIUZHOU CITY
+  m_Text: BAMBOO VALLEY
 --- !u!224 &6515036030712015278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26454,7 +26518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: KAMIKASE PARK
+  m_Text: UGANDA
 --- !u!224 &6515036030837749390
 RectTransform:
   m_ObjectHideFlags: 0
