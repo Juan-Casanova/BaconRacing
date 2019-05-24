@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
 
     public void SpawnPlayers()
     {
+        Debug.Log("gg"+GameManager.instancia.gameObject);
         GameManager.instancia.player1Instancia = Instantiate(GameManager.instancia.player1Prefab, player1SpawnPoint.position, player1SpawnPoint.rotation);
         GameManager.instancia.player2Instancia = Instantiate(GameManager.instancia.player2Prefab, player2SpawnPoint.position, player2SpawnPoint.rotation);
         if(PlayersSpawnEvent != null) PlayersSpawnEvent();

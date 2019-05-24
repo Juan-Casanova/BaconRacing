@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour, IMeta
     public GameObject SrTequilaP1, SrTequilaP2;
     public GameObject SakeP1, SakeP2;
     public GameObject CuauhtemocP1, CuauhtemocP2;
-    public GameObject MecaTequilaP1, MecaTequilaP2, MecaSakeP1, MecaSakeP2, MecaCuahuP1, MecaCuahuP2;
+    public GameObject MecaTequilaP1, MecaTequilaP2, MecaSakeP1, MecaSakeP2, MecaCuahuP1, MecaCuahuP2, QuetzalSakeP1, QuetzalSakeP2, QuetzalTequilaP1, QuetzalTequilaP2, QuetzalCuahuP1, QuetzalCuahuP2;
 
     void Awake()
     {
@@ -92,4 +92,17 @@ public class GameManager : MonoBehaviour, IMeta
     public void PickCharacterMecaCuahuP1() => player1Prefab = MecaCuahuP1;
 
     public void PickCharacterMecaCuahuP2() => player2Prefab = MecaCuahuP2;
+
+
+    public void PickCharacterQuetzalTequilaP1() => player1Prefab = QuetzalTequilaP1;
+
+    public void PickCharacterQuetzalTequilaP2() => player2Prefab = QuetzalTequilaP2;
+
+    public void PickCharacterQuetzalSakeP1() => player1Prefab = QuetzalSakeP1;
+
+    public void PickCharacterQuetzalSakeP2() => player2Prefab = QuetzalSakeP2;
+
+    public void PickCharacterQuetzalCuahuP1() => player1Prefab= QuetzalCuahuP1;
+
+    public void PickCharacterQuetzalCuahuP2() => player2Prefab = QuetzalCuahuP2;
 }
