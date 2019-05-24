@@ -189,6 +189,18 @@ MonoBehaviour:
     type: 3}
   MecaCuahuP2: {fileID: 7241489297305784372, guid: aa5c6e5d0e5b7b645ac6a75748bfdb65,
     type: 3}
+  QuetzalSakeP1: {fileID: 4630842336817475554, guid: 148898fd71469be4695ea49a308ce4e7,
+    type: 3}
+  QuetzalSakeP2: {fileID: 7241489297305784372, guid: 74129b32148da7b46999b768c3cae55d,
+    type: 3}
+  QuetzalTequilaP1: {fileID: 4630842336817475554, guid: 854529dc49fc3d640b12ba23a2893602,
+    type: 3}
+  QuetzalTequilaP2: {fileID: 7241489297305784372, guid: 3917b416ee14a8047b5d10f655277986,
+    type: 3}
+  QuetzalCuahuP1: {fileID: 4630842336817475554, guid: 5f04253788659c44f938d06a8648909b,
+    type: 3}
+  QuetzalCuahuP2: {fileID: 7241489297305784372, guid: 1e458f4a918fa7a40bdda7807a229cd1,
+    type: 3}
 --- !u!1 &4729714467086324228
 GameObject:
   m_ObjectHideFlags: 0

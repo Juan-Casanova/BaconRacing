@@ -461,7 +461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &26098145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1696,9 +1696,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 155147906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &163307026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,7 +1713,6 @@ GameObject:
   - component: {fileID: 163307031}
   - component: {fileID: 163307030}
   - component: {fileID: 163307029}
-  - component: {fileID: 163307028}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -1739,18 +1740,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &163307028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163307026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &163307029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,7 +2043,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 26a5caa76df24dc4fb138f1517008e4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73d770c4c993ec340a34b557dbeecbd4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2162,7 +2151,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &196595160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2956,7 +2945,6 @@ GameObject:
   - component: {fileID: 279119418}
   - component: {fileID: 279119417}
   - component: {fileID: 279119416}
-  - component: {fileID: 279119415}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -2984,18 +2972,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &279119415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279119413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &279119416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3052,7 +3028,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 26a5caa76df24dc4fb138f1517008e4d,
+          m_ObjectArgument: {fileID: 21300000, guid: 73d770c4c993ec340a34b557dbeecbd4,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -3368,9 +3344,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 281760256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &287328106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,7 +3593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &293005215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3797,9 +3775,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 326993525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &326993528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3931,7 +3911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &340350173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4257,7 +4237,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterSrTequilaP1
+        m_MethodName: PickCharacterQuetzalTequilaP1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4274,17 +4254,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: f602696867c471f45ae0c4053c096d99,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4758,9 +4727,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 411599544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &411599547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6704,7 +6675,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: d5811b9a2da1e70419849687646160da,
+          m_ObjectArgument: {fileID: 21300000, guid: ce91b5c9d5c34f44d9a55345fa51f737,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -6882,7 +6853,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 26a5caa76df24dc4fb138f1517008e4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 73d770c4c993ec340a34b557dbeecbd4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7289,9 +7260,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 648927225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &648927228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7575,7 +7548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &665308831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8473,6 +8446,12 @@ MonoBehaviour:
     type: 3}
   MecaCuahuP2: {fileID: 7241489297305784372, guid: aa5c6e5d0e5b7b645ac6a75748bfdb65,
     type: 3}
+  QuetzalSakeP1: {fileID: 0}
+  QuetzalSakeP2: {fileID: 0}
+  QuetzalTequilaP1: {fileID: 0}
+  QuetzalTequilaP2: {fileID: 0}
+  QuetzalCuahuP1: {fileID: 0}
+  QuetzalCuahuP2: {fileID: 0}
 --- !u!4 &754367102
 Transform:
   m_ObjectHideFlags: 0
@@ -9596,7 +9575,6 @@ GameObject:
   - component: {fileID: 895123295}
   - component: {fileID: 895123294}
   - component: {fileID: 895123293}
-  - component: {fileID: 895123292}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -9624,18 +9602,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &895123292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895123290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &895123293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9678,7 +9644,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterSrTequilaP2
+        m_MethodName: PickCharacterMecaTequilaP2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9695,17 +9661,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: f602696867c471f45ae0c4053c096d99,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen_2P
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9846,7 +9801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &911961731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9990,7 +9945,6 @@ GameObject:
   - component: {fileID: 917212033}
   - component: {fileID: 917212032}
   - component: {fileID: 917212031}
-  - component: {fileID: 917212030}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -10018,18 +9972,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &917212030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917212028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &917212031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10072,7 +10014,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterMecaCuahuP2
+        m_MethodName: PickCharacterQuetzalCuahuP2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10089,17 +10031,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: 4bf2118343549bb44ab82c758636743d,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen_2P
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10230,7 +10161,6 @@ GameObject:
   - component: {fileID: 921283324}
   - component: {fileID: 921283323}
   - component: {fileID: 921283322}
-  - component: {fileID: 921283321}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -10258,18 +10188,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &921283321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921283319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &921283322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10614,7 +10532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &996978746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11196,7 +11114,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b7002864c2751af4bbccc638fd3951f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 776d77feb8f2ae445b53478fff98adcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11656,9 +11574,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1080283272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &1086188393
 GameObject:
   m_ObjectHideFlags: 0
@@ -12534,7 +12454,6 @@ GameObject:
   - component: {fileID: 1200574290}
   - component: {fileID: 1200574289}
   - component: {fileID: 1200574288}
-  - component: {fileID: 1200574287}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -12562,18 +12481,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1200574287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200574285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1200574288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12616,7 +12523,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterSrTequilaP2
+        m_MethodName: PickCharacterQuetzalSakeP2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12633,17 +12540,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: 18321c9429bd81e41ac43e9c0484221f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen_2P
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12811,9 +12707,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1210437121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1210437124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13673,7 +13571,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterSrTequilaP1
+        m_MethodName: PickCharacterQuetzalCuahuP1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13690,17 +13588,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: 4bf2118343549bb44ab82c758636743d,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -13793,7 +13680,6 @@ GameObject:
   - component: {fileID: 1278475792}
   - component: {fileID: 1278475791}
   - component: {fileID: 1278475790}
-  - component: {fileID: 1278475789}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -13821,18 +13707,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1278475789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278475787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1278475790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13889,7 +13763,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: d5811b9a2da1e70419849687646160da,
+          m_ObjectArgument: {fileID: 21300000, guid: ce91b5c9d5c34f44d9a55345fa51f737,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -13985,9 +13859,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288240633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1288240636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15252,9 +15128,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355234936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &1355555820
 GameObject:
   m_ObjectHideFlags: 0
@@ -15304,9 +15182,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355555820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1355555823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16733,9 +16613,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1520455295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1520455298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17125,7 +17007,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: b7002864c2751af4bbccc638fd3951f8,
+          m_ObjectArgument: {fileID: 21300000, guid: 776d77feb8f2ae445b53478fff98adcf,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -17722,9 +17604,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1577911381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1577911384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18947,9 +18831,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1716720686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1716720689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19341,7 +19227,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b7002864c2751af4bbccc638fd3951f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 776d77feb8f2ae445b53478fff98adcf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19709,9 +19595,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781181850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &1781181853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19838,7 +19726,6 @@ GameObject:
   - component: {fileID: 1783799330}
   - component: {fileID: 1783799329}
   - component: {fileID: 1783799328}
-  - component: {fileID: 1783799327}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -19866,18 +19753,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1783799327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783799325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1783799328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20372,7 +20247,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 26a5caa76df24dc4fb138f1517008e4d,
+          m_ObjectArgument: {fileID: 21300000, guid: 73d770c4c993ec340a34b557dbeecbd4,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -21512,9 +21387,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893558009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &1901240614
 GameObject:
   m_ObjectHideFlags: 0
@@ -21532,7 +21409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1901240615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22172,7 +22049,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d5811b9a2da1e70419849687646160da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce91b5c9d5c34f44d9a55345fa51f737, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22718,9 +22595,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2009154999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &2012299321
 GameObject:
   m_ObjectHideFlags: 0
@@ -23034,7 +22913,6 @@ GameObject:
   - component: {fileID: 2031069067}
   - component: {fileID: 2031069066}
   - component: {fileID: 2031069065}
-  - component: {fileID: 2031069064}
   m_Layer: 5
   m_Name: Button_Mario
   m_TagString: Untagged
@@ -23062,18 +22940,6 @@ RectTransform:
   m_AnchoredPosition: {x: -13.58, y: 14}
   m_SizeDelta: {x: 170, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2031069064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031069062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2031069065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23130,7 +22996,7 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: b7002864c2751af4bbccc638fd3951f8,
+          m_ObjectArgument: {fileID: 21300000, guid: 776d77feb8f2ae445b53478fff98adcf,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
@@ -23234,7 +23100,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d5811b9a2da1e70419849687646160da, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce91b5c9d5c34f44d9a55345fa51f737, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23477,9 +23343,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2064591089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!1 &2067817016
 GameObject:
   m_ObjectHideFlags: 0
@@ -23731,9 +23599,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2073976241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 022ccc3f3a26eeb489572f8757abbe3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &2073976244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24099,7 +23969,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 754367101}
-        m_MethodName: PickCharacterSrTequilaP1
+        m_MethodName: PickCharacterQuetzalSakeP1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24116,17 +23986,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 21300000, guid: 18321c9429bd81e41ac43e9c0484221f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1222748731}
-        m_MethodName: To_Tracks_Screen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
