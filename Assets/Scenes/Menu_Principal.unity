@@ -7548,7 +7548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &665308831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8446,12 +8446,18 @@ MonoBehaviour:
     type: 3}
   MecaCuahuP2: {fileID: 7241489297305784372, guid: aa5c6e5d0e5b7b645ac6a75748bfdb65,
     type: 3}
-  QuetzalSakeP1: {fileID: 0}
-  QuetzalSakeP2: {fileID: 0}
-  QuetzalTequilaP1: {fileID: 0}
-  QuetzalTequilaP2: {fileID: 0}
-  QuetzalCuahuP1: {fileID: 0}
-  QuetzalCuahuP2: {fileID: 0}
+  QuetzalSakeP1: {fileID: 4630842336817475554, guid: 148898fd71469be4695ea49a308ce4e7,
+    type: 3}
+  QuetzalSakeP2: {fileID: 7241489297305784372, guid: 74129b32148da7b46999b768c3cae55d,
+    type: 3}
+  QuetzalTequilaP1: {fileID: 4630842336817475554, guid: 854529dc49fc3d640b12ba23a2893602,
+    type: 3}
+  QuetzalTequilaP2: {fileID: 7241489297305784372, guid: 3917b416ee14a8047b5d10f655277986,
+    type: 3}
+  QuetzalCuahuP1: {fileID: 4630842336817475554, guid: 5f04253788659c44f938d06a8648909b,
+    type: 3}
+  QuetzalCuahuP2: {fileID: 7241489297305784372, guid: 1e458f4a918fa7a40bdda7807a229cd1,
+    type: 3}
 --- !u!4 &754367102
 Transform:
   m_ObjectHideFlags: 0
@@ -10532,7 +10538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &996978746
 MonoBehaviour:
   m_ObjectHideFlags: 0
