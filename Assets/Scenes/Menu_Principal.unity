@@ -24782,6 +24782,7 @@ GameObject:
   - component: {fileID: 6515036029042437318}
   - component: {fileID: 6515036029042437319}
   - component: {fileID: 6515036029042437312}
+  - component: {fileID: 6515036029042437316}
   m_Layer: 5
   m_Name: Boton_BosqueChina
   m_TagString: Untagged
@@ -24789,6 +24790,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029042437316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029042437315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!222 &6515036029042437318
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24859,6 +24874,7 @@ GameObject:
   - component: {fileID: 6515036029060201981}
   - component: {fileID: 6515036029060201982}
   - component: {fileID: 6515036029060201983}
+  - component: {fileID: 6515036029060201979}
   m_Layer: 5
   m_Name: Boton_Uganda
   m_TagString: Untagged
@@ -24866,6 +24882,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029060201979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029060201978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!222 &6515036029060201981
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25212,6 +25242,7 @@ GameObject:
   - component: {fileID: 6515036029517703473}
   - component: {fileID: 6515036029517703474}
   - component: {fileID: 6515036029517703475}
+  - component: {fileID: 6515036029517703471}
   m_Layer: 5
   m_Name: Boton_PistaMexico
   m_TagString: Untagged
@@ -25219,6 +25250,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029517703471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029517703470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!222 &6515036029517703473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25625,7 +25670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: THE FOREST
+  m_Text: LITTLE FOREST
 --- !u!224 &6515036029784774133
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25683,6 +25728,7 @@ GameObject:
   - component: {fileID: 6515036029857572479}
   - component: {fileID: 6515036029857572472}
   - component: {fileID: 6515036029857572473}
+  - component: {fileID: 6515036029857572469}
   m_Layer: 5
   m_Name: Boton_PistaArbolitos
   m_TagString: Untagged
@@ -25690,6 +25736,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6515036029857572469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036029857572468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c4257689f3cbc44083fa2c77366173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Imagen_Correspondiente: {fileID: 0}
+  Sprite_Correspondiente: {fileID: 0}
 --- !u!114 &6515036029857572472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26247,7 +26307,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIUZHOU CITY
+  m_Text: BAMBOO VALLEY
 --- !u!224 &6515036030712015278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26454,7 +26514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: KAMIKASE PARK
+  m_Text: UGANDA
 --- !u!224 &6515036030837749390
 RectTransform:
   m_ObjectHideFlags: 0
