@@ -11,7 +11,7 @@ public class activaranimaciones : MonoBehaviour
     //public Rigidbody Cerdito;
     public Animator animacioncerdito; // animator del cerdito
     public Animator animacionpersonaje; // animator del personaje
-    public Animator animacionitem; // animator del personaje
+   // public Animator animacionitem; // animator del personaje
     /// <summary>
     /// cerdito=0 significa animacion de idle
     /// cerdito=1 significa animacion de correr

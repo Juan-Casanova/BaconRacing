@@ -449,7 +449,7 @@ Transform:
   - {fileID: 4729714466700589051}
   - {fileID: 4729714467150685394}
   m_Father: {fileID: 5688879523468329774}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4729714467461855481
 GameObject:
@@ -482,7 +482,7 @@ Transform:
   - {fileID: 4729714467360597827}
   - {fileID: 4729714467112914048}
   m_Father: {fileID: 5688879523468329774}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4729714467461855483
 MonoBehaviour:
@@ -540,7 +540,7 @@ Animator:
   m_GameObject: {fileID: 6652436921271286085}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7faaba8076d8fc449b1afc300ff0f0bb, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -624,9 +624,9 @@ Transform:
   m_LocalPosition: {x: 49.253643, y: -0.859486, z: 5.3454666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4729714466917801723}
   - {fileID: 4729714467373304617}
   - {fileID: 4729714467461855480}
-  - {fileID: 4729714466917801723}
   - {fileID: 4729714467084105108}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -638,11 +638,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5688879523468329774}
     m_Modifications:
-    - target: {fileID: 2971089153144567698, guid: 766b4fa3dacca474b84934afad632394,
-        type: 3}
-      propertyPath: m_Name
-      value: HUD
-      objectReference: {fileID: 0}
     - target: {fileID: 2971089153144567696, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -681,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 2971089153144567696, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2971089153144567696, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
@@ -748,6 +743,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2971089153144567698, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_Name
+      value: HUD
+      objectReference: {fileID: 0}
     - target: {fileID: 2971089153440106680, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -768,6 +768,11 @@ PrefabInstance:
       propertyPath: meta
       value: 
       objectReference: {fileID: 4729714467086324231}
+    - target: {fileID: 5555483445793728581, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 766b4fa3dacca474b84934afad632394, type: 3}
 --- !u!224 &4729714466917801723 stripped
