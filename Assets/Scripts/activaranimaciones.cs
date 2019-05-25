@@ -30,7 +30,7 @@ public class activaranimaciones : MonoBehaviour
     {
         animacioncerdito.SetInteger("cerdito", _activaranimacionesengine.SeleccionAnimacion());
         animacionpersonaje.SetInteger("personaje", _activaranimacionesengine.SeleccionAnimacionPersonaje());
-        animacionitem.SetInteger("reactitem", _activaranimacionesengine.SeleccionAnimacionPersonaje());
+       // animacionitem.SetInteger("reactitem", _activaranimacionesengine.SeleccionAnimacionPersonaje());
     }
 
 }
