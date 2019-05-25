@@ -45,7 +45,7 @@ public class ItemControl : MonoBehaviour
    
     //Item 3 Aceleracion del personaje
 
-    public void PoderItem3() => StartCoroutine(TiempoItem3());
+    public void PoderItem3() =>StartCoroutine(TiempoItem3());
 
     IEnumerator TiempoItem3()
     {

@@ -35,7 +35,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     public VelocityModifier VelocityModifier;
     public bool iniciarMovimiento;
 
-
+   
     public int numRandom = 0;
 
     #region  Variables del Movimiento
