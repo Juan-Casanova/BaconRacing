@@ -39,7 +39,7 @@ public class Real_Menu_manager : MonoBehaviour
 
 	public void To_Tracks_Screen() => goToScreen(Tracks_Screen, BackTarget.MainMenu);
 
-	public void To_Tracks_Screen_2P() => goToScreen(Tracks_Screen_2P, BackTarget.MainMenu);
+	public void To_Tracks_Screen_2P() => goToScreen(Tracks_Screen_2P, BackTarget.CharacterSelectMultiPlayer);
 
 	private void goToScreen(GameObject canvas, BackTarget backTarget)
 	{
