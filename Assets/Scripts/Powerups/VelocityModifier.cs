@@ -8,10 +8,12 @@ public class VelocityModifier : MonoBehaviour
     public float reduccion = 0.5f;
 
     public float duration = 2;
-
+    public Animator animacionitem; // animator del item //probandose
     public bool picked = false;
     public MeshRenderer renderer;
     private MovimientoCerdo cerdito;
+   
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !picked)
@@ -20,6 +22,7 @@ public class VelocityModifier : MonoBehaviour
             cerdito = other.GetComponent<MovimientoCerdo>();
             cerdito.movimientoCerdoEngine.speed *= reduccion;
             renderer.enabled = false;
+            
             StartCoroutine(cancelEffect());
         }
     }
@@ -28,6 +31,7 @@ public class VelocityModifier : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         Debug.Log("Me destruyo papu");
+        //animacionitem.SetInteger("reactitem", 2); //se esta probando que funcioine
         cerdito.movimientoCerdoEngine.speed = cerdito.BaseSpeed;
         Destroy(gameObject);
     }
