@@ -1,5 +1,55 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &472636608728395173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8754948329816353845}
+  - component: {fileID: 3911681629925519902}
+  m_Layer: 0
+  m_Name: itemanimator2djugador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8754948329816353845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472636608728395173}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.63695544, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7241489297305784380}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &3911681629925519902
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472636608728395173}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a4264038d3d6fe24baa8f3530eac3a47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2546182937490071241
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +432,7 @@ Transform:
   - {fileID: 8318498944865732475}
   - {fileID: 7680747160933727928}
   - {fileID: 6730304370992527275}
+  - {fileID: 8754948329816353845}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -475,6 +526,8 @@ MonoBehaviour:
   aumento: 2
   activo: 0
   VelocityModifier: {fileID: 0}
+  iniciarMovimiento: 0
+  itemanimator2djugador: {fileID: 3911681629925519902}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -743,6 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7241489297522098898}
   - component: {fileID: 7241489297522098900}
+  - component: {fileID: 5029330363571317831}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -806,6 +860,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &5029330363571317831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241489297522098899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51e9c50963bfcb4db5b61e0d0b03062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7241489297549231615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,10 +2256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100024, guid: fd64159c899ac0047b760edd10094944, type: 3}
-      propertyPath: m_Name
-      value: personajeIdle2
-      objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: fd64159c899ac0047b760edd10094944, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2238,6 +2300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: fd64159c899ac0047b760edd10094944, type: 3}
+      propertyPath: m_Name
+      value: personajeIdle2
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: fd64159c899ac0047b760edd10094944, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2263,14 +2329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03230991
@@ -2326,6 +2384,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
