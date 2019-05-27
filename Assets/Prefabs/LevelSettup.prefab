@@ -773,6 +773,11 @@ PrefabInstance:
       propertyPath: meta
       value: 
       objectReference: {fileID: 4729714467086324231}
+    - target: {fileID: 151266856220825625, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1988399731157597371, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: m_IsActive
