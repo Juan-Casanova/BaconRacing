@@ -164,6 +164,8 @@ MonoBehaviour:
   aumento: 2
   activo: 0
   VelocityModifier: {fileID: 0}
+  iniciarMovimiento: 0
+  itemanimator2djugador: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -219,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7241489297522098898}
   - component: {fileID: 7241489297522098900}
+  - component: {fileID: 6987696731835505420}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -282,6 +285,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &6987696731835505420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241489297522098899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51e9c50963bfcb4db5b61e0d0b03062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7241489298386557094
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,10 +411,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100022, guid: 103b7777698412543bf22c8d4c73826a, type: 3}
-      propertyPath: m_Name
-      value: MECAcerdo1 (final)
-      objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: 103b7777698412543bf22c8d4c73826a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -444,6 +455,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 103b7777698412543bf22c8d4c73826a, type: 3}
+      propertyPath: m_Name
+      value: MECAcerdo1 (final)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 103b7777698412543bf22c8d4c73826a, type: 3}
 --- !u!4 &244991552764102332 stripped
@@ -459,10 +474,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100176, guid: 3ac24157d6a97024895923862b2de40f, type: 3}
-      propertyPath: m_Name
-      value: sake(final)
-      objectReference: {fileID: 0}
     - target: {fileID: 400176, guid: 3ac24157d6a97024895923862b2de40f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -511,6 +522,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
+    - target: {fileID: 100176, guid: 3ac24157d6a97024895923862b2de40f, type: 3}
+      propertyPath: m_Name
+      value: sake(final)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ac24157d6a97024895923862b2de40f, type: 3}
 --- !u!4 &2964035054220224651 stripped
@@ -532,14 +547,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03230991
@@ -595,6 +602,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}

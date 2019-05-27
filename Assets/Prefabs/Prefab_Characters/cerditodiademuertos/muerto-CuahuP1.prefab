@@ -117,6 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4630842336187953924}
   - component: {fileID: 4630842336187953922}
+  - component: {fileID: 8190255744494515257}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -180,6 +181,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &8190255744494515257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4630842336187953925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93eb97fe275c924bae6fe76ac19d88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4630842336817475554
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +313,8 @@ MonoBehaviour:
   aumento: 2
   activo: 0
   VelocityModifier: {fileID: 0}
+  iniciarMovimiento: 0
+  itemanimator2djugador: {fileID: 0}
   numRandom: 0
   _BaseSpeed: 0
   _speed: 7
@@ -396,10 +411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
-      propertyPath: m_Name
-      value: cuahubigotin(final)
-      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
     - target: {fileID: 400000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -444,10 +459,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 91b3850d8ec594e438b99245ea956632, type: 2}
+    - target: {fileID: 100000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
+      propertyPath: m_Name
+      value: cuahubigotin(final)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2355d0de01761ea4f9d4f3194b935534, type: 3}
 --- !u!4 &4382903217563329290 stripped
@@ -532,14 +547,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4630842336817475562}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.017896555
@@ -595,6 +602,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.48478
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
