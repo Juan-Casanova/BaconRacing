@@ -6,27 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu_Principal.unity
+    path: Assets/Scenes/PrimerasEscenas/VideoIntro.unity
+    guid: ba6bc96dcb0be394ba75882c2b610795
+  - enabled: 1
+    path: Assets/Scenes/PrimerasEscenas/Menu_Principal.unity
     guid: 7faad223c9091274c917bb65abc475de
   - enabled: 1
-    path: Assets/Scenes/PistaBosqueChina.unity
+    path: Assets/Scenes/Pistas/PistaBosqueChina.unity
     guid: 9bd9ec640e9e31f46acbaeb54ca81a87
   - enabled: 1
-    path: Assets/Scenes/Pista_Uganda.unity
+    path: Assets/Scenes/Pistas/Pista_Uganda.unity
     guid: 164e64447f694244b91c09031e732b55
   - enabled: 1
-    path: Assets/Scenes/PistaMexico.unity
+    path: Assets/Scenes/Pistas/PistaMexico.unity
     guid: 97b86bffdfe519645b1e65b857641d9a
   - enabled: 1
-    path: Assets/Scenes/Pista_Arbolitos.unity
+    path: Assets/Scenes/Pistas/Pista_Arbolitos.unity
     guid: 8a85030bcfd273a4098f05f8b38dd11b
   - enabled: 1
-    path: Assets/Scenes/Pista_francia.unity
+    path: Assets/Scenes/Pistas/Pista_francia.unity
     guid: d7dc78609c1c45845b30dd2fa1b42bd1
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
