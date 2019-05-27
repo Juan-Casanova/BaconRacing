@@ -796,6 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7241489297522098898}
   - component: {fileID: 7241489297522098900}
+  - component: {fileID: 5029330363571317831}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -859,6 +860,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &5029330363571317831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7241489297522098899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51e9c50963bfcb4db5b61e0d0b03062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7241489297549231615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2243,10 +2256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100024, guid: fd64159c899ac0047b760edd10094944, type: 3}
-      propertyPath: m_Name
-      value: personajeIdle2
-      objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: fd64159c899ac0047b760edd10094944, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2291,6 +2300,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: fd64159c899ac0047b760edd10094944, type: 3}
+      propertyPath: m_Name
+      value: personajeIdle2
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: fd64159c899ac0047b760edd10094944, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2316,14 +2329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7241489297305784380}
     m_Modifications:
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_Name
-      value: ItemChileText
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03230991
@@ -2379,6 +2384,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.30654
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_Name
+      value: ItemChileText
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f23458cb9e0d34bb706fb88fdbd4a2, type: 3}
