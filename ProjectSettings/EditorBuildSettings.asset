@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PrimerasEscenas/VideoIntro.unity
     guid: ba6bc96dcb0be394ba75882c2b610795
   - enabled: 1
+    path: Assets/Scenes/PrimerasEscenas/Login.unity
+    guid: 22b5d04fc6a8e9a49b76a092adb1bc59
+  - enabled: 1
     path: Assets/Scenes/PrimerasEscenas/Menu_Principal.unity
     guid: 7faad223c9091274c917bb65abc475de
   - enabled: 1
