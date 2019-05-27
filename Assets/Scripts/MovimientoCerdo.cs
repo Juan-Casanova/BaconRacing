@@ -35,7 +35,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     public VelocityModifier VelocityModifier;
     public bool iniciarMovimiento;
 
-    public Animator itemanimator2djugador; public ScriptableObject Scerditoanimaciones2d;
+    public Animator itemanimator2djugador; public ScriptableObject Scerditoanimaciones2d; cerditoanimaciones2d _cerditoanimaciones2d; 
     public int numRandom = 0;
 
     #region  Variables del Movimiento
@@ -194,7 +194,8 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 		movimientoCerdoEngine.speed *= 2;
         Debug.Log("hola enchilado?");
         // itemanimator2djugador.SetInteger("reaccionesitems", 3);
-        
+        // _cerditoanimaciones2d.animatorItems.SetInteger("reaccionesitems", 3);
+        _cerditoanimaciones2d.itemfuego();
         Debug.Log("adios enchilado?");
         yield return new WaitForSeconds(5);
 		movimientoCerdoEngine.speed = _BaseSpeed;
