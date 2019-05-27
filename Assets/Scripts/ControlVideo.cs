@@ -24,6 +24,6 @@ public class ControlVideo : MonoBehaviour
     public void EscenaQueSigue()
     {
         
-        SceneManager.LoadScene("Menu_Principal");
+        SceneManager.LoadScene("Login");
     }
 }

@@ -540,7 +540,7 @@ Animator:
   m_GameObject: {fileID: 6652436921271286085}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7faaba8076d8fc449b1afc300ff0f0bb, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -763,11 +763,31 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -7.0999756
       objectReference: {fileID: 0}
+    - target: {fileID: 6039421026547236246, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2971089153144567726, guid: 766b4fa3dacca474b84934afad632394,
         type: 3}
       propertyPath: meta
       value: 
       objectReference: {fileID: 4729714467086324231}
+    - target: {fileID: 1988399731157597371, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004755698029298284, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473798056599033128, guid: 766b4fa3dacca474b84934afad632394,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e1f83cfc059f9174d871ae035b4bc3d7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 766b4fa3dacca474b84934afad632394, type: 3}
 --- !u!224 &4729714466917801723 stripped
