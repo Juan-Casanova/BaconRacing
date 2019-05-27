@@ -108,7 +108,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         if (poderJugador && numRandom != 0)
         {
             itemControlEngine.ChargeItem(numRandom, this);
-            mostrarItem.HideIconItem(numRandom);
+            mostrarItem.HideItem(numRandom, NumPlayer);
             numRandom = 0;
         }
     }
@@ -139,7 +139,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
         {
             
             numRandom = getItemRandom();
-            mostrarItem.ShowIconItem(numRandom);
+            mostrarItem.ShowItem(numRandom, NumPlayer);
             
         }
 
