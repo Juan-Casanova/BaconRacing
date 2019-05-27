@@ -27,7 +27,7 @@ public class MoverCamaraP1 : MonoBehaviour
         if (subiendo)
         {
             this.transform.Rotate(subir, 0, 0);
-            subir = subir - .05f;
+            subir = subir - .1f;
             if (subir <= -.75f)
             {
                 subiendo = false;
@@ -37,7 +37,7 @@ public class MoverCamaraP1 : MonoBehaviour
         if (!subiendo)
         {
             this.transform.Rotate(subir, 0, 0);
-            subir = subir + .05f;
+            subir = subir + .1f;
             if (subir >= .75f)
             {
                 subiendo = true;

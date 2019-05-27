@@ -1,9 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using JetBrains.Annotations;
+
 
 public class Real_Menu_manager : MonoBehaviour
 {
-	private enum BackTarget
+    private string rutaArchivo;
+
+    public int Saldo;
+
+    public Text SaldoInf;
+
+    private enum BackTarget
 	{
 		None,
 		MainMenu,
@@ -11,9 +24,25 @@ public class Real_Menu_manager : MonoBehaviour
 		CharacterSelectMultiPlayer
 	}
 
-	#region Canvas para activar/desactivar
+    #region VarPista
 
-	public GameObject Title_Canvas;
+    public bool PistaMexicoActiva;
+    public bool PistaBosqueActiva;
+    public bool PistaFranciaActiva;
+    public bool PistaSaltarinaActiva;
+
+    #endregion
+
+    #region BotonesPista
+    public UnityEngine.UI.Button PistaMexicobtn;
+    public UnityEngine.UI.Button PistaBosquebtn;
+    public UnityEngine.UI.Button PistaSaltarinbtn;
+    public UnityEngine.UI.Button PistaFranciabtn;
+    #endregion
+
+    #region Canvas para activar/desactivar
+
+    public GameObject Title_Canvas;
 	public GameObject Main_Menu_Canvas;
 	public GameObject Character_Pick_One_Player;
 	public GameObject Character_Pick_Two_Players_firstPlayer;
@@ -65,8 +94,24 @@ public class Real_Menu_manager : MonoBehaviour
 	public void Escribe_Escena(string _scene) => SceneManager.LoadScene(_scene, LoadSceneMode.Single);
 
 	public void SalirJuego() => Application.Quit();
+    static bool PrimeraVez = true;
 
-	private void Update()
+    public void Start()
+    {
+        ActivarPista();
+    }
+
+    void Awake()
+    {
+        rutaArchivo = Application.persistentDataPath + "/datos1.data";
+        if (PrimeraVez)
+        {
+            Cargar();
+            PrimeraVez = false;
+        }
+    }
+
+    private void Update()
 	{
 		if (Input.GetKeyDown("escape"))
 		{
@@ -106,5 +151,152 @@ public class Real_Menu_manager : MonoBehaviour
 		Grupo_Boton_DosJugadores.SetActive(show);
 	}
 
-	#endregion
+    #endregion
+
+    public void GuardarPistaFrancia()
+    {
+        if (Saldo >= 24)
+        {
+            Saldo = Saldo - 24;
+            PistaFranciaActiva = true;
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(rutaArchivo);
+            DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
+            bf.Serialize(file, datos1);
+            file.Close();
+            
+        }
+        else
+        {
+            SaldoInf.gameObject.SetActive(true);
+        }
+    }
+    public void GuardarPistaBosque()
+    {
+        if (Saldo >= 16)
+        {
+            Saldo = Saldo - 16;
+            PistaMexicoActiva = true;
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(rutaArchivo);
+            DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
+            bf.Serialize(file, datos1);
+            file.Close();
+           
+        }
+        else
+        {
+            SaldoInf.gameObject.SetActive(true);
+        }
+    }
+    public void GuardarPistaMexico()
+    {
+        if (Saldo>=12)
+        {
+            Saldo = Saldo - 12;
+            PistaBosqueActiva = true;
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(rutaArchivo);
+            DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
+            bf.Serialize(file, datos1);
+            file.Close();
+           
+        }
+        else
+        {
+            SaldoInf.gameObject.SetActive(true);
+        }
+    }
+    public void GuardarPistaSaltarina()
+    {
+        if (Saldo >=20)
+        {
+            Saldo = Saldo - 20;
+            PistaSaltarinaActiva = true;
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Create(rutaArchivo);
+            DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
+            bf.Serialize(file, datos1);
+            file.Close();
+            
+        }
+        else
+        {
+            SaldoInf.gameObject.SetActive(true);
+        }
+    }
+
+    public void GuardarSaldo()
+    {
+        Saldo=Saldo+4;
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(rutaArchivo);
+        DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva,Saldo);
+        bf.Serialize(file, datos1);
+        file.Close();
+
+        Debug.Log(Saldo);
+        //ActivarPista();
+    }
+
+    public void Cargar()
+    {
+        if (File.Exists(rutaArchivo))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(rutaArchivo, FileMode.Open);
+            DatosAGuardarPistas datos1 = (DatosAGuardarPistas)bf.Deserialize(file);
+            PistaFranciaActiva = datos1.PistaFranciaActiva;
+            PistaBosqueActiva = datos1.PistaBosqueActiva;
+            PistaMexicoActiva = datos1.PistaMexicoActiva;
+            PistaSaltarinaActiva = datos1.PistaSaltarinaActiva;
+            Saldo = datos1.Saldo;
+        }
+        else
+        {
+            PistaFranciaActiva = false;
+            PistaBosqueActiva = false;
+            PistaMexicoActiva = false;
+            PistaSaltarinaActiva = false;
+            Saldo = 12;
+        }
+    }
+
+   void ActivarPista()
+    {
+        if (PistaMexicoActiva==true)
+        {
+            PistaMexicobtn.interactable = true;
+        }
+        if (PistaFranciaActiva == true)
+        {
+            PistaFranciabtn.interactable = true;
+        }
+        if (PistaSaltarinaActiva == true)
+        {
+            PistaSaltarinbtn.interactable = true;
+        }
+        if (PistaBosqueActiva == true)
+        {
+            PistaBosquebtn.interactable = true;
+        }
+    }
+}
+[System.Serializable]
+class DatosAGuardarPistas
+{
+    public bool PistaMexicoActiva;
+    public bool PistaBosqueActiva;
+    public bool PistaFranciaActiva;
+    public bool PistaSaltarinaActiva;
+    public int Saldo;
+
+    public DatosAGuardarPistas(bool PistaMexicoActiva_, bool PistaBosqueActiva_, bool PistaFranciaActiva_, bool PistaSaltarinaActiva_, int Saldo_)
+    {
+        PistaBosqueActiva = PistaBosqueActiva_;
+        PistaFranciaActiva = PistaFranciaActiva_;
+        PistaMexicoActiva = PistaMexicoActiva_;
+        PistaSaltarinaActiva = PistaSaltarinaActiva_;
+        Saldo = Saldo_;
+    }
 }

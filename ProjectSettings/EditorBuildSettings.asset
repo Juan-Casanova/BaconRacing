@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pistas/Pista_francia.unity
     guid: d7dc78609c1c45845b30dd2fa1b42bd1
+  - enabled: 1
+    path: Assets/Scenes/PrimerasEscenas/Tienda.unity
+    guid: a0a939942d193894b83febb3f0c1a7c9
   m_configObjects: {}
