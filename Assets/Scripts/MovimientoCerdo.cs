@@ -35,7 +35,7 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
     public VelocityModifier VelocityModifier;
     public bool iniciarMovimiento;
 
-   
+    public Animator itemanimator2djugador;
     public int numRandom = 0;
 
     #region  Variables del Movimiento
@@ -192,7 +192,10 @@ public class MovimientoCerdo : MonoBehaviour, IMovimientoCerdo, IItemControl
 	{
 		item3chile.SetActive(true);
 		movimientoCerdoEngine.speed *= 2;
-		yield return new WaitForSeconds(5);
+        Debug.Log("hola enchilado?");
+        itemanimator2djugador.SetInteger("reaccionesitems", 3);
+               Debug.Log("adios enchilado?");
+        yield return new WaitForSeconds(5);
 		movimientoCerdoEngine.speed = _BaseSpeed;
 		item3chile.SetActive(false);
 	}
