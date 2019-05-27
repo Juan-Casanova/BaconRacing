@@ -13,5 +13,7 @@ public class Movimiento_Carro : MonoBehaviour
     {
         transform.position = 
 			new Vector3 ( transform.position.x, transform.position.y, Mathf.PingPong(Time.time*Velocidad,Distancia)-Posicion);
+        
+
     }
 }
