@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8004113638836158500}
   m_Layer: 0
   m_Name: ItemBotellaBIEN
-  m_TagString: Untagged
+  m_TagString: botellita
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reduccion: 0
   duration: 2
+  animacionitem: {fileID: 0}
   picked: 0
   renderer: {fileID: 3970815183029196865}
 --- !u!135 &8004113638836158500

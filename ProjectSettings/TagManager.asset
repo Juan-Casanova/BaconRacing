@@ -16,6 +16,8 @@ TagManager:
   - Moneda
   - power
   - trampolin
+  - tocinito
+  - botellita
   layers:
   - Default
   - TransparentFX
