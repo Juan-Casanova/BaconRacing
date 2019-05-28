@@ -22,7 +22,15 @@ public class VelocityModifier : MonoBehaviour
             cerdito = other.GetComponent<MovimientoCerdo>();
             cerdito.movimientoCerdoEngine.speed *= reduccion;
             renderer.enabled = false;
-            cerdito.star.SetActive(true);
+            if (this.gameObject.tag== "tocinito")
+            {
+                cerdito.bacon.SetActive(true);
+            }else if (this.gameObject.tag == "botellita")
+            {
+                cerdito.star.SetActive(true);
+            }
+
+               
             StartCoroutine(cancelEffect());
         }
     }
@@ -34,6 +42,7 @@ public class VelocityModifier : MonoBehaviour
         //animacionitem.SetInteger("reactitem", 2); //se esta probando que funcioine
         // cerdito.movimientoCerdoEngine.speed = cerdito.BaseSpeed;
         cerdito.star.SetActive(false);
+        cerdito.bacon.SetActive(false);
         Destroy(gameObject);
     }
 }

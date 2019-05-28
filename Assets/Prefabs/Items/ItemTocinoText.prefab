@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 6089469075449410513}
   m_Layer: 0
   m_Name: ItemTocinoText
-  m_TagString: Untagged
+  m_TagString: tocinito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,5 +172,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reduccion: 0.2
   duration: 2
+  animacionitem: {fileID: 0}
   picked: 0
   renderer: {fileID: 6703108513805319165}
