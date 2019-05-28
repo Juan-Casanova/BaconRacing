@@ -39,8 +39,6 @@ public class VelocityModifier : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         Debug.Log("Me destruyo papu");
-        //animacionitem.SetInteger("reactitem", 2); //se esta probando que funcioine
-        // cerdito.movimientoCerdoEngine.speed = cerdito.BaseSpeed;
         cerdito.star.SetActive(false);
         cerdito.bacon.SetActive(false);
         Destroy(gameObject);
