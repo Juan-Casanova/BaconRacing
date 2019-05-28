@@ -141,14 +141,15 @@ public class Real_Menu_manager : MonoBehaviour
 	public GameObject Grupo_Boton_UnJugador;
 	public GameObject Grupo_Boton_DosJugadores;
 	public GameObject Grupo_Boton_Salir;
+    public GameObject Grupo_Boton_Tienda;
 
-	public void ShowButtonsForNumberOfPlayers(bool show)
+    public void ShowButtonsForNumberOfPlayers(bool show)
 	{
 		Grupo_Boton_Jugar.SetActive(!show);
 		Grupo_Boton_Salir.SetActive(!show);
-
-		//Grupo_Boton_UnJugador.SetActive(show);
-		Grupo_Boton_DosJugadores.SetActive(show);
+        Grupo_Boton_Tienda.SetActive(!show);
+        //Grupo_Boton_UnJugador.SetActive(show);
+        Grupo_Boton_DosJugadores.SetActive(show);
 	}
 
     #endregion
