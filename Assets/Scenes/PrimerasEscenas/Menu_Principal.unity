@@ -5462,7 +5462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &665308831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9686,6 +9686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Saldo: 0
+  SaldoInf: {fileID: 0}
   PistaMexicoActiva: 0
   PistaBosqueActiva: 0
   PistaFranciaActiva: 0
@@ -18228,7 +18229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2142521003
 MonoBehaviour:
   m_ObjectHideFlags: 0
