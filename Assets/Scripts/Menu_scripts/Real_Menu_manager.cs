@@ -33,12 +33,7 @@ public class Real_Menu_manager : MonoBehaviour
 
     #endregion
 
-    #region BotonesPista
-    public UnityEngine.UI.Button PistaMexicobtn;
-    public UnityEngine.UI.Button PistaBosquebtn;
-    public UnityEngine.UI.Button PistaSaltarinbtn;
-    public UnityEngine.UI.Button PistaFranciabtn;
-    #endregion
+  
 
     #region Canvas para activar/desactivar
 
@@ -96,10 +91,7 @@ public class Real_Menu_manager : MonoBehaviour
 	public void SalirJuego() => Application.Quit();
     static bool PrimeraVez = true;
 
-    public void Start()
-    {
-        ActivarPista();
-    }
+    
 
     void Awake()
     {
@@ -177,7 +169,7 @@ public class Real_Menu_manager : MonoBehaviour
         if (Saldo >= 16)
         {
             Saldo = Saldo - 16;
-            PistaMexicoActiva = true;
+            PistaBosqueActiva = true;
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(rutaArchivo);
             DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
@@ -195,7 +187,8 @@ public class Real_Menu_manager : MonoBehaviour
         if (Saldo>=12)
         {
             Saldo = Saldo - 12;
-            PistaBosqueActiva = true;
+            PistaMexicoActiva = true;
+            Debug.Log(PistaMexicoActiva);
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Create(rutaArchivo);
             DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva, Saldo);
@@ -231,7 +224,7 @@ public class Real_Menu_manager : MonoBehaviour
     {
         Saldo=Saldo+4;
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(rutaArchivo);
+        FileStream file = File.OpenWrite(rutaArchivo);
         DatosAGuardarPistas datos1 = new DatosAGuardarPistas(PistaMexicoActiva, PistaBosqueActiva, PistaFranciaActiva, PistaSaltarinaActiva,Saldo);
         bf.Serialize(file, datos1);
         file.Close();
@@ -263,25 +256,7 @@ public class Real_Menu_manager : MonoBehaviour
         }
     }
 
-   void ActivarPista()
-    {
-        if (PistaMexicoActiva==true)
-        {
-            PistaMexicobtn.interactable = true;
-        }
-        if (PistaFranciaActiva == true)
-        {
-            PistaFranciabtn.interactable = true;
-        }
-        if (PistaSaltarinaActiva == true)
-        {
-            PistaSaltarinbtn.interactable = true;
-        }
-        if (PistaBosqueActiva == true)
-        {
-            PistaBosquebtn.interactable = true;
-        }
-    }
+   
 }
 [System.Serializable]
 class DatosAGuardarPistas

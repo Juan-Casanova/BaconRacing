@@ -9770,10 +9770,6 @@ MonoBehaviour:
   PistaBosqueActiva: 0
   PistaFranciaActiva: 0
   PistaSaltarinaActiva: 0
-  PistaMexicobtn: {fileID: 0}
-  PistaBosquebtn: {fileID: 0}
-  PistaSaltarinbtn: {fileID: 0}
-  PistaFranciabtn: {fileID: 0}
   Title_Canvas: {fileID: 665308830}
   Main_Menu_Canvas: {fileID: 2142521002}
   Character_Pick_One_Player: {fileID: 996978745}
@@ -19930,6 +19926,7 @@ GameObject:
   - component: {fileID: 6515036030050157984}
   - component: {fileID: 6515036030050157985}
   - component: {fileID: 6515036030050157986}
+  - component: {fileID: 6515036030050157988}
   m_Layer: 5
   m_Name: Canvas_pista_selec (2)
   m_TagString: Untagged
@@ -19937,6 +19934,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &6515036030050157988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515036030050157987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55ba197a3310ff6469d69854a24b3bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PistaMexicobtn: {fileID: 6515036029517703475}
+  PistaBosquebtn: {fileID: 6515036029042437312}
+  PistaSaltarinbtn: {fileID: 6515036029857572473}
+  PistaFranciabtn: {fileID: 851322375}
 --- !u!224 &6515036030050157991
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20309,8 +20322,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: To_Main_Menu
+      - m_Target: {fileID: 1222748731}
+        m_MethodName: Character_Screen_Two_Player_secondplayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

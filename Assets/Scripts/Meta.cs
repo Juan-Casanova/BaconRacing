@@ -26,8 +26,9 @@ public class Meta : MonoBehaviour
                 contador.currentCheckpoint = 0;
                 if (contador.currentLap >= 3)
                 {
-                    realMenuManager.GuardarSaldo();
                     GameManager.instancia.GameOver(other.gameObject);
+                    realMenuManager.GuardarSaldo();
+                    
                 }
                 /*
                 if (checkEngine.currentCheckpoint < checkEngine.lenghtSpawn)
