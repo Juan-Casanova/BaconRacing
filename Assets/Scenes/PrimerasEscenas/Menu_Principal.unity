@@ -9764,12 +9764,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177241ffd261d7848b0c5cea55590697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Saldo: 0
-  SaldoInf: {fileID: 0}
   PistaMexicoActiva: 0
   PistaBosqueActiva: 0
   PistaFranciaActiva: 0
   PistaSaltarinaActiva: 0
+  Saldo: 0
+  PistaMexicobtn: {fileID: 6515036029517703475}
+  PistaBosquebtn: {fileID: 6515036029042437312}
+  PistaSaltarinbtn: {fileID: 6515036029857572473}
+  PistaFranciabtn: {fileID: 851322375}
   Title_Canvas: {fileID: 665308830}
   Main_Menu_Canvas: {fileID: 2142521002}
   Character_Pick_One_Player: {fileID: 996978745}
@@ -19946,10 +19949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ba197a3310ff6469d69854a24b3bad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PistaMexicobtn: {fileID: 6515036029517703475}
-  PistaBosquebtn: {fileID: 6515036029042437312}
-  PistaSaltarinbtn: {fileID: 6515036029857572473}
-  PistaFranciabtn: {fileID: 851322375}
 --- !u!224 &6515036030050157991
 RectTransform:
   m_ObjectHideFlags: 0

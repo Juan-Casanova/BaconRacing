@@ -6,7 +6,7 @@ public class Meta : MonoBehaviour
 {
     public int index;
     MetaEngine _MetaEngine = new MetaEngine();
-    Real_Menu_manager realMenuManager=new Real_Menu_manager();
+    public int Saldo;
 
     void OnTriggerEnter(Collider other)
     {
@@ -27,8 +27,11 @@ public class Meta : MonoBehaviour
                 if (contador.currentLap >= 3)
                 {
                     GameManager.instancia.GameOver(other.gameObject);
-                    realMenuManager.GuardarSaldo();
-                    
+                    PlayerPrefs.SetInt("Saldo", +4);
+                    Saldo=PlayerPrefs.GetInt("Saldo");
+
+                    Debug.Log(Saldo);
+
                 }
                 /*
                 if (checkEngine.currentCheckpoint < checkEngine.lenghtSpawn)

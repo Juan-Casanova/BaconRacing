@@ -32,7 +32,7 @@ public class MoverCamaraP1 : MonoBehaviour
             {
                 subiendo = false;
             }
-            Debug.Log(subir);
+            //Debug.Log(subir);
         }
         if (!subiendo)
         {

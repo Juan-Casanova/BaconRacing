@@ -20098,6 +20098,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177241ffd261d7848b0c5cea55590697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PistaMexicoActiva: 0
+  PistaBosqueActiva: 0
+  PistaFranciaActiva: 0
+  PistaSaltarinaActiva: 0
+  Saldo: 0
+  SaldoTextInsuficiente: {fileID: 0}
   Title_Canvas: {fileID: 0}
   Main_Menu_Canvas: {fileID: 0}
   Character_Pick_One_Player: {fileID: 0}
@@ -20110,6 +20116,7 @@ MonoBehaviour:
   Grupo_Boton_UnJugador: {fileID: 0}
   Grupo_Boton_DosJugadores: {fileID: 0}
   Grupo_Boton_Salir: {fileID: 0}
+  Grupo_Boton_Tienda: {fileID: 0}
 --- !u!4 &1774158014
 Transform:
   m_ObjectHideFlags: 0
